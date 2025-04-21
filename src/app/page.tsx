@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-black text-white font-sans">
+    <div className="bg-black text-white font-impact">
       {/* Header Section */}
       <div className="w-auto px-4 py-6">
         <Image
@@ -13,20 +13,23 @@ export default function Home() {
         />
       </div>
 
-      <section className="relative py-16 md:py-32 lg:py-48 flex flex-col items-center justify-center overflow-hidden">
-        <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold ml-10 mb-4">
-          <Image
-            src={`/images/FOMO_logo.png`}
-            alt={`FOMO`}
-            width={800}
-            height={350}
-          />
-        </h1>
+      <section className="relative py-16 md:py-32 lg:py-48 flex flex-col items-center justify-center overflow-hidden font-impact">
+        <div className="mt-20 md:mt-32 lg:-mt-27 text-center">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold ml-10 mb-4">
+            <Image
+              src={`/images/FOMO_logo.png`}
+              alt={`FOMO`}
+              width={800}
+              height={350}
+            />
+          </h1>
 
-        <p className="text-3xl md:text-3x1 font-semibold text-white mb-6">
-          Play Freely with Crypto - Your New Online Casino Starts Here
-        </p>
-        <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-100 h-100 md:w-250 md:h-250 z-20">
+          <p className="text-4xl md:text-4xl font-light text-white mb-6 font-sans">
+            Play Freely with Crypto - Your New Online Casino Starts Here
+          </p>
+        </div>
+
+        <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-100 h-100 md:w-200 md:h-200 z-200">
           <Image
             src="/images/trophy.png"
             alt="Trophy Background"
@@ -35,52 +38,54 @@ export default function Home() {
           />
         </div>
 
-        <div className="text-center relative">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-            <p className="text-sm md:text-base">
-              Get a 100% bonus on your first deposit (up to USDT₮300). Start now
-              and aim for the jackpot!
-            </p>
-            <button className="bg-transparent border border-white text-white py-2 px-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
-              Join Now
-            </button>
-          </div>
+        <div>
+          <div className="text-center relative mt-15">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+              <p className="text-sm md:text-base">
+                Get a 100% bonus on your first deposit (up to USDT₮300). Start
+                now and aim for the jackpot!
+              </p>
+              <button className="bg-transparent border border-white text-white py-2 px-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
+                Join Now
+              </button>
+            </div>
 
-          <div className="mt-12">
-            <p className="text-xl md:text-2xl font-semibold text-white mb-2">
-              <span className="text-5xl font-extrabold text-[#FF008C]">
-                3,000+
-              </span>{" "}
-              Games Across All Genres
-            </p>
-            <div className="text-sm md:text-base text-[#FF008C]">
-              Slots, live casino, baccarat, roulette,
-              <p className="text-white inline-block ml-1">and more Exclusive</p>
-              <Image
-                src="/images/FOMO_logo.png"
-                alt="FOMO Logo"
-                width={50}
-                height={50}
-                className="inline-block align-middle m-2"
-              />
-              original games
+            <div className="mt-12">
+              <p className="text-xl md:text-5xl  text-white mb-2">
+                <span className="text-5xl  text-[#FF008C]">3,000+</span> Games
+                Across All Genres
+              </p>
+              <div className="text-sm md:text-base mt-10 text-[#FF008C]">
+                Slots, live casino, baccarat, roulette,
+                <p className="text-white inline-block ml-1">
+                  and more Exclusive
+                </p>
+                <Image
+                  src="/images/FOMO_logo.png"
+                  alt="FOMO Logo"
+                  width={50}
+                  height={50}
+                  className="inline-block align-middle m-2"
+                />
+                original games
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="relative h-100 md:h-100 lg:h-[400px]">
+      <section className="relative -mt-40 h-100 md:h-100 lg:h-[400px]">
         <Image
           src="/images/bg.png"
           alt="Casino Games Background"
           layout="fill"
           objectFit="cover"
         />
-        <button className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-[#252525] text-white py-3 px-8 rounded-full font-semibold hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white z-10">
+        <button className="absolute px-20 bottom-8 left-1/2 transform -translate-x-1/2 bg-[#252525] text-white py-3 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white z-10">
           🚀 Find your favorite Game
         </button>
       </section>
-      <div className="flex justify-around mt-3">
+      <div className="flex justify-around mt-5">
         <div>
           <p>
             MEGA JACKPOT Exceeds USDT₮1,000,000! 4 different jackpot tiers
@@ -95,12 +100,14 @@ export default function Home() {
 
       <section className="bg-black text-white py-16 md:py-24 lg:py-32 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-            Just a Few Clicks to Get Started!
+          <h2 className="text-2xl md:text-3xl lg:text-4xl mb-4">
+            Just a <p className="text-5xl inline-block">Few Clicks</p> to{" "}
+            <p className="text-5xl inline-block">Get Started!</p>
           </h2>
-          <p className="text-sm md:text-base text-gray-400 mb-8">
-            Get a <span className="text-[#FF008C]">100% Bonus</span> on your
-            First Deposit (Up to USDT₮300)
+          <p className="text-sm md:text-base text-white mb-8">
+            Get a <p className="text-2xl inline-block">100% Bonus</p> on your{" "}
+            <p className="text-2xl inline-block">First Deposit</p> (Up to
+            USDT₮300)
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
@@ -108,8 +115,8 @@ export default function Home() {
               <div className="absolute top-4 left-0 flex items-center">
                 <div className="h-20 w-1 bg-[#FF008C] mr-2"></div>
                 <div className="ml-2">
-                  <h3 className="text-xs font-semibold text-white">STEP</h3>
-                  <h3 className="text-2xl font-semibold text-white mb-2">1</h3>
+                  <h3 className="text-lg text-white">STEP</h3>
+                  <h3 className="text-3xl  text-white mb-2">1</h3>
                 </div>
               </div>
 
@@ -134,8 +141,8 @@ export default function Home() {
               <div className="absolute top-4 left-0 flex items-center">
                 <div className="h-20 w-1 bg-[#FF008C] mr-2"></div>
                 <div className="ml-2">
-                  <h3 className="text-xs font-semibold text-white">STEP</h3>
-                  <h3 className="text-2xl font-semibold text-white mb-2">2</h3>
+                  <h3 className="text-lg text-white">STEP</h3>
+                  <h3 className="text-3xl  text-white mb-2">2</h3>
                 </div>
               </div>
 
@@ -160,8 +167,8 @@ export default function Home() {
               <div className="absolute top-4 left-0 flex items-center">
                 <div className="h-20 w-1 bg-[#FF008C] mr-2"></div>
                 <div className="ml-2">
-                  <h3 className="text-xs font-semibold text-white">STEP</h3>
-                  <h3 className="text-2xl font-semibold text-white mb-2">3</h3>
+                  <h3 className="text-lg text-white">STEP</h3>
+                  <h3 className="text-3xl  text-white mb-2">3</h3>
                 </div>
               </div>
 
@@ -183,7 +190,7 @@ export default function Home() {
             </div>
           </div>
 
-          <button className="bg-[#252525] text-white py-3 px-8 rounded-full font-semibold mt-8 hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
+          <button className="bg-[#252525] text-white py-3 px-20 rounded-full mt-8 hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
             <span className="mr-2">🚀</span> Let's Play Now !
           </button>
 
@@ -195,7 +202,7 @@ export default function Home() {
 
       <div className="bg-black text-white py-16 px-8 md:px-24">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl mb-4">
             A One-of-a-Kind
             <br />
             Betting Experience Only on
@@ -210,9 +217,9 @@ export default function Home() {
 
           <div className="text-2xl text-[#FF008C]">
             Play More, Earn More &nbsp;
-            <p className="text-lg text-gray-400 mb-8 inline-block">
+            <p className="text-lg text-white mb-8 inline-block">
               {" "}
-              - Rewards Like No Other
+              – Rewards Like No Other
             </p>
           </div>
 
@@ -280,8 +287,8 @@ export default function Home() {
 
       <div className="bg-black text-white py-16 md:py-24 px-8 md:px-24 overflow-hidden">
         <div className="flex items-center mb-8">
-          <div className="h-8 w-1 bg-[#FF008C] mr-4"></div>
-          <h1 className="text-3xl md:text-4xl font-bold">
+          <div className="h-20 w-1 bg-[#FF008C] mr-4"></div>
+          <h1 className="text-5xl md:text-6xl">
             Crypto-Friendly and Fiat-Ready
           </h1>
         </div>
@@ -289,19 +296,17 @@ export default function Home() {
         <div className="max-w-6xl mx-auto relative z-10 flex flex-col md:flex-row items-start gap-12 ">
           <div className="flex-1 mt-20 bg-[#121212] px-20 py-5 md:-mr-100  -mb-10">
             <div className="mb-12 ">
-              <h2 className="text-xl font-semibold mb-2">
+              <h2 className="text-2xl font-semibold mb-2">
                 Supported cryptocurrencies:
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-white font-semibold text-lg mt-5">
                 USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE
               </p>
             </div>
 
             <div>
-              <h2 className="text-xl font-semibold mb-2">
-                No crypto? No problem!
-              </h2>
-              <div className="flex items-center space-x-4">
+              <h2 className="text-2xl mb-2">No crypto? No problem!</h2>
+              <div className="flex items-center space-x-2">
                 <div className="relative w-12 h-6">
                   <Image
                     src="/icons/apple.png"
@@ -318,7 +323,7 @@ export default function Home() {
                     objectFit="contain"
                   />
                 </div>
-                <div className="relative w-16 h-6">
+                <div className="relative w-12 h-6">
                   <Image
                     src="/icons/visa.png"
                     alt="Visa"
@@ -349,7 +354,7 @@ export default function Home() {
         </div>
 
         <div className="max-w-6xl mx-auto mt-12 relative z-10 flex justify-center">
-          <button className="bg-[#1A1A1A] text-white py-3 px-8 rounded-full font-semibold hover:bg-[#333333] transition-colors duration-200 flex items-center">
+          <button className="bg-[#1A1A1A] text-white py-3 px-30 rounded-full hover:bg-[#333333] transition-colors duration-200 flex items-center">
             <span className="mr-2">🚀</span> Let's Play Now !
           </button>
         </div>
