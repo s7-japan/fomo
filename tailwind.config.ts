@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        changa: ['var(--font-changa)', 'sans-serif'],
         impact: ['Impact', 'Charcoal', 'sans-serif'],
+        changa: ['var(--font-changa)', 'sans-serif'],        
       },
     },
   },
