@@ -1,8 +1,15 @@
 import Image from "next/image";
+import { Changa } from "next/font/google";
+
+const changa = Changa({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-changa",
+});
 
 export default function Home() {
   return (
-    <div className="bg-black text-white font-impact">
+    <div className={`${changa.variable} bg-black text-white font-changa`}>
       {/* Header Section */}
       <div className="w-auto px-4 py-6">
         <Image
@@ -104,11 +111,11 @@ export default function Home() {
             Just a <p className="text-5xl inline-block">Few Clicks</p> to{" "}
             <p className="text-5xl inline-block">Get Started!</p>
           </h2>
-          <p className="text-sm md:text-base text-white mb-8">
+          <div className="text-sm md:text-base text-white mb-8">
             Get a <p className="text-2xl inline-block">100% Bonus</p> on your{" "}
             <p className="text-2xl inline-block">First Deposit</p> (Up to
             USDT₮300)
-          </p>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             <div className="bg-[#1A1A1A] rounded-lg flex flex-col relative">
@@ -191,7 +198,7 @@ export default function Home() {
           </div>
 
           <button className="bg-[#252525] text-white py-3 px-20 rounded-full mt-8 hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
-            <span className="mr-2">🚀</span> Let's Play Now !
+            <span className="mr-2">🚀</span> Let&apos;s Play Now !
           </button>
 
           <p className="text-xs text-white underline decoration-[#FF008C] mt-2">
@@ -355,7 +362,7 @@ export default function Home() {
 
         <div className="max-w-6xl mx-auto mt-12 relative z-10 flex justify-center">
           <button className="bg-[#1A1A1A] text-white py-3 px-30 rounded-full hover:bg-[#333333] transition-colors duration-200 flex items-center">
-            <span className="mr-2">🚀</span> Let's Play Now !
+            <span className="mr-2">🚀</span> Let&apos;s Play Now !
           </button>
         </div>
       </div>
