@@ -54,7 +54,7 @@ export default function Home() {
         </div>
 
         <div className={`${changa.variable} bg-black text-white font-changa`}>
-          <div className="text-center relative mt-15">
+          <div className="text-center relative mt-30">
             <div className="flex flex-col md:flex-row items-center justify-center gap-4">
               <span className="text-sm md:text-base">
                 Get a 100% bonus on your first deposit (up to USDT₮300).
@@ -111,9 +111,9 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="flex justify-around mt-5 md:-mt-10 flex-col md:flex-row mx-10 md:mx-50">
-        <div className="text-sm md:text-base">
-          <p className="block md:hidden">
+      <div className="flex flex-col md:flex-row md:justify-center md:items-center mt-5 mx-10 md:mx-0">
+        <div className="text-sm md:text-base mt-5 md:mr-5 text-center md:text-left">
+          <p className="block text-left md:hidden">
             Get a 100% bonus on your first deposit (up to USDT₮300). Start now
             and aim for the jackpot!
           </p>
@@ -125,7 +125,8 @@ export default function Home() {
             The MEGA JACKPOT is exclusive for FOMO players
           </p>
         </div>
-        <button className="bg-transparent border-white text-white px-5 md:px-10 text-sm rounded-full ring-1 mt-4 md:mt-0">
+
+        <button className="bg-transparent border-white text-white px-5 ml-0 md:ml-20 md:px-10 text-sm rounded-full ring-1 mt-4 md:mt-0">
           Join Now
         </button>
       </div>
@@ -361,82 +362,58 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto relative z-10 md:mx-47">
-        <div className="flex items-center mb-8 lg:mb-12 ml-12 mr-20 md:mr-0 md:ml-0">
-          <div className="h-20 w-1 bg-[#FF008C] mr-4"></div>
-          <h1 className="text-4xl md:text-4xl lg:text-5xl">
-            Crypto-Friendly{" "}
-            <p className="text-3xl md:text-3xl lg:text-5xl inline-block">and</p>{" "}
-            <p className="block md:inline-block">Fiat-Ready</p>
-          </h1>
-        </div>
+      <div className="w-full px-4">
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="flex items-center mb-8 lg:mb-12 ml-10 md:ml-25">
+            <div className="h-20 w-1 bg-[#FF008C] mr-4"></div>
+            <h1 className="text-4xl md:text-4xl lg:text-5xl">
+              Crypto-Friendly{" "}
+              <span className="text-3xl md:text-3xl lg:text-5xl inline-block">
+                and
+              </span>{" "}
+              <span className="block md:inline-block">Fiat-Ready</span>
+            </h1>
+          </div>
 
-        <div className="max-w-6xl mx-auto relative z-10 flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-12">
-          <div className="flex-1 bg-[#121212] px-8 py-5 md:px-16 md:py-8">
-            <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-2 md:text-2xl">
-                Supported cryptocurrencies:
-              </h2>
-              <p className="text-white font-semibold text-lg mt-3">
-                USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE
-              </p>
-            </div>
-            <div>
-              <h2 className="text-xl mb-2 md:text-2xl">
-                No crypto? No problem!
-              </h2>
-              <div className="flex items-center space-x-2">
-                <div className="relative w-8 h-4 md:w-12 md:h-6">
-                  <Image
-                    src="/icons/apple.png"
-                    alt="Apple Pay"
-                    layout="fill"
-                    objectFit="contain"
-                  />
-                </div>
-                <div className="relative w-8 h-4 md:w-12 md:h-6">
-                  <Image
-                    src="/icons/gpay.png"
-                    alt="Google Pay"
-                    layout="fill"
-                    objectFit="contain"
-                  />
-                </div>
-                <div className="relative w-8 h-4 md:w-12 md:h-6">
-                  <Image
-                    src="/icons/visa.png"
-                    alt="Visa"
-                    layout="fill"
-                    objectFit="contain"
-                  />
-                </div>
-                <div className="relative w-8 h-4 md:w-12 md:h-6">
-                  <Image
-                    src="/icons/mastercard.png"
-                    alt="Mastercard"
-                    layout="fill"
-                    objectFit="contain"
-                  />
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-12">
+            <div className="flex-1 bg-[#121212] px-8 py-5 md:px-16 md:py-8 mx-10 md:ml-25">
+              <div className="mb-8">
+                <h2 className="text-xl font-semibold mb-2 md:text-2xl">
+                  Supported cryptocurrencies:
+                </h2>
+                <p className="text-white font-semibold text-lg mt-3">
+                  USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE
+                </p>
+              </div>
+              <div>
+                <h2 className="text-xl mb-2 md:text-2xl">
+                  No crypto? No problem!
+                </h2>
+                <div className="flex items-center space-x-2">
+                  {["apple", "gpay", "visa", "mastercard"].map((name) => (
+                    <div key={name} className="relative w-8 h-4 md:w-12 md:h-6">
+                      <Image
+                        src={`/icons/${name}.png`}
+                        alt={name}
+                        layout="fill"
+                        objectFit="contain"
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
-          </div>
-          <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-auto lg:h-auto mr-0 md:mr-20 mt-8 lg:mt-0">
-            <Image
-              src="/images/basketball.png"
-              alt="Basketball Bubble"
-              layout="responsive"
-              width={500}
-              height={500}
-              objectFit="contain"
-            />
-          </div>
-        </div>
 
-        <div className="max-w-6xl mx-auto mt-10 relative z-10 flex justify-center">
-          <button className="bg-[#1A1A1A] text-white py-3 px-27 sm:px-12 md:px-20 rounded-full flex items-center">
-            <span className="md:mr-2">🚀</span> Let&apos;s Play Now !
-          </button>
+            <div className="relative mr-0 md:mr-[180px] w-64 h-64 md:w-96 md:h-96 lg:w-auto lg:h-auto mt-8 md:mt-0 lg:mt-0">
+              <Image
+                src="/images/basketball.png"
+                alt="Basketball Bubble"
+                layout="responsive"
+                width={500}
+                height={500}
+              />
+            </div>
+          </div>
         </div>
       </div>
 
