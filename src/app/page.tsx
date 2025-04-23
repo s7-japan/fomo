@@ -14,8 +14,8 @@ export default function Home() {
         <Image
           src={`/images/FOMO_logo.png`}
           alt={`FOMO`}
-          width={142}
-          height={35}
+          width={100}
+          height={50}
         />
       </div>
 
@@ -25,14 +25,14 @@ export default function Home() {
             <Image
               src={`/images/FOMO_logo.png`}
               alt={`FOMO`}
-              width={700}
+              width={550}
               height={350}
-              style={{ maxWidth: "100%" }} // Ensure it takes full width on mobile
+              style={{ maxWidth: "100%" }}
             />
           </h1>
 
           <p
-            className="md:text-[20.5px] text-22px text-white mb-6 sm:w-full sm:text-center"
+            className="md:text-[25.5px] text-[25px] text-white mb-6 sm:w-full sm:text-center"
             style={{
               fontFamily: "Impact",
               fontSize: "22px",
@@ -104,14 +104,14 @@ export default function Home() {
           objectFit="cover"
           className="z-0"
         />
-        <div className="absolute top-45 md:top-87  md:bottom-8 left-1/2 transform -translate-x-1/2 z-10 w-full flex justify-center">
+        <div className="absolute mt-43 md:mt-[300px] left-1/2 transform -translate-x-1/2 z-10 w-full flex justify-center">
           <button className="bg-[#252525] text-white py-2 md:py-3 px-8 md:px-20 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white mt-20 md:mt-0">
             🚀 Find your favorite Game
           </button>
         </div>
       </section>
 
-      <div className="flex justify-around mt-5 md:mt-10 flex-col md:flex-row mx-10 md:mx-0">
+      <div className="flex justify-around mt-5 md:-mt-10 flex-col md:flex-row mx-10 md:mx-50">
         <div className="text-sm md:text-base">
           <p className="block md:hidden">
             Get a 100% bonus on your first deposit (up to USDT₮300). Start now
@@ -125,7 +125,7 @@ export default function Home() {
             The MEGA JACKPOT is exclusive for FOMO players
           </p>
         </div>
-        <button className="bg-transparent border border-white text-white px-5 md:px-8 text-sm rounded-full ring-1 mt-4 md:mt-0 mr-60 md:mr-0">
+        <button className="bg-transparent border-white text-white px-5 md:px-10 text-sm rounded-full ring-1 mt-4 md:mt-0">
           Join Now
         </button>
       </div>
@@ -421,7 +421,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-auto lg:h-auto mt-8 lg:mt-0">
+          <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-auto lg:h-auto mr-0 md:mr-20 mt-8 lg:mt-0">
             <Image
               src="/images/basketball.png"
               alt="Basketball Bubble"
@@ -433,14 +433,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-6xl mx-auto mt-12 relative z-10 flex justify-center">
-          <button className="bg-[#1A1A1A] text-white py-3 px-8 sm:px-12 md:px-20 rounded-full flex items-center">
+        <div className="max-w-6xl mx-auto mt-10 relative z-10 flex justify-center">
+          <button className="bg-[#1A1A1A] text-white py-3 px-27 sm:px-12 md:px-20 rounded-full flex items-center">
             <span className="md:mr-2">🚀</span> Let&apos;s Play Now !
           </button>
         </div>
       </div>
 
-      <footer className="bg-black text-gray-400 py-8 text-center">
+      <footer className="bg-black text-gray-400 py-8 mt-12 md:mt-40 text-center">
         <div className="max-w-6xl mx-auto px-4">
           <div className="mb-4">
             <div className="inline-block">
