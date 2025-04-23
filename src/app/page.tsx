@@ -21,7 +21,7 @@ export default function Home() {
 
       <section className="relative py-16 md:py-32 lg:py-48 flex flex-col items-center justify-center overflow-hidden font-impact">
         <div className="md:mt-32 lg:-mt-27 text-center font-impact sm:-mt-20">
-          <h1 className="mt-10 md:mt-0 mb-4 md:ml-2 w-full">
+          <h1 className="mt-10 md:mt-10 mb-4 md:ml-2 w-full">
             <Image
               src={`/images/FOMO_logo.png`}
               alt={`FOMO`}
@@ -32,7 +32,7 @@ export default function Home() {
           </h1>
 
           <p
-            className="md:text-[25.5px] text-[25px] text-white mb-6 sm:w-full sm:text-center"
+            className="md:text-[25.5px] text-[25px] text-white mb-6  sm:w-full sm:text-center"
             style={{
               fontFamily: "Impact",
               fontSize: "22px",
@@ -44,7 +44,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-170 h-170 md:w-200 md:h-200 z-200">
+        <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-170 h-170 md:w-192 md:h-192 z-200 ">
           <Image
             src="/images/trophy.png"
             alt="Trophy Background"
@@ -54,7 +54,7 @@ export default function Home() {
         </div>
 
         <div className={`${changa.variable} bg-black text-white font-changa`}>
-          <div className="text-center relative mt-30">
+          <div className="text-center relative mt-15">
             <div className="flex flex-col md:flex-row items-center justify-center gap-4">
               <span className="text-sm md:text-base">
                 Get a 100% bonus on your first deposit (up to USDT₮300).
@@ -105,33 +105,35 @@ export default function Home() {
           className="z-0"
         />
         <div className="absolute mt-43 md:mt-[300px] left-1/2 transform -translate-x-1/2 z-10 w-full flex justify-center">
-          <button className="bg-[#252525] text-white py-2 md:py-3 px-8 md:px-20 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white mt-20 md:mt-0">
-            🚀 Find your favorite Game
+          <button className="bg-[#252525] text-white py-2 md:py-3 px-8 md:px-20 rounded-full mt-20 md:mt-0">
+            🚀 Find your favorite Game!
           </button>
         </div>
       </section>
 
-      <div className="flex flex-col md:flex-row md:justify-center md:items-center mt-5 mx-10 md:mx-0">
-        <div className="text-sm md:text-base mt-5 md:mr-5 text-center md:text-left">
-          <p className="block text-left md:hidden">
-            Get a 100% bonus on your first deposit (up to USDT₮300). Start now
-            and aim for the jackpot!
-          </p>
-          <p className="hidden md:block">
-            MEGA JACKPOT Exceeds USDT₮1,000,000! 4 different jackpot tiers
-            available
-          </p>
-          <p className="hidden md:block">
-            The MEGA JACKPOT is exclusive for FOMO players
-          </p>
-        </div>
+      <div className="bg-[#0C0C0C] -mt-0 md:-mt-20">
+        <div className="flex flex-col md:flex-row md:justify-center md:items-center mt-5 mx-10 md:mx-10">
+          <div className="text-sm md:text-base py-5 md:mr-30 text-center md:text-left">
+            <p className="block text-left md:hidden">
+              Get a 100% bonus on your first deposit (up to USDT₮300). Start now
+              and aim for the jackpot!
+            </p>
+            <p className="hidden md:block">
+              MEGA JACKPOT Exceeds USDT₮1,000,000!
+            </p>
+            <p className="hidden md:block">
+              4 different jackpot tiers available The MEGA JACKPOT is exclusive
+              for FOMO players
+            </p>
+          </div>
 
-        <button className="bg-transparent border-white text-white px-5 ml-0 md:ml-20 md:px-10 text-sm rounded-full ring-1 mt-4 md:mt-0">
-          Join Now
-        </button>
+          <button className="bg-transparent border border-white text-white px-10 py-2 md:py-1 md:px-8 text-sm rounded-full ring-1 self-start md:self-auto">
+            Join Now
+          </button>
+        </div>
       </div>
 
-      <section className="bg-black text-white py-16 md:py-24 lg:py-32 px-4 md:px-12 lg:px-24">
+      <section className="bg-black text-white py-16 -mt-0 md:-mt-25 md:py-24 lg:py-32 px-4 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto text-left md:text-center">
           <div>
             <div className="relative inline-block w-full md:w-auto">
@@ -262,7 +264,7 @@ export default function Home() {
 
       <div className="bg-black text-white py-8 md:py-16 px-4 md:px-8 ml-0 md:ml-40 -mt-8 md:-mt-20">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-2xl md:text-4xl mb-4 ml-9 md:ml-0 mr-0 md:mr-25">
+          <h1 className="text-2xl md:text-6xl mb-4 ml-9 md:ml-0 mr-0 md:mr-25">
             A One-of-a-Kind
             <br />
             Betting Experience Only <br className="block md:hidden" />
@@ -273,14 +275,14 @@ export default function Home() {
                 alt="FOMO Logo"
                 width={80}
                 height={24}
-                className="inline-block align-middle w-[80px] h-[24px] md:w-[120px] md:h-[36px]"
+                className="inline-block align-middle w-[80px] h-[24px] md:w-[170px] md:h-[50px] ml-0 md:ml-5"
               />
             </span>
           </h1>
 
-          <div className="text-[18px] md:text-2xl text-[#FF008C] mr-10 ml-10 md:ml-0 md:mr-25">
+          <div className="text-[18px] md:text-3xl text-[#FF008C] mr-10 ml-10 md:ml-0 md:mr-25">
             Play More, Earn More &nbsp;
-            <p className="text-[13px] text-white mb-6 md:mb-8 inline-block">
+            <p className="text-[16px] text-white mb-6 md:mb-8 inline-block">
               {" "}
               – Rewards Like No Other
             </p>
@@ -375,43 +377,60 @@ export default function Home() {
             </h1>
           </div>
 
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-12">
-            <div className="flex-1 bg-[#121212] px-8 py-5 md:px-16 md:py-8 mx-10 md:ml-25">
-              <div className="mb-8">
-                <h2 className="text-xl font-semibold mb-2 md:text-2xl">
-                  Supported cryptocurrencies:
-                </h2>
-                <p className="text-white font-semibold text-lg mt-3">
-                  USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE
-                </p>
+          <div className="relative w-full">
+            <div className="flex flex-col lg:flex-row items-center lg:items-start">
+              {/* Black background box with rounded corners */}
+              <div
+                className="bg-[#121212] px-8 py-5 md:px-16 md:py-8 mx-10 md:ml-20 rounded-2xl 
+                  w-[calc(100%-2.5rem)] lg:w-[75%] lg:absolute lg:z-10"
+              >
+                <div className="mb-8">
+                  <h2 className="text-xl font-semibold mb-2 md:text-2xl">
+                    Supported cryptocurrencies:
+                  </h2>
+                  <p className="text-white font-semibold text-lg mt-3">
+                    USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE
+                  </p>
+                </div>
+                <div>
+                  <h2 className="text-xl mb-2 md:text-2xl">
+                    No crypto? No problem!
+                  </h2>
+                  <div className="flex items-center space-x-2">
+                    {["apple", "gpay", "visa", "mastercard"].map((name) => (
+                      <div
+                        key={name}
+                        className="relative w-8 h-4 md:w-12 md:h-6"
+                      >
+                        <Image
+                          src={`/icons/${name}.png`}
+                          alt={name}
+                          layout="fill"
+                          objectFit="contain"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
-              <div>
-                <h2 className="text-xl mb-2 md:text-2xl">
-                  No crypto? No problem!
-                </h2>
-                <div className="flex items-center space-x-2">
-                  {["apple", "gpay", "visa", "mastercard"].map((name) => (
-                    <div key={name} className="relative w-8 h-4 md:w-12 md:h-6">
-                      <Image
-                        src={`/icons/${name}.png`}
-                        alt={name}
-                        layout="fill"
-                        objectFit="contain"
-                      />
-                    </div>
-                  ))}
+
+              <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-1/2 mt-8 lg:mt-0 lg:ml-auto">
+                <div className="lg:absolute lg:right-0 lg:z-20 mr-0 md:mr-60 md:-mt-10 mt-0">
+                  <Image
+                    src="/images/basketball.png"
+                    alt="Basketball Bubble"
+                    layout="responsive"
+                    width={500}
+                    height={500}
+                  />
                 </div>
               </div>
             </div>
 
-            <div className="relative mr-0 md:mr-[180px] w-64 h-64 md:w-96 md:h-96 lg:w-auto lg:h-auto mt-8 md:mt-0 lg:mt-0">
-              <Image
-                src="/images/basketball.png"
-                alt="Basketball Bubble"
-                layout="responsive"
-                width={500}
-                height={500}
-              />
+            <div className="text-center mt-10">
+              <button className="bg-[#252525] text-white py-2 px-8 mt-10 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
+                <span className="mr-2">🚀</span> Let&apos;s Play Now !
+              </button>
             </div>
           </div>
         </div>
