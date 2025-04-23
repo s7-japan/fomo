@@ -286,11 +286,14 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 mr-10 ml-10 md:ml-0 md:mr-25">
-            <div className="relative rounded-lg overflow-hidden">
-              <div className="bg-[#FF008C] text-white py-4 px-4 md:py-6 md:px-6">
-                <h2 className="text-4xl md:text-6xl font-bold mb-1 md:mb-2">
+            <div className="relative rounded-lg mt-10">
+              <div className="bg-[#FF008C] text-white p-4 pl-16 relative px-4 md:py-6 md:px-6 overflow-visible">
+                <div
+                  className="absolute -top-12 -left-1 text-[#FF008C] text-7xl font-extrabold z-10"
+                  style={{ WebkitTextStroke: "3px black" }}
+                >
                   1
-                </h2>
+                </div>
                 <h3 className="text-[18px] md:text-lg font-semibold">
                   FOMOExcluFOMO-Exclusive
                   <br />
@@ -298,7 +301,7 @@ export default function Home() {
                 </h3>
               </div>
               <div className="bg-[#1A1A1A] py-4 px-4 md:py-6 md:px-6">
-                <ul className="list-disc list-inside text-xs md:text-sm text-gray-400">
+                <ul className="list-disc list-outside pl-5 md:pl-3 text-[13px] md:text-sm text-white">
                   <li className="mb-1 md:mb-2">
                     Bet on special odds and formats only available on FOMO
                   </li>
@@ -309,18 +312,20 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative rounded-lg overflow-hidden">
-              <div className="bg-[#FF008C] text-white py-4 px-4 md:py-6 md:px-6">
-                <h2 className="text-4xl md:text-6xl font-bold mb-1 md:mb-2">
+            <div className="relative rounded-lg mt-10">
+              <div className="bg-[#FF008C] text-white p-4 pl-16 md:pl-17  relative px-4 md:py-[36px] md:px-6 overflow-visible">
+                <div
+                  className="absolute -top-12 -left-1 text-[#FF008C] text-7xl font-extrabold z-10"
+                  style={{ WebkitTextStroke: "3px black" }}
+                >
                   2
-                </h2>
-                <h3 className="text-sm md:text-lg font-semibold">
+                </div>
+                <h3 className="text-[18px] md:text-lg font-semibold m">
                   Nonstop Reward System
                 </h3>
-                <br className="hidden md:block" />
               </div>
               <div className="bg-[#1A1A1A] py-4 px-4 md:py-6 md:px-6">
-                <ul className="list-disc list-inside text-xs md:text-sm text-gray-400">
+                <ul className="list-disc list-outside pl-5 md:pl-3 text-[13px] md:text-sm text-white">
                   <li className="mb-1 md:mb-2">
                     Every bet comes with a chance to earn rewards
                   </li>
@@ -331,19 +336,20 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative rounded-lg overflow-hidden">
-              <div className="bg-[#FF008C] text-white py-4 px-4 md:py-6 md:px-6">
-                <h2 className="text-4xl md:text-6xl font-bold mb-1 md:mb-2">
+            <div className="relative rounded-lg mt-10">
+              <div className="bg-[#FF008C] text-white p-4 pl-10 md:pl-9 relative px-4 md:py-6 md:px-7 overflow-visible">
+                <div
+                  className="absolute -top-12 -left-1 text-[#FF008C] text-7xl font-extrabold z-10"
+                  style={{ WebkitTextStroke: "3px black" }}
+                >
                   3
-                </h2>
-                <h3 className="text-sm md:text-lg font-semibold">
-                  Referral Program - Earn
-                  <br />
-                  up to 35%
+                </div>
+                <h3 className="text-[18px] md:text-lg font-semibold">
+                  Referral Program – Earn up to 35%
                 </h3>
               </div>
               <div className="bg-[#1A1A1A] py-4 px-4 md:py-6 md:px-6">
-                <ul className="list-disc list-inside text-xs md:text-sm text-gray-400">
+                <ul className="list-disc list-outside pl-5 md:pl-3 text-[13px] md:text-sm text-white pb-5">
                   <li className="mb-1 md:mb-2">
                     Get commissions from both direct and indirect referrals
                   </li>
@@ -447,7 +453,7 @@ export default function Home() {
             </div>
           </div>
           <nav className="text-xs">
-            <ul className="flex flex-col items-center sm:items-start md:flex-row md:space-x-6 md:ml-55">
+            <ul className="flex flex-col items-center sm:items-start md:flex-row md:space-x-6 md:ml-55 gap-5 md:gap-0">
               <li>
                 <div className="hover:text-white">Community Guidelines</div>
               </li>

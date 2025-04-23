@@ -1,6 +1,6 @@
 export default function FomoBettingCard() {
   return (
-    <div className="bg-black w-80 font-sans text-white rounded-lg relative m-20">
+    <div className="bg-black w-80 text-white rounded-lg relative m-20">
       <div className="bg-pink-600 p-4 pl-16 relative overflow-visible">
         <div
           className="absolute -top-10 -left-2 text-pink-500 text-6xl font-extrabold z-10"
