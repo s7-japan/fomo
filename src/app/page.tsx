@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Changa } from "next/font/google";
 
 const changa = Changa({
@@ -21,7 +22,7 @@ export default function Home() {
 
       <section className="relative py-16 md:py-32 lg:py-48 flex flex-col items-center justify-center overflow-hidden font-impact">
         <div className="md:mt-32 lg:-mt-27 text-center font-impact sm:-mt-20">
-          <h1 className="mt-10 md:mt-10 mb-4 md:ml-2 w-full">
+          <h1 className="mt-[180px] md:mt-10 mb-4 md:ml-2 w-full">
             <Image
               src={`/images/FOMO_logo.png`}
               alt={`FOMO`}
@@ -43,7 +44,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/3 md:-translate-y-1/5 lg:-translate-y-1/5 w-170 h-170 md:w-[950px] md:h-[950px] z-200">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/4 md:-translate-y-1/5 lg:-translate-y-1/5 w-210 h-210 md:w-[950px] md:h-[950px] z-50">
           <Image
             src="/images/trophy.png"
             alt="Trophy Background"
@@ -54,28 +55,30 @@ export default function Home() {
 
         <div className={`${changa.variable} bg-black text-white font-changa`}>
           <div className="text-center relative mt-20">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-[240px] md:mt-0">
               <span className="text-sm md:text-base">
                 Get a 100% bonus on your first deposit (up to USDT₮300).
                 <p className="block md:inline-block">
                   Start now and aim for the jackpot!{" "}
                 </p>
               </span>
-              <button className="bg-transparent border border-white text-white py-1 md:py-1 px-15 md:px-8 text-sm rounded-full ring-1">
-                Join Now
-              </button>
+              <Link href="" passHref>
+                <button className="relative z-90 bg-transparent border border-white text-white py-1 md:py-1 px-6 md:px-8 text-sm rounded-full ring-1 hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
+                  Join Now
+                </button>
+              </Link>
             </div>
 
-            <div className="mt-12 text-left md:text-center md:ml-0">
+            <div className="mt-12 ml-2 mr-2 text-left md:text-center md:ml-0">
               <p className="text-xl md:text-5xl  text-white mb-2 ">
-                <span className="text-5xl  text-[#FF008C] md:inline-block font-bold md:font-normal">
+                <span className="text-5xl md:text-5xl text-[#FF008C] md:inline-block font-semibold md:font-normal">
                   3,000+
                 </span>{" "}
-                <span className="text-4xl md:text-5xl text-white block md:inline-block">
+                <span className="text-3xl md:text-5xl text-white block md:inline-block">
                   Games Across All Genres
                 </span>
               </p>
-              <div className="text-sm md:text-base mt-2 text-[#FF008C]">
+              <div className="text-[12px] md:text-base mt-2 text-[#FF008C]">
                 Slots, live casino, baccarat,{" "}
                 <span className="block md:inline-block">
                   roulette, Play top leagues, major matches{" "}
@@ -104,9 +107,11 @@ export default function Home() {
           className="z-0"
         />
         <div className="absolute mt-43 md:mt-[300px] left-1/2 transform -translate-x-1/2 z-10 w-full flex justify-center">
-          <button className="bg-[#252525] text-white py-2 md:py-3 px-13 md:px-20 rounded-full mt-20 md:mt-0">
-            🚀 Find your favorite Game!
-          </button>
+          <Link href="" passHref>
+            <button className="bg-[#252525] text-white py-2 px-17 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
+              🚀 Find your favorite Game!
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -125,10 +130,11 @@ export default function Home() {
               for FOMO players
             </p>
           </div>
-
-          <button className="bg-transparent border border-white text-white px-10 py-1 md:py-1 md:px-8 text-sm rounded-full ring-1 self-start md:self-auto">
-            Join Now
-          </button>
+          <Link href="" passHref>
+            <button className="bg-black text-white py-1 md:py-1 px-6 md:px-8 border-2 border-white mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-1 focus:ring-white  self-start md:self-auto">
+              Join Now
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -156,16 +162,18 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="text-sm md:text-base text-white mb-8 md:px-0 px-2 text-center md:text-center">
+            <div className="text-[12px] md:text-base text-white mb-8 md:px-0 px-2 text-center md:text-center">
               Get a{" "}
-              <span className="text-xl md:text-2xl inline-block">
+              <span className="text-lg md:text-2xl inline-block">
                 100% Bonus
               </span>{" "}
               on your{" "}
-              <span className="text-xl md:text-2xl inline-block">
+              <span className="text-lg md:text-2xl inline-block">
                 First Deposit
               </span>{" "}
-              (Up to USDT₮300)
+              <p className="block md:inline-block lg:inline-block">
+                (Up to USDT₮300)
+              </p>
             </div>
           </div>
 
@@ -188,10 +196,10 @@ export default function Home() {
                 />
               </div>
 
-              <p className="text-sm font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
+              <p className="text-[20px] md:text-xl font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
                 Sign up with:
               </p>
-              <p className="text-[10px] text-white ml-2 md:ml-0 text-left">
+              <p className="text-md md:text-sm text-white ml-2 md:ml-0 text-left">
                 Email, Telegram, Metamask wallet.
               </p>
             </div>
@@ -214,10 +222,10 @@ export default function Home() {
                 />
               </div>
 
-              <p className="text-sm font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
+              <p className="text-[20px] md:text-xl font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
                 Minimum deposit:
               </p>
-              <p className="text-[10px] text-white ml-2 md:ml-0 text-left">
+              <p className="text-md md:text-sm text-white ml-2 md:ml-0 text-left">
                 Make a deposit of USDT₮10 to begin.
               </p>
             </div>
@@ -240,19 +248,21 @@ export default function Home() {
                 />
               </div>
 
-              <p className="text-sm font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
+              <p className="text-[20px] md:text-xl font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
                 Get Welcome Bonus:
               </p>
-              <p className="text-[10px] text-white ml-2 md:ml-0 text-left">
+              <p className="text-md md:text-sm text-white ml-2 md:ml-0 text-left">
                 Enjoy a Bonus up to USDT₮300
               </p>
             </div>
           </div>
 
           <div className="text-center">
-            <button className="bg-[#252525] text-white py-2 px-15 mt-10 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
-              <span className="mr-2">🚀</span> Let&apos;s Play Now !
-            </button>
+            <Link href="" passHref>
+              <button className="bg-[#252525] text-white py-2 px-15 mt-10 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
+                <span className="mr-2">🚀</span> Let&apos;s Play Now !
+              </button>
+            </Link>
 
             <p className="text-xs text-white underline decoration-[#FF008C] mt-2">
               Bonus applied instantly after deposit
@@ -289,7 +299,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 mx-10 md:ml-0 md:mr-45">
             <div className="relative rounded-lg mt-10">
-              <div className="bg-[#FF008C] text-white p-4 pl-16 relative px-4 md:py-6 md:px-6 overflow-visible">
+              <div className="bg-[#FF008C] text-white py-4 pl-10 relative px-4 md:py-6 md:px-6 overflow-visible">
                 <div
                   className="absolute -top-12 -left-1 text-[#FF008C] text-7xl font-extrabold z-10"
                   style={{ WebkitTextStroke: "3px black" }}
@@ -322,7 +332,7 @@ export default function Home() {
                 >
                   2
                 </div>
-                <h3 className="text-[18px] md:text-lg font-semibold ">
+                <h3 className="text-[18px] md:text-lg py-3 md:py-0 font-semibold ">
                   Nonstop Reward System
                 </h3>
               </div>
@@ -365,7 +375,7 @@ export default function Home() {
 
       <div className="w-full px-4">
         <div className="max-w-6xl mx-auto relative z-10">
-          <div className="flex items-center mb-8 lg:mb-12 ml-10 md:ml-25">
+          <div className="flex items-center mb-8 lg:mb-12 ml-7 md:ml-25">
             <div className="h-20 w-1 bg-[#FF008C] mr-4"></div>
             <h1 className="text-4xl md:text-4xl lg:text-5xl">
               Crypto-Friendly{" "}
@@ -379,8 +389,8 @@ export default function Home() {
           <div className="relative w-full">
             <div className="flex flex-col lg:flex-row items-center lg:items-start">
               <div
-                className="bg-[#121212] px-8 py-5 pb-[250px] md:px-16 md:py-8 mx-10 md:ml-26 rounded-2xl 
-  w-[calc(100%-2.5rem)] lg:w-[90%] lg:relative lg:z-10 lg:pb-8"
+                className="bg-[#121212] px-6 py-5 md:-mr-[200px] pb-[250px] md:ml-25 md:px-16 md:py-8 mx-4 md:mx-auto rounded-2xl 
+  w-[calc(100%-2rem)] md:w-[100%] lg:w-[100%] lg:relative lg:z-10 lg:pb-8"
               >
                 <div className="mb-8">
                   <h2 className="text-xl font-semibold mb-2 md:text-2xl">
@@ -424,10 +434,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="text-center -mt-20">
-              <button className="bg-[#252525] text-white py-2 px-17 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
-                <span className="mr-2">🚀</span> Let&apos;s Play Now !
-              </button>
+            <div className="text-center -mt-[190px] md:-mt-[50px]">
+              <Link href="" passHref>
+                <button className="bg-[#252525] text-white py-2 px-17 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
+                  <span className="mr-2">🚀</span> Let&apos;s Play Now !
+                </button>
+              </Link>
             </div>
           </div>
         </div>
