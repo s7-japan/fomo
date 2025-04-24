@@ -20,9 +20,9 @@ export default function Home() {
         />
       </div>
 
-      <section className="relative py-16 md:py-32 lg:py-48 flex flex-col items-center justify-center overflow-hidden font-impact">
-        <div className="md:mt-32 lg:-mt-27 text-center font-impact sm:-mt-20">
-          <h1 className="mt-[130px] md:mt-10 mb-4 md:ml-2 w-full">
+      <section className="relative min-h-screen py-16 md:py-32 lg:py-48 flex flex-col items-center justify-center overflow-hidden font-impact">
+        <div className="text-center font-impact mt-10 sm:-mt-10 md:mt-32 lg:-mt-20">
+          <h1 className="md:mt-10 mb-4 md:ml-2 w-full">
             <Image
               src={`/images/FOMO_logo.png`}
               alt={`FOMO`}
@@ -44,7 +44,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-7/24 md:-translate-y-1/5 lg:-translate-y-1/5 w-210 h-210 md:w-[950px] md:h-[950px] z-50">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/3 md:-translate-y-1/5 lg:-translate-y-1/5 w-[600px] h-[600px] md:w-[950px] md:h-[950px] z-10">
           <Image
             src="/images/trophy.png"
             alt="Trophy Background"
@@ -53,80 +53,11 @@ export default function Home() {
           />
         </div>
 
-        <div className={`${changa.variable} bg-black text-white font-changa`}>
-          <div className="text-center relative mt-20">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-[170px] md:mt-0">
-              <span className="text-sm md:text-base">
-                Get a 100% bonus on your first deposit (up to USDT₮300).
-                <p className="block md:inline-block">
-                  Start now and aim for the jackpot!{" "}
-                </p>
-              </span>
-              <Link href="" passHref>
-                <button className="relative z-90 bg-transparent border border-white text-white py-1 md:py-1 px-6 md:px-8 text-sm rounded-full ring-1 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black focus:ring-2 focus:ring-white">
-                  Join Now
-                </button>
-              </Link>
-            </div>
-
-            <div className="mt-[120px] md:mt-12 ml-2 mr-2 text-left md:text-center md:ml-0">
-              <p className="text-xl md:text-5xl  text-white mb-2">
-                <span className="text-5xl md:text-5xl text-[#FF008C] md:inline-block font-semibold md:font-normal">
-                  3,000+
-                </span>{" "}
-                <span className="text-3xl md:text-5xl text-white block md:inline-block">
-                  Games Across All Genres
-                </span>
-              </p>
-              <div className="text-[12px] md:text-base mt-2 text-[#FF008C]">
-                Slots, live casino, baccarat,{" "}
-                <span className="block md:inline-block">
-                  roulette, Play top leagues, major matches{" "}
-                  <p className="text-white inline-block">and more Exclusive</p>
-                </span>
-                <Image
-                  src="/images/FOMO_logo.png"
-                  alt="FOMO Logo"
-                  width={50}
-                  height={50}
-                  className="inline-block align-middle m-0 md:m-2 mr-2 md:mr-2"
-                />
-                original games
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="relative -mt-20 mb-20 md:-mt-40 h-64 md:h-100 lg:h-[400px] opacity-75">
-        <div className="text-center font-impact mt-12 md:mt-32">
-          <h1 className="mb-4 w-full">
-            <Image
-              src="/images/FOMO_logo.png"
-              alt="FOMO"
-              width={800}
-              height={350}
-              style={{ maxWidth: "100%" }}
-            />
-          </h1>
-
-          <p className="md:text-[33px] text-white mb-6 text-center w-full">
-            Play Freely with Crypto - Your New Online Casino Starts Here
-          </p>
-        </div>
-
-        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/3 md:-translate-y-1/5 w-[80vw] h-[80vw] max-w-[400px] max-h-[400px] z-50 pointer-events-none">
-          <Image
-            src="/images/trophy.png"
-            alt="Trophy Background"
-            layout="fill"
-            objectFit="contain"
-          />
-        </div>
-
-        <div className="bg-black text-white font-changa w-full px-4">
-          <div className="text-center relative mt-16 md:mt-0">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+        <div
+          className={`${changa.variable} bg-black text-white font-changa w-full`}
+        >
+          <div className="text-center relative mt-20 px-4">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-20 md:mt-0">
               <span className="text-sm md:text-base">
                 Get a 100% bonus on your first deposit (up to USDT₮300).
                 <p className="block md:inline-block">
@@ -134,12 +65,47 @@ export default function Home() {
                 </p>
               </span>
               <Link href="" passHref>
-                <button className="relative z-90 bg-transparent border border-white text-white py-1 md:py-1 px-6 md:px-8 text-sm rounded-full ring-1 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black focus:ring-2 focus:ring-white">
+                <button className="relative z-20 bg-transparent border border-white text-white py-2 px-6 text-sm rounded-full hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black focus:ring-2 focus:ring-white">
                   Join Now
                 </button>
               </Link>
             </div>
+
+            <div className="mt-20 md:mt-12 ml-2 mr-2 text-left md:text-center md:ml-0">
+              <p className="text-xl md:text-5xl text-white mb-2">
+                <span className="text-5xl md:text-5xl text-[#FF008C] md:inline-block font-semibold md:font-normal">
+                  3,000+
+                </span>
+                <span className="text-3xl md:text-5xl text-white block md:inline-block">
+                  Games Across All Genres
+                </span>
+              </p>
+              <div className="text-[12px] md:text-base mt-2 text-[#FF008C]">
+                Slots, live casino, baccarat,
+                <span className="block md:inline-block">
+                  roulette, Play top leagues, major matches
+                  <p className="text-white inline-block">and more Exclusive</p>
+                </span>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section className="relative -mt-20 mb-20 md:-mt-40 h-64 md:h-100 lg:h-[400px] opacity-75">
+        <Image
+          src="/images/bg.png"
+          alt="Casino Games Background"
+          layout="fill"
+          objectFit="cover"
+          className="z-0"
+        />
+        <div className="absolute mt-43 md:mt-[300px] left-1/2 transform -translate-x-1/2 z-10 w-full flex justify-center">
+          <Link href="" passHref>
+            <button className="bg-[#252525] text-white py-2 px-17 mb-6 mt-[90px] md:mt-0 lg:mt-0 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
+              🚀 Find your favorite Game!
+            </button>
+          </Link>
         </div>
       </section>
 
