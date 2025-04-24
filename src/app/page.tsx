@@ -393,7 +393,7 @@ export default function Home() {
   w-[calc(100%-2rem)] md:w-[100%] lg:w-[100%] lg:relative lg:z-10 lg:pb-8"
               >
                 <div className="mb-8">
-                  <h2 className="text-3xl font-semibold mb-2 md:text-2xl">
+                  <h2 className="text-3xl font-semibold mb-2 md:text-3xl">
                     Supported cryptocurrencies:
                   </h2>
                   <p className="text-white font-semibold text-md md:text-lg mt-3">
