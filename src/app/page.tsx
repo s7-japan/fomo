@@ -33,7 +33,7 @@ export default function Home() {
           </h1>
 
           <p
-            className="md:text-[33px] text-white mb-6  sm:w-full sm:text-center"
+            className="md:text-[33px] text-white mb-6 sm:w-full sm:text-center"
             style={{
               fontFamily: "Impact",
               textAlign: "center",
@@ -44,7 +44,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-7/24 md:-translate-y-1/5 lg:-translate-y-1/5 w-210 h-210 md:w-[950px] md:h-[950px] z-50">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-5/16 md:-translate-y-1/5 lg:-translate-y-1/5 w-210 h-210 md:w-[950px] md:h-[950px] z-50">
           <Image
             src="/images/trophy.png"
             alt="Trophy Background"
@@ -55,7 +55,7 @@ export default function Home() {
 
         <div className={`${changa.variable} bg-black text-white font-changa`}>
           <div className="text-center relative mt-20">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-[200px] md:mt-0">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-[120px] md:mt-0">
               <span className="text-sm md:text-base">
                 Get a 100% bonus on your first deposit (up to USDT₮300).
                 <p className="block md:inline-block">
@@ -69,7 +69,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="mt-[100px] md:mt-12 ml-2 mr-2 text-left md:text-center md:ml-0">
+            <div className="mt-[200px] md:mt-12 ml-2 mr-2 text-left md:text-center md:ml-0">
               <p className="text-xl md:text-5xl  text-white mb-2">
                 <span className="text-5xl md:text-5xl text-[#FF008C] md:inline-block font-semibold md:font-normal">
                   3,000+
