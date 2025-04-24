@@ -22,7 +22,7 @@ export default function Home() {
 
       <section className="relative py-16 md:py-32 lg:py-48 flex flex-col items-center justify-center overflow-hidden font-impact">
         <div className="md:mt-32 lg:-mt-27 text-center font-impact sm:-mt-20">
-          <h1 className="mt-[180px] md:mt-10 mb-4 md:ml-2 w-full">
+          <h1 className="mt-[130px] md:mt-10 mb-4 md:ml-2 w-full">
             <Image
               src={`/images/FOMO_logo.png`}
               alt={`FOMO`}
@@ -44,7 +44,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/4 md:-translate-y-1/5 lg:-translate-y-1/5 w-210 h-210 md:w-[950px] md:h-[950px] z-50">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-7/24 md:-translate-y-1/5 lg:-translate-y-1/5 w-210 h-210 md:w-[950px] md:h-[950px] z-50">
           <Image
             src="/images/trophy.png"
             alt="Trophy Background"
@@ -55,7 +55,7 @@ export default function Home() {
 
         <div className={`${changa.variable} bg-black text-white font-changa`}>
           <div className="text-center relative mt-20">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-[240px] md:mt-0">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-[200px] md:mt-0">
               <span className="text-sm md:text-base">
                 Get a 100% bonus on your first deposit (up to USDT₮300).
                 <p className="block md:inline-block">
@@ -69,8 +69,8 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="mt-12 ml-2 mr-2 text-left md:text-center md:ml-0">
-              <p className="text-xl md:text-5xl  text-white mb-2 ">
+            <div className="mt-[100px] md:mt-12 ml-2 mr-2 text-left md:text-center md:ml-0">
+              <p className="text-xl md:text-5xl  text-white mb-2">
                 <span className="text-5xl md:text-5xl text-[#FF008C] md:inline-block font-semibold md:font-normal">
                   3,000+
                 </span>{" "}
@@ -108,7 +108,7 @@ export default function Home() {
         />
         <div className="absolute mt-43 md:mt-[300px] left-1/2 transform -translate-x-1/2 z-10 w-full flex justify-center">
           <Link href="" passHref>
-            <button className="bg-[#252525] text-white py-2 px-17 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
+            <button className="bg-[#252525] text-white py-2 px-17 mb-6 mt-[90px] md:mt-0 lg:mt-0 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
               🚀 Find your favorite Game!
             </button>
           </Link>
@@ -393,10 +393,10 @@ export default function Home() {
   w-[calc(100%-2rem)] md:w-[100%] lg:w-[100%] lg:relative lg:z-10 lg:pb-8"
               >
                 <div className="mb-8">
-                  <h2 className="text-xl font-semibold mb-2 md:text-2xl">
+                  <h2 className="text-3xl font-semibold mb-2 md:text-2xl">
                     Supported cryptocurrencies:
                   </h2>
-                  <p className="text-white font-semibold text-lg mt-3">
+                  <p className="text-white font-semibold text-md md:text-lg mt-3">
                     USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE
                   </p>
                 </div>
