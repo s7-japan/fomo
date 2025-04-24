@@ -20,9 +20,9 @@ export default function Home() {
         />
       </div>
 
-      <section className="relative min-h-screen py-16 md:py-32 lg:py-48 flex flex-col items-center justify-center overflow-hidden font-impact">
-        <div className="text-center font-impact mt-10 sm:-mt-10 md:mt-32 lg:-mt-20">
-          <h1 className="md:mt-10 mb-4 md:ml-2 w-full">
+      <section className="relative py-16 md:py-32 lg:py-48 flex flex-col items-center justify-center overflow-hidden font-impact">
+        <div className="md:mt-32 lg:-mt-27 text-center font-impact sm:-mt-20">
+          <h1 className="mt-[130px] md:mt-10 mb-4 md:ml-2 w-full">
             <Image
               src={`/images/FOMO_logo.png`}
               alt={`FOMO`}
@@ -44,7 +44,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/3 md:-translate-y-1/5 lg:-translate-y-1/5 w-[600px] h-[600px] md:w-[950px] md:h-[950px] z-10">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-7/24 md:-translate-y-1/5 lg:-translate-y-1/5 w-210 h-210 md:w-[950px] md:h-[950px] z-50">
           <Image
             src="/images/trophy.png"
             alt="Trophy Background"
@@ -53,39 +53,45 @@ export default function Home() {
           />
         </div>
 
-        <div
-          className={`${changa.variable} bg-black text-white font-changa w-full`}
-        >
-          <div className="text-center relative mt-20 px-4">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-20 md:mt-0">
+        <div className={`${changa.variable} bg-black text-white font-changa`}>
+          <div className="text-center relative mt-20">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-[170px] md:mt-0">
               <span className="text-sm md:text-base">
                 Get a 100% bonus on your first deposit (up to USDT₮300).
                 <p className="block md:inline-block">
-                  Start now and aim for the jackpot!
+                  Start now and aim for the jackpot!{" "}
                 </p>
               </span>
               <Link href="" passHref>
-                <button className="relative z-20 bg-transparent border border-white text-white py-2 px-6 text-sm rounded-full hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black focus:ring-2 focus:ring-white">
+                <button className="relative z-90 bg-transparent border border-white text-white py-1 md:py-1 px-6 md:px-8 text-sm rounded-full ring-1 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black focus:ring-2 focus:ring-white">
                   Join Now
                 </button>
               </Link>
             </div>
 
-            <div className="mt-20 md:mt-12 ml-2 mr-2 text-left md:text-center md:ml-0">
-              <p className="text-xl md:text-5xl text-white mb-2">
+            <div className="mt-[120px] md:mt-12 ml-2 mr-2 text-left md:text-center md:ml-0">
+              <p className="text-xl md:text-5xl  text-white mb-2">
                 <span className="text-5xl md:text-5xl text-[#FF008C] md:inline-block font-semibold md:font-normal">
                   3,000+
-                </span>
+                </span>{" "}
                 <span className="text-3xl md:text-5xl text-white block md:inline-block">
                   Games Across All Genres
                 </span>
               </p>
               <div className="text-[12px] md:text-base mt-2 text-[#FF008C]">
-                Slots, live casino, baccarat,
+                Slots, live casino, baccarat,{" "}
                 <span className="block md:inline-block">
-                  roulette, Play top leagues, major matches
+                  roulette, Play top leagues, major matches{" "}
                   <p className="text-white inline-block">and more Exclusive</p>
                 </span>
+                <Image
+                  src="/images/FOMO_logo.png"
+                  alt="FOMO Logo"
+                  width={50}
+                  height={50}
+                  className="inline-block align-middle m-0 md:m-2 mr-2 md:mr-2"
+                />
+                original games
               </div>
             </div>
           </div>
