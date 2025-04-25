@@ -1,55 +1,53 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Changa } from "next/font/google";
+import { i18nT, setupI18n } from '@/lib/services/i18n.service'
+import { Changa } from 'next/font/google'
 
 const changa = Changa({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-changa",
-});
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-changa',
+})
 
 export default function Home() {
+  setupI18n('ja')
+  const t = i18nT
+  // ======= {t('common.logoTitle')} ===== 
+
   return (
     <div className=" bg-black text-white">
       <div className="w-auto px-4 py-6">
-        <Image
-          src={`/images/FOMO_logo.png`}
-          alt={`FOMO`}
-          width={100}
-          height={50}
-        />
+        <img src={`/images/FOMO_logo.png`} width={100} height={50} alt="" />
       </div>
 
       <section className="relative py-16 md:py-32 lg:py-48 flex flex-col items-center justify-center overflow-hidden font-impact">
         <div className="md:mt-32 lg:-mt-27 text-center font-impact sm:-mt-20">
           <h1 className="mt-[130px] md:mt-10 mb-4 md:ml-2 w-full">
-            <Image
+            <img
               src={`/images/FOMO_logo.png`}
               alt={`FOMO`}
               width={800}
               height={350}
-              style={{ maxWidth: "100%" }}
+              style={{ maxWidth: '100%' }}
             />
           </h1>
 
           <p
             className="md:text-[33px] text-white mb-6 sm:w-full sm:text-center"
             style={{
-              fontFamily: "Impact",
-              textAlign: "center",
-              width: "100%",
+              fontFamily: 'Impact',
+              textAlign: 'center',
+              width: '100%',
             }}
           >
-            Play Freely with Crypto - Your New Online Casino Starts Here
+            Play Freely with Crypto - Your New Online Casino
+            Starts Here
           </p>
         </div>
 
         <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-7/24 md:-translate-y-1/5 lg:-translate-y-1/5 w-210 h-210 md:w-[950px] md:h-[950px] z-50">
-          <Image
+          <img
             src="/images/trophy.png"
             alt="Trophy Background"
-            layout="fill"
-            objectFit="contain"
+            className="w-full h-full object-contain"
           />
         </div>
 
@@ -58,33 +56,31 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-[170px] md:mt-0">
               <span className="text-sm md:text-base">
                 Get a 100% bonus on your first deposit (up to USDT₮300).
-                <p className="block md:inline-block">
-                  Start now and aim for the jackpot!{" "}
-                </p>
+                <p className="block md:inline-block">Start now and aim for the jackpot! </p>
               </span>
-              <Link href="" passHref>
+              <a href="#">
                 <button className="relative z-90 bg-transparent border border-white text-white py-1 md:py-1 px-6 md:px-8 text-sm rounded-full ring-1 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black focus:ring-2 focus:ring-white">
                   Join Now
                 </button>
-              </Link>
+              </a>
             </div>
 
             <div className="mt-[120px] md:mt-12 ml-2 mr-2 text-left md:text-center md:ml-0">
               <p className="text-xl md:text-5xl  text-white mb-2">
                 <span className="text-5xl md:text-5xl text-[#FF008C] md:inline-block font-semibold md:font-normal">
                   3,000+
-                </span>{" "}
+                </span>{' '}
                 <span className="text-3xl md:text-5xl text-white block md:inline-block">
                   Games Across All Genres
                 </span>
               </p>
               <div className="text-[12px] md:text-base mt-2 text-[#FF008C]">
-                Slots, live casino, baccarat,{" "}
+                Slots, live casino, baccarat,{' '}
                 <span className="block md:inline-block">
-                  roulette, Play top leagues, major matches{" "}
+                  roulette, Play top leagues, major matches{' '}
                   <p className="text-white inline-block">and more Exclusive</p>
                 </span>
-                <Image
+                <img
                   src="/images/FOMO_logo.png"
                   alt="FOMO Logo"
                   width={50}
@@ -99,19 +95,17 @@ export default function Home() {
       </section>
 
       <section className="relative -mt-20 mb-20 md:-mt-40 h-64 md:h-100 lg:h-[400px] opacity-75">
-        <Image
+        <img
           src="/images/bg.png"
           alt="Casino Games Background"
-          layout="fill"
-          objectFit="cover"
-          className="z-0"
+          className="z-0 w-full h-full object-cover"
         />
         <div className="absolute mt-43 md:mt-[300px] left-1/2 transform -translate-x-1/2 z-10 w-full flex justify-center">
-          <Link href="" passHref>
+          <a href="#">
             <button className="bg-[#252525] text-white py-2 px-17 mb-6 mt-[90px] md:mt-0 lg:mt-0 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
               🚀 Find your favorite Game!
             </button>
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -119,22 +113,19 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:justify-center md:items-center mt-5 mx-10 md:mx-10">
           <div className="text-sm md:text-base py-5 md:mr-30 text-center md:text-left">
             <p className="block text-left md:hidden">
-              Get a 100% bonus on your first deposit (up to USDT₮300). Start now
-              and aim for the jackpot!
+              Get a 100% bonus on your first deposit (up to USDT₮300). Start now and aim for the
+              jackpot!
             </p>
+            <p className="hidden md:block">MEGA JACKPOT Exceeds USDT₮1,000,000!</p>
             <p className="hidden md:block">
-              MEGA JACKPOT Exceeds USDT₮1,000,000!
-            </p>
-            <p className="hidden md:block">
-              4 different jackpot tiers available The MEGA JACKPOT is exclusive
-              for FOMO players
+              4 different jackpot tiers available The MEGA JACKPOT is exclusive for FOMO players
             </p>
           </div>
-          <Link href="" passHref>
+          <a href="#">
             <button className="bg-black text-white py-1 md:py-1 px-6 md:px-8 border-2 border-white mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-1 focus:ring-white  self-start md:self-auto">
               Join Now
             </button>
-          </Link>
+          </a>
         </div>
       </div>
 
@@ -142,38 +133,18 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-left md:text-center">
           <div>
             <div className="relative inline-block w-full md:w-auto">
-              <Image
-                src="/images/line_bg.png"
-                alt=""
-                layout="fill"
-                objectFit="contain"
-                className="z-0"
-              />
+              <img src="/images/line_bg.png" alt="" className="z-0 w-full h-full object-contain" />
 
               <h2 className="relative z-10 text-center text-3xl md:text-3xl lg:text-4xl mb-4">
-                Just a{" "}
-                <span className="text-4xl md:text-5xl inline-block">
-                  Few Clicks
-                </span>{" "}
-                to{" "}
-                <span className="text-4xl md:text-5xl block md:inline-block">
-                  Get Started!
-                </span>
+                Just a <span className="text-4xl md:text-5xl inline-block">Few Clicks</span> to{' '}
+                <span className="text-4xl md:text-5xl block md:inline-block">Get Started!</span>
               </h2>
             </div>
 
             <div className="text-[12px] md:text-base text-white mb-8 md:px-0 px-2 text-center md:text-center">
-              Get a{" "}
-              <span className="text-lg md:text-2xl inline-block">
-                100% Bonus
-              </span>{" "}
-              on your{" "}
-              <span className="text-lg md:text-2xl inline-block">
-                First Deposit
-              </span>{" "}
-              <p className="block md:inline-block lg:inline-block">
-                (Up to USDT₮300)
-              </p>
+              Get a <span className="text-lg md:text-2xl inline-block">100% Bonus</span> on your{' '}
+              <span className="text-lg md:text-2xl inline-block">First Deposit</span>{' '}
+              <p className="block md:inline-block lg:inline-block">(Up to USDT₮300)</p>
             </div>
           </div>
 
@@ -188,12 +159,7 @@ export default function Home() {
               </div>
 
               <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
-                <Image
-                  src="/images/wheel.png"
-                  alt="wheel"
-                  layout="fill"
-                  objectFit="contain"
-                />
+                <img src="/images/wheel.png" alt="wheel" className="w-full h-full object-contain" />
               </div>
 
               <p className="text-[20px] md:text-xl font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
@@ -214,12 +180,7 @@ export default function Home() {
               </div>
 
               <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
-                <Image
-                  src="/images/bolt.png"
-                  alt="bolt"
-                  layout="fill"
-                  objectFit="contain"
-                />
+                <img src="/images/bolt.png" alt="bolt" className="w-full h-full object-contain" />
               </div>
 
               <p className="text-[20px] md:text-xl font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
@@ -240,11 +201,10 @@ export default function Home() {
               </div>
 
               <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
-                <Image
+                <img
                   src="/images/dollar.png"
                   alt="dollar"
-                  layout="fill"
-                  objectFit="contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
 
@@ -258,11 +218,11 @@ export default function Home() {
           </div>
 
           <div className="text-center">
-            <Link href="" passHref>
+            <a href="">
               <button className="bg-[#252525] text-white py-2 px-15 mt-10 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
                 <span className="mr-2">🚀</span> Let&apos;s Play Now !
               </button>
-            </Link>
+            </a>
 
             <p className="text-xs text-white underline decoration-[#FF008C] mt-2">
               Bonus applied instantly after deposit
@@ -279,7 +239,7 @@ export default function Home() {
             Betting Experience Only <br className="block md:hidden" />
             <span className="inline-flex items-center">
               on&nbsp;
-              <Image
+              <img
                 src="/images/FOMO_logo.png"
                 alt="FOMO Logo"
                 width={80}
@@ -292,7 +252,7 @@ export default function Home() {
           <div className="text-[15px] md:text-3xl text-[#FF008C] mr-10 ml-10 md:ml-0 md:mr-25">
             Play More, Earn More &nbsp;
             <p className="text-[12px] md:text-xl text-white mb-6 md:mb-8 inline-block">
-              {" "}
+              {' '}
               – Rewards Like No Other
             </p>
           </div>
@@ -302,7 +262,7 @@ export default function Home() {
               <div className="bg-[#FF008C] text-white py-4 pl-10 relative px-4 md:py-6 md:px-6 overflow-visible">
                 <div
                   className="absolute -top-12 -left-1 text-[#FF008C] text-7xl font-extrabold z-10"
-                  style={{ WebkitTextStroke: "3px black" }}
+                  style={{ WebkitTextStroke: '3px black' }}
                 >
                   1
                 </div>
@@ -317,9 +277,7 @@ export default function Home() {
                   <li className="mb-1 md:mb-2">
                     Bet on special odds and formats only available on FOMO
                   </li>
-                  <li>
-                    Participate in limited competitions and earn real prizes
-                  </li>
+                  <li>Participate in limited competitions and earn real prizes</li>
                 </ul>
               </div>
             </div>
@@ -328,7 +286,7 @@ export default function Home() {
               <div className="bg-[#FF008C] text-white p-4 pl-16 md:pl-17 relative px-4 md:py-[36px] md:px-6 overflow-visible">
                 <div
                   className="absolute -top-12 -left-1 text-[#FF008C] text-7xl font-extrabold z-10"
-                  style={{ WebkitTextStroke: "3px black" }}
+                  style={{ WebkitTextStroke: '3px black' }}
                 >
                   2
                 </div>
@@ -338,12 +296,8 @@ export default function Home() {
               </div>
               <div className="bg-[#1A1A1A] py-4 px-4 md:py-6 md:px-6">
                 <ul className="list-disc list-outside pl-5 md:pl-3 text-[13px] md:text-sm text-white">
-                  <li className="mb-1 md:mb-2">
-                    Every bet comes with a chance to earn rewards
-                  </li>
-                  <li>
-                    Get rake back on every bet, and cashback when you lose.
-                  </li>
+                  <li className="mb-1 md:mb-2">Every bet comes with a chance to earn rewards</li>
+                  <li>Get rake back on every bet, and cashback when you lose.</li>
                 </ul>
               </div>
             </div>
@@ -352,7 +306,7 @@ export default function Home() {
               <div className="bg-[#FF008C] text-white p-4 pl-10 md:pl-9 relative px-4 md:py-6 md:px-7 overflow-visible">
                 <div
                   className="absolute -top-12 -left-1 text-[#FF008C] text-7xl font-extrabold z-10"
-                  style={{ WebkitTextStroke: "3px black" }}
+                  style={{ WebkitTextStroke: '3px black' }}
                 >
                   3
                 </div>
@@ -378,10 +332,8 @@ export default function Home() {
           <div className="flex items-center mb-8 lg:mb-12 ml-7 md:ml-25">
             <div className="h-20 w-1 bg-[#FF008C] mr-4"></div>
             <h1 className="text-4xl md:text-4xl lg:text-5xl">
-              Crypto-Friendly{" "}
-              <span className="text-3xl md:text-3xl lg:text-5xl inline-block">
-                and
-              </span>{" "}
+              Crypto-Friendly{' '}
+              <span className="text-3xl md:text-3xl lg:text-5xl inline-block">and</span>{' '}
               <span className="block md:inline-block">Fiat-Ready</span>
             </h1>
           </div>
@@ -401,20 +353,14 @@ export default function Home() {
                   </p>
                 </div>
                 <div>
-                  <h2 className="text-xl mb-2 md:text-2xl">
-                    No crypto? No problem!
-                  </h2>
+                  <h2 className="text-xl mb-2 md:text-2xl">No crypto? No problem!</h2>
                   <div className="flex items-center space-x-2">
-                    {["apple", "gpay", "visa", "mastercard"].map((name) => (
-                      <div
-                        key={name}
-                        className="relative w-8 h-4 md:w-12 md:h-6"
-                      >
-                        <Image
+                    {['apple', 'gpay', 'visa', 'mastercard'].map((name) => (
+                      <div key={name} className="relative w-8 h-4 md:w-12 md:h-6">
+                        <img
                           src={`/icons/${name}.png`}
                           alt={name}
-                          layout="fill"
-                          objectFit="contain"
+                          className="w-full h-full object-contain"
                         />
                       </div>
                     ))}
@@ -423,23 +369,22 @@ export default function Home() {
               </div>
 
               <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-[400px] mt-8 -top-[230px] md:-top-5 right-0 md:right-[270px] lg:mt-0 z-20">
-                <Image
+                <img
                   src="/images/basketball.png"
                   alt="Basketball Bubble"
                   width={400}
                   height={400}
-                  layout="intrinsic"
-                  objectFit="contain"
+                  className="w-auto h-auto max-w-full max-h-full object-contain"
                 />
               </div>
             </div>
 
             <div className="text-center -mt-[190px] md:-mt-[50px]">
-              <Link href="" passHref>
+              <a href="#">
                 <button className="bg-[#252525] text-white py-2 px-17 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
                   <span className="mr-2">🚀</span> Let&apos;s Play Now !
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -449,12 +394,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="mb-4">
             <div className="inline-block">
-              <Image
-                src="/images/FOMO_logo.png"
-                alt="FOMO Logo"
-                width={80}
-                height={24}
-              />
+              <img src="/images/FOMO_logo.png" alt="FOMO Logo" width={80} height={24} />
             </div>
           </div>
           <nav className="text-xs">
@@ -482,5 +422,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  );
+  )
 }

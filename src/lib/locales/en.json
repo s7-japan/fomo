@@ -1,0 +1,9 @@
+{
+  "common": {
+    "logoTitle": "Casino Leo",
+    "register": "Register",
+    "login": "Login",
+    "menu": "Menu",
+    "balance": "Balance"
+  }
+}
