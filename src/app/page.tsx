@@ -10,12 +10,12 @@ const changa = Changa({
 export default function Home() {
   setupI18n('ja')
   const t = i18nT
-  // ======= {t('common.logoTitle')} ===== 
+  // ======= {t('common.logoTitle')} =====
 
   return (
     <div className=" bg-black text-white">
       <div className="w-auto px-4 py-6">
-        <img src={`/images/FOMO_logo.png`} width={100} height={50} alt="" />
+        <img src={`/images/FOMO_logo.png`} alt={`FOMO`} width={100} height={50} />
       </div>
 
       <section className="relative py-16 md:py-32 lg:py-48 flex flex-col items-center justify-center overflow-hidden font-impact">
@@ -38,8 +38,7 @@ export default function Home() {
               width: '100%',
             }}
           >
-            Play Freely with Crypto - Your New Online Casino
-            Starts Here
+            Play Freely with Crypto - Your New Online Casino Starts Here
           </p>
         </div>
 
@@ -47,7 +46,7 @@ export default function Home() {
           <img
             src="/images/trophy.png"
             alt="Trophy Background"
-            className="w-full h-full object-contain"
+            className="absolute w-full h-full object-contain"
           />
         </div>
 
@@ -58,7 +57,7 @@ export default function Home() {
                 Get a 100% bonus on your first deposit (up to USDT₮300).
                 <p className="block md:inline-block">Start now and aim for the jackpot! </p>
               </span>
-              <a href="#">
+              <a href="">
                 <button className="relative z-90 bg-transparent border border-white text-white py-1 md:py-1 px-6 md:px-8 text-sm rounded-full ring-1 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black focus:ring-2 focus:ring-white">
                   Join Now
                 </button>
@@ -98,10 +97,10 @@ export default function Home() {
         <img
           src="/images/bg.png"
           alt="Casino Games Background"
-          className="z-0 w-full h-full object-cover"
+          className="z-0 absolute w-full h-full object-cover"
         />
         <div className="absolute mt-43 md:mt-[300px] left-1/2 transform -translate-x-1/2 z-10 w-full flex justify-center">
-          <a href="#">
+          <a href="">
             <button className="bg-[#252525] text-white py-2 px-17 mb-6 mt-[90px] md:mt-0 lg:mt-0 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
               🚀 Find your favorite Game!
             </button>
@@ -121,7 +120,7 @@ export default function Home() {
               4 different jackpot tiers available The MEGA JACKPOT is exclusive for FOMO players
             </p>
           </div>
-          <a href="#">
+          <a href="">
             <button className="bg-black text-white py-1 md:py-1 px-6 md:px-8 border-2 border-white mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-1 focus:ring-white  self-start md:self-auto">
               Join Now
             </button>
@@ -133,7 +132,11 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-left md:text-center">
           <div>
             <div className="relative inline-block w-full md:w-auto">
-              <img src="/images/line_bg.png" alt="" className="z-0 w-full h-full object-contain" />
+              <img
+                src="/images/line_bg.png"
+                alt=""
+                className="z-0 absolute w-full h-full object-contain"
+              />
 
               <h2 className="relative z-10 text-center text-3xl md:text-3xl lg:text-4xl mb-4">
                 Just a <span className="text-4xl md:text-5xl inline-block">Few Clicks</span> to{' '}
@@ -159,7 +162,11 @@ export default function Home() {
               </div>
 
               <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
-                <img src="/images/wheel.png" alt="wheel" className="w-full h-full object-contain" />
+                <img
+                  src="/images/wheel.png"
+                  alt="wheel"
+                  className="absolute w-full h-full object-contain"
+                />
               </div>
 
               <p className="text-[20px] md:text-xl font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
@@ -180,7 +187,11 @@ export default function Home() {
               </div>
 
               <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
-                <img src="/images/bolt.png" alt="bolt" className="w-full h-full object-contain" />
+                <img
+                  src="/images/bolt.png"
+                  alt="bolt"
+                  className="absolute w-full h-full object-contain"
+                />
               </div>
 
               <p className="text-[20px] md:text-xl font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
@@ -204,7 +215,7 @@ export default function Home() {
                 <img
                   src="/images/dollar.png"
                   alt="dollar"
-                  className="w-full h-full object-contain"
+                  className="absolute w-full h-full object-contain"
                 />
               </div>
 
@@ -360,7 +371,7 @@ export default function Home() {
                         <img
                           src={`/icons/${name}.png`}
                           alt={name}
-                          className="w-full h-full object-contain"
+                          className="absolute w-full h-full object-contain"
                         />
                       </div>
                     ))}
@@ -374,13 +385,13 @@ export default function Home() {
                   alt="Basketball Bubble"
                   width={400}
                   height={400}
-                  className="w-auto h-auto max-w-full max-h-full object-contain"
+                  className="max-w-full h-auto"
                 />
               </div>
             </div>
 
             <div className="text-center -mt-[190px] md:-mt-[50px]">
-              <a href="#">
+              <a href="">
                 <button className="bg-[#252525] text-white py-2 px-17 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">
                   <span className="mr-2">🚀</span> Let&apos;s Play Now !
                 </button>
