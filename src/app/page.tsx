@@ -2,17 +2,28 @@ import { i18nT, LangType, setupI18n } from '../lib/services/i18n.service'
 
 export interface IAppProps {
   lang: LangType
+  is_show_header_footer: boolean
 }
 
 export function LandingPage(props: IAppProps) {
   setupI18n(props.lang)
   const t = i18nT
+  const isShowHeaderFooter = JSON.parse(props.is_show_header_footer.toString())
 
   return (
     <div className=" bg-black text-white font-changa">
-      <div className="w-auto px-4 py-6">
-        <img src={`https://fomoio.netlify.app/themes/fomoio/landingpage/images/FOMO_logo.png`} alt={`FOMO`} width={100} height={50} />
-      </div>
+      {isShowHeaderFooter ? (
+        <div className="w-auto px-4 py-6">
+          <img
+            src={`https://fomoio.netlify.app/themes/fomoio/landingpage/images/FOMO_logo.png`}
+            alt={`FOMO`}
+            width={100}
+            height={50}
+          />
+        </div>
+      ) : (
+        ''
+      )}
 
       <section className="relative py-16 md:py-32 lg:py-48 flex flex-col items-center justify-center overflow-hidden font-impact">
         <div className="md:mt-32 lg:-mt-27 text-center font-impact sm:-mt-20">
@@ -407,42 +418,50 @@ export function LandingPage(props: IAppProps) {
           </div>
         </div>
       </div>
-
-      <footer className="bg-black text-gray-400 py-8 mt-12 md:mt-20 text-center">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="mb-4">
-            <div className="inline-block">
-              <img src="https://fomoio.netlify.app/themes/fomoio/landingpage/images/FOMO_logo.png" alt="FOMO Logo" width={80} height={24} />
+      {isShowHeaderFooter ? (
+        <footer className="bg-black text-gray-400 py-8 mt-12 md:mt-20 text-center">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="mb-4">
+              <div className="inline-block">
+                <img
+                  src="https://fomoio.netlify.app/themes/fomoio/landingpage/images/FOMO_logo.png"
+                  alt="FOMO Logo"
+                  width={80}
+                  height={24}
+                />
+              </div>
             </div>
+            <nav className="text-xs">
+              <ul className="flex flex-col items-center sm:items-start md:flex-row md:space-x-6 md:ml-55 gap-5 md:gap-0">
+                <li>
+                  <div className="hover:text-white">Community Guidelines</div>
+                </li>
+                <li>
+                  <div className="hover:text-white">DMCA Policy</div>
+                </li>
+                <li>
+                  <div className="hover:text-white">Privacy Policy</div>
+                </li>
+                <li>
+                  <div className="hover:text-white">Terms of Service</div>
+                </li>
+                <li>
+                  <div className="hover:text-white">Help & Support</div>
+                </li>
+                <li>
+                  <div className="hover:text-white">Responsible Gaming</div>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav className="text-xs">
-            <ul className="flex flex-col items-center sm:items-start md:flex-row md:space-x-6 md:ml-55 gap-5 md:gap-0">
-              <li>
-                <div className="hover:text-white">Community Guidelines</div>
-              </li>
-              <li>
-                <div className="hover:text-white">DMCA Policy</div>
-              </li>
-              <li>
-                <div className="hover:text-white">Privacy Policy</div>
-              </li>
-              <li>
-                <div className="hover:text-white">Terms of Service</div>
-              </li>
-              <li>
-                <div className="hover:text-white">Help & Support</div>
-              </li>
-              <li>
-                <div className="hover:text-white">Responsible Gaming</div>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </footer>
+        </footer>
+      ) : (
+        <div className="min-h-[140px]"></div>
+      )}
     </div>
   )
 }
 
 export default function Home() {
-  return <LandingPage lang="en" />
+  return <LandingPage lang="en" is_show_header_footer={true} />
 }
