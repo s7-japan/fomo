@@ -1,9 +1,32 @@
 {
-  "common": {
-    "logoTitle": "Casino Leo",
-    "register": "Register",
-    "login": "Login",
-    "menu": "Menu",
-    "balance": "Balance"
+  "page": {
+    "Play Freely with Crypto - Your New Online Casino Starts Here": "Play Freely with Crypto - Your New Online Casino Starts Here",
+    "Get a 100% bonus on your first deposit (up to USDT₮300).01": "Get a 100% bonus on your first deposit (up to USDT₮300).",
+    "Get a 100% bonus on your first deposit (up to USDT₮300).02": "Start now and aim for the jackpot!",
+    "Join Now": "Join Now",
+    "3,000+ {\" \"} Games Across All Genres": "3,000+ {\" \"} Games Across All Genres",
+    "Slots, live casino, baccarat,{\" \"} roulette, play top leagues, major matches{\" \"} <br /><br />and more Exclusive<br /><br />Original games": "Slots, live casino, baccarat,{\" \"} roulette, play top leagues, major matches{\" \"} <br /><br />and more Exclusive<br /><br />Original games",
+    "🚀 Find your favorite Game!": "🚀 Find your favorite Game!",
+    "Get a 100% bonus on your first deposit (up to USDT₮300). Start now and aim for the jackpot!": "Get a 100% bonus on your first deposit (up to USDT₮300). Start now and aim for the jackpot!",
+    "MEGA JACKPOT Exceeds USDT₮1,000,000!<br /><br />4 different jackpot tiers available. The MEGA JACKPOT is exclusive for FOMO players": "MEGA JACKPOT Exceeds USDT₮1,000,000!<br /><br />4 different jackpot tiers available. The MEGA JACKPOT is exclusive for FOMO players",
+    "Just a{\" \"} Few Clicks {\" \"} to{\" \"} Get Started!": "Just a{\" \"} Few Clicks {\" \"} to{\" \"} Get Started!",
+    "Get a{\" \"} 100% Bonus {\" \"} on your{\" \"} First Deposit {\" \"}<br /><br />(up to USDT₮300)": "Get a{\" \"} 100% Bonus {\" \"} on your{\" \"} First Deposit {\" \"}<br /><br />(up to USDT₮300)",
+    "STEP<br /><br />1<br /><br />Sign up with:<br /><br />Email, Telegram, Metamask wallet.": "STEP<br /><br />1<br /><br />Sign up with:<br /><br />Email, Telegram, Metamask wallet.",
+    "STEP<br /><br />2<br /><br />Minimum deposit:<br /><br />Make a deposit of USDT₮10 to begin.": "STEP<br /><br />2<br /><br />Minimum deposit:<br /><br />Make a deposit of USDT₮10 to begin.",
+    "STEP<br /><br />3<br /><br />Get Welcome Bonus:<br /><br />Enjoy a Bonus up to USDT₮300": "STEP<br /><br />3<br /><br />Get Welcome Bonus:<br /><br />Enjoy a Bonus up to USDT₮300",
+    "🚀 Let's Play Now !": "🚀 Let's Play Now !",
+    "Bonus must be claimed on the Deposit Page before depositing.": "Bonus must be claimed on the Deposit Page before depositing.",
+    "A One-of-a-Kind<br /><br />Betting Experience Only<br /><br />on": "A One-of-a-Kind<br /><br />Betting Experience Only<br /><br />on",
+    "Play More, Earn More <br /><br />{\" \"} – Rewards Like No Other": "Play More, Earn More <br /><br />{\" \"} – Rewards Like No Other",
+    "1<br /><br />FOMO-Exclusive Betting Events<br /><br />Bet on special odds and formats only available on FOMO<br /><br />Participate in limited competitions and earn real prizes": "1<br /><br />FOMO-Exclusive Betting Events<br /><br />Bet on special odds and formats only available on FOMO<br /><br />Participate in limited competitions and earn real prizes",
+    "2<br /><br />Nonstop Reward System<br /><br />Every bet comes with a chance to earn rewards<br /><br />Get rakeback on every bet, and cashback when you lose.": "2<br /><br />Nonstop Reward System<br /><br />Every bet comes with a chance to earn rewards<br /><br />Get rakeback on every bet, and cashback when you lose.",
+    "3<br /><br />Referral Program – Earn up to 35%<br /><br />Get commissions from both direct and indirect referrals<br /><br />Earn rewards even when your referrals win": "3<br /><br />Referral Program – Earn up to 35%<br /><br />Get commissions from both direct and indirect referrals<br /><br />Earn rewards even when your referrals win",
+    "Crypto-Friendly{\" \"} and {\" \"} Fiat-Ready<br /><br />Supported cryptocurrencies:<br /><br />USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE<br /><br />No crypto? No problem!": "Crypto-Friendly{\" \"} and {\" \"} Fiat-Ready<br /><br />Supported cryptocurrencies:<br /><br />USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE<br /><br />No crypto? No problem!",
+    "Privacy Policy": "Privacy Policy",
+    "Terms of Service": "Terms of Service",
+    "Bonus Terms": "Bonus Terms",
+    "Help & Support": "Help & Support",
+    "Responsible Gaming": "Responsible Gaming",
+    "Provably Fair": "Provably Fair"
   }
 }

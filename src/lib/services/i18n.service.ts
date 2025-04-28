@@ -1,13 +1,17 @@
 import i18next from 'i18next'
 import EN from '../locales/en.json'
 import JA from '../locales/ja.json'
+import KO from '../locales/ko.json'
+
+export type LangType = keyof typeof lngMappingObj
 
 export const lngMappingObj = {
   en: EN,
   ja: JA,
+  ko: KO,
 } as const
 
-export const setupI18n = (lang: keyof typeof lngMappingObj) => {
+export const setupI18n = (lang: LangType) => {
   const defaultLng = lang //'ja'
   const defaultNS = '_'
   i18next.init({
@@ -19,7 +23,7 @@ export const setupI18n = (lang: keyof typeof lngMappingObj) => {
   })
 }
 
-export const getCurrentLng = () => i18next.language as keyof typeof lngMappingObj
+export const getCurrentLng = () => i18next.language as LangType
 
 export const getShortCurrentLng = () => {
   const lng = getCurrentLng()

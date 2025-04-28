@@ -1,9 +1,12 @@
-import { i18nT, setupI18n } from '../lib/services/i18n.service'
+import { i18nT, LangType, setupI18n } from '../lib/services/i18n.service'
 
-export default function Home() {
-  setupI18n('ja')
+export interface IAppProps {
+  lang: LangType
+}
+
+export function LandingPage(props: IAppProps) {
+  setupI18n(props.lang)
   const t = i18nT
-  console.log(t('common.logoTitle'))
 
   return (
     <div className=" bg-black text-white font-changa">
@@ -31,7 +34,7 @@ export default function Home() {
               width: '100%',
             }}
           >
-            Play Freely with Crypto - Your New Online Casino Starts Here
+            {t('page.Play Freely with Crypto - Your New Online Casino Starts Here')}
           </p>
         </div>
 
@@ -47,8 +50,10 @@ export default function Home() {
           <div className="text-center relative mt-20">
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-[170px] md:mt-0">
               <span className="text-sm md:text-base">
-                Get a 100% bonus on your first deposit (up to USDT₮300).
-                <p className="block md:inline-block">Start now and aim for the jackpot! </p>
+                {t('page.Get a 100% bonus on your first deposit (up to USDT₮300).01')}
+                <p className="block md:inline-block">
+                  {t('page.Get a 100% bonus on your first deposit (up to USDT₮300).02')}
+                </p>
               </span>
               <a href="">
                 <button className="relative z-90 bg-transparent border border-white text-white py-1 md:py-1 px-6 md:px-8 text-sm rounded-full ring-1 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black focus:ring-2 focus:ring-white">
@@ -427,4 +432,8 @@ export default function Home() {
       </footer>
     </div>
   )
+}
+
+export default function Home() {
+  return <LandingPage lang="ja" />
 }
