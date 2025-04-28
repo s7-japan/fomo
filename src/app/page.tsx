@@ -1,19 +1,12 @@
-import { i18nT, setupI18n } from '@/lib/services/i18n.service'
-import { Changa } from 'next/font/google'
-
-const changa = Changa({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-changa',
-})
+import { i18nT, setupI18n } from '../lib/services/i18n.service'
 
 export default function Home() {
   setupI18n('ja')
   const t = i18nT
-  // ======= {t('common.logoTitle')} =====
+  console.log(t('common.logoTitle'))
 
   return (
-    <div className=" bg-black text-white">
+    <div className=" bg-black text-white font-changa">
       <div className="w-auto px-4 py-6">
         <img src={`/images/FOMO_logo.png`} alt={`FOMO`} width={100} height={50} />
       </div>
@@ -50,7 +43,7 @@ export default function Home() {
           />
         </div>
 
-        <div className={`${changa.variable} bg-black text-white font-changa`}>
+        <div className={`bg-black text-white`}>
           <div className="text-center relative mt-20">
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-[170px] md:mt-0">
               <span className="text-sm md:text-base">
