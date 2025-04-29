@@ -1,5 +1,5 @@
 import { MouseEvent } from 'react'
-import { i18nT, LangType, setupI18n } from '../lib/services/i18n.service'
+import { setLng, getCurrentLng, i18nT, LangType, setupI18n } from '../lib/services/i18n.service'
 
 export type EventEmitType = 'signUp' | 'gotoCasino' | 'gotoBonusTerms'
 
@@ -9,10 +9,14 @@ export interface IAppProps {
   event_emit: (type: EventEmitType) => void
 }
 
+setupI18n('en')
 export default function LandingPage(props: IAppProps) {
-  setupI18n(props.lang)
   const t = i18nT
   const isShowHeaderFooter = JSON.parse(props.is_show_header_footer.toString())
+
+  if (getCurrentLng() !== props.lang) {
+    setLng(props.lang)
+  }
 
   const singUp = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()

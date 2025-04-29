@@ -32,4 +32,6 @@ export const getShortCurrentLng = () => {
 
 export const getValidLng = () => Object.keys(lngMappingObj)
 
+export const setLng = (lang: LangType) => i18next.changeLanguage(lang)
+
 export const i18nT = i18next.t
