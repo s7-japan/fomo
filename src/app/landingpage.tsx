@@ -84,14 +84,12 @@ export default function LandingPage(props: IAppProps) {
                   {t('page.Get a 100% bonus on your first deposit (up to USDT₮300).02')}
                 </p>
               </span>
-              <a href="">
-                <button
-                  onClick={singUp}
-                  className="relative z-90 bg-transparent border border-white text-white py-1 md:py-1 px-6 md:px-8 text-sm rounded-full ring-1 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black focus:ring-2 focus:ring-white"
-                >
-                  {t('page.Join Now')}
-                </button>
-              </a>
+              <button
+                onClick={singUp}
+                className="relative z-90 bg-transparent border border-white text-white py-1 md:py-1 px-6 md:px-8 text-sm rounded-full ring-1 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black focus:ring-2 focus:ring-white cursor-pointer"
+              >
+                {t('page.Join Now')}
+              </button>
             </div>
 
             <div className="mt-[120px] md:mt-12 ml-2 mr-2 text-left md:text-center md:ml-0">
@@ -130,14 +128,12 @@ export default function LandingPage(props: IAppProps) {
           className="z-0 absolute w-full h-full object-cover"
         />
         <div className="absolute mt-43 md:mt-[300px] left-1/2 transform -translate-x-1/2 z-10 w-full flex justify-center">
-          <a href="">
-            <button
-              onClick={(e) => gotoLink(e, 'gotoCasino')}
-              className="bg-[#252525] text-white py-2 px-17 mb-6 mt-[90px] md:mt-0 lg:mt-0 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white"
-            >
-              {t('page.🚀 Find your favorite Game!')}
-            </button>
-          </a>
+          <button
+            onClick={(e) => gotoLink(e, 'gotoCasino')}
+            className="bg-[#252525] text-white py-2 px-17 mb-6 mt-[90px] md:mt-0 lg:mt-0 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
+          >
+            {t('page.🚀 Find your favorite Game!')}
+          </button>
         </div>
       </section>
 
@@ -156,14 +152,12 @@ export default function LandingPage(props: IAppProps) {
               )}
             </p>
           </div>
-          <a href="">
-            <button
-              onClick={singUp}
-              className="bg-black text-white py-1 md:py-1 px-6 md:px-8 border-2 border-white mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-1 focus:ring-white  self-start md:self-auto"
-            >
-              {t('page.Join Now')}
-            </button>
-          </a>
+          <button
+            onClick={singUp}
+            className="bg-black text-white py-1 md:py-1 px-6 md:px-8 border-2 border-white mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-1 focus:ring-white  self-start md:self-auto  cursor-pointer"
+          >
+            {t('page.Join Now')}
+          </button>
         </div>
       </div>
 
@@ -274,16 +268,14 @@ export default function LandingPage(props: IAppProps) {
           </div>
 
           <div className="text-center">
-            <a href="">
-              <button
-                onClick={singUp}
-                className="bg-[#252525] text-white py-2 px-15 mt-10 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white"
-              >
-                <span className="mr-2">🚀</span> {t(`page.Let's Play Now !`)}
-              </button>
-            </a>
+            <button
+              onClick={singUp}
+              className="bg-[#252525] text-white py-2 px-15 mt-10 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
+            >
+              <span className="mr-2">🚀</span> {t(`page.Let's Play Now !`)}
+            </button>
 
-            <button onClick={(e) => gotoLink(e, 'gotoBonusTerms')}>
+            <button className="cursor-pointer" onClick={(e) => gotoLink(e, 'gotoBonusTerms')}>
               <p className="text-xs text-white underline decoration-[#FF008C] mt-2">
                 {t('page.Bonus must be claimed on the Deposit Page before depositing.')}
               </p>
@@ -429,7 +421,7 @@ export default function LandingPage(props: IAppProps) {
                 </div>
               </div>
 
-              <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-[400px] mt-8 -top-[230px] md:-top-5 right-0 md:right-[270px] lg:mt-0 z-20">
+              <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-[400px] mt-8 -top-[230px] md:-top-5 right-0 md:right-[270px] lg:mt-0 z-20  pointer-events-none">
                 <img
                   src="https://fomoio.netlify.app/themes/fomoio/landingpage/images/basketball.png"
                   alt="Basketball Bubble"
@@ -441,14 +433,12 @@ export default function LandingPage(props: IAppProps) {
             </div>
 
             <div className="text-center -mt-[190px] md:-mt-[50px]">
-              <a href="">
-                <button
-                  onClick={singUp}
-                  className="bg-[#252525] text-white py-2 px-17 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white"
-                >
-                  <span className="mr-2">🚀</span> {t(`page.Let's Play Now !`)}
-                </button>
-              </a>
+              <button
+                onClick={singUp}
+                className="bg-[#252525] text-white py-2 px-17 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
+              >
+                <span className="mr-2">🚀</span> {t(`page.Let's Play Now !`)}
+              </button>
             </div>
           </div>
         </div>
