@@ -9,6 +9,8 @@ export interface IAppProps {
   event_emit: (type: EventEmitType) => void
 }
 
+const CDN_TMP = 'https://fomoio.netlify.app'
+
 setupI18n('en')
 export default function LandingPage(props: IAppProps) {
   const t = i18nT
@@ -33,7 +35,7 @@ export default function LandingPage(props: IAppProps) {
       {isShowHeaderFooter ? (
         <div className="w-auto px-4 py-6">
           <img
-            src={`https://fomoio.netlify.app/themes/fomoio/landingpage/images/FOMO_logo.png`}
+            src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
             alt={`FOMO`}
             width={100}
             height={50}
@@ -47,7 +49,7 @@ export default function LandingPage(props: IAppProps) {
         <div className="md:mt-32 lg:-mt-27 text-center font-impact sm:-mt-20">
           <h1 className="mt-[130px] md:mt-10 mb-4 md:ml-2 w-full">
             <img
-              src={`https://fomoio.netlify.app/themes/fomoio/landingpage/images/FOMO_logo.png`}
+              src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
               alt={`FOMO`}
               width={800}
               height={350}
@@ -69,7 +71,7 @@ export default function LandingPage(props: IAppProps) {
 
         <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-7/24 md:-translate-y-1/5 lg:-translate-y-1/5 w-210 h-210 md:w-[950px] md:h-[950px] z-50">
           <img
-            src="https://fomoio.netlify.app/themes/fomoio/landingpage/images/trophy.png"
+            src={`${CDN_TMP}/themes/fomoio/landingpage/images/trophy.png`}
             alt="Trophy Background"
             className="absolute w-full h-full object-contain"
           />
@@ -108,7 +110,7 @@ export default function LandingPage(props: IAppProps) {
                   <p className="text-white inline-block">{t('page.and more Exclusive')}</p>
                 </span>
                 <img
-                  src="https://fomoio.netlify.app/themes/fomoio/landingpage/images/FOMO_logo.png"
+                  src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
                   alt="FOMO Logo"
                   width={50}
                   height={50}
@@ -123,7 +125,7 @@ export default function LandingPage(props: IAppProps) {
 
       <section className="relative -mt-20 mb-20 md:-mt-40 h-64 md:h-100 lg:h-[400px] opacity-75">
         <img
-          src="https://fomoio.netlify.app/themes/fomoio/landingpage/images/bg.png"
+          src={`${CDN_TMP}/themes/fomoio/landingpage/images/bg.png`}
           alt="Casino Games Background"
           className="z-0 absolute w-full h-full object-cover"
         />
@@ -166,7 +168,7 @@ export default function LandingPage(props: IAppProps) {
           <div>
             <div className="relative inline-block w-full md:w-auto">
               <img
-                src="https://fomoio.netlify.app/themes/fomoio/landingpage/images/line_bg.png"
+                src={`${CDN_TMP}/themes/fomoio/landingpage/images/line_bg.png`}
                 alt=""
                 className="z-0 absolute w-full h-full object-contain"
               />
@@ -202,7 +204,7 @@ export default function LandingPage(props: IAppProps) {
 
               <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
                 <img
-                  src="https://fomoio.netlify.app/themes/fomoio/landingpage/images/wheel.png"
+                  src={`${CDN_TMP}/themes/fomoio/landingpage/images/wheel.png`}
                   alt="wheel"
                   className="absolute w-full h-full object-contain"
                 />
@@ -227,7 +229,7 @@ export default function LandingPage(props: IAppProps) {
 
               <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
                 <img
-                  src="https://fomoio.netlify.app/themes/fomoio/landingpage/images/bolt.png"
+                  src={`${CDN_TMP}/themes/fomoio/landingpage/images/bolt.png`}
                   alt="bolt"
                   className="absolute w-full h-full object-contain"
                 />
@@ -252,7 +254,7 @@ export default function LandingPage(props: IAppProps) {
 
               <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
                 <img
-                  src="https://fomoio.netlify.app/themes/fomoio/landingpage/images/dollar.png"
+                  src={`${CDN_TMP}/themes/fomoio/landingpage/images/dollar.png`}
                   alt="dollar"
                   className="absolute w-full h-full object-contain"
                 />
@@ -293,7 +295,7 @@ export default function LandingPage(props: IAppProps) {
             <span className="inline-flex items-center">
               {t('page.on')}&nbsp;
               <img
-                src="https://fomoio.netlify.app/themes/fomoio/landingpage/images/FOMO_logo.png"
+                src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
                 alt="FOMO Logo"
                 width={80}
                 height={24}
@@ -411,7 +413,7 @@ export default function LandingPage(props: IAppProps) {
                     {['apple', 'gpay', 'visa', 'mastercard'].map((name) => (
                       <div key={name} className="relative w-8 h-4 md:w-12 md:h-6">
                         <img
-                          src={`https://fomoio.netlify.app/themes/fomoio/landingpage/icons/${name}.png`}
+                          src={`${CDN_TMP}/themes/fomoio/landingpage/icons/${name}.png`}
                           alt={name}
                           className="absolute w-full h-full object-contain"
                         />
@@ -423,7 +425,7 @@ export default function LandingPage(props: IAppProps) {
 
               <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-[400px] mt-8 -top-[230px] md:-top-5 right-0 md:right-[270px] lg:mt-0 z-20  pointer-events-none">
                 <img
-                  src="https://fomoio.netlify.app/themes/fomoio/landingpage/images/basketball.png"
+                  src={`${CDN_TMP}/themes/fomoio/landingpage/images/basketball.png`}
                   alt="Basketball Bubble"
                   width={400}
                   height={400}
@@ -449,7 +451,7 @@ export default function LandingPage(props: IAppProps) {
             <div className="mb-4">
               <div className="inline-block">
                 <img
-                  src="https://fomoio.netlify.app/themes/fomoio/landingpage/images/FOMO_logo.png"
+                  src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
                   alt="FOMO Logo"
                   width={80}
                   height={24}
