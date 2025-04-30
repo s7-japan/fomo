@@ -132,7 +132,7 @@ export default function LandingPage(props: IAppProps) {
         <div className="absolute mt-43 md:mt-[300px] left-1/2 transform -translate-x-1/2 z-10 w-full flex justify-center">
           <button
             onClick={(e) => gotoLink(e, 'gotoCasino')}
-            className="bg-[#252525] text-white py-2 px-17 mb-6 mt-[90px] md:mt-0 lg:mt-0 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
+            className="bg-[#252525] text-white py-2 px-12 mb-6 mt-[90px] md:mt-0 lg:mt-0 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
           >
             {t('page.🚀 Find your favorite Game!')}
           </button>
@@ -317,7 +317,7 @@ export default function LandingPage(props: IAppProps) {
               <div className="bg-[#FF008C] text-white py-4 pl-10 relative px-4 md:py-6 md:px-6 overflow-visible min-h-[84px] md:min-h-[104px]">
                 <div
                   className="absolute -top-12 -left-1 text-[#FF008C] text-7xl font-extrabold z-10"
-                  style={{ WebkitTextStroke: '3px black' }}
+                  style={{ WebkitTextStroke: '3px black', fontFamily: 'sans-serif' }}
                 >
                   1
                 </div>
@@ -339,7 +339,7 @@ export default function LandingPage(props: IAppProps) {
               <div className="bg-[#FF008C] text-white py-4 pl-10 relative px-4 md:py-6 md:px-6 overflow-visible min-h-[84px] md:min-h-[104px]">
                 <div
                   className="absolute -top-12 -left-1 text-[#FF008C] text-7xl font-extrabold z-10"
-                  style={{ WebkitTextStroke: '3px black' }}
+                  style={{ WebkitTextStroke: '3px black', fontFamily: 'sans-serif' }}
                 >
                   2
                 </div>
@@ -361,7 +361,7 @@ export default function LandingPage(props: IAppProps) {
               <div className="bg-[#FF008C] text-white py-4 pl-10 relative px-4 md:py-6 md:px-6 overflow-visible min-h-[84px] md:min-h-[104px]">
                 <div
                   className="absolute -top-12 -left-1 text-[#FF008C] text-7xl font-extrabold z-10"
-                  style={{ WebkitTextStroke: '3px black' }}
+                  style={{ WebkitTextStroke: '3px black', fontFamily: 'sans-serif' }}
                 >
                   3
                 </div>
