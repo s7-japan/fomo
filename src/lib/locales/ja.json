@@ -24,11 +24,11 @@
     "First Deposit": "GET",
     "(up to USDT₮300)": "（最大USDT₮300まで）",
     "STEP": "ステップ",
-    "Sign up with:": "下記で登録する",
+    "Sign up with": "下記で登録する",
     "Email, Telegram, Metamask wallet.": "メールアドレス、Telegram、Metamaskウォレット",
-    "Minimum deposit:": "最小有効額を入金",
+    "Minimum deposit": "最小有効額を入金",
     "Make a deposit of USDT₮10 to begin.": "USDT₮10以上を入金して開始",
-    "Get Welcome Bonus:": "新規限定ボーナスを獲得",
+    "Get Welcome Bonus": "新規限定ボーナスを獲得",
     "Enjoy a Bonus up to USDT₮300": "最大USDT₮300のボーナスをお楽しみください",
     "Let's Play Now !": "今すぐプレイ！",
     "Bonus must be claimed on the Deposit Page before depositing.": "ボーナスを取得するには入金完了前に入金ページで申請する必要があります。",
@@ -49,7 +49,7 @@
     "Crypto-Friendly": "仮想通貨対応",
     "and": "および",
     "Fiat-Ready": "法定通貨対応",
-    "Supported cryptocurrencies:": "< 対応仮想通貨 >",
+    "Supported cryptocurrencies": "< 対応仮想通貨 >",
     "USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE": "USDT、USDC、ETH、POL、BNB、BTC、LTC、DOGE",
     "No crypto? No problem!": "仮想通貨をお持ちでなくても、もちろん大丈夫です！"
   }

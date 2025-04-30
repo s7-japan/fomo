@@ -209,7 +209,7 @@ export default function LandingPage(props: IAppProps) {
               </div>
 
               <p className="text-[20px] md:text-xl font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
-                {t('page.Sign up with:')}
+                {t('page.Sign up with')}
               </p>
               <p className="text-md md:text-sm text-white ml-2 md:ml-0 text-left">
                 {t('page.Email, Telegram, Metamask wallet.')}
@@ -234,7 +234,7 @@ export default function LandingPage(props: IAppProps) {
               </div>
 
               <p className="text-[20px] md:text-xl font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
-                {t('page.Minimum deposit:')}
+                {t('page.Minimum deposit')}
               </p>
               <p className="text-md md:text-sm text-white ml-2 md:ml-0 text-left">
                 {t('page.Make a deposit of USDT₮10 to begin.')}
@@ -259,7 +259,7 @@ export default function LandingPage(props: IAppProps) {
               </div>
 
               <p className="text-[20px] md:text-xl font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
-                {t('page.Get Welcome Bonus:')}
+                {t('page.Get Welcome Bonus')}
               </p>
               <p className="text-md md:text-sm text-white ml-2 md:ml-0 text-left">
                 {t('page.Enjoy a Bonus up to USDT₮300')}
@@ -276,7 +276,7 @@ export default function LandingPage(props: IAppProps) {
             </button>
 
             <button className="cursor-pointer" onClick={(e) => gotoLink(e, 'gotoBonusTerms')}>
-              <p className="text-xs text-white underline decoration-[#FF008C] mt-2">
+              <p className="text-xs text-white underline decoration-[#FF008C] mt-2 md:ml-2">
                 {t('page.Bonus must be claimed on the Deposit Page before depositing.')}
               </p>
             </button>
@@ -399,7 +399,7 @@ export default function LandingPage(props: IAppProps) {
               >
                 <div className="mb-8">
                   <h2 className="text-3xl font-semibold mb-2 md:text-3xl">
-                    {t('page.Supported cryptocurrencies:')}
+                    {t('page.Supported cryptocurrencies')}
                   </h2>
                   <p className="text-white font-semibold text-md md:text-lg mt-3">
                     {t('page.USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE')}
