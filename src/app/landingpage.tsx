@@ -578,20 +578,35 @@ export default function LandingPage(props: IAppProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 mx-10 md:ml-0 md:mr-45">
             <div className="relative rounded-lg mt-10">
-              <div className="bg-[#FF008C] text-white py-4 pl-10 relative px-4 md:py-6 md:px-6 overflow-visible min-h-[84px] md:min-h-[104px]">
+              <div className="bg-[#FF008C] text-white py-4 pl-10 relative px-4 md:py-6 md:px-6 overflow-visible min-h-[84px] md:min-h-[108px]">
                 <div
-                  className="absolute -top-12 -left-1 text-[#FF008C] text-7xl font-extrabold z-10"
+                  className="
+                  absolute -top-12 -left-1 text-[#FF008C] z-10
+                  en:text-7xl en:font-extrabold
+                  jako:text-7xl jako:font-extrabold jako:font-changa
+                  "
                   style={{ WebkitTextStroke: '3px black' }}
                 >
                   1
                 </div>
-                <h3 className="text-[18px] md:text-lg font-semibold">
+                <h3
+                  className="
+                  en:text-[18px] font-semibold en:md:text-[20px]
+                  jako:text-[20px] jako:font-black jako:md:text-[20px]
+                  "
+                >
                   {t('page.FOMO-Exclusive Betting Events')}
                 </h3>
               </div>
               <div className="bg-[#1A1A1A] py-4 px-4 md:py-6 md:px-6 min-h-[110px] md:min-h-[136px]">
-                <ul className="list-disc list-outside pl-5 md:pl-3 text-[13px] md:text-sm text-white">
-                  <li className="mb-1 md:mb-2">
+                <ul
+                  className="
+                  list-disc list-outside pl-5 md:pl-3 text-white
+                  en:text-[13px] en:md:text-[14px]
+                  jako:text-[14px] jako:font-bold jako:md:font-semibold
+                  "
+                >
+                  <li className="mb-4">
                     {t('page.Bet on special odds and formats only available on FOMO')}
                   </li>
                   <li>{t('page.Participate in limited competitions and earn real prizes')}</li>
@@ -600,20 +615,35 @@ export default function LandingPage(props: IAppProps) {
             </div>
 
             <div className="relative rounded-lg mt-10">
-              <div className="bg-[#FF008C] text-white py-4 pl-10 relative px-4 md:py-6 md:px-6 overflow-visible min-h-[84px] md:min-h-[104px]">
+              <div className="bg-[#FF008C] text-white py-4 pl-10 relative px-4 md:py-6 md:px-6 overflow-visible min-h-[84px] md:min-h-[108px]">
                 <div
-                  className="absolute -top-12 -left-1 text-[#FF008C] text-7xl font-extrabold z-10"
+                  className="
+                  absolute -top-12 -left-1 text-[#FF008C] z-10
+                  en:text-7xl en:font-extrabold
+                  jako:text-7xl jako:font-extrabold jako:font-changa
+                  "
                   style={{ WebkitTextStroke: '3px black' }}
                 >
                   2
                 </div>
-                <h3 className="text-[18px] md:text-lg font-semibold">
+                <h3
+                  className="
+                  en:text-[18px] font-semibold en:md:text-[20px]
+                  jako:text-[20px] jako:font-black jako:md:text-[20px]
+                  "
+                >
                   {t('page.Nonstop Reward System')}
                 </h3>
               </div>
               <div className="bg-[#1A1A1A] py-4 px-4 md:py-6 md:px-6 min-h-[110px] md:min-h-[136px]">
-                <ul className="list-disc list-outside pl-5 md:pl-3 text-[13px] md:text-sm text-white">
-                  <li className="mb-1 md:mb-2">
+                <ul
+                  className="
+                  list-disc list-outside pl-5 md:pl-3 text-white
+                  en:text-[13px] en:md:text-[14px]
+                  jako:text-[14px] jako:font-bold jako:md:font-semibold
+                  "
+                >
+                  <li className="mb-4">
                     {t('page.Every bet comes with a chance to earn rewards')}
                   </li>
                   <li>{t('page.Get rakeback on every bet, and cashback when you lose.')}</li>
@@ -622,20 +652,35 @@ export default function LandingPage(props: IAppProps) {
             </div>
 
             <div className="relative rounded-lg mt-10">
-              <div className="bg-[#FF008C] text-white py-4 pl-10 relative px-4 md:py-6 md:px-6 overflow-visible min-h-[84px] md:min-h-[104px]">
+              <div className="bg-[#FF008C] text-white py-4 pl-10 relative px-4 md:py-6 md:px-6 overflow-visible min-h-[84px] md:min-h-[108px]">
                 <div
-                  className="absolute -top-12 -left-1 text-[#FF008C] text-7xl font-extrabold z-10"
+                  className="
+                  absolute -top-12 -left-1 text-[#FF008C] z-10
+                  en:text-7xl en:font-extrabold
+                  jako:text-7xl jako:font-extrabold jako:font-changa
+                  "
                   style={{ WebkitTextStroke: '3px black' }}
                 >
                   3
                 </div>
-                <h3 className="text-[18px] md:text-lg font-semibold">
+                <h3
+                  className="
+                  en:text-[18px] font-semibold en:md:text-[20px]
+                  jako:text-[20px] jako:font-black jako:md:text-[20px]
+                  "
+                >
                   {t('page.Referral Program – Earn up to 35%')}
                 </h3>
               </div>
               <div className="bg-[#1A1A1A] py-4 px-4 md:py-6 md:px-6 min-h-[110px] md:min-h-[136px]">
-                <ul className="list-disc list-outside pl-5 md:pl-3 text-[13px] md:text-sm text-white">
-                  <li className="mb-1 md:mb-2">
+                <ul
+                  className="
+                  list-disc list-outside pl-5 md:pl-3 text-white
+                  en:text-[13px] en:md:text-[14px]
+                  jako:text-[14px] jako:font-bold jako:md:font-semibold
+                  "
+                >
+                  <li className="mb-4">
                     {t('page.Get commissions from both direct and indirect referrals')}
                   </li>
                   <li>{t('page.Earn rewards even when your referrals win')}</li>
@@ -650,10 +695,35 @@ export default function LandingPage(props: IAppProps) {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="flex items-center mb-8 lg:mb-12 ml-7 md:ml-25">
             <div className="h-20 w-1 bg-[#FF008C] mr-4"></div>
-            <h1 className="text-4xl md:text-4xl lg:text-5xl">
-              {t('page.Crypto-Friendly')}{' '}
-              <span className="text-3xl md:text-3xl lg:text-5xl inline-block">{t('page.and')}</span>{' '}
-              <span className="block md:inline-block">{t('page.Fiat-Ready')}</span>
+            <h1>
+              {/* text-4xl md:text-4xl lg:text-5xl */}
+              <span
+                className="
+                en:text-[30px] en:md:text-[64px]
+                jako:text-[23px] jako:font-black jako:md:text-[50px]
+                "
+              >
+                {t('page.Crypto-Friendly')}
+              </span>
+              {/* inline-block text-3xl md:text-3xl lg:text-5xl  */}
+              <span
+                className="
+                mx-2 md:mx-4
+                en:text-[23px] en:md:text-[50px]
+                jako:text-[23px] jako:font-black jako:md:text-[36px]
+                "
+              >
+                {t('page.and')}
+              </span>
+              <span
+                className="
+                block md:inline-block
+                en:text-[30px] en:md:text-[64px]
+                jako:text-[23px] jako:font-black jako:md:text-[50px]
+                "
+              >
+                {t('page.Fiat-Ready')}
+              </span>
             </h1>
           </div>
 
@@ -664,15 +734,38 @@ export default function LandingPage(props: IAppProps) {
   w-[calc(100%-2rem)] md:w-[100%] lg:w-[100%] lg:relative lg:z-10 lg:pb-8"
               >
                 <div className="mb-8">
-                  <h2 className="text-3xl font-semibold mb-2 md:text-3xl">
+                  {/* text-3xl font-semibold md:text-3xl  */}
+                  <h2
+                    className="
+                    mb-2
+                    en:text-[28px] en:font-semibold en:leading-7 en:md:text-[36px]
+                    jako:text-[25px] jako:font-black jako:md:text-[36px]
+                    "
+                  >
                     {t('page.Supported cryptocurrencies')}
                   </h2>
-                  <p className="text-white font-semibold text-md md:text-lg mt-3">
+                  {/* font-semibold text-md md:text-lg */}
+                  <p
+                    className="
+                    text-white mt-3
+                    en:font-changa en:text-[15px] en:font-semibold en:md:text-[20px]
+                    jako:font-changa jako:text-[15px] jako:font-semibold jako:md:text-[20px] jako:md:leading-10
+                    "
+                  >
                     {t('page.USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE')}
                   </p>
                 </div>
                 <div>
-                  <h2 className="text-xl mb-2 md:text-2xl">{t('page.No crypto? No problem!')}</h2>
+                  {/* text-xl md:text-2xl */}
+                  <h2
+                    className="
+                    mb-2
+                    en:text-[24px] en:md:text-[32px]
+                    jako:text-[14px] jako:font-extrabold jako:md:text-[24px]
+                    "
+                  >
+                    {t('page.No crypto? No problem!')}
+                  </h2>
                   <div className="flex items-center space-x-2">
                     {['apple', 'gpay', 'visa', 'mastercard'].map((name) => (
                       <div key={name} className="relative w-8 h-4 md:w-12 md:h-6">
@@ -687,7 +780,7 @@ export default function LandingPage(props: IAppProps) {
                 </div>
               </div>
 
-              <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-[400px] mt-8 -top-[230px] md:-top-5 right-0 md:right-[270px] lg:mt-0 z-20  pointer-events-none">
+              <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-[400px] mt-8 -top-[230px] md:-top-5 right-0 md:right-[140px] lg:mt-0 z-20  pointer-events-none">
                 <img
                   src={`${CDN_TMP}/themes/fomoio/landingpage/images/basketball.png`}
                   alt="Basketball Bubble"
@@ -701,7 +794,11 @@ export default function LandingPage(props: IAppProps) {
             <div className="text-center -mt-[190px] md:-mt-[50px]">
               <button
                 onClick={singUp}
-                className="bg-[#252525] text-white py-2 px-17 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
+                className="
+                bg-[#252525] text-white py-2 px-17 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer
+                en:text-[16px] en:md:text-[20px]
+                jako:text-[14px] jako:font-extrabold jako:md:text-[20px]
+                "
               >
                 <span className="mr-2">🚀</span> {t(`page.Let's Play Now !`)}
               </button>
