@@ -29,7 +29,7 @@ export default function LandingPage(props: IAppProps) {
   }
 
   return (
-    <div className=" bg-black text-white antialiased font-changa">
+    <div className=" bg-black text-white antialiased en:font-changa">
       {isShowHeaderFooter ? (
         <div className="w-auto px-4 py-6">
           <img
@@ -43,9 +43,9 @@ export default function LandingPage(props: IAppProps) {
         ''
       )}
 
-      <section className="relative py-16 md:py-32 lg:py-48 flex flex-col items-center justify-center overflow-hidden font-impact">
-        <div className="md:mt-32 lg:-mt-27 text-center font-impact sm:-mt-20">
-          <h1 className="mt-[130px] md:mt-10 mb-4 md:ml-2 w-full">
+      <section className="relative py-16 md:py-32 lg:py-48 flex flex-col items-center justify-center overflow-hidden">
+        <div className="md:mt-32 lg:-mt-27 text-center sm:-mt-20">
+          <h1 className="mt-[130px] md:mt-10 mb-4 md:ml-2 w-full flex justify-center">
             <img
               src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
               alt={`FOMO`}
@@ -55,13 +55,13 @@ export default function LandingPage(props: IAppProps) {
             />
           </h1>
 
+          {/* text-center w-full */}
           <p
-            className="md:text-[33px] text-white mb-6 sm:w-full sm:text-center"
-            style={{
-              fontFamily: 'Impact',
-              textAlign: 'center',
-              width: '100%',
-            }}
+            className="
+            text-white mb-6 sm:w-full sm:text-center text-center w-full 
+            en:text-[16px] en:font-impact en:font-normal en:md:text-[32px]
+            jako:text-[13px] jako:font-notosansjp jako:font-black jako:md:text-[32px]
+            "
           >
             {t('page.Play Freely with Crypto - Your New Online Casino Starts Here')}
           </p>
@@ -78,43 +78,99 @@ export default function LandingPage(props: IAppProps) {
         <div className={`bg-black text-white`}>
           <div className="text-center relative mt-20">
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-[170px] md:mt-0">
-              <span className="text-sm md:text-base">
-                {t('page.Get a 100% bonus on your first deposit (up to USDT₮300).01')}
-                <p className="block md:inline-block">
-                  {t('page.Get a 100% bonus on your first deposit (up to USDT₮300).02')}
+              <span
+                className="
+              en:text-[12px] en:font-normal en:md:text-[20px]
+              jako:text-[12px] jako:font-bold jako:md:text-[19px]
+              "
+              >
+                {t('page.Get a 100% bonus on your first deposit (up to USDT₮300).')}
+                <p
+                  className="
+                block md:inline-block
+                en:text-[12px] en:font-normal en:md:text-[20px]
+                jako:text-[12px] jako:font-bold jako:md:text-[19px]
+                "
+                >
+                  {t('page.Start now and aim for the jackpot!')}
                 </p>
               </span>
               <button
                 onClick={singUp}
-                className="relative z-90 bg-transparent border border-white text-white py-1 md:py-1 px-6 md:px-8 text-sm rounded-full ring-1 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black focus:ring-2 focus:ring-white cursor-pointer"
+                className="
+                relative z-90 bg-transparent border border-white text-white py-1 md:py-1 px-6 md:px-8 rounded-full ring-1 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black focus:ring-2 focus:ring-white cursor-pointer
+                en:text-[20px] en:font-normal en:md:text-[20px]
+                jako:text-[16px] jako:font-bold jako:md:text-[18px]
+                "
               >
                 {t('page.Join Now')}
               </button>
             </div>
 
-            <div className="mt-[120px] md:mt-12 ml-2 mr-2 text-left md:text-center md:ml-0">
+            <div className="max-w-[84vw] mt-12 md:mt-12 ml-2 mr-2 text-left md:text-center md:ml-0">
               <p className="text-xl md:text-5xl  text-white mb-2">
-                <span className="text-5xl md:text-5xl text-[#FF008C] md:inline-block font-semibold md:font-normal">
+                <span
+                  className="
+                  text-[#FF008C] md:inline-block 
+                  en:text-[44px] en:font-semibold en:leading-[38px] en:md:text-[64px] en:md:font-normal
+                  jako:text-[20px] jako:font-black jako:md:text-[36px]
+                  "
+                >
                   {t('page.3,000+')}
                 </span>{' '}
-                <span className="text-3xl md:text-5xl text-white block md:inline-block">
+                <span
+                  className="
+                text-white block md:inline-block
+                  en:text-[30px] en:font-normal en:leading-[38px] en:md:text-[64px] en:md:font-normal
+                  jako:text-[16px] jako:font-black jako:md:text-[36px]
+                  "
+                >
                   {t('page.Games Across All Genres')}
                 </span>
               </p>
-              <div className="text-[12px] md:text-base mt-2 text-[#FF008C]">
-                {t('page.Slots, live casino, baccarat,')}{' '}
-                <span className="block md:inline-block">
-                  {t('page.roulette, play top leagues, major matches')}{' '}
-                  <p className="text-white inline-block">{t('page.and more Exclusive')}</p>
+              <div className="mt-6 text-[#FF008C]">
+                <span
+                  className="
+                  en:text-[13px] en:leading-6 en:md:text-xl
+                  jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
+                  "
+                >
+                  {t('page.Slots, live casino, baccarat,')}{' '}
                 </span>
+                <span
+                  className="
+                  block md:inline-block
+                  en:text-[13px] en:leading-6 en:md:text-xl
+                  jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
+                  "
+                >
+                  {t('page.roulette, play top leagues, major matches')}{' '}
+                </span>
+                <p
+                  className="
+                  inline-block
+                  en:text-[13px] en:leading-6 en:md:text-xl
+                  jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
+                  "
+                >
+                  {t('page.and more Exclusive')}
+                </p>
                 <img
                   src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
                   alt="FOMO Logo"
-                  width={50}
-                  height={50}
-                  className="inline-block align-middle m-0 md:m-2 mr-2 md:mr-2"
+                  className="
+                  inline-block align-baseline m-0 mx-2 h-4 md:h-7
+                  "
                 />
-                {t('page.Original games')}
+                <span
+                  className="
+                text-white
+                  en:text-[13px] en:leading-6 en:md:text-xl
+                  jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
+                  "
+                >
+                  {t('page.Original games')}
+                </span>
               </div>
             </div>
           </div>
@@ -130,7 +186,11 @@ export default function LandingPage(props: IAppProps) {
         <div className="absolute mt-43 md:mt-[300px] left-1/2 transform -translate-x-1/2 z-10 w-full flex justify-center">
           <button
             onClick={(e) => gotoLink(e, 'gotoCasino')}
-            className="bg-[#252525] text-white py-2 px-8 mb-6 mt-[90px] md:mt-0 lg:mt-0 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
+            className="
+            bg-[#252525] text-white py-2 px-8 mb-6 mt-[90px] md:mt-0 lg:mt-0 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer
+            en:text-[16px] en:md:text-[22px]
+            jako:text-[14px] jako:font-extrabold jako:md:text-[20px]
+            "
           >
             {t('page.🚀 Find your favorite Game!')}
           </button>
@@ -140,13 +200,31 @@ export default function LandingPage(props: IAppProps) {
       <div className="bg-[#0C0C0C] -mt-0 md:-mt-20">
         <div className="flex flex-col md:flex-row md:justify-center md:items-center mt-5 mx-10 md:mx-10">
           <div className="text-sm md:text-base py-5 md:mr-30 text-center md:text-left">
-            <p className="block text-left md:hidden">
+            <p
+              className="
+              block text-left md:hidden
+              en:text-[12px]
+              jako:text-[12px] jako:font-bold
+              "
+            >
               {t(
                 'page.Get a 100% bonus on your first deposit (up to USDT₮300). Start now and aim for the jackpot!'
               )}
             </p>
-            <p className="hidden md:block">{t('page.MEGA JACKPOT Exceeds USDT₮1,000,000!')}</p>
-            <p className="hidden md:block">
+            <p
+              className="
+              hidden md:block
+              en:md:text-[16px]
+              "
+            >
+              {t('page.MEGA JACKPOT Exceeds USDT₮1,000,000!')}
+            </p>
+            <p
+              className="
+              hidden md:block
+              en:md:text-[20px]
+              "
+            >
               {t(
                 'page.4 different jackpot tiers available. The MEGA JACKPOT is exclusive for FOMO players'
               )}
@@ -154,14 +232,18 @@ export default function LandingPage(props: IAppProps) {
           </div>
           <button
             onClick={singUp}
-            className="bg-black text-white py-1 md:py-1 px-6 md:px-8 border-2 border-white mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-1 focus:ring-white  self-start md:self-auto  cursor-pointer"
+            className="
+            bg-black text-white py-1 md:py-1 px-6 md:px-8 border-2 border-white mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-1 focus:ring-white self-start md:self-auto  cursor-pointer
+            en:text-[12px] en:md:text-[20px]
+            jako:text-[12px] jako:font-extrabold jako:md:text-[16px] jako:md:font-bold jako:md:font-changa
+            "
           >
             {t('page.Join Now')}
           </button>
         </div>
       </div>
 
-      <section className="bg-black text-white py-16 -mt-0 md:-mt-25 md:py-24 lg:py-32 px-4 md:px-12 lg:px-24">
+      <section className="bg-black text-white py-6 -mt-0 px-4 md:-mt-25 md:py-24 md:px-12 lg:px-24 lg:py-32 ">
         <div className="max-w-6xl mx-auto text-left md:text-center">
           <div>
             <div className="relative inline-block w-full md:w-auto">
@@ -170,23 +252,92 @@ export default function LandingPage(props: IAppProps) {
                 alt=""
                 className="z-0 absolute w-full h-full object-contain"
               />
-
-              <h2 className="relative z-10 text-center text-3xl md:text-3xl lg:text-4xl mb-4">
-                {t('page.Just a')}{' '}
-                <span className="text-4xl md:text-5xl inline-block">{t('page.Few Clicks')}</span>{' '}
-                {t('page.to')}{' '}
-                <span className="text-4xl md:text-5xl block md:inline-block">
+              <h2 className="relative z-10 text-center mb-4">
+                <span
+                  className="
+                  en:text-[32px] en:leading-9 en:md:text-[50px]
+                  jako:text-[20px] jako:font-black jako:md:text-[32px]
+                  "
+                >
+                  {t('page.Just a')}{' '}
+                </span>
+                <span
+                  className="
+                  inline-block
+                  en:text-[32px] en:leading-9 en:md:text-[64px]
+                  jako:text-[20px] jako:font-black jako:md:text-[50px]
+                  "
+                >
+                  {t('page.Few Clicks')}
+                </span>{' '}
+                <span
+                  className="
+                  en:md:mx-2
+                  en:text-[32px] en:leading-9 en:md:text-[50px]
+                  jako:text-[20px] jako:font-black jako:md:text-[32px]
+                  "
+                >
+                  {t('page.to')}
+                </span>{' '}
+                <span
+                  className="
+                  block md:inline-block
+                  en:text-[32px] en:leading-9 en:md:text-[64px]
+                  jako:text-[20px] jako:font-black jako:md:text-[50px]
+                  "
+                >
                   {t('page.Get Started!')}
                 </span>
               </h2>
             </div>
 
-            <div className="text-[12px] md:text-base text-white mb-8 md:px-0 px-2 text-center md:text-center">
-              {t('page.Get a')}{' '}
-              <span className="text-lg md:text-2xl inline-block">{t('page.100% Bonus')}</span>{' '}
-              {t('page.on your')}{' '}
-              <span className="text-lg md:text-2xl inline-block">{t('page.First Deposit')}</span>{' '}
-              <p className="block md:inline-block lg:inline-block">{t('page.(up to USDT₮300)')}</p>
+            {/* text-[12px] md:text-base */}
+            <div className="text-white mb-8 md:px-0 px-2 text-center md:text-center">
+              <span
+                className="
+                en:text-[12px] en:md:text-[18px]
+                jako:text-[15px] jako:font-changa jako:font-bold jako:md:text-[26px]
+                "
+              >
+                {t('page.Get a')}
+              </span>
+              {/* text-lg md:text-2xl  */}
+              <span
+                className="
+                inline-block mx-1 md:mx-2
+                en:text-[17px] en:md:text-[30px]
+                jako:text-[15px] jako:font-changa jako:font-bold jako:md:text-[26px]
+                "
+              >
+                {t('page.100% Bonus')}
+              </span>
+              <span
+                className="
+                en:text-[12px] en:md:text-[18px]
+                jako:text-[15px] jako:font-changa jako:font-bold jako:md:text-[26px]
+                "
+              >
+                {t('page.on your')}
+              </span>
+              {/* text-lg md:text-2xl  */}
+              <span
+                className="
+                inline-block mx-1 md:mx-2
+                en:text-[17px] en:md:text-[30px]
+                jako:text-[15px] jako:font-changa jako:font-bold jako:md:text-[26px]
+                "
+              >
+                {t('page.First Deposit')}
+              </span>
+              <p
+                className="
+                block md:inline-block lg:inline-block
+                en:text-[13px] en:md:text-[24px]
+                jako:text-[15px] jako:font-changa jako:font-bold jako:md:text-[26px]
+                "
+              >
+                {t('page.(up to USDT₮300)')}
+              </p>
             </div>
           </div>
 
@@ -195,8 +346,24 @@ export default function LandingPage(props: IAppProps) {
               <div className="absolute top-4 left-0 flex items-center">
                 <div className="h-17 w-1 bg-[#FF008C] mr-2"></div>
                 <div className="ml-2">
-                  <h3 className="text-lg text-white">{t('page.STEP')}</h3>
-                  <h3 className="text-3xl text-white mb-2">1</h3>
+                  <h3
+                    className="
+                    text-white
+                    en:text-[21px] en:md:text-[22px]
+                    jako:text-[21px] jako:md:text-[22px]
+                    "
+                  >
+                    {t('page.STEP')}
+                  </h3>
+                  <h3
+                    className="
+                    text-white mb-2 text-center
+                    en:text-[26px] en:md:text-[30px]
+                    jako:text-[26px] jako:md:text-[30px]
+                    "
+                  >
+                    1
+                  </h3>
                 </div>
               </div>
 
@@ -208,10 +375,22 @@ export default function LandingPage(props: IAppProps) {
                 />
               </div>
 
-              <p className="text-[20px] md:text-xl font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
+              <p
+                className="
+                text-white mb-1 ml-2 md:ml-0 text-left -mt-10 pt-4
+                en:text-[22px] en:font-bold en:md:text-[18px]
+                jako:text-[25px] jako:font-black jako:md:text-[17px]
+                "
+              >
                 {t('page.Sign up with')}
               </p>
-              <p className="text-md md:text-sm text-white ml-2 md:ml-0 text-left">
+              <p
+                className="
+                text-white ml-2 md:ml-0 text-left
+                en:text-[18px] en:md:text-[16px]
+                jako:text-[12px] jako:md:text-[12px]
+                "
+              >
                 {t('page.Email, Telegram, Metamask wallet.')}
               </p>
             </div>
@@ -220,23 +399,51 @@ export default function LandingPage(props: IAppProps) {
               <div className="absolute top-4 left-0 flex items-center">
                 <div className="h-17 w-1 bg-[#FF008C] mr-2"></div>
                 <div className="ml-2">
-                  <h3 className="text-lg text-white">{t('page.STEP')}</h3>
-                  <h3 className="text-3xl text-white mb-2">2</h3>
+                  <h3
+                    className="
+                    text-white
+                    en:text-[21px] en:md:text-[22px]
+                    jako:text-[21px] jako:md:text-[22px]
+                    "
+                  >
+                    {t('page.STEP')}
+                  </h3>
+                  <h3
+                    className="
+                    text-white mb-2 text-center
+                    en:text-[26px] en:md:text-[30px]
+                    jako:text-[26px] jako:md:text-[30px]
+                    "
+                  >
+                    2
+                  </h3>
                 </div>
               </div>
 
               <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
                 <img
                   src={`${CDN_TMP}/themes/fomoio/landingpage/images/bolt.png`}
-                  alt="bolt"
+                  alt="wheel"
                   className="absolute w-full h-full object-contain"
                 />
               </div>
 
-              <p className="text-[20px] md:text-xl font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
+              <p
+                className="
+                text-white mb-1 ml-2 md:ml-0 text-left -mt-10 pt-4
+                en:text-[22px] en:font-bold en:md:text-[18px]
+                jako:text-[25px] jako:font-black jako:md:text-[17px]
+                "
+              >
                 {t('page.Minimum deposit')}
               </p>
-              <p className="text-md md:text-sm text-white ml-2 md:ml-0 text-left">
+              <p
+                className="
+                text-white ml-2 md:ml-0 text-left
+                en:text-[18px] en:md:text-[16px]
+                jako:text-[12px] jako:md:text-[12px]
+                "
+              >
                 {t('page.Make a deposit of USDT₮10 to begin.')}
               </p>
             </div>
@@ -245,38 +452,76 @@ export default function LandingPage(props: IAppProps) {
               <div className="absolute top-4 left-0 flex items-center">
                 <div className="h-17 w-1 bg-[#FF008C] mr-2"></div>
                 <div className="ml-2">
-                  <h3 className="text-lg text-white">{t('page.STEP')}</h3>
-                  <h3 className="text-3xl text-white mb-2">3</h3>
+                  <h3
+                    className="
+                    text-white
+                    en:text-[21px] en:md:text-[22px]
+                    jako:text-[21px] jako:md:text-[22px]
+                    "
+                  >
+                    {t('page.STEP')}
+                  </h3>
+                  <h3
+                    className="
+                    text-white mb-2 text-center
+                    en:text-[26px] en:md:text-[30px]
+                    jako:text-[26px] jako:md:text-[30px]
+                    "
+                  >
+                    3
+                  </h3>
                 </div>
               </div>
 
               <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
                 <img
                   src={`${CDN_TMP}/themes/fomoio/landingpage/images/dollar.png`}
-                  alt="dollar"
+                  alt="wheel"
                   className="absolute w-full h-full object-contain"
                 />
               </div>
 
-              <p className="text-[20px] md:text-xl font-bold text-white mb-1 ml-2 md:ml-0 text-left -mt-10">
+              <p
+                className="
+                text-white mb-1 ml-2 md:ml-0 text-left -mt-10 pt-4
+                en:text-[22px] en:font-bold en:md:text-[18px]
+                jako:text-[25px] jako:font-black jako:md:text-[17px]
+                "
+              >
                 {t('page.Get Welcome Bonus')}
               </p>
-              <p className="text-md md:text-sm text-white ml-2 md:ml-0 text-left">
+              <p
+                className="
+                text-white ml-2 md:ml-0 text-left
+                en:text-[18px] en:md:text-[16px]
+                jako:text-[12px] jako:md:text-[12px]
+                "
+              >
                 {t('page.Enjoy a Bonus up to USDT₮300')}
               </p>
             </div>
           </div>
 
-          <div className="text-center">
+          <div className="text-center flex flex-col items-center">
             <button
               onClick={singUp}
-              className="bg-[#252525] text-white py-2 px-15 mt-10 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
+              className="
+              bg-[#252525] text-white py-2 px-15 mt-10 mb-3 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer
+              en:text-[16px] en:md:text-[20px]
+              jako:text-[14px] jako:font-extrabold jako:md:text-[20px]
+              "
             >
               <span className="mr-2">🚀</span> {t(`page.Let's Play Now !`)}
             </button>
 
-            <button className="cursor-pointer" onClick={(e) => gotoLink(e, 'gotoBonusTerms')}>
-              <p className="text-xs text-white underline decoration-[#FF008C] mt-2 md:ml-2">
+            <button onClick={(e) => gotoLink(e, 'gotoBonusTerms')} className="cursor-pointer">
+              <p
+                className="
+              text-white underline decoration-[#FF008C] mt-2 md:ml-2
+                en:text-[13px] en:md:text-[14px]
+                jako:text-[12px] jako:font-semibold jako:md:text-[13px]
+                "
+              >
                 {t('page.Bonus must be claimed on the Deposit Page before depositing.')}
               </p>
             </button>
@@ -286,26 +531,47 @@ export default function LandingPage(props: IAppProps) {
 
       <div className="bg-black text-white py-8 md:py-16 px-4 md:px-8 ml-0 md:ml-40 -mt-8 md:-mt-20">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-2xl md:text-6xl mb-4 ml-9 md:ml-0 mr-0 md:mr-25">
+          <h1
+            className="
+            mb-4 ml-9 md:ml-0 mr-0 md:mr-25
+            en:text-[30px] en:leading-[38px] en:md:text-[64px] en:md:leading-[70px]
+            jako:text-[27px] jako:font-black jako:md:text-[48px]
+            "
+          >
             {t('page.A One-of-a-Kind')}
-            <br />
-            {t('page.Betting Experience Only')} <br className="block md:hidden" />
-            <span className="inline-flex items-center">
+            <br className="jako:hidden" />
+            {t('page.Betting Experience Only')} <br className="block md:hidden jako:hidden" />
+            <span
+              className="
+              inline-flex items-center
+              en:text-[30px] en:md:text-[50px]
+              jako:text-[27px] jako:font-black jako:md:text-[48px]
+              "
+            >
               {t('page.on')}&nbsp;
               <img
                 src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
                 alt="FOMO Logo"
-                width={80}
-                height={24}
-                className="inline-block align-middle w-[80px] h-[24px] md:w-[170px] md:h-[50px] ml-0 md:ml-5"
+                className="inline-block align-middle w-[80px] h-[24px] md:w-[170px] md:h-[50px] ml-0"
               />
             </span>
           </h1>
 
-          <div className="text-[15px] md:text-3xl text-[#FF008C] mr-10 ml-10 md:ml-0 md:mr-25">
-            {t('page.Play More, Earn More')} &nbsp;
-            <p className="text-[12px] md:text-xl text-white mb-6 md:mb-8 inline-block">
-              {' '}
+          <div
+            className="
+            text-[#FF008C] mr-10 ml-10 md:ml-0 md:mr-25
+            en:text-[17px] en:font-medium en:md:text-[32px] en:md:font-normal
+            jako:text-[14px] jako:font-extrabold jako:md:text-[32px]
+            "
+          >
+            {t('page.Play More, Earn More')}
+            <p
+              className="
+              text-white mb-6 md:mb-8 inline-block ml-1
+              en:text-[10px] en:md:text-[20px]
+              jako:text-[11px] jako:font-extrabold jako:md:text-[20px]
+              "
+            >
               {t('page.– Rewards Like No Other')}
             </p>
           </div>
