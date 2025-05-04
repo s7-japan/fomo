@@ -131,7 +131,7 @@ export default function LandingPage(props: IAppProps) {
               <div className="mt-6 text-[#FF008C]">
                 <span
                   className="
-                  en:text-[13px] en:leading-6 en:md:text-xl
+                  en:text-[13px] en:leading-6 en:md:text-[20px]
                   jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
                   "
                 >
