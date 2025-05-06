@@ -66,8 +66,7 @@ export default function LandingPage(props: IAppProps) {
             {t('page.Play Freely with Crypto - Your New Online Casino Starts Here')}
           </p>
         </div>
-
-        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-6/24 md:-translate-y-1/5 lg:-translate-y-1/5 w-210 h-210 md:w-[950px] md:h-[950px] z-50">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-6/24 md:-translate-y-[23%] w-210 h-210 md:w-[950px] md:h-[950px] z-50">
           <img
             src={`${CDN_TMP}/themes/fomoio/landingpage/images/trophy.png`}
             alt="Trophy Background"
