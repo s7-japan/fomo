@@ -67,7 +67,7 @@ export default function LandingPage(props: IAppProps) {
           </p>
         </div>
 
-        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-7/24 md:-translate-y-1/5 lg:-translate-y-1/5 w-210 h-210 md:w-[950px] md:h-[950px] z-50">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-6/24 md:-translate-y-1/5 lg:-translate-y-1/5 w-210 h-210 md:w-[950px] md:h-[950px] z-50">
           <img
             src={`${CDN_TMP}/themes/fomoio/landingpage/images/trophy.png`}
             alt="Trophy Background"
@@ -76,8 +76,8 @@ export default function LandingPage(props: IAppProps) {
         </div>
 
         <div className={`bg-black text-white`}>
-          <div className="text-center relative mt-20">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-[170px] md:mt-0">
+          <div className="text-center relative mt-20 md:mt-40">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-[140px] md:mt-0">
               <span
                 className="
               en:text-[12px] en:font-normal en:md:text-[20px]
@@ -128,11 +128,12 @@ export default function LandingPage(props: IAppProps) {
                   {t('page.Games Across All Genres')}
                 </span>
               </p>
-              <div className="mt-6 text-[#FF008C]">
+              {/* text-[#FF008C] */}
+              <div className="mt-6">
                 <span
                   className="
-                  en:text-[13px] en:leading-6 en:md:text-[20px]
-                  jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
+                  en:text-[#FF008C] en:text-[13px] en:leading-6 en:md:text-[20px] 
+                  jako:text-[#FF008C] jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
                   "
                 >
                   {t('page.Slots, live casino, baccarat,')}{' '}
@@ -140,17 +141,17 @@ export default function LandingPage(props: IAppProps) {
                 <span
                   className="
                   block md:inline-block
-                  en:text-[13px] en:leading-6 en:md:text-xl
-                  jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
+                  en:text-[#FF008C] en:text-[13px] en:leading-6 en:md:text-xl
+                  jako:text-[#FF008C] jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
                   "
                 >
-                  {t('page.roulette, play top leagues, major matches')}{' '}
+                  {t('page.roulette, play top leagues, major matches')}
                 </span>
                 <p
                   className="
                   inline-block
-                  en:text-[13px] en:leading-6 en:md:text-xl
-                  jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
+                  en:ml-0 en:text-[13px] en:leading-6 en:md:text-xl en:md:ml-1
+                  jako:text-[#FF008C] jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
                   "
                 >
                   {t('page.and more Exclusive')}
@@ -159,13 +160,13 @@ export default function LandingPage(props: IAppProps) {
                   src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
                   alt="FOMO Logo"
                   className="
-                  inline-block align-baseline m-0 mx-2 h-4 md:h-7
+                  inline-block align-middle m-0 mx-2 h-4 md:h-7 md:align-bottom
                   "
                 />
                 <span
                   className="
                 text-white
-                  en:text-[13px] en:leading-6 en:md:text-xl
+                  en:text-[#FF008C] en:text-[13px] en:leading-6 en:md:text-xl
                   jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
                   "
                 >
@@ -350,7 +351,7 @@ export default function LandingPage(props: IAppProps) {
                     className="
                     text-white
                     en:text-[21px] en:md:text-[22px]
-                    jako:text-[21px] jako:md:text-[22px]
+                    jako:font-changa jako:text-[21px] jako:md:text-[22px]
                     "
                   >
                     {t('page.STEP')}
@@ -359,7 +360,7 @@ export default function LandingPage(props: IAppProps) {
                     className="
                     text-white mb-2 text-center
                     en:text-[26px] en:md:text-[30px]
-                    jako:text-[26px] jako:md:text-[30px]
+                    jako:font-changa jako:text-[26px] jako:md:text-[30px]
                     "
                   >
                     1
@@ -403,7 +404,7 @@ export default function LandingPage(props: IAppProps) {
                     className="
                     text-white
                     en:text-[21px] en:md:text-[22px]
-                    jako:text-[21px] jako:md:text-[22px]
+                    jako:font-changa jako:text-[21px] jako:md:text-[22px]
                     "
                   >
                     {t('page.STEP')}
@@ -412,7 +413,7 @@ export default function LandingPage(props: IAppProps) {
                     className="
                     text-white mb-2 text-center
                     en:text-[26px] en:md:text-[30px]
-                    jako:text-[26px] jako:md:text-[30px]
+                    jako:font-changa jako:text-[26px] jako:md:text-[30px]
                     "
                   >
                     2
@@ -456,7 +457,7 @@ export default function LandingPage(props: IAppProps) {
                     className="
                     text-white
                     en:text-[21px] en:md:text-[22px]
-                    jako:text-[21px] jako:md:text-[22px]
+                    jako:font-changa jako:text-[21px] jako:md:text-[22px]
                     "
                   >
                     {t('page.STEP')}
@@ -465,7 +466,7 @@ export default function LandingPage(props: IAppProps) {
                     className="
                     text-white mb-2 text-center
                     en:text-[26px] en:md:text-[30px]
-                    jako:text-[26px] jako:md:text-[30px]
+                    jako:font-changa jako:text-[26px] jako:md:text-[30px]
                     "
                   >
                     3
