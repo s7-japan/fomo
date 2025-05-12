@@ -201,16 +201,17 @@ export default function LandingPage(props: IAppProps) {
         <div className="flex flex-col md:flex-row md:justify-center md:items-center mt-5 mx-10 md:mx-10">
           <div className="text-sm md:text-base py-5 md:mr-30 text-center md:text-left">
             <p
+              dangerouslySetInnerHTML={{
+                __html: t(
+                  'page.Get a 100% bonus on your first deposit (up to USDT₮300). Start now and aim for the jackpot!'
+                ),
+              }}
               className="
               block text-left md:hidden
               en:text-[12px]
               jako:text-[12px] jako:font-bold
               "
-            >
-              {t(
-                'page.Get a 100% bonus on your first deposit (up to USDT₮300). Start now and aim for the jackpot!'
-              )}
-            </p>
+            ></p>
             <p
               className="
               hidden md:block
@@ -521,9 +522,10 @@ export default function LandingPage(props: IAppProps) {
                 en:text-[13px] en:md:text-[14px]
                 jako:text-[12px] jako:font-semibold jako:md:text-[13px]
                 "
-              >
-                {t('page.Bonus must be claimed on the Deposit Page before depositing.')}
-              </p>
+                dangerouslySetInnerHTML={{
+                  __html: t('page.Bonus must be claimed on the Deposit Page before depositing.'),
+                }}
+              ></p>
             </button>
           </div>
         </div>
@@ -552,8 +554,13 @@ export default function LandingPage(props: IAppProps) {
               <img
                 src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
                 alt="FOMO Logo"
-                className="inline-block align-middle w-[80px] h-[24px] md:w-[170px] md:h-[50px] ml-0"
+                className="
+                  inline-block align-middle w-[80px] h-[24px] md:w-[170px] md:h-[50px] ml-0
+                  jako:mt-1
+                "
               />
+              &nbsp;
+              {t('page.cc1')}
             </span>
           </h1>
 
@@ -594,9 +601,8 @@ export default function LandingPage(props: IAppProps) {
                   en:text-[18px] font-semibold en:md:text-[20px]
                   jako:text-[20px] jako:font-black jako:md:text-[20px]
                   "
-                >
-                  {t('page.FOMO-Exclusive Betting Events')}
-                </h3>
+                  dangerouslySetInnerHTML={{ __html: t('page.FOMO-Exclusive Betting Events') }}
+                ></h3>
               </div>
               <div className="bg-[#1A1A1A] py-4 px-4 md:py-6 md:px-6 min-h-[110px] md:min-h-[136px]">
                 <ul
@@ -631,9 +637,8 @@ export default function LandingPage(props: IAppProps) {
                   en:text-[18px] font-semibold en:md:text-[20px]
                   jako:text-[20px] jako:font-black jako:md:text-[20px]
                   "
-                >
-                  {t('page.Nonstop Reward System')}
-                </h3>
+                  dangerouslySetInnerHTML={{ __html: t('page.Nonstop Reward System') }}
+                ></h3>
               </div>
               <div className="bg-[#1A1A1A] py-4 px-4 md:py-6 md:px-6 min-h-[110px] md:min-h-[136px]">
                 <ul
@@ -668,9 +673,8 @@ export default function LandingPage(props: IAppProps) {
                   en:text-[18px] font-semibold en:md:text-[20px]
                   jako:text-[20px] jako:font-black jako:md:text-[20px]
                   "
-                >
-                  {t('page.Referral Program – Earn up to 35%')}
-                </h3>
+                  dangerouslySetInnerHTML={{ __html: t('page.Referral Program – Earn up to 35%') }}
+                ></h3>
               </div>
               <div className="bg-[#1A1A1A] py-4 px-4 md:py-6 md:px-6 min-h-[110px] md:min-h-[136px]">
                 <ul
