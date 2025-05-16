@@ -342,7 +342,7 @@ export default function LandingPage(props: IAppProps) {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-5 mx-10 md:mx-[80px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-5 mx-6 md:mx-[80px]">
             <div className="bg-[#1A1A1A] rounded-lg flex flex-col relative px-4 py-6">
               <div className="absolute top-4 left-0 flex items-center">
                 <div className="h-17 w-1 bg-[#FF008C] mr-2"></div>
@@ -535,38 +535,47 @@ export default function LandingPage(props: IAppProps) {
         <div className="max-w-6xl mx-auto">
           <h1
             className="
-            mb-4 ml-9 md:ml-0 mr-0 md:mr-25
-            en:text-[30px] en:leading-[38px] en:md:text-[64px] en:md:leading-[70px]
+            mb-4 mx-6 md:ml-0 md:mr-25
+            en:text-[30px] en:leading-[38px] en:md:text-[64px] en:md:leading-[70px] en:tracking-[-1px]
             jako:text-[27px] jako:font-black jako:md:text-[48px]
             "
           >
             {t('page.A One-of-a-Kind')}
             <br className="jako:hidden" />
-            {t('page.Betting Experience Only')} <br className="block md:hidden jako:hidden" />
+            {t('page.Betting Experience Only')}
+            <br className="block md:hidden jako:hidden" />
             <span
               className="
-              inline-flex items-center
               en:text-[30px] en:md:text-[50px]
               jako:text-[27px] jako:font-black jako:md:text-[48px]
               "
             >
-              {t('page.on')}&nbsp;
+              <span
+                className="
+                en:md:ml-2
+                "
+              >
+                {t('page.on')}
+              </span>
+              &nbsp;
               <img
                 src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
                 alt="FOMO Logo"
                 className="
                   inline-block align-middle w-[80px] h-[24px] md:w-[170px] md:h-[50px] ml-0
-                  jako:mt-1
-                "
+                  jako:mt-1 jako:mb-1 jako:md:mb-2
+                  "
               />
               &nbsp;
+              {t('page.cc0')}
+              <br className="hidden jako:hidden jako:md:block" />
               {t('page.cc1')}
             </span>
           </h1>
 
           <div
             className="
-            text-[#FF008C] mr-10 ml-10 md:ml-0 md:mr-25
+            text-[#FF008C] mx-6 md:ml-0 md:mr-25
             en:text-[17px] en:font-medium en:md:text-[32px] en:md:font-normal
             jako:text-[14px] jako:font-extrabold jako:md:text-[32px]
             "
@@ -583,9 +592,9 @@ export default function LandingPage(props: IAppProps) {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 mx-10 md:ml-0 md:mr-45">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 mx-6 md:ml-0 md:mr-45">
             <div className="relative rounded-lg mt-10">
-              <div className="bg-[#FF008C] text-white py-4 pl-10 relative px-4 md:py-6 md:px-6 overflow-visible min-h-[84px] md:min-h-[108px]">
+              <div className="bg-[#FF008C] text-white py-4 pl-6 pr-4 relative md:py-6 md:px-6 overflow-visible min-h-[84px] md:min-h-[108px]">
                 <div
                   className="
                   absolute -top-12 -left-1 text-[#FF008C] z-10
@@ -621,7 +630,7 @@ export default function LandingPage(props: IAppProps) {
             </div>
 
             <div className="relative rounded-lg mt-10">
-              <div className="bg-[#FF008C] text-white py-4 pl-10 relative px-4 md:py-6 md:px-6 overflow-visible min-h-[84px] md:min-h-[108px]">
+              <div className="bg-[#FF008C] text-white py-4 pl-6 pr-4  relative md:py-6 md:px-6 overflow-visible min-h-[84px] md:min-h-[108px]">
                 <div
                   className="
                   absolute -top-12 -left-1 text-[#FF008C] z-10
@@ -657,7 +666,7 @@ export default function LandingPage(props: IAppProps) {
             </div>
 
             <div className="relative rounded-lg mt-10">
-              <div className="bg-[#FF008C] text-white py-4 pl-10 relative px-4 md:py-6 md:px-6 overflow-visible min-h-[84px] md:min-h-[108px]">
+              <div className="bg-[#FF008C] text-white py-4 pl-6 pr-4  relative md:py-6 md:px-6 overflow-visible min-h-[84px] md:min-h-[108px]">
                 <div
                   className="
                   absolute -top-12 -left-1 text-[#FF008C] z-10
