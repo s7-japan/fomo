@@ -387,9 +387,9 @@ export default function LandingPage(props: IAppProps) {
               </p>
               <p
                 className="
-                text-white ml-2 md:ml-0 text-left
+                text-white ml-2 -mr-1 md:ml-0 text-left
                 en:text-[18px] en:md:text-[16px]
-                jako:text-[12px] jako:md:text-[12px]
+                jako:text-[12px] jako:md:text-[12px] tracking-[-1px]
                 "
               >
                 {t('page.Email, Telegram, Metamask wallet.')}
@@ -440,9 +440,9 @@ export default function LandingPage(props: IAppProps) {
               </p>
               <p
                 className="
-                text-white ml-2 md:ml-0 text-left
+                text-white ml-2 -mr-1 md:ml-0 text-left
                 en:text-[18px] en:md:text-[16px]
-                jako:text-[12px] jako:md:text-[12px]
+                jako:text-[12px] jako:md:text-[12px] tracking-[-1px]
                 "
               >
                 {t('page.Make a deposit of USDT₮10 to begin.')}
@@ -493,9 +493,9 @@ export default function LandingPage(props: IAppProps) {
               </p>
               <p
                 className="
-                text-white ml-2 md:ml-0 text-left
+                text-white ml-2 -mr-1 md:ml-0 text-left
                 en:text-[18px] en:md:text-[16px]
-                jako:text-[12px] jako:md:text-[12px]
+                jako:text-[12px] jako:md:text-[12px] tracking-[-1px]
                 "
               >
                 {t('page.Enjoy a Bonus up to USDT₮300')}
@@ -537,7 +537,7 @@ export default function LandingPage(props: IAppProps) {
             className="
             mb-4 mx-6 md:ml-0 md:mr-25
             en:text-[30px] en:leading-[38px] en:md:text-[64px] en:md:leading-[70px] en:tracking-[-1px]
-            jako:text-[27px] jako:font-black jako:md:text-[48px]
+            jako:text-[27px] jako:font-black jako:tracking-tighter jako:md:text-[48px]
             "
           >
             {t('page.A One-of-a-Kind')}
