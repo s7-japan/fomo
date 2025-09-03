@@ -22,7 +22,7 @@ function Mobile(props: IAppEvent) {
 
       <div className="w-full flex justify-center px-2">
         <div className="inline-flex flex-col justify-start items-center gap-[30px]">
-          <div className="w-full max-w-[362px] h-[49px] relative">
+          <div className="w-full max-w-[362px] min-w-[calc(100vw_-_12px)] h-[49px] relative">
             <div className="w-[282px] h-5 left-0 top-0 absolute">
               <div data-svg-wrapper className="left-0 top-[0.25px] absolute">
                 <svg
