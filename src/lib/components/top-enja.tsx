@@ -1,25 +1,9 @@
-import { MouseEvent } from 'react'
-import { CDN_TMP, EventEmitType } from '../services/layout.service'
-import { i18nT, LangType } from '../services/i18n.service'
+import { i18nT } from '../services/i18n.service'
+import { CDN_TMP, gotoLink, IAppEvent, singUp } from '../services/layout.service'
 
-interface IAppProps {
-  is_show_header_footer: boolean
-  event_emit: (type: EventEmitType) => void
-}
+const t = i18nT
 
-export default function App(props: IAppProps) {
-  const t = i18nT
-
-  const singUp = (e: MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault()
-    props.event_emit('signUp')
-  }
-
-  const gotoLink = (e: MouseEvent<HTMLButtonElement>, type: EventEmitType) => {
-    e.preventDefault()
-    props.event_emit(type)
-  }
-
+export default function App(props: IAppEvent) {
   return (
     <>
       <section className="relative py-16 md:py-32 lg:py-48 flex flex-col items-center justify-center overflow-hidden">
@@ -74,7 +58,7 @@ export default function App(props: IAppProps) {
                 </p>
               </span>
               <button
-                onClick={singUp}
+                onClick={singUp(props)}
                 className="
                 relative z-90 bg-transparent border border-white text-white py-1 md:py-1 px-6 md:px-8 rounded-full ring-1 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black focus:ring-2 focus:ring-white cursor-pointer
                 en:text-[20px] en:font-normal en:md:text-[20px]
@@ -164,7 +148,7 @@ export default function App(props: IAppProps) {
         />
         <div className="absolute mt-43 md:mt-[300px] left-1/2 transform -translate-x-1/2 z-10 w-full flex justify-center">
           <button
-            onClick={(e) => gotoLink(e, 'gotoCasino')}
+            onClick={(e) => gotoLink(props)(e, 'gotoCasino')}
             className="
             bg-[#252525] text-white py-2 px-8 mb-6 mt-[90px] md:mt-0 lg:mt-0 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer
             en:text-[16px] en:md:text-[22px]
@@ -211,7 +195,7 @@ export default function App(props: IAppProps) {
             </p>
           </div>
           <button
-            onClick={singUp}
+            onClick={singUp(props)}
             className="
             bg-black text-white py-1 md:py-1 px-6 md:px-8 border-2 border-white mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-1 focus:ring-white self-start md:self-auto  cursor-pointer
             en:text-[12px] en:md:text-[20px]

@@ -1,17 +1,16 @@
 import { MouseEvent } from 'react'
 import { setLng, i18nT, LangType, setupI18n } from '../lib/services/i18n.service'
-import { CDN_TMP, EventEmitType } from "../lib/services/layout.service"
+import { CDN_TMP, EventEmitType, IAppEvent } from '../lib/services/layout.service'
 import TopEnJa from '../lib/components/top-enja'
 import TopKo from '../lib/components/top-ko'
 
 interface IAppProps {
   lang: LangType
   is_show_header_footer: boolean
-  event_emit: (type: EventEmitType) => void
 }
 
 setupI18n('en')
-export default function LandingPage(props: IAppProps) {
+export default function LandingPage(props: IAppProps & IAppEvent) {
   const t = i18nT
   const isShowHeaderFooter = JSON.parse(props.is_show_header_footer.toString())
 
