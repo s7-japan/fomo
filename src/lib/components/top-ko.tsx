@@ -1,11 +1,6 @@
-import { useEffect } from 'react'
-import { CDN_TMP, IAppEvent, addAdobeFonts, singUp } from '../services/layout.service'
+import { CDN_TMP, IAppEvent, singUp } from '../services/layout.service'
 
 export default function App(props: IAppEvent) {
-  useEffect(() => {
-    addAdobeFonts()
-  })
-
   return (
     <>
       {/* mobile */}
@@ -23,7 +18,7 @@ export default function App(props: IAppEvent) {
 function Mobile(props: IAppEvent) {
   return (
     <>
-      <img src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/top-img.png`} alt="top-img" />
+      <img src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/top-img-m.png`} alt="top-img" />
 
       <div className="w-full flex justify-center px-2">
         <div className="inline-flex flex-col justify-start items-center gap-[30px]">
@@ -428,13 +423,13 @@ function Mobile(props: IAppEvent) {
           <div className="text-center justify-start text-white text-lg font-normal font-['Inter'] leading-normal max-w-[340px]">
             첫 입금시 100% 보너스 (최대 300 USDT) 혜택! 지금 바로 잿팟에 도전하세요!
           </div>
-          <div className="px-[42px] py-2 bg-black rounded-[100px] outline outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
-            <button onClick={singUp(props)}>
+          <button onClick={singUp(props)}>
+            <div className="px-[42px] py-2 bg-black rounded-[100px] outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
               <span className="text-center justify-start text-white text-2xl font-normal leading-7">
                 지금 가입하기
               </span>
-            </button>
-          </div>
+            </div>
+          </button>
         </div>
       </div>
 
@@ -442,7 +437,7 @@ function Mobile(props: IAppEvent) {
         <div className="flex flex-col justify-start items-center gap-4">
           <img
             className="w-[65.75px]"
-            src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/game-mobile.png`}
+            src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/game-badge.png`}
           />
           <div className="text-center justify-start text-[#ff008c] text-6xl font-semibold font-['Pretendard'] leading-[60px]">
             3,000+
@@ -451,10 +446,7 @@ function Mobile(props: IAppEvent) {
             모든 장르의 게임이 기다리고 있습니다!
           </div>
         </div>
-        <img
-          src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/game-list-mobile.png`}
-          alt="games"
-        />
+        <img src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/game-list-m.png`} alt="games" />
         <div className="text-center justify-start text-[#ff008c] text-xl font-semibold font-['Pretendard'] leading-[30px]">
           슬롯, 라이브카지노, 바카라, 룰렛등
           <br />전 세계 메이저 리그와 빅매치 베팅까지!
@@ -477,5 +469,455 @@ function Mobile(props: IAppEvent) {
 }
 
 function Desktop(props: IAppEvent) {
-  return <></>
+  return (
+    <>
+      <img src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/top-img-d.png`} alt="top-img" />
+
+      <div className="w-full flex justify-center mt-[-54px]">
+        <div className="inline-flex flex-col justify-start items-center gap-[38px]">
+          <div className="w-[892.93px] h-[89.46px] relative">
+            <div className="w-[524.38px] h-[37.18px] left-0 top-0 absolute overflow-hidden">
+              <div data-svg-wrapper className="left-0 top-[0.46px] absolute">
+                <svg
+                  width="44"
+                  height="37"
+                  viewBox="0 0 44 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.27 19.4109C6.38 19.4109 2.76 15.6709 4.29 9.96094C5.82 4.25094 11.45 0.500937 18.34 0.500937C25.23 0.500937 28.84 4.28094 27.32 9.95094C25.8 15.6209 20.17 19.4009 13.28 19.4009L13.27 19.4109ZM4.07 21.1309H35.32L31.25 36.3409H0L4.07 21.1309ZM14.82 13.6509C17.55 13.6509 19.66 12.2209 20.26 9.95094C20.86 7.68094 19.53 6.25094 16.8 6.25094C14.07 6.25094 11.96 7.68094 11.36 9.95094C10.76 12.2209 12.09 13.6509 14.82 13.6509ZM8.66 30.5009H25.71L26.66 26.9709H9.61L8.66 30.5009ZM41.62 13.3209H37.42L35.66 19.8709H28.56L33.77 0.460938H40.87L39.27 6.42094H43.47L41.62 13.3109V13.3209Z"
+                    fill="#FF008C"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[38.31px] top-0 absolute">
+                <svg
+                  width="44"
+                  height="36"
+                  viewBox="0 0 44 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M38.2896 28.78L36.5996 35.08H0.30957L1.99957 28.78H16.5296L17.3696 25.63C10.3196 25.13 5.95957 22.9 7.18957 18.32C8.61957 12.99 15.8596 10.88 24.9396 10.88C34.0196 10.88 40.1296 12.98 38.6996 18.32C37.4696 22.9 31.9196 25.13 24.5996 25.63L23.7596 28.78H38.2896ZM42.2296 9.66H8.28957L9.95957 3.44H23.2796L24.1996 0H31.5096L30.5896 3.44H43.9096L42.2396 9.66H42.2296ZM22.4796 20.04C27.3996 20.04 31.0896 19.58 31.4296 18.32C31.7696 17.06 28.3196 16.6 23.4096 16.6C18.4996 16.6 14.7996 17.06 14.4596 18.32C14.1196 19.58 17.5696 20.04 22.4796 20.04Z"
+                    fill="#FF008C"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[78.81px] top-[0.21px] absolute">
+                <svg
+                  width="45"
+                  height="37"
+                  viewBox="0 0 45 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.5196 9.62094H7.31957L8.93958 3.57094H17.3396L18.2396 0.210938H25.5496L24.6496 3.57094H33.1396L31.5196 9.62094ZM17.8696 28.4009C21.1896 28.4009 24.9996 27.9809 27.4896 26.9709L25.8096 33.2309C23.3096 34.2409 19.5896 34.6609 16.0196 34.6609H0.80957L2.48957 28.4009H10.8096L11.6296 25.3309C7.51957 24.5309 5.26957 22.1009 6.31957 18.1909C7.62957 13.3209 12.8996 10.7109 19.1596 10.7109C25.4196 10.7109 29.2996 13.3109 27.9896 18.1909C26.9296 22.1409 23.2996 24.5809 18.6696 25.3709L17.8596 28.3909L17.8696 28.4009ZM16.6596 20.0809C19.1796 20.0809 21.0296 19.4509 21.3696 18.1909C21.7096 16.9309 20.1996 16.3009 17.6796 16.3009C15.1596 16.3009 13.3096 16.9309 12.9696 18.1909C12.6296 19.4509 14.1396 20.0809 16.6596 20.0809ZM42.6096 20.1209H38.4896L34.1496 36.3309H27.0496L36.6596 0.460938H43.7596L40.3396 13.2309H44.4596L42.6096 20.1209Z"
+                    fill="#FF008C"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[118.96px] top-[0.46px] absolute">
+                <svg
+                  width="47"
+                  height="37"
+                  viewBox="0 0 47 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.33 28.0609C20.42 27.8909 21.46 27.6409 22.3 27.3009L20.69 33.3109C18.29 34.2809 14.78 34.6509 11.63 34.6509H0.959961L2.58996 28.5609H4.55996L10.23 7.39094H8.54996L10.18 1.30094H28.37L26.74 7.39094H24.85L19.31 28.0609H19.33ZM10.76 28.5609H13.03L18.7 7.39094H16.43L10.76 28.5609ZM31.56 0.630937H37.69L28.29 35.7109H22.16L24.94 25.3309H21.96L23.73 18.7309H26.71L27.51 15.7509H24.53L26.3 9.15094H29.28L31.56 0.620937V0.630937ZM46.09 0.460938L36.48 36.3309H30.18L39.79 0.460938H46.09Z"
+                    fill="#FF008C"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[159.53px] top-[1.30px] absolute">
+                <svg
+                  width="44"
+                  height="35"
+                  viewBox="0 0 44 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M38.5503 27.6108L36.8203 34.0808H0.530273L2.26027 27.6108H16.7903L17.8703 23.5808H5.35028L9.27028 8.96078H34.5603L35.2103 6.52078H9.84027L11.5103 0.300781H43.9003L39.9903 14.8808H14.7003L14.0403 17.3608H39.7503L38.0803 23.5808H25.1003L24.0203 27.6108H38.5503Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[212.05px] top-[0.46px] absolute">
+                <svg
+                  width="44"
+                  height="37"
+                  viewBox="0 0 44 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.0398 16.8009L26.6698 30.3309L19.9298 34.4909L15.4698 24.7909C10.8898 31.0509 5.4398 34.6209 0.0498047 34.6609L1.95981 27.5209C7.36981 26.9309 12.8498 19.3309 16.1898 7.82094H8.2498L9.98981 1.31094H32.5898L30.8498 7.82094H23.3298C22.3798 11.0509 21.2698 14.0809 20.0398 16.8109V16.8009ZM41.4898 20.4609H37.2898L33.0398 36.3409H25.9398L35.5498 0.460938H42.6498L39.1398 13.5709H43.3398L41.4898 20.4609Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[253.78px] top-[0.34px] absolute">
+                <svg
+                  width="41"
+                  height="38"
+                  viewBox="0 0 41 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M37.0703 28.7798H29.4703L27.2203 37.1798H20.1603L22.4103 28.7798H15.4403L13.1903 37.1798H6.13028L8.38028 28.7798H0.780273L2.51027 22.3098H38.8003L37.0703 28.7798ZM7.38028 10.2498C9.01028 4.15984 16.5503 0.339844 26.5503 0.339844C36.5503 0.339844 42.0303 4.15984 40.4003 10.2498C38.7703 16.3398 31.2303 20.1598 21.2303 20.1598C11.2303 20.1598 5.75028 16.3398 7.38028 10.2498ZM14.8503 10.2498C14.2203 12.5998 17.7803 13.8998 22.9003 13.8998C28.0203 13.8998 32.2803 12.5998 32.9103 10.2498C33.5403 7.89984 29.9803 6.59984 24.8603 6.59984C19.7403 6.59984 15.4903 7.85984 14.8503 10.2498Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[294.26px] top-[0.46px] absolute">
+                <svg
+                  width="42"
+                  height="37"
+                  viewBox="0 0 42 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.5197 17.3909L38.1598 22.4709H1.86975L3.22977 17.3909H17.8498L18.2997 15.7109H5.90976L8.44977 6.22094H33.3997L33.7697 4.83094H8.72977L9.89975 0.460938H41.8698L39.3098 10.0009H14.3597L13.9897 11.3909H39.3198L38.1598 15.7209H25.3498L24.8997 17.4009H39.5197V17.3909ZM28.8898 23.5209H35.7798L32.3498 36.3309H0.259766L3.68976 23.5209H10.5797L10.1398 25.1609H28.4597L28.8997 23.5209H28.8898ZM26.7598 31.4609L27.2198 29.7409H8.89975L8.43976 31.4609H26.7598Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[333.51px] top-[0.46px] absolute">
+                <svg
+                  width="45"
+                  height="37"
+                  viewBox="0 0 45 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28.7798 0.630937H35.4198L26.0197 35.7109H19.3798L23.4897 20.3809H19.2097C14.5097 29.9209 7.29977 34.5809 0.509766 34.6609L2.28976 28.0209C7.81976 27.6009 12.7597 22.3509 15.4597 12.2709L16.6898 7.69094H7.73975L9.44977 1.30094H25.1998L22.3297 12.0109C22.1797 12.5609 22.0398 13.1009 21.8498 13.6509H25.2898L28.7798 0.630937ZM44.8698 0.460938L35.2598 36.3309H28.5398L38.1497 0.460938H44.8698Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[386.86px] top-[0.47px] absolute">
+                <svg
+                  width="43"
+                  height="37"
+                  viewBox="0 0 43 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M40.7204 15.0407L39.3504 20.1607H3.06036L4.43036 15.0407H40.7204ZM39.2404 13.6507H6.64038L7.96036 8.7407H13.4604L14.3604 5.3807H9.24036L10.5604 0.470703H42.4004L41.0804 5.3807H35.9604L35.0604 8.7407H40.5604L39.2404 13.6507ZM8.96036 31.9707H34.4604L33.2904 36.3407H0.860352L3.34036 27.1007H28.4604L28.7904 25.8807H3.59036L4.75037 21.5507H36.8904L34.4204 30.7507H9.30035L8.97037 31.9707H8.96036ZM20.4804 8.7407H28.0404L28.9404 5.3807H21.3804L20.4804 8.7407Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[426.21px] top-[0.46px] absolute">
+                <svg
+                  width="45"
+                  height="37"
+                  viewBox="0 0 45 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.11 28.6109C13.92 28.6109 17.4 28.1909 19.8 27.3909L18.2 33.3509C15.82 34.2309 11.89 34.6509 8.85995 34.6509H0.209961L5.48996 14.9509H13.93L15.97 7.35094H7.52997L9.14996 1.30094H24.15L18.89 20.9209H10.49L8.42996 28.6109H11.12H11.11ZM28.73 0.630937H35.28L25.88 35.7109H19.33L23.36 20.6709H20.46L22.26 13.9509H25.16L28.73 0.630937ZM44.44 0.460938L34.83 36.3309H28.19L37.81 0.460938H44.45H44.44Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[470.25px] top-[0.46px] absolute">
+                <svg
+                  width="40"
+                  height="37"
+                  viewBox="0 0 40 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24.0503 17.9809C20.8903 29.7809 14.9703 35.0809 8.21028 35.0809C1.45028 35.0809 -1.66972 29.7909 1.49028 17.9809C4.65028 6.17094 10.6103 0.880937 17.3703 0.880937C24.1303 0.880937 27.2103 6.17094 24.0503 17.9809ZM8.5103 17.9809C6.3503 26.0509 7.56028 28.5709 9.96028 28.5709C12.3603 28.5709 14.8803 26.0509 17.0403 17.9809C19.1903 9.96094 17.9903 7.39094 15.6303 7.39094C13.2703 7.39094 10.6603 9.95094 8.5103 17.9809ZM30.2303 36.3409H23.1303L32.7403 0.460938H39.8403L30.2303 36.3309V36.3409Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[507.07px] top-[1.52px] absolute">
+                <svg
+                  width="18"
+                  height="36"
+                  viewBox="0 0 18 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.3095 23.4095H4.09951L8.29949 0.519531H17.3695L9.29949 23.4095H9.3095ZM9.14953 30.9295C8.45953 33.4895 6.07949 35.3395 3.51949 35.3395C0.95949 35.3395 -0.440499 33.4895 0.249501 30.9295C0.939501 28.3695 3.32953 26.4795 5.89953 26.4795C8.46953 26.4795 9.84947 28.3695 9.15947 30.9295H9.14953Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div className="w-[618.93px] h-[36.46px] left-[274px] top-[53px] absolute overflow-hidden">
+              <div data-svg-wrapper className="left-[-0.01px] top-[0.59px] absolute">
+                <svg
+                  width="45"
+                  height="37"
+                  viewBox="0 0 45 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44.8702 0.589844L35.2602 36.4598H28.5802L32.8602 20.4998H29.5802L25.4702 35.8298H18.8702L19.8902 32.0098L14.6202 34.2798L12.6902 25.1598C8.81023 31.3298 4.58023 34.5698 -0.00976562 34.7798L1.93023 27.5498C6.09023 26.9198 11.1102 16.9598 15.3102 1.29984L21.9602 1.54984C20.5602 6.75984 19.0702 11.3798 17.4502 15.4098L20.7502 28.8098L28.2702 0.759844H34.8702L31.3802 13.7798H34.6602L38.1902 0.589844H44.8702Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[40.30px] top-[1.42px] absolute">
+                <svg
+                  width="44"
+                  height="35"
+                  viewBox="0 0 44 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M38.3198 27.7299L36.5898 34.1999H0.299805L2.0298 27.7299H16.5598L17.6398 23.6999H5.1198L9.03981 9.07992H34.3298L34.9798 6.63992H9.60981L11.2798 0.419922H43.6698L39.7598 14.9999H14.4698L13.8098 17.4799H39.5198L37.8498 23.6999H24.8698L23.7898 27.7299H38.3198Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[82.46px] top-0 absolute">
+                <svg
+                  width="41"
+                  height="37"
+                  viewBox="0 0 41 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.63 17.89L38.07 23.73H23.49L22.18 28.6H15.04L16.35 23.73H1.76996L3.32996 17.89H39.62H39.63ZM7.61996 8.15C9.11996 2.56 16.82 0 26.27 0C35.72 0 42.05 2.56 40.55 8.15C39.05 13.74 31.35 16.3 21.9 16.3C12.45 16.3 6.11996 13.74 7.61996 8.15ZM9.25996 30.58H34.55L32.97 36.46H0.459961L3.30996 25.83H10.54L9.26996 30.58H9.25996ZM15.19 8.15C14.72 9.91 18 10.84 23.38 10.84C28.76 10.84 32.53 9.92 33.01 8.15C33.49 6.38 30.2 5.46 24.82 5.46C19.44 5.46 15.66 6.43 15.19 8.15Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[134.62px] top-0 absolute">
+                <svg
+                  width="41"
+                  height="37"
+                  viewBox="0 0 41 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.6301 18.48L38.0701 24.32H1.78012L3.34012 18.48H17.9201L18.5401 16.17C11.0901 15.58 6.49012 13.02 7.79012 8.15C9.29012 2.56 16.9901 0 26.4401 0C35.8901 0 42.2201 2.56 40.7201 8.15C39.4101 13.02 33.4301 15.59 25.6701 16.17L25.0501 18.48H39.6301ZM9.43011 30.54H34.7201L33.1301 36.46H0.620117L3.45012 25.92H10.6801L9.44012 30.54H9.43011ZM23.5401 10.84C28.9201 10.84 32.6901 9.92 33.1701 8.15C33.6501 6.38 30.3601 5.46 24.9801 5.46C19.6001 5.46 15.8201 6.43 15.3501 8.15C14.8801 9.87 18.1601 10.84 23.5401 10.84Z"
+                    fill="#FF008C"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[174.58px] top-[0.59px] absolute">
+                <svg
+                  width="43"
+                  height="37"
+                  viewBox="0 0 43 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.7101 28.3998C20.1101 28.3998 23.9801 27.7698 26.4301 26.7598L24.7401 33.0598C22.2601 34.1498 18.2301 34.7798 14.7801 34.7798H0.580078L5.92007 14.8698H19.2801L21.1701 7.80984H7.73007L9.44008 1.41984H29.9401L24.6501 21.1598H11.2901L9.35008 28.3798H16.7001L16.7101 28.3998ZM41.0701 20.5798H36.8701L32.6201 36.4598H25.5201L35.1301 0.589844H42.2301L38.7201 13.6998H42.9201L41.0701 20.5898V20.5798Z"
+                    fill="#FF008C"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[216.35px] top-[0.59px] absolute">
+                <svg
+                  width="42"
+                  height="37"
+                  viewBox="0 0 42 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.5296 11.3798C25.7896 17.8898 19.8596 22.1298 12.8396 22.1298C5.8196 22.1298 2.1696 17.8898 3.9196 11.3798C5.6696 4.86984 11.5896 0.629844 18.6096 0.629844C25.6296 0.629844 29.2696 4.91984 27.5296 11.3798ZM9.2896 30.0798H34.2396L32.5296 36.4598H0.349609L3.7196 23.8998H10.9496L9.29961 30.0698L9.2896 30.0798ZM10.9796 11.3798C10.1496 14.4898 11.6996 16.2098 14.4296 16.2098C17.1596 16.2098 19.6396 14.4898 20.4696 11.3798C21.2996 8.26984 19.7496 6.54984 17.0196 6.54984C14.2896 6.54984 11.8096 8.26984 10.9796 11.3798ZM34.5296 27.1398H27.4296L34.5396 0.589844H41.6396L34.5296 27.1398Z"
+                    fill="#FF008C"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[266.96px] top-[0.59px] absolute">
+                <svg
+                  width="44"
+                  height="37"
+                  viewBox="0 0 44 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.88998 1.42984H30.52L27.64 12.1798C23.79 26.5498 12.98 34.7398 0.959961 34.7798L2.73996 28.1398C8.58996 28.0998 13.76 25.5798 17.27 20.1598H4.87997L6.59998 13.7298H20.17L20.45 12.6798L21.76 7.80984H8.18997L9.89996 1.41984L9.88998 1.42984ZM41.64 20.5798H37.44L33.19 36.4598H26.09L35.7 0.589844H42.8L39.29 13.6998H43.49L41.64 20.5898V20.5798Z"
+                    fill="#FF008C"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[306.98px] top-[0.59px] absolute">
+                <svg
+                  width="45"
+                  height="37"
+                  viewBox="0 0 45 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.1505 16.8898L27.9405 30.4198L21.1905 34.6198L16.6005 24.7898C11.9905 31.1698 6.45047 34.7498 0.980469 34.7898L2.89047 27.6498C8.30047 27.0598 13.9505 19.4598 17.2805 7.94984H9.17047L10.9105 1.43984H33.8505L32.1104 7.94984H24.4205C23.4705 11.1798 22.3805 14.1698 21.1405 16.8998L21.1505 16.8898ZM44.2104 0.589844L34.6005 36.4598H27.5005L37.1104 0.589844H44.2104Z"
+                    fill="#FF008C"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[346.64px] top-[1.21px] absolute">
+                <svg
+                  width="41"
+                  height="35"
+                  viewBox="0 0 41 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M38.7096 27.5609L36.9296 34.2009H0.639648L2.41965 27.5609H16.9496L18.6896 21.0509H6.12964L11.7096 0.210938H18.9796L15.1796 14.4109H40.4696L38.6896 21.0509H25.9196L24.1796 27.5609H38.7096Z"
+                    fill="#FF008C"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[388.16px] top-[0.59px] absolute">
+                <svg
+                  width="43"
+                  height="37"
+                  viewBox="0 0 43 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.10016 1.42984H29.3902L26.7902 11.1298C22.8802 25.7098 12.6002 34.7798 0.160156 34.7798L1.96014 28.0598C10.5901 27.9798 16.7502 21.6298 19.5602 11.1298L20.4301 7.89984H7.37015L9.10016 1.42984ZM40.8502 20.5798H36.6501L32.4001 36.4598H25.3001L34.9102 0.589844H42.0102L38.5002 13.6998H42.7002L40.8502 20.5898V20.5798Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[442.10px] top-[0.60px] absolute">
+                <svg
+                  width="42"
+                  height="37"
+                  viewBox="0 0 42 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.1896 18.0196C6.25961 18.0196 2.8196 14.5296 4.2196 9.31961C5.6196 4.10961 10.9196 0.619609 17.8496 0.619609C24.7796 0.619609 28.1996 4.14961 26.8196 9.31961C25.4396 14.4896 20.1196 18.0196 13.1896 18.0196ZM33.4296 31.5496L32.1096 36.4596H0.0996094L2.9696 25.7496H27.5896L27.9696 24.3196H3.26959L4.5896 19.3996H36.3096L33.4396 30.1096H8.81961L8.43961 31.5396H33.4296V31.5496ZM14.6896 12.4296C17.3796 12.4296 19.3396 11.2096 19.8496 9.31961C20.3596 7.42961 19.0396 6.20961 16.3596 6.20961C13.6796 6.20961 11.7096 7.42961 11.1996 9.31961C10.6896 11.2096 12.0096 12.4296 14.6896 12.4296ZM31.7396 10.4196L32.3796 8.02961H28.3896L29.4996 2.31961H33.9096L34.3696 0.599609H41.3396L36.6296 18.1596H29.6596L30.1996 16.1396H25.7896L27.7396 10.4296H31.7296L31.7396 10.4196Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[481.88px] top-[0.59px] absolute">
+                <svg
+                  width="43"
+                  height="37"
+                  viewBox="0 0 43 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.7899 8.27984L22.3199 6.30984H7.44989L8.86987 1.01984H30.7599L27.4999 13.1998H12.7099L12.1799 15.1698H21.4199C24.6499 15.1698 27.9299 14.7098 30.0299 13.9098L28.6099 19.1998C26.5499 19.9998 23.2699 20.4598 19.9099 20.4598H3.73987L6.99988 8.27984H21.7899ZM29.8399 21.7998H36.8999L32.9698 36.4598H0.879883L4.80988 21.7998H11.8699L11.3299 23.8198H29.3099L29.8499 21.7998H29.8399ZM27.3699 31.0398L27.8999 29.0698H9.91989L9.38989 31.0398H27.3699ZM42.5799 0.589844L37.2299 20.5398H30.1299L35.4799 0.589844H42.5799Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[521.73px] top-[0.59px] absolute">
+                <svg
+                  width="43"
+                  height="37"
+                  viewBox="0 0 43 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.77051 28.3098H17.2905C20.6905 28.3098 24.5705 27.6398 27.0405 26.5898L25.3105 33.0598C22.8305 34.1498 19.0105 34.7798 15.5605 34.7798H0.730469L9.72046 1.21984H17.0305L9.77051 28.3098ZM33.3805 36.4598H26.2805L35.8905 0.589844H42.9905L33.3805 36.4598Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[561.75px] top-[0.59px] absolute">
+                <svg
+                  width="44"
+                  height="37"
+                  viewBox="0 0 44 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.88 28.3498C20.28 28.3498 24.14 27.7598 26.59 26.7498L24.89 33.0898C22.41 34.1798 18.1 34.7698 14.65 34.7698H0.75L9.69 1.41984H30.57L28.85 7.84984H15.2L9.71002 28.3498H16.89H16.88ZM41.23 20.5798H37.03L32.78 36.4598H25.68L35.29 0.589844H42.39L38.88 13.6998H43.08L41.23 20.5898V20.5798Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[601.62px] top-[1.64px] absolute">
+                <svg
+                  width="18"
+                  height="36"
+                  viewBox="0 0 18 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.87029 23.5306H4.66027L8.86028 0.640625H17.9303L9.86028 23.5306H9.87029ZM9.7003 31.0506C9.0103 33.6106 6.6303 35.4606 4.0703 35.4606C1.5103 35.4606 0.11028 33.6106 0.80028 31.0506C1.49028 28.4906 3.8803 26.6006 6.4503 26.6006C9.0203 26.6006 10.4003 28.4906 9.71031 31.0506H9.7003Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div className="self-stretch text-center justify-start text-white text-2xl font-normal font-['Pretendard'] leading-normal">
+            첫 입금시 100% 보너스 (최대 300 USDT) 혜택! 지금 바로 잿팟에 도전하세요!
+          </div>
+          <button
+            onClick={singUp(props)}
+            className="cursor-pointer px-[54px] py-4 bg-black rounded-[100px] outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5"
+          >
+            <div className="text-center justify-start text-white text-[28px] font-semibold font-['Pretendard'] leading-7">
+              지금 가입하기
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div className="w-full flex justify-center my-[120px]">
+        <div className="w-[992px] inline-flex flex-col justify-start items-center gap-[35px]">
+          <div className="flex flex-col justify-start items-center gap-[34px]">
+            <img
+              className="w-[100px]"
+              src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/game-badge.png`}
+            />
+            <div className="text-center justify-start text-[#ff008c] text-[100px] font-semibold font-['Pretendard'] leading-[100px]">
+              3,000+
+            </div>
+            <div className="self-stretch text-center justify-start text-white text-4xl font-semibold font-['Pretendard'] leading-9">
+              모든 장르의 게임이 기다리고 있습니다!
+            </div>
+          </div>
+          <img src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/game-list-d.png`} alt="games" />
+          <div className="flex flex-col justify-start items-center gap-[15px]">
+            <div className="text-center justify-start text-[#ff008c] text-2xl font-semibold font-['Pretendard'] leading-normal">
+              슬롯, 라이브카지노, 바카라, 룰렛등 전 세계 메이저 리그와 빅매치 베팅까지!
+            </div>
+            <div className="inline-flex justify-start items-center gap-[9px]">
+              <img
+                className="w-[100px]"
+                src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
+              />
+              <div className="text-center justify-start text-white text-2xl font-semibold font-['Pretendard'] leading-normal">
+                에서만 즐길 수 있는 오리지널 독점 게임도 놓치지 마세요!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  )
 }

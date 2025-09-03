@@ -1,30 +1,21 @@
-import { MouseEvent } from 'react'
-import { setLng, i18nT, LangType, setupI18n } from '../lib/services/i18n.service'
-import { CDN_TMP, EventEmitType, IAppEvent } from '../lib/services/layout.service'
 import TopEnJa from '../lib/components/top-enja'
 import TopKo from '../lib/components/top-ko'
+import { i18nT, LangType, setLng, setupI18n } from '../lib/services/i18n.service'
+import { addAdobeFonts, CDN_TMP, gotoLink, IAppEvent, singUp } from '../lib/services/layout.service'
+
+addAdobeFonts()
+setupI18n('en')
+const t = i18nT
 
 interface IAppProps {
   lang: LangType
   is_show_header_footer: boolean
 }
 
-setupI18n('en')
 export default function LandingPage(props: IAppProps & IAppEvent) {
-  const t = i18nT
   const isShowHeaderFooter = JSON.parse(props.is_show_header_footer.toString())
 
   setLng(props.lang)
-
-  const singUp = (e: MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault()
-    props.event_emit('signUp')
-  }
-
-  const gotoLink = (e: MouseEvent<HTMLButtonElement>, type: EventEmitType) => {
-    e.preventDefault()
-    props.event_emit(type)
-  }
 
   return (
     <div className=" bg-black text-white antialiased en:font-changa">
@@ -304,7 +295,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
 
           <div className="text-center flex flex-col items-center">
             <button
-              onClick={singUp}
+              onClick={singUp(props)}
               className="
               bg-[#252525] text-white py-2 px-15 mt-10 mb-3 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer
               en:text-[16px] en:md:text-[20px]
@@ -314,7 +305,10 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
               <span className="mr-2">🚀</span> {t(`page.Let's Play Now !`)}
             </button>
 
-            <button onClick={(e) => gotoLink(e, 'gotoBonusTerms')} className="cursor-pointer">
+            <button
+              onClick={(e) => gotoLink(props)(e, 'gotoBonusTerms')}
+              className="cursor-pointer"
+            >
               <p
                 className="
               text-white underline decoration-[#FF008C] mt-2 md:ml-2
@@ -605,7 +599,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
 
             <div className="text-center -mt-[190px] md:-mt-[50px]">
               <button
-                onClick={singUp}
+                onClick={singUp(props)}
                 className="
                 bg-[#252525] text-white py-2 px-17 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer
                 en:text-[16px] en:md:text-[20px]

@@ -8,6 +8,8 @@ export type EventEmitType = 'signUp' | 'gotoCasino' | 'gotoBonusTerms'
 
 export const CDN_TMP = 'https://fomoio.netlify.app'
 
+declare var Typekit: any;
+
 export const addAdobeFonts = () => {
   ;(function (d) {
     var config = {
@@ -19,9 +21,9 @@ export const addAdobeFonts = () => {
       t = setTimeout(function () {
         h.className = h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive'
       }, config.scriptTimeout),
-      tk = d.createElement('script'),
+      tk = d.createElement('script') as any,
       f = false,
-      s = d.getElementsByTagName('script')[0],
+      s = d.getElementsByTagName('script')[0] as any,
       a
     h.className += ' wf-loading'
     tk.src = 'https://use.typekit.net/' + config.kitId + '.js'
