@@ -23,7 +23,7 @@ export default function App(props: IAppEvent) {
             className="
             text-white mb-6 sm:w-full sm:text-center text-center w-full 
             en:text-[16px] en:font-impact en:font-normal en:md:text-[32px]
-            jako:text-[13px] jako:font-notosansjp jako:font-black jako:md:text-[32px]
+            jakoth:text-[13px] jakoth:font-notosansjp jakoth:font-black jakoth:md:text-[32px]
             "
           >
             {t('page.Play Freely with Crypto - Your New Online Casino Starts Here')}
@@ -43,15 +43,15 @@ export default function App(props: IAppEvent) {
               <span
                 className="
               en:text-[12px] en:font-normal en:md:text-[20px]
-              jako:text-[12px] jako:font-bold jako:md:text-[19px]
+              jakoth:text-[12px] jakoth:font-bold jakoth:md:text-[19px]
               "
               >
-                {t('page.Get a 100% bonus on your first deposit (up to USDT₮300).')}
+                {t('page.Get a 100% bonus on your first deposit (up to $300).')}
                 <p
                   className="
                 block md:inline-block
                 en:text-[12px] en:font-normal en:md:text-[20px]
-                jako:text-[12px] jako:font-bold jako:md:text-[19px]
+                jakoth:text-[12px] jakoth:font-bold jakoth:md:text-[19px]
                 "
                 >
                   {t('page.Start now and aim for the jackpot!')}
@@ -62,7 +62,7 @@ export default function App(props: IAppEvent) {
                 className="
                 relative z-90 bg-transparent border border-white text-white py-1 md:py-1 px-6 md:px-8 rounded-full ring-1 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black focus:ring-2 focus:ring-white cursor-pointer
                 en:text-[20px] en:font-normal en:md:text-[20px]
-                jako:text-[16px] jako:font-bold jako:md:text-[18px]
+                jakoth:text-[16px] jakoth:font-bold jakoth:md:text-[18px]
                 "
               >
                 {t('page.Join Now')}
@@ -75,7 +75,7 @@ export default function App(props: IAppEvent) {
                   className="
                   text-[#FF008C] md:inline-block 
                   en:text-[44px] en:font-semibold en:leading-[38px] en:md:text-[64px] en:md:font-normal
-                  jako:text-[20px] jako:font-black jako:md:text-[36px]
+                  jakoth:text-[20px] jakoth:font-black jakoth:md:text-[36px]
                   "
                 >
                   {t('page.3,000+')}
@@ -84,7 +84,7 @@ export default function App(props: IAppEvent) {
                   className="
                 text-white block md:inline-block
                   en:text-[30px] en:font-normal en:leading-[38px] en:md:text-[64px] en:md:font-normal
-                  jako:text-[16px] jako:font-black jako:md:text-[36px]
+                  jakoth:text-[16px] jakoth:font-black jakoth:md:text-[36px]
                   "
                 >
                   {t('page.Games Across All Genres')}
@@ -95,7 +95,7 @@ export default function App(props: IAppEvent) {
                 <span
                   className="
                   en:text-[#FF008C] en:text-[13px] en:leading-6 en:md:text-[20px] 
-                  jako:text-[#FF008C] jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
+                  jakoth:text-[#FF008C] jakoth:text-[14px] jakoth:font-changa jakoth:font-bold jakoth:leading-6 jakoth:md:text-[18px]
                   "
                 >
                   {t('page.Slots, live casino, baccarat,')}{' '}
@@ -104,7 +104,7 @@ export default function App(props: IAppEvent) {
                   className="
                   block md:inline-block
                   en:text-[#FF008C] en:text-[13px] en:leading-6 en:md:text-xl
-                  jako:text-[#FF008C] jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
+                  jakoth:text-[#FF008C] jakoth:text-[14px] jakoth:font-changa jakoth:font-bold jakoth:leading-6 jakoth:md:text-[18px]
                   "
                 >
                   {t('page.roulette, play top leagues, major matches')}
@@ -113,7 +113,7 @@ export default function App(props: IAppEvent) {
                   className="
                   inline-block
                   en:ml-0 en:text-[13px] en:leading-6 en:md:text-xl en:md:ml-1
-                  jako:text-[#FF008C] jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
+                  jakoth:text-[#FF008C] jakoth:text-[14px] jakoth:font-changa jakoth:font-bold jakoth:leading-6 jakoth:md:text-[18px]
                   "
                 >
                   {t('page.and more Exclusive')}
@@ -129,7 +129,7 @@ export default function App(props: IAppEvent) {
                   className="
                 text-white
                   en:text-[#FF008C] en:text-[13px] en:leading-6 en:md:text-xl
-                  jako:text-[14px] jako:font-changa jako:font-bold jako:leading-6 jako:md:text-[18px]
+                  jakoth:text-[14px] jakoth:font-changa jakoth:font-bold jakoth:leading-6 jakoth:md:text-[18px]
                   "
                 >
                   {t('page.Original games')}
@@ -152,7 +152,7 @@ export default function App(props: IAppEvent) {
             className="
             bg-[#252525] text-white py-2 px-8 mb-6 mt-[90px] md:mt-0 lg:mt-0 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer
             en:text-[16px] en:md:text-[22px]
-            jako:text-[14px] jako:font-extrabold jako:md:text-[20px]
+            jakoth:text-[14px] jakoth:font-extrabold jakoth:md:text-[20px]
             "
           >
             {t('page.🚀 Find your favorite Game!')}
@@ -166,13 +166,13 @@ export default function App(props: IAppEvent) {
             <p
               dangerouslySetInnerHTML={{
                 __html: t(
-                  'page.Get a 100% bonus on your first deposit (up to USDT₮300). Start now and aim for the jackpot!'
+                  'page.Get a 100% bonus on your first deposit (up to $300). Start now and aim for the jackpot!'
                 ),
               }}
               className="
               block text-left md:hidden
               en:text-[12px]
-              jako:text-[12px] jako:font-bold
+              jakoth:text-[12px] jakoth:font-bold
               "
             ></p>
             <p
@@ -181,7 +181,7 @@ export default function App(props: IAppEvent) {
               en:md:text-[16px]
               "
             >
-              {t('page.MEGA JACKPOT Exceeds USDT₮1,000,000!')}
+              {t('page.MEGA JACKPOT Exceeds $1,000,000!')}
             </p>
             <p
               className="
@@ -199,7 +199,7 @@ export default function App(props: IAppEvent) {
             className="
             bg-black text-white py-1 md:py-1 px-6 md:px-8 border-2 border-white mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-1 focus:ring-white self-start md:self-auto  cursor-pointer
             en:text-[12px] en:md:text-[20px]
-            jako:text-[12px] jako:font-extrabold jako:md:text-[16px] jako:md:font-bold jako:md:font-changa
+            jakoth:text-[12px] jakoth:font-extrabold jakoth:md:text-[16px] jakoth:md:font-bold jakoth:md:font-changa
             "
           >
             {t('page.Join Now')}

@@ -1,5 +1,6 @@
 import TopEnJa from '../lib/components/top-enja'
 import TopKo from '../lib/components/top-ko'
+import TopTh from '../lib/components/top-th'
 import { i18nT, LangType, setLng, setupI18n } from '../lib/services/i18n.service'
 import { addAdobeFonts, CDN_TMP, gotoLink, IAppEvent, singUp } from '../lib/services/layout.service'
 
@@ -32,7 +33,13 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
         ''
       )}
 
-      {props.lang === 'ko' ? <TopKo {...props} /> : <TopEnJa {...props} />}
+      {props.lang === 'ko' ? (
+        <TopKo {...props} />
+      ) : props.lang === 'th' ? (
+        <TopTh {...props} />
+      ) : (
+        <TopEnJa {...props} />
+      )}
 
       <section className="bg-black text-white py-6 -mt-0 px-4 md:-mt-25 md:py-24 md:px-12 lg:px-24 lg:py-32 ">
         <div className="max-w-6xl mx-auto text-left md:text-center">
@@ -47,7 +54,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 <span
                   className="
                   en:text-[32px] en:leading-9 en:md:text-[50px]
-                  jako:text-[20px] jako:font-black jako:md:text-[32px]
+                  jakoth:text-[20px] jakoth:font-black jakoth:md:text-[32px]
                   "
                 >
                   {t('page.Just a')}{' '}
@@ -56,7 +63,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                   className="
                   inline-block
                   en:text-[32px] en:leading-9 en:md:text-[64px]
-                  jako:text-[20px] jako:font-black jako:md:text-[50px]
+                  jakoth:text-[20px] jakoth:font-black jakoth:md:text-[50px]
                   "
                 >
                   {t('page.Few Clicks')}
@@ -65,7 +72,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                   className="
                   en:md:mx-2
                   en:text-[32px] en:leading-9 en:md:text-[50px]
-                  jako:text-[20px] jako:font-black jako:md:text-[32px]
+                  jakoth:text-[20px] jakoth:font-black jakoth:md:text-[32px]
                   "
                 >
                   {t('page.to')}
@@ -74,7 +81,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                   className="
                   block md:inline-block
                   en:text-[32px] en:leading-9 en:md:text-[64px]
-                  jako:text-[20px] jako:font-black jako:md:text-[50px]
+                  jakoth:text-[20px] jakoth:font-black jakoth:md:text-[50px]
                   "
                 >
                   {t('page.Get Started!')}
@@ -87,7 +94,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
               <span
                 className="
                 en:text-[12px] en:md:text-[18px]
-                jako:text-[15px] jako:font-changa jako:font-bold jako:md:text-[26px]
+                jakoth:text-[15px] jakoth:font-changa jakoth:font-bold jakoth:md:text-[26px]
                 "
               >
                 {t('page.Get a')}
@@ -97,7 +104,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 className="
                 inline-block mx-1 md:mx-2
                 en:text-[17px] en:md:text-[30px]
-                jako:text-[15px] jako:font-changa jako:font-bold jako:md:text-[26px]
+                jakoth:text-[15px] jakoth:font-changa jakoth:font-bold jakoth:md:text-[26px]
                 "
               >
                 {t('page.100% Bonus')}
@@ -105,7 +112,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
               <span
                 className="
                 en:text-[12px] en:md:text-[18px]
-                jako:text-[15px] jako:font-changa jako:font-bold jako:md:text-[26px]
+                jakoth:text-[15px] jakoth:font-changa jakoth:font-bold jakoth:md:text-[26px]
                 "
               >
                 {t('page.on your')}
@@ -115,7 +122,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 className="
                 inline-block mx-1 md:mx-2
                 en:text-[17px] en:md:text-[30px]
-                jako:text-[15px] jako:font-changa jako:font-bold jako:md:text-[26px]
+                jakoth:text-[15px] jakoth:font-changa jakoth:font-bold jakoth:md:text-[26px]
                 "
               >
                 {t('page.First Deposit')}
@@ -124,10 +131,10 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 className="
                 block md:inline-block lg:inline-block
                 en:text-[13px] en:md:text-[24px]
-                jako:text-[15px] jako:font-changa jako:font-bold jako:md:text-[26px]
+                jakoth:text-[15px] jakoth:font-changa jakoth:font-bold jakoth:md:text-[26px]
                 "
               >
-                {t('page.(up to USDT₮300)')}
+                {t('page.(up to $300)')}
               </p>
             </div>
           </div>
@@ -141,7 +148,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                     className="
                     text-white
                     en:text-[21px] en:md:text-[22px]
-                    jako:font-changa jako:text-[21px] jako:md:text-[22px]
+                    jakoth:font-changa jakoth:text-[21px] jakoth:md:text-[22px]
                     "
                   >
                     {t('page.STEP')}
@@ -150,7 +157,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                     className="
                     text-white mb-2 text-center
                     en:text-[26px] en:md:text-[30px]
-                    jako:font-changa jako:text-[26px] jako:md:text-[30px]
+                    jakoth:font-changa jakoth:text-[26px] jakoth:md:text-[30px]
                     "
                   >
                     1
@@ -170,7 +177,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 className="
                 text-white mb-1 ml-2 md:ml-0 text-left -mt-10 pt-4
                 en:text-[22px] en:font-bold en:md:text-[18px]
-                jako:text-[25px] jako:font-black jako:md:text-[17px]
+                jakoth:text-[25px] jakoth:font-black jakoth:md:text-[17px]
                 "
               >
                 {t('page.Sign up with')}
@@ -179,7 +186,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 className="
                 text-white ml-2 -mr-1 md:ml-0 text-left
                 en:text-[18px] en:md:text-[16px]
-                jako:text-[12px] jako:md:text-[12px] tracking-[-1px]
+                jakoth:text-[12px] jakoth:md:text-[12px] tracking-[-1px]
                 "
               >
                 {t('page.Email, Telegram, Metamask wallet.')}
@@ -194,7 +201,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                     className="
                     text-white
                     en:text-[21px] en:md:text-[22px]
-                    jako:font-changa jako:text-[21px] jako:md:text-[22px]
+                    jakoth:font-changa jakoth:text-[21px] jakoth:md:text-[22px]
                     "
                   >
                     {t('page.STEP')}
@@ -203,7 +210,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                     className="
                     text-white mb-2 text-center
                     en:text-[26px] en:md:text-[30px]
-                    jako:font-changa jako:text-[26px] jako:md:text-[30px]
+                    jakoth:font-changa jakoth:text-[26px] jakoth:md:text-[30px]
                     "
                   >
                     2
@@ -223,7 +230,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 className="
                 text-white mb-1 ml-2 md:ml-0 text-left -mt-10 pt-4
                 en:text-[22px] en:font-bold en:md:text-[18px]
-                jako:text-[25px] jako:font-black jako:md:text-[17px]
+                jakoth:text-[25px] jakoth:font-black jakoth:md:text-[17px]
                 "
               >
                 {t('page.Minimum deposit')}
@@ -232,10 +239,10 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 className="
                 text-white ml-2 -mr-1 md:ml-0 text-left
                 en:text-[18px] en:md:text-[16px]
-                jako:text-[12px] jako:md:text-[12px] tracking-[-1px]
+                jakoth:text-[12px] jakoth:md:text-[12px] tracking-[-1px]
                 "
               >
-                {t('page.Make a deposit of USDT₮10 to begin.')}
+                {t('page.Make a deposit of $10 to begin.')}
               </p>
             </div>
 
@@ -247,7 +254,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                     className="
                     text-white
                     en:text-[21px] en:md:text-[22px]
-                    jako:font-changa jako:text-[21px] jako:md:text-[22px]
+                    jakoth:font-changa jakoth:text-[21px] jakoth:md:text-[22px]
                     "
                   >
                     {t('page.STEP')}
@@ -256,7 +263,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                     className="
                     text-white mb-2 text-center
                     en:text-[26px] en:md:text-[30px]
-                    jako:font-changa jako:text-[26px] jako:md:text-[30px]
+                    jakoth:font-changa jakoth:text-[26px] jakoth:md:text-[30px]
                     "
                   >
                     3
@@ -276,7 +283,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 className="
                 text-white mb-1 ml-2 md:ml-0 text-left -mt-10 pt-4
                 en:text-[22px] en:font-bold en:md:text-[18px]
-                jako:text-[25px] jako:font-black jako:md:text-[17px]
+                jakoth:text-[25px] jakoth:font-black jakoth:md:text-[17px]
                 "
               >
                 {t('page.Get Welcome Bonus')}
@@ -285,10 +292,10 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 className="
                 text-white ml-2 -mr-1 md:ml-0 text-left
                 en:text-[18px] en:md:text-[16px]
-                jako:text-[12px] jako:md:text-[12px] tracking-[-1px]
+                jakoth:text-[12px] jakoth:md:text-[12px] tracking-[-1px]
                 "
               >
-                {t('page.Enjoy a Bonus up to USDT₮300')}
+                {t('page.Enjoy a Bonus up to $300')}
               </p>
             </div>
           </div>
@@ -299,7 +306,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
               className="
               bg-[#252525] text-white py-2 px-15 mt-10 mb-3 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer
               en:text-[16px] en:md:text-[20px]
-              jako:text-[14px] jako:font-extrabold jako:md:text-[20px]
+              jakoth:text-[14px] jakoth:font-extrabold jakoth:md:text-[20px]
               "
             >
               <span className="mr-2">🚀</span> {t(`page.Let's Play Now !`)}
@@ -313,7 +320,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 className="
               text-white underline decoration-[#FF008C] mt-2 md:ml-2
                 en:text-[13px] en:md:text-[14px]
-                jako:text-[12px] jako:font-semibold jako:md:text-[13px]
+                jakoth:text-[12px] jakoth:font-semibold jakoth:md:text-[13px]
                 "
                 dangerouslySetInnerHTML={{
                   __html: t('page.Bonus must be claimed on the Deposit Page before depositing.'),
@@ -330,17 +337,17 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
             className="
             mb-4 mx-6 md:ml-0 md:mr-25
             en:text-[30px] en:leading-[38px] en:md:text-[64px] en:md:leading-[70px] en:tracking-[-1px]
-            jako:text-[27px] jako:font-black jako:tracking-tighter jako:md:text-[48px]
+            jakoth:text-[27px] jakoth:font-black jakoth:tracking-tighter jakoth:md:text-[48px]
             "
           >
             {t('page.A One-of-a-Kind')}
-            <br className="jako:hidden" />
+            <br className="jakoth:hidden" />
             {t('page.Betting Experience Only')}
-            <br className="block md:hidden jako:hidden" />
+            <br className="block md:hidden jakoth:hidden" />
             <span
               className="
               en:text-[30px] en:md:text-[50px]
-              jako:text-[27px] jako:font-black jako:md:text-[48px]
+              jakoth:text-[27px] jakoth:font-black jakoth:md:text-[48px]
               "
             >
               <span
@@ -356,12 +363,12 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 alt="FOMO Logo"
                 className="
                   inline-block align-middle w-[80px] h-[24px] md:w-[170px] md:h-[50px] ml-0
-                  jako:mt-1 jako:mb-1 jako:md:mb-2
+                  jakoth:mt-1 jakoth:mb-1 jakoth:md:mb-2
                   "
               />
               &nbsp;
               {t('page.cc0')}
-              <br className="hidden jako:hidden jako:md:block" />
+              <br className="hidden jakoth:hidden jakoth:md:block" />
               {t('page.cc1')}
             </span>
           </h1>
@@ -370,7 +377,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
             className="
             text-[#FF008C] mx-6 md:ml-0 md:mr-25
             en:text-[17px] en:font-medium en:md:text-[32px] en:md:font-normal
-            jako:text-[14px] jako:font-extrabold jako:md:text-[32px]
+            jakoth:text-[14px] jakoth:font-extrabold jakoth:md:text-[32px]
             "
           >
             {t('page.Play More, Earn More')}
@@ -378,7 +385,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
               className="
               text-white mb-6 md:mb-8 inline-block ml-1
               en:text-[10px] en:md:text-[20px]
-              jako:text-[11px] jako:font-extrabold jako:md:text-[20px]
+              jakoth:text-[11px] jakoth:font-extrabold jakoth:md:text-[20px]
               "
             >
               {t('page.– Rewards Like No Other')}
@@ -392,7 +399,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                   className="
                   absolute -top-12 -left-1 text-[#FF008C] z-10
                   en:text-7xl en:font-extrabold
-                  jako:text-7xl jako:font-extrabold jako:font-changa
+                  jakoth:text-7xl jakoth:font-extrabold jakoth:font-changa
                   "
                   style={{ WebkitTextStroke: '3px black' }}
                 >
@@ -401,7 +408,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 <h3
                   className="
                   en:text-[18px] font-semibold en:md:text-[20px]
-                  jako:text-[20px] jako:font-black jako:md:text-[20px]
+                  jakoth:text-[20px] jakoth:font-black jakoth:md:text-[20px]
                   "
                   dangerouslySetInnerHTML={{ __html: t('page.FOMO-Exclusive Betting Events') }}
                 ></h3>
@@ -411,7 +418,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                   className="
                   list-disc list-outside pl-5 md:pl-3 text-white
                   en:text-[13px] en:md:text-[14px]
-                  jako:text-[14px] jako:font-bold jako:md:font-semibold
+                  jakoth:text-[14px] jakoth:font-bold jakoth:md:font-semibold
                   "
                 >
                   <li className="mb-4">
@@ -428,7 +435,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                   className="
                   absolute -top-12 -left-1 text-[#FF008C] z-10
                   en:text-7xl en:font-extrabold
-                  jako:text-7xl jako:font-extrabold jako:font-changa
+                  jakoth:text-7xl jakoth:font-extrabold jakoth:font-changa
                   "
                   style={{ WebkitTextStroke: '3px black' }}
                 >
@@ -437,7 +444,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 <h3
                   className="
                   en:text-[18px] font-semibold en:md:text-[20px]
-                  jako:text-[20px] jako:font-black jako:md:text-[20px]
+                  jakoth:text-[20px] jakoth:font-black jakoth:md:text-[20px]
                   "
                   dangerouslySetInnerHTML={{ __html: t('page.Nonstop Reward System') }}
                 ></h3>
@@ -447,7 +454,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                   className="
                   list-disc list-outside pl-5 md:pl-3 text-white
                   en:text-[13px] en:md:text-[14px]
-                  jako:text-[14px] jako:font-bold jako:md:font-semibold
+                  jakoth:text-[14px] jakoth:font-bold jakoth:md:font-semibold
                   "
                 >
                   <li className="mb-4">
@@ -464,7 +471,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                   className="
                   absolute -top-12 -left-1 text-[#FF008C] z-10
                   en:text-7xl en:font-extrabold
-                  jako:text-7xl jako:font-extrabold jako:font-changa
+                  jakoth:text-7xl jakoth:font-extrabold jakoth:font-changa
                   "
                   style={{ WebkitTextStroke: '3px black' }}
                 >
@@ -473,7 +480,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 <h3
                   className="
                   en:text-[18px] font-semibold en:md:text-[20px]
-                  jako:text-[20px] jako:font-black jako:md:text-[20px]
+                  jakoth:text-[20px] jakoth:font-black jakoth:md:text-[20px]
                   "
                   dangerouslySetInnerHTML={{ __html: t('page.Referral Program – Earn up to 35%') }}
                 ></h3>
@@ -483,7 +490,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                   className="
                   list-disc list-outside pl-5 md:pl-3 text-white
                   en:text-[13px] en:md:text-[14px]
-                  jako:text-[14px] jako:font-bold jako:md:font-semibold
+                  jakoth:text-[14px] jakoth:font-bold jakoth:md:font-semibold
                   "
                 >
                   <li className="mb-4">
@@ -506,7 +513,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
               <span
                 className="
                 en:text-[30px] en:md:text-[64px]
-                jako:text-[23px] jako:font-black jako:md:text-[50px]
+                jakoth:text-[23px] jakoth:font-black jakoth:md:text-[50px]
                 "
               >
                 {t('page.Crypto-Friendly')}
@@ -516,7 +523,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 className="
                 mx-2 md:mx-4
                 en:text-[23px] en:md:text-[50px]
-                jako:text-[23px] jako:font-black jako:md:text-[36px]
+                jakoth:text-[23px] jakoth:font-black jakoth:md:text-[36px]
                 "
               >
                 {t('page.and')}
@@ -525,7 +532,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 className="
                 block md:inline-block
                 en:text-[30px] en:md:text-[64px]
-                jako:text-[23px] jako:font-black jako:md:text-[50px]
+                jakoth:text-[23px] jakoth:font-black jakoth:md:text-[50px]
                 "
               >
                 {t('page.Fiat-Ready')}
@@ -545,7 +552,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                     className="
                     mb-2
                     en:text-[28px] en:font-semibold en:leading-7 en:md:text-[36px]
-                    jako:text-[25px] jako:font-black jako:md:text-[36px]
+                    jakoth:text-[25px] jakoth:font-black jakoth:md:text-[36px]
                     "
                   >
                     {t('page.Supported cryptocurrencies')}
@@ -555,7 +562,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                     className="
                     text-white mt-3
                     en:font-changa en:text-[15px] en:font-semibold en:md:text-[20px]
-                    jako:font-changa jako:text-[15px] jako:font-semibold jako:md:text-[20px] jako:md:leading-10
+                    jakoth:font-changa jakoth:text-[15px] jakoth:font-semibold jakoth:md:text-[20px] jakoth:md:leading-10
                     "
                   >
                     {t('page.USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE')}
@@ -567,7 +574,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                     className="
                     mb-2
                     en:text-[24px] en:md:text-[32px]
-                    jako:text-[14px] jako:font-extrabold jako:md:text-[24px]
+                    jakoth:text-[14px] jakoth:font-extrabold jakoth:md:text-[24px]
                     "
                   >
                     {t('page.No crypto? No problem!')}
@@ -603,7 +610,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
                 className="
                 bg-[#252525] text-white py-2 px-17 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer
                 en:text-[16px] en:md:text-[20px]
-                jako:text-[14px] jako:font-extrabold jako:md:text-[20px]
+                jakoth:text-[14px] jakoth:font-extrabold jakoth:md:text-[20px]
                 "
               >
                 <span className="mr-2">🚀</span> {t(`page.Let's Play Now !`)}

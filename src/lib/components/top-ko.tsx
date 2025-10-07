@@ -421,7 +421,7 @@ function Mobile(props: IAppEvent) {
             </div>
           </div>
           <div className="text-center justify-start text-white text-lg font-normal font-['Inter'] leading-normal max-w-[340px]">
-            첫 입금시 100% 보너스 (최대 300 USDT) 혜택! 지금 바로 잿팟에 도전하세요!
+            첫 입금시 100% 보너스 (최대 300 $) 혜택! 지금 바로 잿팟에 도전하세요!
           </div>
           <button onClick={singUp(props)}>
             <div className="px-[42px] py-2 bg-black rounded-[100px] outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
@@ -874,7 +874,7 @@ function Desktop(props: IAppEvent) {
             </div>
           </div>
           <div className="self-stretch text-center justify-start text-white text-2xl font-normal font-['Pretendard'] leading-normal">
-            첫 입금시 100% 보너스 (최대 300 USDT) 혜택! 지금 바로 잿팟에 도전하세요!
+            첫 입금시 100% 보너스 (최대 300 $) 혜택! 지금 바로 잿팟에 도전하세요!
           </div>
           <button
             onClick={singUp(props)}

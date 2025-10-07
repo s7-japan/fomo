@@ -2,6 +2,7 @@ import i18next from 'i18next'
 import EN from '../locales/en.json'
 import JA from '../locales/ja.json'
 import KO from '../locales/ko.json'
+import TH from '../locales/th.json'
 
 export type LangType = keyof typeof lngMappingObj
 
@@ -9,6 +10,7 @@ export const lngMappingObj = {
   en: EN,
   ja: JA,
   ko: KO,
+  th: TH,
 } as const
 
 export const setupI18n = (lang: LangType) => {
