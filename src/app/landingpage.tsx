@@ -3,6 +3,7 @@ import TopKo from '../lib/components/top-ko'
 import TopTh from '../lib/components/top-th'
 import RegEnM from '../lib/components/registration/reg-en-m'
 import RegJaM from '../lib/components/registration/reg-ja-m'
+import RegKoM from '../lib/components/registration/reg-ko-m'
 import StepsM from '../lib/components/steps';
 import OneOfTheKind from '../lib/components/one-of-the-kind'
 import { i18nT, LangType, setLng, setupI18n } from '../lib/services/i18n.service'
@@ -28,7 +29,7 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
       {props.is_registration ? (
         <div className=" bg-black text-white antialiased en:font-changa">
           <div className="block lg:hidden">
-            {props.lang === 'ja' ? <RegJaM /> : props.lang === 'ko' ? <div>koko</div> : <RegEnM />}
+            {props.lang === 'ja' ? <RegJaM /> : props.lang === 'ko' ? <RegKoM /> : <RegEnM />}
           </div>
         </div>
       ) : (

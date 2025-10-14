@@ -190,10 +190,12 @@ export default function App(props: IAppProps) {
           </div>
 
           <div className="w-full h-[613.24px] relative">
-            <div className="w-[311px] h-[541px] left-[6.66px] top-0 absolute bg-white/5 rounded-[21px]" />
+            <div className="w-full h-[541px] left-[6.66px] top-0 absolute bg-white/5 rounded-[21px]" />
+
             <div className="absolute top-[227px]">
               <img src="/images/ball-m.png" alt="" />
             </div>
+            
             <div className="w-[285px] h-[45px] left-[30.12px] top-[186.66px] absolute justify-center text-white text-2xl font-normal font-['Changa'] leading-snug">
               No Crypto? No problem.
               <br />
