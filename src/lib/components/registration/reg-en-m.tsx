@@ -7,66 +7,139 @@ export default function App(props: IAppProps) {
   return (
     <div className="inline-flex flex-col justify-start items-center">
       <div className="self-stretch inline-flex flex-col justify-center items-center gap-1.5">
-        <img className="w-full" src="/images/big-header-m.png" />
+        <img className="block lg:hidden w-full" src="/images/big-header-m.png" />
+        <img className="hidden lg:block w-full" src="/images/big-header-d.png" />
       </div>
 
       <div className="size- inline-flex flex-col justify-start items-center gap-[30px] px-3">
         <div className="w-full text-center justify-center">
-          <span className="text-white text-[26px] font-bold font-['Phudu'] leading-[30px]">
+          <span
+            className="
+          text-white font-bold font-['Phudu']
+          text-[26px] leading-[30px] lg:text-5xl lg:leading-[50px]
+          "
+          >
             Play and win{' '}
           </span>
-          <span className="text-[#ff008c] text-[26px] font-bold font-['Phudu'] leading-[30px]">
+          <span
+            className="
+          text-[#ff008c] font-bold font-['Phudu']
+          text-[26px] leading-[30px] lg:text-5xl lg:leading-[50px]
+          "
+          >
             Crypto
           </span>
-          <span className="text-white text-[26px] font-bold font-['Phudu'] leading-[30px]">
+          <span
+            className="
+          text-white font-bold font-['Phudu']
+          text-[26px] leading-[30px] lg:text-5xl lg:leading-[50px]
+          "
+          >
             {' '}
             for free! <br />
           </span>
-          <span className="text-[#ff008c] text-[26px] font-bold font-['Phudu'] leading-[30px]">
+          <span
+            className="
+          text-[#ff008c] font-bold font-['Phudu']
+          text-[26px] leading-[30px] lg:text-5xl lg:leading-[50px]
+          "
+          >
             10 Guaranteed Wins
           </span>
-          <span className="text-white text-[26px] font-bold font-['Phudu'] leading-[30px]">
+          <span
+            className="
+          text-white font-bold font-['Phudu']
+          text-[26px] leading-[30px] lg:text-5xl lg:leading-[50px]
+          "
+          >
             {' '}
             just for signing up.
           </span>
         </div>
         <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
-          <div className="text-center justify-start text-white text-2xl font-medium font-['Inter'] leading-7">
+          <div
+            className="
+          text-center justify-start text-white font-medium font-['Inter'] leading-7
+          text-2xl lg:text-4xl
+          "
+          >
             PLAY FOR FREE
           </div>
         </div>
         <div className="w-full text-center justify-start">
-          <span className="text-white text-base font-normal font-['Inter'] leading-normal">
+          <span
+            className="
+          text-white font-normal font-['Inter'] leading-normal
+          text-base lg:text-2xl
+          "
+          >
             Just sign up and choose one of these games to unlock your 10 Free Guaranteed Wins.
             <br /> <br />
             All{' '}
           </span>
-          <span className="text-[#ff008c] text-base font-bold font-['Inter'] leading-normal">
+          <span
+            className="
+          text-[#ff008c] font-bold font-['Inter'] leading-normal
+          text-base lg:text-2xl
+          "
+          >
             CASH{' '}
           </span>
-          <span className="text-white text-base font-normal font-['Inter'] leading-normal">
+          <span
+            className="
+          text-white font-normal font-['Inter'] leading-normal
+          text-base lg:text-2xl
+          "
+          >
             wins.{' '}
           </span>
-          <span className="text-[#ff008c] text-base font-bold font-['Inter'] leading-normal">
+          <span
+            className="
+          text-[#ff008c] font-bold font-['Inter'] leading-normal
+          text-base lg:text-2xl
+          "
+          >
             No deposit{' '}
           </span>
-          <span className="text-white text-base font-normal font-['Inter'] leading-normal">
+          <span
+            className="
+          text-white font-normal font-['Inter'] leading-normal
+          text-base lg:text-2xl
+          "
+          >
             needed.
           </span>
         </div>
-        <div className="self-stretch inline-flex justify-between items-center overflow-hidden gap-1">
+        <div
+          className="
+        inline-flex justify-between items-center overflow-hidden max-w-[418px]
+        gap-1 lg:gap-4
+        "
+        >
           <img className="w-28 h-[150px]" src="https://placehold.co/112x150" />
           <img className="w-28 h-[150px]" src="https://placehold.co/112x150" />
           <img className="w-28 h-[150px]" src="https://placehold.co/112x150" />
         </div>
-        <div className="text-center justify-start text-white text-base font-normal font-['Inter'] leading-normal">
+
+        <div
+          className="
+        text-center justify-start text-white font-normal font-['Inter'] leading-normal
+        text-base lg:text-2xl
+        "
+        >
           No wagering requirements. No gameplay restrictions. Just straight up crypto wins!
         </div>
         <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
-          <div className="text-center justify-start text-white text-2xl font-medium font-['Inter'] leading-7">
+          <div
+            className="
+          text-center justify-start text-white font-medium font-['Inter'] leading-7
+          text-2xl lg:text-4xl
+          "
+          >
             PLAY FOR FREE
           </div>
         </div>
+
         <div className="text-center justify-start text-white text-[13px] font-normal font-['Inter'] leading-normal">
           Available to new players only.
         </div>
@@ -75,18 +148,31 @@ export default function App(props: IAppProps) {
       <div className="w-full pt-12 inline-flex flex-col justify-start items-center gap-[35px] px-3">
         <div className="size- flex flex-col justify-start items-center gap-4">
           <img className="w-[65.75px] h-[34.34px]" src="/images/game-tag-m.png" />
-          <div className="text-center justify-start text-[#ff008c] text-6xl font-semibold font-['Inter'] leading-[60px]">
+          <div
+            className="
+          text-center justify-start text-[#ff008c] font-semibold font-['Inter']
+          text-6xl leading-[60px] lg:text-[100px] lg:leading-[100px]
+          "
+          >
             5,000+
           </div>
-          <div className="text-center justify-start text-white text-xl font-semibold font-['Inter'] leading-normal">
+
+          <div className="
+          text-center justify-start text-white font-semibold font-['Inter']
+          text-xl leading-normal lg:text-4xl lg:leading-9
+          ">
             Games of all genres await!
           </div>
         </div>
-        <div className="w-full">
-          <img src="/images/game-list-m.png" alt="" />
+        <div className="max-w-[992px]">
+          <img className="lg:hidden" src="/images/game-list-m.png" alt="" />
+          <img className="hidden lg:block" src="/images/game-list-d.png" alt="" />
         </div>
-        <div className="self-stretch flex flex-col justify-start items-start gap-0.5 overflow-hidden">
-          <div className="w-full justify-start text-[#ff008c] text-sm font-semibold font-['Inter'] leading-normal">
+        <div className="flex flex-col justify-start items-start gap-0.5 overflow-hidden">
+          <div className="
+          w-full max-w-[1300px] justify-start text-[#ff008c] font-semibold font-['Inter'] leading-normal
+          text-sm lg:text-2xl lg:text-center
+          ">
             Wide variety of slots, live casino, baccarat, roulette. Bet on top Sports leagues,
             international matches and Exclusive FOMO Originals.
           </div>
@@ -94,8 +180,8 @@ export default function App(props: IAppProps) {
       </div>
 
       <div className="self-stretch pt-12 inline-flex justify-center items-center gap-2.5">
-        <div className="w-[334.09px] inline-flex flex-col justify-start items-center gap-[17px]">
-          <div className="w-full h-[76px] relative">
+        <div className="w-full inline-flex flex-col justify-start items-center gap-[17px]">
+          <div className="w-[334.09px] h-[76px] relative">
             <div className="left-0 top-0 absolute text-center justify-center text-white text-3xl font-normal font-['Changa'] leading-[38px]">
               Just a Few Clicks to Claim <br />
               Your Welcome Bonus!
@@ -178,7 +264,7 @@ export default function App(props: IAppProps) {
         </div>
       </div>
 
-      <div className="self-stretch pt-12 inline-flex justify-center items-center gap-2.5">
+      <div className="mt-20 lg:pt-6">
         <OneOfTheKind />
       </div>
 
@@ -195,7 +281,7 @@ export default function App(props: IAppProps) {
             <div className="absolute top-[227px]">
               <img src="/images/ball-m.png" alt="" />
             </div>
-            
+
             <div className="w-[285px] h-[45px] left-[30.12px] top-[186.66px] absolute justify-center text-white text-2xl font-normal font-['Changa'] leading-snug">
               No Crypto? No problem.
               <br />

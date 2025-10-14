@@ -28,9 +28,9 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
     <>
       {props.is_registration ? (
         <div className=" bg-black text-white antialiased en:font-changa">
-          <div className="block lg:hidden">
+          {/* <div className="block lg:hidden"> */}
             {props.lang === 'ja' ? <RegJaM /> : props.lang === 'ko' ? <RegKoM /> : <RegEnM />}
-          </div>
+          {/* </div> */}
         </div>
       ) : (
         <div className=" bg-black text-white antialiased en:font-changa">

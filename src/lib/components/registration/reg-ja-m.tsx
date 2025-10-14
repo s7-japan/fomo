@@ -75,10 +75,11 @@ export default function App(props: IAppProps) {
             あらゆるジャンルのゲームが待っています！
           </div>
         </div>
-        <div className="w-full">
-          <img src="/images/game-list-m.png" alt="" />
+        <div className="max-w-[992px]">
+          <img className="lg:hidden" src="/images/game-list-m.png" alt="" />
+          <img className="hidden lg:block" src="/images/game-list-d.png" alt="" />
         </div>
-        <div className="self-stretch flex flex-col justify-start items-start gap-0.5 overflow-hidden">
+        <div className="flex flex-col justify-start items-start gap-0.5 overflow-hidden">
           <div className="w-full justify-start text-[#ff008c] text-sm font-semibold font-['Inter'] leading-normal">
             スロット、ライブカジノ、バカラ、ルーレットなど、豊富なゲームをご用意。トップスポーツリーグ、試合、そして限定FOMOオリジナルゲームに賭けましょう。
           </div>
@@ -178,7 +179,7 @@ export default function App(props: IAppProps) {
         </div>
       </div>
 
-      <div className="self-stretch pt-12 inline-flex justify-center items-center gap-2.5">
+      <div className="mt-20 lg:pt-6">
         <OneOfTheKind />
       </div>
 
