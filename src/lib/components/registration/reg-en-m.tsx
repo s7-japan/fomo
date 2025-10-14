@@ -1,4 +1,3 @@
-import * as React from 'react'
 import StepsM from '../steps'
 import OneOfTheKind from '../one-of-the-kind'
 
@@ -10,6 +9,7 @@ export default function App(props: IAppProps) {
       <div className="self-stretch inline-flex flex-col justify-center items-center gap-1.5">
         <img className="w-full" src="/images/big-header-m.png" />
       </div>
+
       <div className="size- inline-flex flex-col justify-start items-center gap-[30px] px-3">
         <div className="w-full text-center justify-center">
           <span className="text-white text-[26px] font-bold font-['Phudu'] leading-[30px]">
@@ -54,7 +54,7 @@ export default function App(props: IAppProps) {
             needed.
           </span>
         </div>
-        <div className="self-stretch inline-flex justify-between items-center overflow-hidden">
+        <div className="self-stretch inline-flex justify-between items-center overflow-hidden gap-1">
           <img className="w-28 h-[150px]" src="https://placehold.co/112x150" />
           <img className="w-28 h-[150px]" src="https://placehold.co/112x150" />
           <img className="w-28 h-[150px]" src="https://placehold.co/112x150" />
@@ -71,6 +71,7 @@ export default function App(props: IAppProps) {
           Available to new players only.
         </div>
       </div>
+
       <div className="w-full pt-12 inline-flex flex-col justify-start items-center gap-[35px] px-3">
         <div className="size- flex flex-col justify-start items-center gap-4">
           <img className="w-[65.75px] h-[34.34px]" src="/images/game-tag-m.png" />
@@ -85,7 +86,7 @@ export default function App(props: IAppProps) {
           <img src="/images/game-list-m.png" alt="" />
         </div>
         <div className="self-stretch flex flex-col justify-start items-start gap-0.5 overflow-hidden">
-          <div className="w-[349px] justify-start text-[#ff008c] text-sm font-semibold font-['Inter'] leading-normal">
+          <div className="w-full justify-start text-[#ff008c] text-sm font-semibold font-['Inter'] leading-normal">
             Wide variety of slots, live casino, baccarat, roulette. Bet on top Sports leagues,
             international matches and Exclusive FOMO Originals.
           </div>
@@ -171,11 +172,8 @@ export default function App(props: IAppProps) {
               SIGN UP NOW
             </div>
           </div>
-          <div className="w-[220px] h-[9px] relative">
-            <div className="w-[210px] h-0 left-0 top-[9px] absolute outline outline-[3px] outline-offset-[-1.50px] outline-[#fe006e]"></div>
-            <div className="left-0 top-0 absolute text-center justify-center text-white text-[13px] font-normal font-['Changa'] leading-[4px]">
-              Bonus applied instantly after deposit
-            </div>
+          <div className="text-center justify-center text-white text-[13px] font-normal font-['Changa'] leading-[4px] underline underline-offset-3 decoration-2 decoration-[#FF008C]">
+            Bonus applied instantly after deposit
           </div>
         </div>
       </div>
@@ -186,12 +184,9 @@ export default function App(props: IAppProps) {
 
       <div className="self-stretch pt-12 inline-flex justify-center items-center gap-2.5 px-3">
         <div className="w-full inline-flex flex-col justify-start items-start gap-[18px] px-4">
-          <div className="size- inline-flex justify-start items-start gap-[23px]">
-            <div className="w-[77px] h-0 origin-top-left rotate-90 outline outline-[3px] outline-offset-[-1.50px] outline-[#fe006e]"></div>
-            <div className="w-[264px] h-[76px] -ml-[77px] justify-center text-white text-3xl font-normal font-['Changa'] leading-[38px]">
-              Crypto Casino. <br />
-              Fiat-Friendly.
-            </div>
+          <div className="w-full pl-[23px] border-l-4 border-[#FF008C] h-[76px] justify-center text-white text-3xl font-normal font-['Changa'] leading-[38px]">
+            Crypto Casino. <br />
+            Fiat-Friendly.
           </div>
 
           <div className="w-full h-[613.24px] relative">
@@ -212,7 +207,7 @@ export default function App(props: IAppProps) {
             </div>
           </div>
 
-          <div className="w-[312px] h-10 py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3">
+          <div className="w-full h-10 py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3">
             <div className="justify-start text-black text-[26px] font-normal font-['Inter'] tracking-wide">
               🚀
             </div>
