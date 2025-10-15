@@ -55,7 +55,12 @@ export default function App(props: IAppProps) {
           </span>
           <span className="text-white text-base font-normal font-['Inter'] leading-normal">.</span>
         </div>
-        <div className="self-stretch inline-flex justify-between items-center overflow-hidden gap-1">
+        <div
+          className="
+        max-w-[418px] inline-flex justify-between items-center overflow-hidden
+        gap-1 md:gap-4
+        "
+        >
           <img className="w-28 h-[150px]" src="https://placehold.co/112x150" />
           <img className="w-28 h-[150px]" src="https://placehold.co/112x150" />
           <img className="w-28 h-[150px]" src="https://placehold.co/112x150" />

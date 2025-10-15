@@ -112,7 +112,7 @@ export default function App(props: IAppProps) {
         </div>
         <div
           className="
-        inline-flex justify-between items-center overflow-hidden max-w-[418px]
+        max-w-[418px] inline-flex justify-between items-center overflow-hidden
         gap-1 md:gap-4
         "
         >
@@ -185,7 +185,8 @@ export default function App(props: IAppProps) {
 
       <div className="self-stretch pt-12 inline-flex justify-center items-center gap-2.5">
         <div className="w-full inline-flex flex-col justify-start items-center gap-[17px]">
-          <div className="w-[334.09px] h-[76px] relative">
+          {/* mobile */}
+          <div className="md:hidden w-[334.09px] h-[76px] relative">
             <div className="left-0 top-0 absolute text-center justify-center text-white text-3xl font-normal font-['Changa'] leading-[38px]">
               Just a Few Clicks to Claim <br />
               Your Welcome Bonus!
@@ -251,18 +252,138 @@ export default function App(props: IAppProps) {
               </svg>
             </div>
           </div>
+          <div className="md:hidden w-[315px] h-[41px] text-center justify-center">
+            <span className="text-white text-xs font-normal font-['Changa'] leading-normal">
+              Get a{' '}
+            </span>
+            <span className="text-white text-[17px] font-normal font-['Changa'] leading-normal">
+              100% Bonus
+            </span>
+            <span className="text-white text-xs font-normal font-['Changa'] leading-normal">
+              {' '}
+              on Your{' '}
+            </span>
+            <span className="text-white text-[17px] font-normal font-['Changa'] leading-normal">
+              First Deposit <br />
+            </span>
+            <span className="text-white text-[13px] font-normal font-['Changa'] leading-normal">
+              (Up to $300)
+            </span>
+          </div>
+
+          {/* desktop */}
+          <div className="hidden md:inline-flex w-full max-w-[1310px] flex-col justify-start items-center">
+            <div className="w-full max-w-[1310px] h-[173px] relative">
+              <div data-svg-wrapper className="left-[141.80px] top-[65.92px] absolute">
+                <svg
+                  width="1053"
+                  height="53"
+                  viewBox="0 0 1053 53"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.79688 48.0039L1047.79 5.91761"
+                    stroke="url(#paint0_linear_4105_38656)"
+                    stroke-opacity="0.19"
+                    stroke-width="10"
+                    stroke-linecap="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_4105_38656"
+                      x1="6.01871"
+                      y1="53.4995"
+                      x2="1048.02"
+                      y2="11.4132"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#FE018C" />
+                      <stop offset="1" stop-color="#FF006F" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div data-svg-wrapper className="left-[379px] top-[59px] absolute">
+                <svg
+                  width="653"
+                  height="75"
+                  viewBox="0 0 653 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 5L647.997 69.1723"
+                    stroke="url(#paint0_linear_4105_38657)"
+                    stroke-opacity="0.19"
+                    stroke-width="10"
+                    stroke-linecap="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_4105_38657"
+                      x1="4.45372"
+                      y1="10.4728"
+                      x2="647.451"
+                      y2="74.6451"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#FE018C" />
+                      <stop offset="1" stop-color="#FF006F" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div className="left-0 top-0 absolute text-center justify-center text-white text-[64px] font-medium font-['Changa'] leading-[173px]">
+                Just a Few Clicks to Claim Your Welcome Bonus!
+              </div>
+            </div>
+            <div className="self-stretch h-[50px] text-center justify-center mt-[-32px]">
+              <span className="text-white text-2xl font-normal font-['Changa'] leading-[33px]">
+                Get a
+              </span>
+              <span className="text-white text-[34px] font-normal font-['Changa'] leading-[33px]">
+                {' '}
+                100% Bonus{' '}
+              </span>
+              <span className="text-white text-2xl font-normal font-['Changa'] leading-[33px]">
+                on Your
+              </span>
+              <span className="text-white text-[34px] font-normal font-['Changa'] leading-[33px]">
+                {' '}
+                First Deposit{' '}
+              </span>
+              <span className="text-white text-2xl font-normal font-['Changa'] leading-[33px]">
+                {' '}
+                (Up to $300)
+              </span>
+            </div>
+          </div>
 
           <StepsM />
 
-          <div className="w-[312px] h-10 py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3">
+          <div className="
+          py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3
+          w-[312px] md:w-[412px] md:mt-8
+          ">
             <div className="justify-start text-black text-[26px] font-normal font-['Inter'] tracking-wide">
               🚀
             </div>
-            <div className="text-center justify-center text-white text-base font-normal font-['Changa'] leading-[21px]">
+
+            <div
+              className="
+            text-center justify-center text-white font-['Changa']
+            text-base font-normal leading-[21px] md:text-[28px] md:font-medium md:leading-7
+            "
+            >
               SIGN UP NOW
             </div>
           </div>
-          <div className="text-center justify-center text-white text-[13px] font-normal font-['Changa'] leading-[4px] underline underline-offset-3 decoration-2 decoration-[#FF008C]">
+
+          <div className="
+          text-center justify-center text-white font-['Changa'] underline underline-offset-3 decoration-2 decoration-[#FF008C]
+          text-[13px] font-normal leading-[4px] md:text-xl md:font-semibold md:leading-[80px]
+          ">
             Bonus applied instantly after deposit
           </div>
         </div>
@@ -336,11 +457,17 @@ export default function App(props: IAppProps) {
             </div>
           </div>
 
-          <div className="w-full max-w-[312px] self-center h-10 py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3">
+          <div className="
+          self-center py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3
+          w-full md:w-[412px] md:mt-8
+          ">
             <div className="justify-start text-black text-[26px] font-normal font-['Inter'] tracking-wide">
               🚀
             </div>
-            <div className="text-center justify-center text-white text-base font-normal font-['Changa'] leading-[21px]">
+            <div className="
+            text-center justify-center text-white font-['Changa']
+            text-base font-normal leading-[21px] md:text-[28px] md:font-medium md:leading-7
+            ">
               PLAY FOR FREE
             </div>
           </div>
