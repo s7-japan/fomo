@@ -86,8 +86,8 @@ export default function App(props: IAppProps) {
           </div>
         </div>
         <div className="max-w-[992px]">
-          <img className="lg:hidden" src="/images/game-list-m.png" alt="" />
-          <img className="hidden lg:block" src="/images/game-list-d.png" alt="" />
+          <img className="md:hidden" src="/images/game-list-m.png" alt="" />
+          <img className="hidden md:block" src="/images/game-list-d.png" alt="" />
         </div>
         <div className="text-center justify-start text-[#ff008c] text-xl font-semibold font-['Pretendard'] leading-[30px]">
           슬롯, 라이브카지노, 바카라, 룰렛등
@@ -219,12 +219,12 @@ export default function App(props: IAppProps) {
         </div>
       </div>
 
-      <div className="mt-20 lg:pt-6">
+      <div className="mt-20 md:pt-6">
         <OneOfTheKind />
       </div>
 
       <div className="self-stretch pt-12 inline-flex justify-center items-center gap-2.5 px-3">
-        <div className="w-full inline-flex flex-col justify-start items-start gap-[18px] px-4">
+        <div className="w-full inline-flex flex-col justify-start items-start gap-[18px] px-4 max-w-5xl">
           <div className="w-full pl-[23px] border-l-4 border-[#FF008C] justify-center text-white text-3xl font-normal font-['Changa'] leading-[38px]">
             암호화폐 OK!
             <br />
@@ -233,11 +233,11 @@ export default function App(props: IAppProps) {
 
           <div className="w-full h-[613.24px] relative">
             <div className="w-full h-[541px] left-[6.66px] top-0 absolute bg-white/5 rounded-[21px]" />
-            
+
             <div className="top-[227px] absolute">
               <img src="/images/ball-m.png" alt="" />
             </div>
-            
+
             <div className="w-[285px] h-[45px] left-[29.17px] top-[170px] absolute justify-center text-white text-lg font-normal font-['Changa'] leading-snug">
               암호화폐가 없으신가요? 걱정 마세요!
               <br />
@@ -251,7 +251,7 @@ export default function App(props: IAppProps) {
             </div>
           </div>
 
-          <div className="self-stretch h-10 py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3">
+          <div className="w-full max-w-[312px] self-center h-10 py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3">
             <div className="justify-start text-black text-[26px] font-normal font-['Inter'] tracking-wide">
               🚀
             </div>

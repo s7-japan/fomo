@@ -9,7 +9,6 @@ export default function App(props: IAppProps) {
       <div className="self-stretch inline-flex flex-col justify-center items-center gap-1.5">
         <img className="w-full" src="/images/big-header-m.png" />
       </div>
-
       <div className="size- inline-flex flex-col justify-start items-center gap-[30px] px-3">
         <div className="w-full text-center justify-center">
           <span className="text-white text-2xl font-extrabold font-['Inter'] leading-[30px] tracking-wide">
@@ -64,7 +63,6 @@ export default function App(props: IAppProps) {
           ※ 新規プレイヤー限定オファーです。
         </div>
       </div>
-
       <div className="w-full pt-12 inline-flex flex-col justify-start items-center gap-[35px] px-3">
         <div className="size- flex flex-col justify-start items-center gap-4">
           <img className="w-[65.75px] h-[34.34px]" src="/images/game-tag-m.png" />
@@ -76,8 +74,8 @@ export default function App(props: IAppProps) {
           </div>
         </div>
         <div className="max-w-[992px]">
-          <img className="lg:hidden" src="/images/game-list-m.png" alt="" />
-          <img className="hidden lg:block" src="/images/game-list-d.png" alt="" />
+          <img className="md:hidden" src="/images/game-list-m.png" alt="" />
+          <img className="hidden md:block" src="/images/game-list-d.png" alt="" />
         </div>
         <div className="flex flex-col justify-start items-start gap-0.5 overflow-hidden">
           <div className="w-full justify-start text-[#ff008c] text-sm font-semibold font-['Inter'] leading-normal">
@@ -85,7 +83,6 @@ export default function App(props: IAppProps) {
           </div>
         </div>
       </div>
-
       <div className="self-stretch pt-12 pb-6 inline-flex justify-center items-center gap-2.5">
         <div className="w-[354px] inline-flex flex-col justify-start items-center gap-[23px]">
           <div className="w-full h-[38.28px] relative">
@@ -178,13 +175,11 @@ export default function App(props: IAppProps) {
           </div>
         </div>
       </div>
-
-      <div className="mt-20 lg:pt-6">
+      <div className="mt-20 md:pt-6">
         <OneOfTheKind />
       </div>
-
       <div className="self-stretch pt-12 inline-flex justify-center items-center gap-2.5 px-3">
-        <div className="w-full inline-flex flex-col justify-end items-start gap-[18px] px-4">
+        <div className="w-full inline-flex flex-col justify-end items-start gap-[18px] px-4 max-w-5xl">
           <div className="w-full pl-[23px] border-l-4 border-[#FF008C] justify-center text-white text-[23px] font-bold font-['Changa'] leading-[38px]">
             いろいろな
             <br />
@@ -212,7 +207,7 @@ export default function App(props: IAppProps) {
             </div>
           </div>
 
-          <div className="self-stretch h-10 py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3">
+          <div className="w-full max-w-[312px] self-center h-10 py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3">
             <div className="justify-start text-black text-[26px] font-normal font-['Inter'] tracking-wide">
               🚀
             </div>
@@ -222,7 +217,6 @@ export default function App(props: IAppProps) {
           </div>
         </div>
       </div>
-
       <div className="min-h-[140px]"></div>
     </div>
   )
