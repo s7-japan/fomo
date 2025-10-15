@@ -56,6 +56,7 @@ export default function App(props: IAppProps) {
             just for signing up.
           </span>
         </div>
+
         <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
           <div
             className="
@@ -66,6 +67,7 @@ export default function App(props: IAppProps) {
             PLAY FOR FREE
           </div>
         </div>
+
         <div className="w-full text-center justify-start">
           <span
             className="
@@ -285,9 +287,9 @@ export default function App(props: IAppProps) {
                   <path
                     d="M5.79688 48.0039L1047.79 5.91761"
                     stroke="url(#paint0_linear_4105_38656)"
-                    stroke-opacity="0.19"
-                    stroke-width="10"
-                    stroke-linecap="round"
+                    strokeOpacity="0.19"
+                    strokeWidth="10"
+                    strokeLinecap="round"
                   />
                   <defs>
                     <linearGradient
@@ -298,8 +300,8 @@ export default function App(props: IAppProps) {
                       y2="11.4132"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#FE018C" />
-                      <stop offset="1" stop-color="#FF006F" />
+                      <stop stopColor="#FE018C" />
+                      <stop offset="1" stopColor="#FF006F" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -315,9 +317,9 @@ export default function App(props: IAppProps) {
                   <path
                     d="M5 5L647.997 69.1723"
                     stroke="url(#paint0_linear_4105_38657)"
-                    stroke-opacity="0.19"
-                    stroke-width="10"
-                    stroke-linecap="round"
+                    strokeOpacity="0.19"
+                    strokeWidth="10"
+                    strokeLinecap="round"
                   />
                   <defs>
                     <linearGradient
@@ -328,8 +330,8 @@ export default function App(props: IAppProps) {
                       y2="74.6451"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#FE018C" />
-                      <stop offset="1" stop-color="#FF006F" />
+                      <stop stopColor="#FE018C" />
+                      <stop offset="1" stopColor="#FF006F" />
                     </linearGradient>
                   </defs>
                 </svg>

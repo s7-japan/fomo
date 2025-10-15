@@ -253,9 +253,9 @@ export default function App(props: IAppProps) {
                   <path
                     d="M5.39844 48.0039L1047.39 5.91761"
                     stroke="url(#paint0_linear_4105_38656)"
-                    stroke-opacity="0.19"
-                    stroke-width="10"
-                    stroke-linecap="round"
+                    strokeOpacity="0.19"
+                    strokeWidth="10"
+                    strokeLinecap="round"
                   />
                   <defs>
                     <linearGradient
@@ -266,8 +266,8 @@ export default function App(props: IAppProps) {
                       y2="11.4132"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#FE018C" />
-                      <stop offset="1" stop-color="#FF006F" />
+                      <stop stopColor="#FE018C" />
+                      <stop offset="1" stopColor="#FF006F" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -283,9 +283,9 @@ export default function App(props: IAppProps) {
                   <path
                     d="M5.60156 5L648.599 69.1723"
                     stroke="url(#paint0_linear_4105_38657)"
-                    stroke-opacity="0.19"
-                    stroke-width="10"
-                    stroke-linecap="round"
+                    strokeOpacity="0.19"
+                    strokeWidth="10"
+                    strokeLinecap="round"
                   />
                   <defs>
                     <linearGradient
@@ -296,8 +296,8 @@ export default function App(props: IAppProps) {
                       y2="74.6451"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#FE018C" />
-                      <stop offset="1" stop-color="#FF006F" />
+                      <stop stopColor="#FE018C" />
+                      <stop offset="1" stopColor="#FF006F" />
                     </linearGradient>
                   </defs>
                 </svg>
