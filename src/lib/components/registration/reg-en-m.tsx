@@ -1,5 +1,6 @@
 import StepsM from '../steps'
 import OneOfTheKind from '../one-of-the-kind'
+import GameList from './game-list'
 
 export interface IAppProps {}
 
@@ -112,17 +113,7 @@ export default function App(props: IAppProps) {
             needed.
           </span>
         </div>
-        <div
-          className="
-        max-w-[418px] inline-flex justify-between items-center overflow-hidden
-        gap-1 md:gap-4
-        "
-        >
-          <img className="w-28 h-[150px]" src="https://placehold.co/112x150" />
-          <img className="w-28 h-[150px]" src="https://placehold.co/112x150" />
-          <img className="w-28 h-[150px]" src="https://placehold.co/112x150" />
-        </div>
-
+        <GameList />
         <div
           className="
         text-center justify-start text-white font-normal font-['Inter'] leading-normal
