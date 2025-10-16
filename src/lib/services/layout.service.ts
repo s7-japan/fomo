@@ -1,5 +1,12 @@
 import { MouseEvent } from 'react'
+import { LangType } from './i18n.service'
 
+declare var Typekit: any
+
+export interface IMainProps {
+  lang: LangType
+  is_show_header_footer: boolean
+}
 export interface IAppEvent {
   event_emit: (type: EventEmitType) => void
 }
@@ -7,8 +14,6 @@ export interface IAppEvent {
 export type EventEmitType = 'signUp' | 'gotoCasino' | 'gotoBonusTerms'
 
 export const CDN_TMP = 'https://fomoio.netlify.app'
-
-declare var Typekit: any;
 
 export const addAdobeFonts = () => {
   ;(function (d) {

@@ -1,4 +1,4 @@
-import { CDN_TMP, IAppEvent, singUp } from '../services/layout.service'
+import { CDN_TMP, IAppEvent, singUp } from '../../services/layout.service'
 
 export default function App(props: IAppEvent) {
   return (

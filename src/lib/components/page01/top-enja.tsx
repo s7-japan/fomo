@@ -1,5 +1,5 @@
-import { i18nT } from '../services/i18n.service'
-import { CDN_TMP, gotoLink, IAppEvent, singUp } from '../services/layout.service'
+import { i18nT } from '../../services/i18n.service'
+import { CDN_TMP, gotoLink, IAppEvent, singUp } from '../../services/layout.service'
 
 const t = i18nT
 

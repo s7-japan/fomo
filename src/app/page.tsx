@@ -11,7 +11,6 @@ export default function Home() {
     <LandingPage
       lang="en"
       is_show_header_footer={true}
-      is_registration={true}
       event_emit={(type) => clickIt(type)}
     />
   )
