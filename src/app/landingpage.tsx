@@ -1,11 +1,10 @@
 import Page01 from '../lib/components/page01/_main'
 import Page02 from '../lib/components/page02/_main'
-import { i18nT, LangType, setLng, setupI18n } from '../lib/services/i18n.service'
+import { LangType, setLng, setupI18n } from '../lib/services/i18n.service'
 import { addAdobeFonts, CDN_TMP, IAppEvent } from '../lib/services/layout.service'
 
 addAdobeFonts()
 setupI18n('en')
-const t = i18nT
 
 interface IAppProps {
   lang: LangType
@@ -14,7 +13,7 @@ interface IAppProps {
 
 export default function LandingPage(props: IAppProps & IAppEvent) {
   const isShowHeaderFooter = props.is_show_header_footer
-  
+
   setLng(props.lang)
 
   return (

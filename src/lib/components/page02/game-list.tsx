@@ -38,7 +38,7 @@ export default function App(props: IAppProps) {
         "
     >
       {games.map((item, i) => (
-        <button className="relative cursor-pointer" onClick={() => showOverlay(item)}>
+        <button key={i} className="relative cursor-pointer" onClick={() => showOverlay(item)}>
           <img className="w-28 h-[150px]" src={item.imgUrl} />
           {selectedGame?.name === item.name ? (
             <div

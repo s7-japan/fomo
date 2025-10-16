@@ -355,10 +355,12 @@ export default function App(props: IAppProps) {
 
           <StepsM />
 
-          <div className="
+          <div
+            className="
           py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3
           w-[312px] md:w-[412px] md:mt-8
-          ">
+          "
+          >
             <div className="justify-start text-black text-[26px] font-normal font-['Inter'] tracking-wide">
               🚀
             </div>
@@ -373,10 +375,12 @@ export default function App(props: IAppProps) {
             </div>
           </div>
 
-          <div className="
+          <div
+            className="
           text-center justify-center text-white font-['Changa'] underline underline-offset-3 decoration-2 decoration-[#FF008C]
           text-[13px] font-normal leading-[4px] md:text-xl md:font-semibold md:leading-[80px]
-          ">
+          "
+          >
             Bonus applied instantly after deposit
           </div>
         </div>
@@ -450,24 +454,26 @@ export default function App(props: IAppProps) {
             </div>
           </div>
 
-          <div className="
+          <div
+            className="
           self-center py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3
           w-full md:w-[412px] md:mt-8
-          ">
+          "
+          >
             <div className="justify-start text-black text-[26px] font-normal font-['Inter'] tracking-wide">
               🚀
             </div>
-            <div className="
+            <div
+              className="
             text-center justify-center text-white font-['Changa']
             text-base font-normal leading-[21px] md:text-[28px] md:font-medium md:leading-7
-            ">
+            "
+            >
               PLAY FOR FREE
             </div>
           </div>
         </div>
       </div>
-
-      <div className="min-h-[140px]"></div>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import StepsM from '../steps'
 import OneOfTheKind from '../one-of-the-kind'
-import GameList from "./game-list"
+import GameList from './game-list'
 
 export interface IAppProps {}
 
@@ -363,25 +363,31 @@ export default function App(props: IAppProps) {
 
           <StepsM />
 
-          <div className="
+          <div
+            className="
           py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3
           w-[312px] md:w-[412px] md:mt-8
-          ">
+          "
+          >
             <div className="justify-start text-black text-[26px] font-normal font-['Inter'] tracking-wide">
               🚀
             </div>
-            <div className="
+            <div
+              className="
             text-center justify-center text-white font-['Changa']
             text-base font-normal leading-[21px] md:text-[28px] md:font-medium md:leading-7
-            ">
+            "
+            >
               지금 가입하기
             </div>
           </div>
 
-          <div className="
+          <div
+            className="
           text-center justify-center text-white font-['Changa'] underline underline-offset-3 decoration-2 decoration-[#FF008C]
           text-[13px] font-normal leading-[4px] md:text-xl md:font-semibold md:leading-[80px]
-          ">
+          "
+          >
             보너스는 입금 전 '입금 페이지'에서 반드시 신청해야 합니다.
           </div>
         </div>
@@ -393,70 +399,86 @@ export default function App(props: IAppProps) {
 
       <div className="self-stretch pt-12 inline-flex justify-center items-center gap-2.5 px-3">
         <div className="w-full inline-flex flex-col justify-start items-start gap-[18px] px-4 max-w-5xl">
-          <div className="
+          <div
+            className="
           w-full pl-[23px] border-l-4 border-[#FF008C] justify-center text-white font-normal font-['Changa']
           text-3xl leading-[38px] md:text-[52px] md:leading-[76px]
-          ">
+          "
+          >
             암호화폐 OK! <br className="md:hidden" />
             법정화폐도 OK!
           </div>
 
-          <div className="
+          <div
+            className="
           w-full relative
           h-[613.24px] md:h-[440px]
-          ">
-            <div className="
+          "
+          >
+            <div
+              className="
             w-full left-[6.66px] top-0 absolute bg-white/5 rounded-[21px]
             h-[541px] md:h-[370px]
-            " />
+            "
+            />
 
-            <div className="
+            <div
+              className="
             absolute
             top-[227px] md:top-[-140px] md:left-[580px] md:w-[480px]
-            ">
+            "
+            >
               <img src="/images/ball-m.png" alt="" />
             </div>
 
-            <div className="
+            <div
+              className="
             h-[45px] left-[29.17px] top-[170px] absolute justify-center text-white font-normal font-['Changa'] leading-snug
             w-[285px] text-lg md:w-full md:text-[35px] md:leading-[42px]
-            ">
+            "
+            >
               암호화폐가 없으신가요? 걱정 마세요!
               <br />
               카드만 사용하세요.
             </div>
-            <div className="
+            <div
+              className="
             left-[29.18px] absolute inline-flex justify-between items-center overflow-hidden
             top-[95px] w-[272px] md:top-[94px] md:w-[460px]
-            ">
+            "
+            >
               <img src="/public/images/coin-list-m.png" alt="" />
             </div>
-            <div className="
+            <div
+              className="
             h-[53px] left-[29.16px] top-[32px] absolute justify-center text-white font-['Changa']
             w-[272px] text-[25px] font-semibold leading-[25px] md:w-full md:text-[48px] md:font-extrabold md:leading-[42px]
-            ">
+            "
+            >
               암호화폐를 입금하세요.
             </div>
           </div>
 
-          <div className="
+          <div
+            className="
           self-center py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3
           w-full md:w-[412px] md:mt-8
-          ">
+          "
+          >
             <div className="justify-start text-black text-[26px] font-normal font-['Inter'] tracking-wide">
               🚀
             </div>
-            <div className="
+            <div
+              className="
             text-center justify-center text-white font-['Changa']
             text-base font-normal leading-[21px] md:text-[28px] md:font-medium md:leading-7
-            ">
+            "
+            >
               무료로 플레이하세요
             </div>
           </div>
         </div>
       </div>
-
-      <div className="min-h-[140px]"></div>
     </div>
   )
 }

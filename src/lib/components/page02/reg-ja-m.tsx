@@ -1,6 +1,6 @@
 import StepsM from '../steps'
 import OneOfTheKind from '../one-of-the-kind'
-import GameList from "./game-list"
+import GameList from './game-list'
 
 export interface IAppProps {}
 
@@ -425,8 +425,6 @@ export default function App(props: IAppProps) {
           </div>
         </div>
       </div>
-
-      <div className="min-h-[140px]"></div>
     </div>
   )
 }
