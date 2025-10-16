@@ -53,6 +53,8 @@
     "Fiat-Ready": "決済サービスで決済可能！",
     "Supported cryptocurrencies": "< 対応仮想通貨 >",
     "USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE": "USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE",
-    "No crypto? No problem!": "クレジットカード決済もできます。"
+    "No crypto? No problem!": "クレジットカード決済もできます。",
+    "gameLogin": "ログイン",
+    "demoPlay": "デモプレイ"
   }
 }

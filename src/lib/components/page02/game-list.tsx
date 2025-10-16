@@ -1,26 +1,11 @@
-// Dreams of Gold Jackpot
-// https://fomo-dev.previewenv.net/player/winfast/dreams_of_gold_jackpot/
-// https://tiles.fomo.io/staging/t/winfast/dreams_of_gold_jackpot
-
+import { t } from 'i18next'
 import { useState } from 'react'
-
-// Hawaiian Dream Gold
-// https://fomo-dev.previewenv.net/player/winfast/hawaiian_dream_gold/
-// https://tiles.fomo.io/staging/t/winfast/hawaiian_dream_gold
-
-// Mummy Princess
-// https://fomo-dev.previewenv.net/player/winfast/mummy_princess/
-// https://tiles.fomo.io/staging/t/winfast/st/mummy_princess
 
 export interface IAppProps {}
 
-type GameType = {
-  name: string
-  linkUrl: string
-  imgUrl: string
-}
+type GameType = (typeof games)[0]
 
-const games: GameType[] = [
+const games = [
   {
     name: 'Dreams of Gold Jackpot',
     linkUrl: 'https://fomo-dev.previewenv.net/player/winfast/dreams_of_gold_jackpot/',
@@ -61,9 +46,10 @@ export default function App(props: IAppProps) {
               text-white text-sm font-medium"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="flex flex-col justify-center gap-3 w-[80%]">
-                <button className="h-8 rounded-[8px] bg-[#ff008c] ">Login</button>
-                <button className="h-8 rounded-[8px] bg-[#1f1f1f]">Demo Play</button>
+              <div className="flex flex-col justify-center gap-3 w-[85%]">
+                
+                <button className="h-8 rounded-[8px] bg-[#ff008c] ">{t('page.gameLogin')}</button>
+                <button className="h-8 rounded-[8px] bg-[#1f1f1f]">{t('page.demoPlay')}</button>
               </div>
             </div>
           ) : (
