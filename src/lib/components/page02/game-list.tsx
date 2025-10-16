@@ -38,8 +38,10 @@ export default function App(props: IAppProps) {
         "
     >
       {games.map((item, i) => (
-        <button key={i} className="relative cursor-pointer" onClick={() => showOverlay(item)}>
-          <img className="w-28 h-[150px]" src={item.imgUrl} />
+        <div key={i} className="relative">
+          <button className="cursor-pointer" onClick={() => showOverlay(item)}>
+            <img className="w-28 h-[150px]" src={item.imgUrl} />
+          </button>
           {selectedGame?.name === item.name ? (
             <div
               className="absolute font-sans w-full h-full inset-0 flex flex-col justify-around items-center bg-[#00000080]
@@ -47,15 +49,18 @@ export default function App(props: IAppProps) {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex flex-col justify-center gap-3 w-[85%]">
-                
-                <button className="h-8 rounded-[8px] bg-[#ff008c] ">{t('page.gameLogin')}</button>
-                <button className="h-8 rounded-[8px] bg-[#1f1f1f]">{t('page.demoPlay')}</button>
+                <button className="cursor-pointer h-8 rounded-[8px] bg-[#ff008c] ">
+                  {t('page.gameLogin')}
+                </button>
+                <button className="cursor-pointer h-8 rounded-[8px] bg-[#1f1f1f]">
+                  {t('page.demoPlay')}
+                </button>
               </div>
             </div>
           ) : (
             ''
           )}
-        </button>
+        </div>
       ))}
     </div>
   )
