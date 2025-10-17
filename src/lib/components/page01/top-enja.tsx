@@ -1,6 +1,6 @@
 import { setEventEmitterS } from '../../services/event.service'
 import { i18nT } from '../../services/i18n.service'
-import { CDN_TMP } from '../../services/layout.service'
+import { getCDNUrl } from '../../services/layout.service'
 
 const t = i18nT
 
@@ -13,7 +13,7 @@ export default function App(props: IAppEvent) {
         <div className="md:mt-32 lg:-mt-27 text-center sm:-mt-20">
           <h1 className="mt-[130px] md:mt-10 mb-4 md:ml-2 w-full flex justify-center">
             <img
-              src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
+              src={getCDNUrl(`/themes/fomoio/landingpage/images/FOMO_logo.png`)}
               alt={`FOMO`}
               width={800}
               height={350}
@@ -34,7 +34,7 @@ export default function App(props: IAppEvent) {
         </div>
         <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-6/24 md:-translate-y-[23%] w-210 h-210 md:w-[950px] md:h-[950px] z-50">
           <img
-            src={`${CDN_TMP}/themes/fomoio/landingpage/images/trophy.png`}
+            src={getCDNUrl(`/themes/fomoio/landingpage/images/trophy.png`)}
             alt="Trophy Background"
             className="absolute w-full h-full object-contain"
           />
@@ -122,7 +122,7 @@ export default function App(props: IAppEvent) {
                   {t('page.and more Exclusive')}
                 </p>
                 <img
-                  src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
+                  src={getCDNUrl(`/themes/fomoio/landingpage/images/FOMO_logo.png`)}
                   alt="FOMO Logo"
                   className="
                   inline-block align-middle m-0 mx-2 h-4 md:h-7 md:align-bottom
@@ -145,13 +145,13 @@ export default function App(props: IAppEvent) {
 
       <section className="relative -mt-20 mb-20 md:-mt-40 h-64 md:h-100 lg:h-[400px] opacity-75">
         <img
-          src={`${CDN_TMP}/themes/fomoio/landingpage/images/bg.png`}
+          src={getCDNUrl(`/themes/fomoio/landingpage/images/bg.png`)}
           alt="Casino Games Background"
           className="z-0 absolute w-full h-full object-cover"
         />
         <div className="absolute mt-43 md:mt-[300px] left-1/2 transform -translate-x-1/2 z-10 w-full flex justify-center">
           <button
-            onClick={(e) => setEventEmitterS({ type: 'gotoCasino' })}
+            onClick={() => setEventEmitterS({ type: 'url', info: '/casino/' })}
             className="
             bg-[#252525] text-white py-2 px-8 mb-6 mt-[90px] md:mt-0 lg:mt-0 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer
             en:text-[16px] en:md:text-[22px]

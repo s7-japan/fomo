@@ -1,13 +1,21 @@
-import StepsM from '../steps'
+import { setEventEmitterS } from '../../../lib/services/event.service'
+import { getCDNUrl } from '../../../lib/services/layout.service'
 import OneOfTheKind from '../one-of-the-kind'
+import StepsM from '../steps'
 import GameList from './game-list'
 
 export default function App() {
   return (
     <div className="inline-flex flex-col justify-start items-center">
       <div className="self-stretch inline-flex flex-col justify-center items-center gap-1.5">
-        <img className="block md:hidden w-full" src="/images/big-header-m.png" />
-        <img className="hidden md:block w-full" src="/images/big-header-d.png" />
+        <img
+          className="block md:hidden w-full"
+          src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/big-header-m.png`)}
+        />
+        <img
+          className="hidden md:block w-full"
+          src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/big-header-d.png`)}
+        />
       </div>
 
       <div className="size- inline-flex flex-col justify-start items-center gap-[30px] px-3">
@@ -55,16 +63,18 @@ export default function App() {
             ！
           </span>
         </div>
-        <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
-          <div
-            className="
+        <button className="cursor-pointer" onClick={() => setEventEmitterS({ type: 'signUp' })}>
+          <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
+            <div
+              className="
           text-center justify-start text-white font-medium font-['Inter'] leading-7
           text-2xl md:text-4xl 
           "
-          >
-            無料でプレイ
+            >
+              無料でプレイ
+            </div>
           </div>
-        </div>
+        </button>
         <div className="w-full text-center justify-start">
           <span
             className="
@@ -103,16 +113,19 @@ export default function App() {
         >
           出金条件なし・プレイ制限なし。 純粋にクリプト勝利を楽しもう！{' '}
         </div>
-        <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
-          <div
-            className="
+
+        <button className="cursor-pointer" onClick={() => setEventEmitterS({ type: 'signUp' })}>
+          <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
+            <div
+              className="
           text-center justify-start text-white font-medium font-['Inter'] leading-7
           text-2xl md:text-4xl
           "
-          >
-            無料でプレイ
+            >
+              無料でプレイ
+            </div>
           </div>
-        </div>
+        </button>
         <div className="w-full text-center justify-start text-white text-[13px] font-normal font-['Inter'] leading-normal">
           ※ 新規プレイヤー限定オファーです。
         </div>
@@ -120,7 +133,10 @@ export default function App() {
 
       <div className="w-full pt-12 inline-flex flex-col justify-start items-center gap-[35px] px-3">
         <div className="size- flex flex-col justify-start items-center gap-4">
-          <img className="w-[65.75px] h-[34.34px]" src="/images/game-tag-m.png" />
+          <img
+            className="w-[65.75px] h-[34.34px]"
+            src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/game-tag-m.png`)}
+          />
           <div
             className="
           text-center justify-start text-[#ff008c] font-semibold font-['Inter']
@@ -140,8 +156,16 @@ export default function App() {
           </div>
         </div>
         <div className="max-w-[992px]">
-          <img className="md:hidden" src="/images/game-list-m.png" alt="" />
-          <img className="hidden md:block" src="/images/game-list-d.png" alt="" />
+          <img
+            className="md:hidden"
+            src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/game-list-m.png`)}
+            alt=""
+          />
+          <img
+            className="hidden md:block"
+            src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/game-list-d.png`)}
+            alt=""
+          />
         </div>
         <div className="flex flex-col justify-start items-start gap-0.5 overflow-hidden">
           <div
@@ -303,35 +327,42 @@ export default function App() {
 
           <StepsM />
 
-          <div
-            className="
+          <button className="cursor-pointer" onClick={() => setEventEmitterS({ type: 'signUp' })}>
+            <div
+              className="
           py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3
           w-[312px] md:w-[412px] md:mt-8
           "
-          >
-            <div className="justify-start text-black text-[26px] font-normal font-['Inter'] tracking-wide">
-              🚀
-            </div>
-            <div
-              className="
+            >
+              <div className="justify-start text-black text-[26px] font-normal font-['Inter'] tracking-wide">
+                🚀
+              </div>
+              <div
+                className="
             text-center justify-center text-white font-['Changa']
             text-base font-normal leading-[21px] md:text-[28px] md:font-medium md:leading-7
             "
-            >
-              今すぐ登録
+              >
+                今すぐ登録
+              </div>
             </div>
-          </div>
+          </button>
 
-          <div
-            className="
+          <button
+            className="cursor-pointer"
+            onClick={() => setEventEmitterS({ type: 'url', info: '/bonus-terms/' })}
+          >
+            <div
+              className="
           text-center justify-center text-white text-xs font-['Inter'] underline underline-offset-3 decoration-2 decoration-[#FF008C]
           text-[13px] font-normal leading-[29px] md:text-xl md:font-semibold md:leading-[40px]
           "
-          >
-            ボーナスを取得するには入金完了前に入金ページで
-            <br />
-            申請する必要があります。
-          </div>
+            >
+              ボーナスを取得するには入金完了前に入金ページで
+              <br />
+              申請する必要があります。
+            </div>
+          </button>
         </div>
       </div>
 
@@ -371,7 +402,7 @@ export default function App() {
             top-[227px] md:top-[-140px] md:left-[580px] md:w-[480px]
             "
             >
-              <img src="/images/ball-m.png" alt="" />
+              <img src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/ball-m.png`)} alt="" />
             </div>
 
             <div
@@ -390,7 +421,10 @@ export default function App() {
             top-[88.46px] w-[272px] md:top-[94px] md:w-[460px]
             "
             >
-              <img src="/public/images/coin-list-m.png" alt="" />
+              <img
+                src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/coin-list-m.png`)}
+                alt=""
+              />
             </div>
             <div
               className="
@@ -403,24 +437,29 @@ export default function App() {
             </div>
           </div>
 
-          <div
-            className="
-          self-center py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3
-          w-full md:w-[412px] md:mt-8
-          "
+          <button
+            className="cursor-pointer self-center "
+            onClick={() => setEventEmitterS({ type: 'signUp' })}
           >
-            <div className="justify-start text-black text-[26px] font-normal font-['Inter'] tracking-wide">
-              🚀
-            </div>
             <div
               className="
+          py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3
+          w-full md:w-[412px] md:mt-8
+          "
+            >
+              <div className="justify-start text-black text-[26px] font-normal font-['Inter'] tracking-wide">
+                🚀
+              </div>
+              <div
+                className="
             text-center justify-center text-white font-['Changa']
             text-base font-normal leading-[21px] md:text-[28px] md:font-medium md:leading-7
             "
-            >
-              無料でプレイ
+              >
+                無料でプレイ
+              </div>
             </div>
-          </div>
+          </button>
         </div>
       </div>
     </div>

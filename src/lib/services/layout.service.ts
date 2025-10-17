@@ -2,7 +2,9 @@ import { ngComputed, ngSignal } from '../common/preact-ng-signals'
 
 declare var Typekit: any
 
-export const CDN_TMP = 'https://fomoio.netlify.app'
+const CDN_TMP = 'https://fomoio.netlify.app'
+
+export const getCDNUrl = (url: string) => CDN_TMP + url
 
 export const addAdobeFonts = () => {
   ;(function (d) {

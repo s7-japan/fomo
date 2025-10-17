@@ -1,6 +1,6 @@
 import { setEventEmitterS } from '../../services/event.service'
 import { getCurrentLng, i18nT } from '../../services/i18n.service'
-import { CDN_TMP } from '../../services/layout.service'
+import { getCDNUrl } from '../../services/layout.service'
 import OneOfTheKind from '../one-of-the-kind'
 import StepsM from '../steps'
 import TopEnJa from './top-enja'
@@ -21,7 +21,7 @@ export default function LandingPage() {
           <div>
             <div className="relative inline-block w-full md:w-auto">
               <img
-                src={`${CDN_TMP}/themes/fomoio/landingpage/images/line_bg.png`}
+                src={getCDNUrl(`/themes/fomoio/landingpage/images/line_bg.png`)}
                 alt=""
                 className="z-0 absolute w-full h-full object-contain"
               />
@@ -129,8 +129,8 @@ export default function LandingPage() {
             </button>
 
             <button
-              onClick={(e) => setEventEmitterS({ type: 'gotoBonusTerms' })}
               className="cursor-pointer"
+              onClick={() => setEventEmitterS({ type: 'url', info: '/bonus-terms/' })}
             >
               <p
                 className="
@@ -228,7 +228,7 @@ export default function LandingPage() {
                     {['apple', 'gpay', 'visa', 'mastercard'].map((name) => (
                       <div key={name} className="relative w-8 h-4 md:w-12 md:h-6">
                         <img
-                          src={`${CDN_TMP}/themes/fomoio/landingpage/icons/${name}.png`}
+                          src={getCDNUrl(`/themes/fomoio/landingpage/icons/${name}.png`)}
                           alt={name}
                           className="absolute w-full h-full object-contain"
                         />
@@ -240,7 +240,7 @@ export default function LandingPage() {
 
               <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-[400px] mt-8 -top-[230px] md:-top-5 right-0 md:right-[140px] lg:mt-0 z-20  pointer-events-none">
                 <img
-                  src={`${CDN_TMP}/themes/fomoio/landingpage/images/basketball.png`}
+                  src={getCDNUrl(`/themes/fomoio/landingpage/images/basketball.png`)}
                   alt="Basketball Bubble"
                   width={400}
                   height={400}

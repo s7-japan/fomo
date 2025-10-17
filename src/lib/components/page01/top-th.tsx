@@ -1,5 +1,5 @@
 import { setEventEmitterS } from '../../services/event.service'
-import { CDN_TMP } from '../../services/layout.service'
+import { getCDNUrl } from '../../services/layout.service'
 
 interface IAppEvent {}
 
@@ -21,7 +21,7 @@ export default function App(props: IAppEvent) {
 function Mobile(props: IAppEvent) {
   return (
     <>
-      <img src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/top-img-m.png`} alt="top-img" />
+      <img src={getCDNUrl(`/themes/fomoio/landingpage/images/ko/top-img-m.png`)} alt="top-img" />
 
       <div className="w-full flex justify-center px-2">
         <div className="inline-flex flex-col justify-start items-center gap-[30px]">
@@ -47,7 +47,7 @@ function Mobile(props: IAppEvent) {
         <div className="flex flex-col justify-start items-center gap-4">
           <img
             className="w-[65.75px]"
-            src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/game-badge.png`}
+            src={getCDNUrl(`/themes/fomoio/landingpage/images/ko/game-badge.png`)}
           />
           <div className="text-center justify-start text-[#ff008c] text-6xl font-semibold font-['Pretendard'] leading-[60px]">
             3,000+
@@ -56,7 +56,7 @@ function Mobile(props: IAppEvent) {
             เกมทุกประเภทกำลังรอคุณอยู่!
           </div>
         </div>
-        <img src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/game-list-m.png`} alt="games" />
+        <img src={getCDNUrl(`/themes/fomoio/landingpage/images/ko/game-list-m.png`)} alt="games" />
         <div className="text-center justify-start text-[#ff008c] text-xl font-semibold font-['Pretendard'] leading-[30px]">
           สล็อต คาสิโนสด บาคาร่า รูเล็ตต์ และอื่นๆ
           <br />
@@ -68,7 +68,7 @@ function Mobile(props: IAppEvent) {
           </div>
           <img
             className="w-[83px] left-[21px] top-[4px] absolute"
-            src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
+            src={getCDNUrl(`/themes/fomoio/landingpage/images/FOMO_logo.png`)}
           />
           <div className="left-0 top-[35px] absolute text-center justify-start text-white text-xl font-semibold font-['Pretendard'] leading-tight">
             อย่าพลาดเกมสุดพิเศษเฉพาะทาง!
@@ -82,7 +82,7 @@ function Mobile(props: IAppEvent) {
 function Desktop(props: IAppEvent) {
   return (
     <>
-      <img src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/top-img-d.png`} alt="top-img" />
+      <img src={getCDNUrl(`/themes/fomoio/landingpage/images/ko/top-img-d.png`)} alt="top-img" />
 
       <div className="w-full flex justify-center mt-[-54px]">
         <div className="inline-flex flex-col justify-start items-center gap-[38px]">
@@ -110,7 +110,7 @@ function Desktop(props: IAppEvent) {
           <div className="flex flex-col justify-start items-center gap-[34px]">
             <img
               className="w-[100px]"
-              src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/game-badge.png`}
+              src={getCDNUrl(`/themes/fomoio/landingpage/images/ko/game-badge.png`)}
             />
             <div className="text-center justify-start text-[#ff008c] text-[100px] font-semibold font-['Pretendard'] leading-[100px]">
               3,000+
@@ -119,7 +119,10 @@ function Desktop(props: IAppEvent) {
               เกมทุกประเภทกำลังรอคุณอยู่!
             </div>
           </div>
-          <img src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/game-list-d.png`} alt="games" />
+          <img
+            src={getCDNUrl(`/themes/fomoio/landingpage/images/ko/game-list-d.png`)}
+            alt="games"
+          />
           <div className="flex flex-col justify-start items-center gap-[15px]">
             <div className="text-center justify-start text-[#ff008c] text-2xl font-semibold font-['Pretendard'] leading-normal">
               สล็อต คาสิโนสด บาคาร่า รูเล็ตต์ และอื่นๆ พนันลีกใหญ่และแมตช์ใหญ่ทั่วโลก!
@@ -127,7 +130,7 @@ function Desktop(props: IAppEvent) {
             <div className="inline-flex justify-start items-center gap-[9px]">
               <img
                 className="w-[100px]"
-                src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
+                src={getCDNUrl(`/themes/fomoio/landingpage/images/FOMO_logo.png`)}
               />
               <div className="text-center justify-start text-white text-2xl font-semibold font-['Pretendard'] leading-normal">
                 เฉพาะที่ อย่าพลาดเกมสุดพิเศษเฉพาะทาง!

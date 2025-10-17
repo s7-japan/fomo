@@ -1,7 +1,7 @@
 import { ngComputed, ngSignal } from '../common/preact-ng-signals'
 
 export type EventEmitterObjectType = {
-  type: 'signUp' | 'gotoCasino' | 'gotoBonusTerms'
+  type: 'signUp' | 'url'
   info?: string | object
 }
 

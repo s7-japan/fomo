@@ -1,7 +1,7 @@
 // import Page01 from '../lib/components/page01/_main'
 import Page02 from '../lib/components/page02/_main'
 import { setupI18n } from '../lib/services/i18n.service'
-import { addAdobeFonts, CDN_TMP, getIsShowHeaderFooter } from '../lib/services/layout.service'
+import { addAdobeFonts, getCDNUrl, getIsShowHeaderFooter } from '../lib/services/layout.service'
 
 addAdobeFonts()
 setupI18n('en')
@@ -14,7 +14,7 @@ export default function LandingPage() {
       {isShowHeaderFooterS() ? (
         <div className="w-auto px-4 py-6">
           <img
-            src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
+            src={getCDNUrl(`/themes/fomoio/landingpage/images/FOMO_logo.png`)}
             alt={`FOMO`}
             width={100}
             height={50}
@@ -33,7 +33,7 @@ export default function LandingPage() {
             <div className="mb-4">
               <div className="inline-block">
                 <img
-                  src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
+                  src={getCDNUrl(`/themes/fomoio/landingpage/images/FOMO_logo.png`)}
                   alt="FOMO Logo"
                   width={80}
                   height={24}

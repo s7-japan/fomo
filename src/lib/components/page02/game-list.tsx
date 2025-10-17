@@ -1,21 +1,22 @@
 import { useSignals } from '@preact/signals-react/runtime'
 import { t } from 'i18next'
+import { setEventEmitterS } from '../../../lib/services/event.service'
 import { ngSignal } from '../../common/preact-ng-signals'
 
 const games = [
   {
     name: 'Dreams of Gold Jackpot',
-    linkUrl: 'https://fomo-dev.previewenv.net/player/winfast/dreams_of_gold_jackpot/',
+    linkUrl: '/winfast/dreams_of_gold_jackpot/',
     imgUrl: 'https://tiles.fomo.io/staging/t/winfast/dreams_of_gold_jackpot',
   },
   {
     name: 'Hawaiian Dream Gold',
-    linkUrl: 'https://fomo-dev.previewenv.net/player/winfast/hawaiian_dream_gold/',
+    linkUrl: '/winfast/hawaiian_dream_gold/',
     imgUrl: 'https://tiles.fomo.io/staging/t/winfast/hawaiian_dream_gold',
   },
   {
     name: 'Mummy Princess',
-    linkUrl: 'https://fomo-dev.previewenv.net/player/winfast/mummy_princess/',
+    linkUrl: '/winfast/mummy_princess/',
     imgUrl: 'https://tiles.fomo.io/staging/t/winfast/st/mummy_princess',
   },
 ]
@@ -43,13 +44,27 @@ export default function App() {
             <div
               className="absolute font-sans w-full h-full inset-0 flex flex-col justify-around items-center bg-[#00000080]
               text-white text-sm font-medium"
-              onClick={(e) => e.stopPropagation()}
             >
               <div className="flex flex-col justify-center gap-3 w-[85%]">
-                <button className="cursor-pointer h-8 rounded-[8px] bg-[#ff008c] ">
+                <button
+                  className="cursor-pointer h-8 rounded-[8px] bg-[#ff008c]"
+                  onClick={() =>
+                    setEventEmitterS({
+                      type: 'signUp',
+                    })
+                  }
+                >
                   {t('page.gameLogin')}
                 </button>
-                <button className="cursor-pointer h-8 rounded-[8px] bg-[#1f1f1f]">
+                <button
+                  className="cursor-pointer h-8 rounded-[8px] bg-[#1f1f1f]"
+                  onClick={() =>
+                    setEventEmitterS({
+                      type: 'url',
+                      info: item.linkUrl,
+                    })
+                  }
+                >
                   {t('page.demoPlay')}
                 </button>
               </div>

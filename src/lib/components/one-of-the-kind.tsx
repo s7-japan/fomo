@@ -1,5 +1,5 @@
 import { t } from "i18next"
-import { CDN_TMP } from "../services/layout.service"
+import { getCDNUrl } from "../services/layout.service"
 
 export default function App() {
   return (
@@ -31,7 +31,7 @@ export default function App() {
             </span>
             &nbsp;
             <img
-              src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
+              src={getCDNUrl(`/themes/fomoio/landingpage/images/FOMO_logo.png`)}
               alt="FOMO Logo"
               className="
                           inline-block align-middle w-[80px] h-[24px] md:w-[170px] md:h-[50px] ml-0
