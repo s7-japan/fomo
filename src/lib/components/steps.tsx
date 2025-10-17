@@ -1,9 +1,7 @@
 import { t } from 'i18next'
 import { CDN_TMP } from '../services/layout.service'
 
-export interface IAppProps {}
-
-export default function App(props: IAppProps) {
+export default function App() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-5 mx-6 md:mx-[80px]">
       <div className="bg-[#1A1A1A] rounded-lg flex flex-col relative px-4 py-6">

@@ -1,26 +1,20 @@
-import { useEffect } from "react"
-import { i18nT, LangType } from '../../services/i18n.service'
-import { CDN_TMP, IMainProps } from '../../services/layout.service'
+import { setEventEmitterS } from '../../services/event.service'
+import { getCurrentLng, i18nT } from '../../services/i18n.service'
+import { CDN_TMP } from '../../services/layout.service'
 import OneOfTheKind from '../one-of-the-kind'
 import StepsM from '../steps'
 import TopEnJa from './top-enja'
 import TopKo from './top-ko'
 import TopTh from './top-th'
-import { setEventEmitterS } from "../../services/event.service"
 
 const t = i18nT
 
-export default function LandingPage(props: IMainProps) {
+const langS = getCurrentLng()
 
+export default function LandingPage() {
   return (
     <>
-      {props.lang === 'ko' ? (
-        <TopKo {...props} />
-      ) : props.lang === 'th' ? (
-        <TopTh {...props} />
-      ) : (
-        <TopEnJa {...props} />
-      )}
+      {langS() === 'ko' ? <TopKo /> : langS() === 'th' ? <TopTh /> : <TopEnJa />}
 
       <section className="bg-black text-white py-6 -mt-0 px-4 md:-mt-25 md:py-24 md:px-12 lg:px-24 lg:py-32 ">
         <div className="max-w-6xl mx-auto text-left md:text-center">
@@ -257,7 +251,7 @@ export default function LandingPage(props: IMainProps) {
 
             <div className="text-center -mt-[190px] md:-mt-[50px]">
               <button
-                onClick={() => setEventEmitterS({type: 'signUp'})}
+                onClick={() => setEventEmitterS({ type: 'signUp' })}
                 className="
                     bg-[#252525] text-white py-2 px-17 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer
                     en:text-[16px] en:md:text-[20px]

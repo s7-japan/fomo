@@ -1,13 +1,6 @@
-import { MouseEvent } from 'react'
-import { LangType } from './i18n.service'
-// import { EventEmitType } from "./event.service"
+import { ngComputed, ngSignal } from '../common/preact-ng-signals'
 
 declare var Typekit: any
-
-export interface IMainProps {
-  lang: LangType
-  is_show_header_footer: boolean
-}
 
 export const CDN_TMP = 'https://fomoio.netlify.app'
 
@@ -41,3 +34,7 @@ export const addAdobeFonts = () => {
     s.parentNode.insertBefore(tk, s)
   })(document)
 }
+
+const isShowHeaderFooterS = ngSignal(true)
+export const getIsShowHeaderFooter = () => ngComputed(() => isShowHeaderFooterS())
+export const setIsShowHeaderFooter = (v: boolean) => isShowHeaderFooterS.set(v)

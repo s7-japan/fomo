@@ -1,9 +1,6 @@
+import { useSignals } from '@preact/signals-react/runtime'
 import { t } from 'i18next'
-import { useState } from 'react'
-
-export interface IAppProps {}
-
-type GameType = (typeof games)[0]
+import { ngSignal } from '../../common/preact-ng-signals'
 
 const games = [
   {
@@ -23,12 +20,12 @@ const games = [
   },
 ]
 
-export default function App(props: IAppProps) {
-  const [selectedGame, setSelectedGame] = useState<GameType | null>(null)
+type GameType = (typeof games)[0]
 
-  const showOverlay = (game: GameType) => {
-    setSelectedGame(game)
-  }
+const selectedGameS = ngSignal<GameType | null>(null)
+
+export default function App() {
+  useSignals()
 
   return (
     <div
@@ -39,10 +36,10 @@ export default function App(props: IAppProps) {
     >
       {games.map((item, i) => (
         <div key={i} className="relative">
-          <button className="cursor-pointer" onClick={() => showOverlay(item)}>
+          <button className="cursor-pointer" onClick={() => selectedGameS.set(item)}>
             <img className="w-28 h-[150px]" src={item.imgUrl} />
           </button>
-          {selectedGame?.name === item.name ? (
+          {selectedGameS()?.name === item.name ? (
             <div
               className="absolute font-sans w-full h-full inset-0 flex flex-col justify-around items-center bg-[#00000080]
               text-white text-sm font-medium"

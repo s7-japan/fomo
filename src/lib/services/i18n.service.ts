@@ -3,6 +3,7 @@ import EN from '../locales/en.json'
 import JA from '../locales/ja.json'
 import KO from '../locales/ko.json'
 import TH from '../locales/th.json'
+import { ngComputed, ngSignal } from "../common/preact-ng-signals"
 
 export type LangType = keyof typeof lngMappingObj
 
@@ -25,15 +26,17 @@ export const setupI18n = (lang: LangType) => {
   })
 }
 
-export const getCurrentLng = () => i18next.language as LangType
+export const i18nT = i18next.t
 
+const langS = ngSignal(i18next.language as LangType)
+export const getCurrentLng = () => ngComputed(() => langS())
+export const setLang = (lang: LangType) => {
+  i18next.changeLanguage(lang)
+  langS.set(lang)
+}
 export const getShortCurrentLng = () => {
   const lng = getCurrentLng()
-  return lng.split('-')[0] ?? Object.keys(lngMappingObj)[0]
+  return lng().split('-')[0] ?? Object.keys(lngMappingObj)[0]
 }
 
-export const getValidLng = () => Object.keys(lngMappingObj)
-
-export const setLng = (lang: LangType) => i18next.changeLanguage(lang)
-
-export const i18nT = i18next.t
+export const getValidLang = () => Object.keys(lngMappingObj)

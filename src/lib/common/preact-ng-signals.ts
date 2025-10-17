@@ -5,7 +5,19 @@ import {
   untracked as preactLibUntracked,
 } from '@preact/signals-core'
 
-export function ngSignal<T>(initialValue: T) {
+export interface NGSignal<T> {
+  (): T
+  set(value: T): void
+  update(updateFn: (value: T) => T): void
+  mutate(mutatorFn: (value: T) => void): void
+}
+
+export type NGReadonlySignal<T> = () => T
+export interface NGEffectRef {
+  destroy(): void
+}
+
+export function ngSignal<T>(initialValue: T): NGSignal<T> {
   const sourceSignal = preactLibSignal(initialValue)
 
   const getter = () => sourceSignal.value
@@ -26,12 +38,12 @@ export function ngSignal<T>(initialValue: T) {
   return getter
 }
 
-export function ngComputed<T>(computation: () => T) {
+export function ngComputed<T>(computation: () => T): NGReadonlySignal<T> {
   const sourceComputed = preactLibComputed(computation)
   return () => sourceComputed.value
 }
 
-export function ngEffect(effectFn: () => void) {
+export function ngEffect(effectFn: () => void): NGEffectRef {
   const dispose = preactLibEffect(effectFn)
   return {
     destroy: dispose,

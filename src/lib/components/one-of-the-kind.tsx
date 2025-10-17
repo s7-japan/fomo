@@ -1,9 +1,7 @@
 import { t } from "i18next"
 import { CDN_TMP } from "../services/layout.service"
 
-export interface IAppProps {}
-
-export default function App(props: IAppProps) {
+export default function App() {
   return (
     <div className="bg-black text-white py-8 md:py-16 px-4 md:px-8 ml-0 md:ml-40 -mt-8 md:-mt-20">
       <div className="max-w-6xl mx-auto">

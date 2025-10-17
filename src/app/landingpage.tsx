@@ -1,24 +1,17 @@
-import Page01 from '../lib/components/page01/_main'
+// import Page01 from '../lib/components/page01/_main'
 import Page02 from '../lib/components/page02/_main'
-import { LangType, setLng, setupI18n } from '../lib/services/i18n.service'
-import { addAdobeFonts, CDN_TMP } from '../lib/services/layout.service'
+import { setupI18n } from '../lib/services/i18n.service'
+import { addAdobeFonts, CDN_TMP, getIsShowHeaderFooter } from '../lib/services/layout.service'
 
 addAdobeFonts()
 setupI18n('en')
 
-interface IAppProps {
-  lang: LangType
-  is_show_header_footer: boolean
-}
+const isShowHeaderFooterS = getIsShowHeaderFooter()
 
-export default function LandingPage(props: IAppProps) {
-  const isShowHeaderFooter = props.is_show_header_footer
-
-  setLng(props.lang)
-
+export default function LandingPage() {
   return (
     <div className=" bg-black text-white antialiased en:font-changa">
-      {isShowHeaderFooter ? (
+      {isShowHeaderFooterS() ? (
         <div className="w-auto px-4 py-6">
           <img
             src={`${CDN_TMP}/themes/fomoio/landingpage/images/FOMO_logo.png`}
@@ -31,10 +24,10 @@ export default function LandingPage(props: IAppProps) {
         ''
       )}
 
-      {<Page01 {...props} />}
-      {/* {<Page02 {...props} />} */}
+      {/* {<Page01 />} */}
+      {<Page02 />}
 
-      {isShowHeaderFooter ? (
+      {isShowHeaderFooterS() ? (
         <footer className="bg-black text-gray-400 py-8 mt-12 md:mt-20 text-center">
           <div className="max-w-6xl mx-auto px-4">
             <div className="mb-4">

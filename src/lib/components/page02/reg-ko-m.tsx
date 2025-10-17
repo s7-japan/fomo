@@ -2,9 +2,7 @@ import StepsM from '../steps'
 import OneOfTheKind from '../one-of-the-kind'
 import GameList from './game-list'
 
-export interface IAppProps {}
-
-export default function App(props: IAppProps) {
+export default function App() {
   return (
     <div className="inline-flex flex-col justify-start items-center">
       <div className="self-stretch inline-flex flex-col justify-center items-center gap-1.5">
