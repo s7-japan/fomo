@@ -1,4 +1,7 @@
-import { CDN_TMP, IAppEvent, singUp } from '../../services/layout.service'
+import { setEventEmitterS } from '../../services/event.service'
+import { CDN_TMP } from '../../services/layout.service'
+
+interface IAppEvent {}
 
 export default function App(props: IAppEvent) {
   return (
@@ -23,12 +26,14 @@ function Mobile(props: IAppEvent) {
       <div className="w-full flex justify-center px-2">
         <div className="inline-flex flex-col justify-start items-center gap-[30px]">
           <div className="w-full max-w-[362px] min-w-[94vw] h-[49px] relative">
-            <div className="text-center justify-start text-white text-[22px] font-black font-['Noto_Sans_JP']">เล่นได้อย่างอิสระด้วยคริปโตเคอร์เรนซี!คาสิโนออนไลน์ใหม่เปิดแล้ว!</div>
+            <div className="text-center justify-start text-white text-[22px] font-black font-['Noto_Sans_JP']">
+              เล่นได้อย่างอิสระด้วยคริปโตเคอร์เรนซี!คาสิโนออนไลน์ใหม่เปิดแล้ว!
+            </div>
           </div>
           <div className="text-center justify-start text-white text-lg font-normal font-['Inter'] leading-normal max-w-[340px]">
             รับโบนัส 100% สูงสุดถึง 300 $ ทันทีที่ฝากเงินครั้งแรก! ลุ้นแจ็คพ็อตตอนนี้เลย!
           </div>
-          <button onClick={singUp(props)}>
+          <button onClick={() => setEventEmitterS({ type: 'signUp' })}>
             <div className="px-[42px] py-2 bg-black rounded-[100px] outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
               <span className="text-center justify-start text-white text-2xl font-normal leading-7">
                 สมัครเลย
@@ -54,7 +59,8 @@ function Mobile(props: IAppEvent) {
         <img src={`${CDN_TMP}/themes/fomoio/landingpage/images/ko/game-list-m.png`} alt="games" />
         <div className="text-center justify-start text-[#ff008c] text-xl font-semibold font-['Pretendard'] leading-[30px]">
           สล็อต คาสิโนสด บาคาร่า รูเล็ตต์ และอื่นๆ
-          <br />พนันลีกใหญ่และแมตช์ใหญ่ทั่วโลก!
+          <br />
+          พนันลีกใหญ่และแมตช์ใหญ่ทั่วโลก!
         </div>
         <div className="w-[285px] h-[55px] relative">
           <div className="left-[111px] top-0 absolute text-center justify-start text-white text-xl font-semibold font-['Pretendard'] leading-normal">
@@ -81,13 +87,15 @@ function Desktop(props: IAppEvent) {
       <div className="w-full flex justify-center mt-[-54px]">
         <div className="inline-flex flex-col justify-start items-center gap-[38px]">
           <div className="w-[892.93px] relative">
-            <div className="text-center justify-start text-white text-[55px] font-black">เล่นได้อย่างอิสระด้วยคริปโตเคอร์เรนซี!คาสิโนออนไลน์ใหม่เปิดแล้ว!</div>
+            <div className="text-center justify-start text-white text-[55px] font-black">
+              เล่นได้อย่างอิสระด้วยคริปโตเคอร์เรนซี!คาสิโนออนไลน์ใหม่เปิดแล้ว!
+            </div>
           </div>
           <div className="self-stretch text-center justify-start text-white text-2xl font-normal font-['Pretendard'] leading-normal">
             รับโบนัส 100% สูงสุดถึง 300 $ ทันทีที่ฝากเงินครั้งแรก! ลุ้นแจ็คพ็อตตอนนี้เลย!
           </div>
           <button
-            onClick={singUp(props)}
+            onClick={() => setEventEmitterS({ type: 'signUp' })}
             className="cursor-pointer px-[54px] py-4 bg-black rounded-[100px] outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5"
           >
             <div className="text-center justify-start text-white text-[28px] font-semibold font-['Pretendard'] leading-7">

@@ -1,4 +1,7 @@
-import { CDN_TMP, IAppEvent, singUp } from '../../services/layout.service'
+import { setEventEmitterS } from '../../services/event.service'
+import { CDN_TMP } from '../../services/layout.service'
+
+interface IAppEvent {}
 
 export default function App(props: IAppEvent) {
   return (
@@ -423,7 +426,7 @@ function Mobile(props: IAppEvent) {
           <div className="text-center justify-start text-white text-lg font-normal font-['Inter'] leading-normal max-w-[340px]">
             첫 입금시 100% 보너스 (최대 300 $) 혜택! 지금 바로 잿팟에 도전하세요!
           </div>
-          <button onClick={singUp(props)}>
+          <button onClick={() => setEventEmitterS({ type: 'signUp' })}>
             <div className="px-[42px] py-2 bg-black rounded-[100px] outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
               <span className="text-center justify-start text-white text-2xl font-normal leading-7">
                 지금 가입하기
@@ -877,7 +880,7 @@ function Desktop(props: IAppEvent) {
             첫 입금시 100% 보너스 (최대 300 $) 혜택! 지금 바로 잿팟에 도전하세요!
           </div>
           <button
-            onClick={singUp(props)}
+            onClick={() => setEventEmitterS({ type: 'signUp' })}
             className="cursor-pointer px-[54px] py-4 bg-black rounded-[100px] outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5"
           >
             <div className="text-center justify-start text-white text-[28px] font-semibold font-['Pretendard'] leading-7">

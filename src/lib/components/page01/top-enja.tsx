@@ -1,7 +1,10 @@
+import { setEventEmitterS } from '../../services/event.service'
 import { i18nT } from '../../services/i18n.service'
-import { CDN_TMP, gotoLink, IAppEvent, singUp } from '../../services/layout.service'
+import { CDN_TMP } from '../../services/layout.service'
 
 const t = i18nT
+
+interface IAppEvent {}
 
 export default function App(props: IAppEvent) {
   return (
@@ -58,7 +61,7 @@ export default function App(props: IAppEvent) {
                 </p>
               </span>
               <button
-                onClick={singUp(props)}
+                onClick={() => setEventEmitterS({ type: 'signUp' })}
                 className="
                 relative z-90 bg-transparent border border-white text-white py-1 md:py-1 px-6 md:px-8 rounded-full ring-1 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black focus:ring-2 focus:ring-white cursor-pointer
                 en:text-[20px] en:font-normal en:md:text-[20px]
@@ -148,7 +151,7 @@ export default function App(props: IAppEvent) {
         />
         <div className="absolute mt-43 md:mt-[300px] left-1/2 transform -translate-x-1/2 z-10 w-full flex justify-center">
           <button
-            onClick={(e) => gotoLink(props)(e, 'gotoCasino')}
+            onClick={(e) => setEventEmitterS({ type: 'gotoCasino' })}
             className="
             bg-[#252525] text-white py-2 px-8 mb-6 mt-[90px] md:mt-0 lg:mt-0 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer
             en:text-[16px] en:md:text-[22px]
@@ -195,7 +198,7 @@ export default function App(props: IAppEvent) {
             </p>
           </div>
           <button
-            onClick={singUp(props)}
+            onClick={() => setEventEmitterS({ type: 'signUp' })}
             className="
             bg-black text-white py-1 md:py-1 px-6 md:px-8 border-2 border-white mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-1 focus:ring-white self-start md:self-auto  cursor-pointer
             en:text-[12px] en:md:text-[20px]

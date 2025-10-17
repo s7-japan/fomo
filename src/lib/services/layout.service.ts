@@ -1,5 +1,6 @@
 import { MouseEvent } from 'react'
 import { LangType } from './i18n.service'
+// import { EventEmitType } from "./event.service"
 
 declare var Typekit: any
 
@@ -7,11 +8,6 @@ export interface IMainProps {
   lang: LangType
   is_show_header_footer: boolean
 }
-export interface IAppEvent {
-  event_emit: (type: EventEmitType) => void
-}
-
-export type EventEmitType = 'signUp' | 'gotoCasino' | 'gotoBonusTerms'
 
 export const CDN_TMP = 'https://fomoio.netlify.app'
 
@@ -45,14 +41,3 @@ export const addAdobeFonts = () => {
     s.parentNode.insertBefore(tk, s)
   })(document)
 }
-
-export const singUp = (props: IAppEvent) => (e: MouseEvent<HTMLButtonElement>) => {
-  e.preventDefault()
-  props.event_emit('signUp')
-}
-
-export const gotoLink =
-  (props: IAppEvent) => (e: MouseEvent<HTMLButtonElement>, type: EventEmitType) => {
-    e.preventDefault()
-    props.event_emit(type)
-  }

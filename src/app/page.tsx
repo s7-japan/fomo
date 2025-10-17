@@ -1,17 +1,15 @@
 'use client'
 
-import { type EventEmitType } from "@/lib/services/layout.service"
+import { getEventEmitterS } from '../lib/services/event.service'
+import { ngEffect } from '../lib/common/preact-ng-signals'
 import LandingPage from './landingpage'
 
+const eventEmitterS = getEventEmitterS()
+
+ngEffect(() => {
+  console.log(eventEmitterS())
+})
+
 export default function Home() {
-  const clickIt = (type: EventEmitType) => {
-    console.log(type)
-  }
-  return (
-    <LandingPage
-      lang="en"
-      is_show_header_footer={true}
-      event_emit={(type) => clickIt(type)}
-    />
-  )
+  return <LandingPage lang="en" is_show_header_footer={true} />
 }

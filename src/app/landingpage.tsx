@@ -1,7 +1,7 @@
 import Page01 from '../lib/components/page01/_main'
 import Page02 from '../lib/components/page02/_main'
 import { LangType, setLng, setupI18n } from '../lib/services/i18n.service'
-import { addAdobeFonts, CDN_TMP, IAppEvent } from '../lib/services/layout.service'
+import { addAdobeFonts, CDN_TMP } from '../lib/services/layout.service'
 
 addAdobeFonts()
 setupI18n('en')
@@ -11,7 +11,7 @@ interface IAppProps {
   is_show_header_footer: boolean
 }
 
-export default function LandingPage(props: IAppProps & IAppEvent) {
+export default function LandingPage(props: IAppProps) {
   const isShowHeaderFooter = props.is_show_header_footer
 
   setLng(props.lang)
@@ -31,8 +31,8 @@ export default function LandingPage(props: IAppProps & IAppEvent) {
         ''
       )}
 
-      {/* {<Page01 {...props} />} */}
-      {<Page02 {...props} />}
+      {<Page01 {...props} />}
+      {/* {<Page02 {...props} />} */}
 
       {isShowHeaderFooter ? (
         <footer className="bg-black text-gray-400 py-8 mt-12 md:mt-20 text-center">

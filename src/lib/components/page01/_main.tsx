@@ -1,14 +1,17 @@
+import { useEffect } from "react"
 import { i18nT, LangType } from '../../services/i18n.service'
-import { CDN_TMP, gotoLink, IAppEvent, IMainProps, singUp } from '../../services/layout.service'
+import { CDN_TMP, IMainProps } from '../../services/layout.service'
 import OneOfTheKind from '../one-of-the-kind'
 import StepsM from '../steps'
 import TopEnJa from './top-enja'
 import TopKo from './top-ko'
 import TopTh from './top-th'
+import { setEventEmitterS } from "../../services/event.service"
 
 const t = i18nT
 
-export default function LandingPage(props: IMainProps & IAppEvent) {
+export default function LandingPage(props: IMainProps) {
+
   return (
     <>
       {props.lang === 'ko' ? (
@@ -121,7 +124,7 @@ export default function LandingPage(props: IMainProps & IAppEvent) {
 
           <div className="text-center flex flex-col items-center">
             <button
-              onClick={singUp(props)}
+              onClick={() => setEventEmitterS({ type: 'signUp' })}
               className="
                   bg-[#252525] text-white py-2 px-15 mt-10 mb-3 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer
                   en:text-[16px] en:md:text-[20px]
@@ -132,7 +135,7 @@ export default function LandingPage(props: IMainProps & IAppEvent) {
             </button>
 
             <button
-              onClick={(e) => gotoLink(props)(e, 'gotoBonusTerms')}
+              onClick={(e) => setEventEmitterS({ type: 'gotoBonusTerms' })}
               className="cursor-pointer"
             >
               <p
@@ -254,7 +257,7 @@ export default function LandingPage(props: IMainProps & IAppEvent) {
 
             <div className="text-center -mt-[190px] md:-mt-[50px]">
               <button
-                onClick={singUp(props)}
+                onClick={() => setEventEmitterS({type: 'signUp'})}
                 className="
                     bg-[#252525] text-white py-2 px-17 mb-6 rounded-full hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white cursor-pointer
                     en:text-[16px] en:md:text-[20px]
