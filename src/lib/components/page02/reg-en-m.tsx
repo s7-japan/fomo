@@ -468,7 +468,10 @@ export default function App() {
             top-[111.66px] w-[272px] md:top-[94px] md:w-[460px]
             "
             >
-              <img src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/coin-list-m.png`)} alt="" />
+              <img
+                src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/coin-list-m.png`)}
+                alt=""
+              />
             </div>
 
             <div
