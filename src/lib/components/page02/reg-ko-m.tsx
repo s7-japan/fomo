@@ -23,7 +23,7 @@ export default function App() {
           <div className="self-stretch justify-center">
             <span
               className="
-            text-white font-medium font-['Gmarket_Sans']
+            text-white font-semibold font-['Gmarket_Sans']
             text-2xl leading-[28.80px] md:text-5xl md:leading-[50px]
             "
             >
@@ -31,7 +31,7 @@ export default function App() {
             </span>
             <span
               className="
-            text-[#ff008c] font-medium font-['Gmarket_Sans']
+            text-[#ff008c] font-semibold font-['Gmarket_Sans']
             text-2xl leading-[28.80px] md:text-5xl md:leading-[50px]
             "
             >
@@ -39,7 +39,7 @@ export default function App() {
             </span>
             <span
               className="
-            text-white font-medium font-['Gmarket_Sans']
+            text-white font-semibold font-['Gmarket_Sans']
             text-2xl leading-[28.80px] md:text-5xl md:leading-[50px]
             "
             >
@@ -49,7 +49,7 @@ export default function App() {
           <div className="self-stretch text-right justify-center">
             <span
               className="
-            text-white font-medium font-['Gmarket_Sans']
+            text-white font-semibold font-['Gmarket_Sans']
             text-2xl leading-[28.80px] md:text-5xl md:leading-[50px]
             "
             >
@@ -57,7 +57,7 @@ export default function App() {
             </span>
             <span
               className="
-            text-[#ff008c] font-medium font-['Gmarket_Sans']
+            text-[#ff008c] font-semibold font-['Gmarket_Sans']
             text-2xl leading-[28.80px] md:text-5xl md:leading-[50px]
             "
             >
@@ -65,7 +65,7 @@ export default function App() {
             </span>
             <span
               className="
-            text-white font-medium font-['Gmarket_Sans']
+            text-white font-semibold font-['Gmarket_Sans']
             text-2xl leading-[28.80px] md:text-5xl md:leading-[50px]
             "
             >
@@ -142,9 +142,17 @@ export default function App() {
             </div>
           </div>
         </button>
-        <div className="w-full text-center justify-start text-white text-[13px] font-normal font-['Inter'] leading-normal">
-          ※ 신규 회원 한정 프로모션입니다.
-        </div>
+
+        <button
+          className="cursor-pointer"
+          onClick={() =>
+            setEventEmitterS({ type: 'url', info: '/promotion-page/registration_reward/' })
+          }
+        >
+          <div className="w-full text-center justify-start text-white text-[13px] font-normal font-['Inter'] leading-normal underline underline-offset-3 decoration-2 decoration-[#FF008C]">
+            ※ 신규 회원 한정 프로모션입니다.
+          </div>
+        </button>
       </div>
 
       <div className="w-full pt-12 inline-flex flex-col justify-start items-center gap-[35px] px-3">
@@ -491,7 +499,7 @@ export default function App() {
           </div>
 
           <button
-            className="cursor-pointer self-center"
+            className="cursor-pointer self-stretch md:self-center"
             onClick={() => setEventEmitterS({ type: 'signUp' })}
           >
             <div

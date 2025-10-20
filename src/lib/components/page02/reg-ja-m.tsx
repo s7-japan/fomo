@@ -126,9 +126,16 @@ export default function App() {
             </div>
           </div>
         </button>
-        <div className="w-full text-center justify-start text-white text-[13px] font-normal font-['Inter'] leading-normal">
-          ※ 新規プレイヤー限定オファーです。
-        </div>
+        <button
+          className="cursor-pointer"
+          onClick={() =>
+            setEventEmitterS({ type: 'url', info: '/promotion-page/registration_reward/' })
+          }
+        >
+          <div className="w-full text-center justify-start text-white text-[13px] font-normal font-['Inter'] leading-normal underline underline-offset-3 decoration-2 decoration-[#FF008C]">
+            ※ 新規プレイヤー限定オファーです。
+          </div>
+        </button>
       </div>
 
       <div className="w-full pt-12 inline-flex flex-col justify-start items-center gap-[35px] px-3">
@@ -438,7 +445,7 @@ export default function App() {
           </div>
 
           <button
-            className="cursor-pointer self-center "
+            className="cursor-pointer self-stretch md:self-center"
             onClick={() => setEventEmitterS({ type: 'signUp' })}
           >
             <div

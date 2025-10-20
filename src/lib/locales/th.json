@@ -54,7 +54,7 @@
     "Supported cryptocurrencies": "คริปโตที่รองรับ:",
     "USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE": "USDT, USDC, ETH, POL, BNB, BTC, LTC, DOGE",
     "No crypto? No problem!": "ไม่มีคริปโต? ไม่เป็นปัญหา!",
-    "gameLogin": "เข้าสู่ระบบ",
+    "gameSignUp": "สมัครสมาชิก",
     "demoPlay": "เล่นทดลอง"
   }
 }
