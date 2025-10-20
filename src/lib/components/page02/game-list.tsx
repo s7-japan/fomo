@@ -40,12 +40,7 @@ export default function App() {
   useSignals()
 
   return (
-    <div
-      className="
-        w-full max-w-[520px] inline-flex justify-between items-center overflow-hidden
-        gap-1 md:gap-12
-        "
-    >
+    <div className="w-full max-w-[520px] inline-flex justify-between items-center overflow-hidden gap-1">
       {gameS().map((item, i) => (
         <div key={i} className="relative">
           <button className="cursor-pointer" onClick={() => selectedGameS.set(item)}>
