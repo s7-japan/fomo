@@ -7,14 +7,14 @@ import GameList from './game-list'
 export default function App() {
   return (
     <div className="inline-flex flex-col justify-start items-center">
-      <div className="self-stretch inline-flex flex-col justify-center items-center gap-1.5">
+      <div className="self-stretch inline-flex flex-col justify-center items-center gap-1.5 -mb-6 md:-mb-11">
         <img
           className="block md:hidden w-full"
-          src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/big-header-m.png`)}
+          src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/big-header-m-ko.png`)}
         />
         <img
           className="hidden md:block w-full"
-          src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/big-header-d.png`)}
+          src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/big-header-d-ko.png`)}
         />
       </div>
 
