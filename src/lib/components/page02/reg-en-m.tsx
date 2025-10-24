@@ -68,7 +68,7 @@ export default function App() {
           <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
             <div
               className="
-            text-center justify-start text-white font-medium font-['Inter'] leading-7
+            text-center justify-start text-white font-medium font-['Inter']
             text-2xl md:text-4xl
             "
             >
@@ -134,7 +134,7 @@ export default function App() {
           <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
             <div
               className="
-          text-center justify-start text-white font-medium font-['Inter'] leading-7
+          text-center justify-start text-white font-medium font-['Inter']
           text-2xl md:text-4xl
           "
             >
@@ -208,7 +208,7 @@ export default function App() {
         <div className="w-full inline-flex flex-col justify-start items-center gap-[17px]">
           {/* mobile */}
           <div className="md:hidden w-[334.09px] h-[76px] relative">
-            <div className="left-0 top-0 absolute text-center justify-center text-white text-3xl font-normal font-['Changa'] leading-[38px]">
+            <div className="relative text-center justify-center text-white text-3xl font-normal font-['Changa'] leading-[38px]">
               Just a Few Clicks to Claim <br />
               Your Welcome Bonus!
             </div>
@@ -294,8 +294,8 @@ export default function App() {
 
           {/* desktop */}
           <div className="hidden md:inline-flex w-full max-w-[1310px] flex-col justify-start items-center">
-            <div className="w-full max-w-[1310px] h-[173px] relative">
-              <div data-svg-wrapper className="left-[141.80px] top-[65.92px] absolute">
+            <div className="relative">
+              <div data-svg-wrapper className="left-[45px] top-[65.92px] absolute">
                 <svg
                   width="1053"
                   height="53"
@@ -325,7 +325,7 @@ export default function App() {
                   </defs>
                 </svg>
               </div>
-              <div data-svg-wrapper className="left-[379px] top-[59px] absolute">
+              <div data-svg-wrapper className="left-[240px] top-[59px] absolute">
                 <svg
                   width="653"
                   height="75"
@@ -355,7 +355,7 @@ export default function App() {
                   </defs>
                 </svg>
               </div>
-              <div className="left-0 top-0 absolute text-center justify-center text-white text-[64px] font-medium font-['Changa'] leading-[173px]">
+              <div className="relative text-center justify-center text-white text-[52px] font-medium font-['Changa'] leading-[173px] text-nowrap">
                 Just a Few Clicks to Claim Your Welcome Bonus!
               </div>
             </div>

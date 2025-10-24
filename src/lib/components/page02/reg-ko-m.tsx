@@ -78,7 +78,7 @@ export default function App() {
           <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
             <div
               className="
-          text-center justify-start text-white font-normal font-['Gmarket_Sans'] leading-7
+          text-center justify-start text-white font-normal font-['Gmarket_Sans'] translate-y-[2px]
           text-2xl md:text-4xl
           "
             >
@@ -134,7 +134,7 @@ export default function App() {
           <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
             <div
               className="
-          text-center justify-start text-white font-normal font-['Gmarket_Sans'] leading-7
+          text-center justify-start text-white font-normal font-['Gmarket_Sans'] translate-y-[2px]
           text-2xl md:text-4xl
           "
             >
@@ -230,7 +230,7 @@ export default function App() {
         <div className="w-full inline-flex flex-col justify-start items-center gap-[17px]">
           {/* mobile */}
           <div className="md:hidden w-[313px] h-[76px] relative">
-            <div className="left-[9px] top-0 absolute text-center justify-center text-white text-3xl font-normal font-['Changa'] leading-[38px]">
+            <div className="relative text-center justify-center text-white text-[28px] tracking-tight font-normal font-['Changa'] leading-[38px]">
               단 몇 번의 클릭으로
               <br />
               웰컴 보너스를 받으세요!
@@ -320,7 +320,7 @@ export default function App() {
 
           {/* desktop */}
           <div className="hidden md:inline-flex w-full max-w-[1310px] flex-col justify-start items-center">
-            <div className="w-[1121px] h-[140px] relative">
+            <div className="relative">
               <div data-svg-wrapper className="left-[47.30px] top-[45.92px] absolute">
                 <svg
                   width="1053"
@@ -381,7 +381,7 @@ export default function App() {
                   </defs>
                 </svg>
               </div>
-              <div className="left-0 top-0 absolute text-center justify-center text-white text-[62px] font-normal font-['Changa'] leading-[140px]">
+              <div className="relative text-center justify-center text-white text-[58px] font-normal font-['Changa'] leading-[140px] text-nowrap">
                 단 몇 번의 클릭으로 웰컴 보너스를 받으세요!
               </div>
             </div>

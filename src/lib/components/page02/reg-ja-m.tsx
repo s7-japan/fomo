@@ -67,7 +67,7 @@ export default function App() {
           <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
             <div
               className="
-          text-center justify-start text-white font-medium font-['Inter'] leading-7
+          text-center justify-start text-white font-medium font-['Inter']
           text-2xl md:text-4xl 
           "
             >
@@ -118,7 +118,7 @@ export default function App() {
           <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
             <div
               className="
-          text-center justify-start text-white font-medium font-['Inter'] leading-7
+          text-center justify-start text-white font-medium font-['Inter']
           text-2xl md:text-4xl
           "
             >
@@ -250,7 +250,7 @@ export default function App() {
                 </defs>
               </svg>
             </div>
-            <div className="left-0 top-0 absolute text-center justify-center text-white text-[22px] font-bold font-['Changa'] leading-[38px]">
+            <div className="relative text-center justify-center text-white text-[22px] font-bold font-['Changa'] leading-[38px]">
               たったの３ステップですぐ遊べる！{' '}
             </div>
           </div>
@@ -262,7 +262,7 @@ export default function App() {
 
           {/* desktop */}
           <div className="hidden md:inline-flex w-full max-w-[1310px] flex-col justify-start items-center">
-            <div className="w-[1042.79px] h-[173px] relative">
+            <div className="relative">
               <div data-svg-wrapper className="left-[0.80px] top-[60.92px] absolute">
                 <svg
                   width="1053"
@@ -323,7 +323,7 @@ export default function App() {
                   </defs>
                 </svg>
               </div>
-              <div className="left-0 top-0 absolute text-center justify-center text-white text-[64px] font-bold font-['Changa'] leading-[173px]">
+              <div className="relative text-center justify-center text-white text-[64px] font-bold font-['Changa'] leading-[173px] text-nowrap">
                 たったの３ステップですぐ遊べる！{' '}
               </div>
             </div>
