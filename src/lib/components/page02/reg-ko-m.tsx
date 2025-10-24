@@ -321,7 +321,7 @@ export default function App() {
           {/* desktop */}
           <div className="hidden md:inline-flex w-full max-w-[1310px] flex-col justify-start items-center">
             <div className="relative">
-              <div data-svg-wrapper className="left-[47.30px] top-[45.92px] absolute">
+              <div data-svg-wrapper className="left-[-20px] top-[45.92px] absolute">
                 <svg
                   width="1053"
                   height="53"
@@ -351,7 +351,7 @@ export default function App() {
                   </defs>
                 </svg>
               </div>
-              <div data-svg-wrapper className="left-[284.50px] top-[39px] absolute">
+              <div data-svg-wrapper className="left-[240px] top-[39px] absolute">
                 <svg
                   width="653"
                   height="75"
