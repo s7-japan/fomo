@@ -233,7 +233,7 @@ export default function App() {
             <div className="relative text-center justify-center text-white text-[28px] tracking-tight font-normal font-['Changa'] leading-[38px]">
               단 몇 번의 클릭으로
               <br />
-              웰컴 보너스를 받으세요!
+              혜택을 잡으세요!
             </div>
             <div data-svg-wrapper className="left-0 top-[26.69px] absolute">
               <svg
@@ -301,27 +301,25 @@ export default function App() {
               첫{' '}
             </span>
             <span className="text-white text-[17px] font-normal font-['Changa'] leading-normal">
-              3회
+              손실금{' '}
             </span>
             <span className="text-white text-xs font-normal font-['Changa'] leading-normal">
-              {' '}
-              입금으로
+              100%
               <br />
-              최대{' '}
+              전액{' '}
             </span>
             <span className="text-white text-[17px] font-normal font-['Changa'] leading-normal">
-              $500
+              캐시백!{' '}
             </span>
             <span className="text-white text-xs font-normal font-['Changa'] leading-normal">
-              {' '}
-              보너스 획득!
+              (최대 $77)
             </span>
           </div>
 
           {/* desktop */}
           <div className="hidden md:inline-flex w-full max-w-[1310px] flex-col justify-start items-center">
             <div className="relative">
-              <div data-svg-wrapper className="left-[-20px] top-[45.92px] absolute">
+              <div data-svg-wrapper className="left-[-120px] top-[45.92px] absolute">
                 <svg
                   width="1053"
                   height="53"
@@ -382,11 +380,11 @@ export default function App() {
                 </svg>
               </div>
               <div className="relative text-center justify-center text-white text-[58px] font-normal font-['Changa'] leading-[140px] text-nowrap">
-                단 몇 번의 클릭으로 웰컴 보너스를 받으세요!
+                단 몇 번의 클릭으로 혜택을 잡으세요!
               </div>
             </div>
             <div className="text-center justify-center text-white text-[34px] font-normal font-['Changa'] leading-normal">
-              첫 3회 입금으로 최대 $500 보너스 획득!
+              첫 손실금 100% 전액 캐시백! (최대 $77)
             </div>
           </div>
 
@@ -415,7 +413,7 @@ export default function App() {
 
           <button
             className="cursor-pointer"
-            onClick={() => setEventEmitterS({ type: 'url', info: '/bonus-terms/' })}
+            onClick={() => setEventEmitterS({ type: 'url', info: '/promotion-page/registration_reward/' })}
           >
             <div
               className="
@@ -423,7 +421,7 @@ export default function App() {
           text-[13px] font-normal leading-[4px] md:text-xl md:font-semibold md:leading-[80px]
           "
             >
-              보너스는 입금 전 '입금 페이지'에서 반드시 신청해야 합니다.
+              ⚡ 선착순 1,000명 한정!
             </div>
           </button>
         </div>

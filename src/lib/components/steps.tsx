@@ -44,7 +44,7 @@ export default function App() {
                     jakoth:text-[25px] jakoth:font-black jakoth:md:text-[17px]
                     "
         >
-          {t('page.Sign up with')}
+          {t('page.step1_title')}
         </p>
         <p
           className="
@@ -53,7 +53,7 @@ export default function App() {
                     jakoth:text-[12px] jakoth:md:text-[12px] tracking-[-1px]
                     "
         >
-          {t('page.Email, Telegram, Metamask wallet.')}
+          {t('page.step1_description')}
         </p>
       </div>
 
@@ -97,7 +97,7 @@ export default function App() {
                     jakoth:text-[25px] jakoth:font-black jakoth:md:text-[17px]
                     "
         >
-          {t('page.Minimum deposit')}
+          {t('page.step2_title')}
         </p>
         <p
           className="
@@ -106,7 +106,7 @@ export default function App() {
                     jakoth:text-[12px] jakoth:md:text-[12px] tracking-[-1px]
                     "
         >
-          {t('page.Make a deposit of $10 to begin.')}
+          {t('page.step2_description')}
         </p>
       </div>
 
@@ -150,7 +150,7 @@ export default function App() {
                     jakoth:text-[25px] jakoth:font-black jakoth:md:text-[17px]
                     "
         >
-          {t('page.Get Welcome Bonus')}
+          {t('page.step3_title')}
         </p>
         <p
           className="
@@ -159,7 +159,7 @@ export default function App() {
                     jakoth:text-[12px] jakoth:md:text-[12px] tracking-[-1px]
                     "
         >
-          {t('page.Enjoy a Bonus up to $300')}
+          {t('page.step3_description')}
         </p>
       </div>
     </div>

@@ -209,8 +209,7 @@ export default function App() {
           {/* mobile */}
           <div className="md:hidden w-[334.09px] h-[76px] relative">
             <div className="relative text-center justify-center text-white text-3xl font-normal font-['Changa'] leading-[38px]">
-              Just a Few Clicks to Claim <br />
-              Your Welcome Bonus!
+              Just a Few Clicks to <br /> Get Started!
             </div>
             <div data-svg-wrapper className="left-[9px] top-[26.69px] absolute">
               <svg
@@ -273,29 +272,28 @@ export default function App() {
               </svg>
             </div>
           </div>
-          <div className="md:hidden w-[315px] h-[41px] text-center justify-center">
+          <div className="md:hidden w-[315px] text-center justify-center">
             <span className="text-white text-xs font-normal font-['Changa'] leading-normal">
-              Get a{' '}
+              Get{' '}
             </span>
-            <span className="text-white text-[17px] font-normal font-['Changa'] leading-normal">
-              100% Bonus
+            <span className="text-white text-[16px] tracking-tight font-normal font-['Changa'] leading-normal">
+              100% cashback{' '}
             </span>
             <span className="text-white text-xs font-normal font-['Changa'] leading-normal">
-              {' '}
-              on Your{' '}
+              on your{' '}
             </span>
-            <span className="text-white text-[17px] font-normal font-['Changa'] leading-normal">
-              First Deposit <br />
+            <span className="text-white text-[16px] tracking-tight font-normal font-['Changa'] leading-normal">
+              first Casino losses <br />
             </span>
             <span className="text-white text-[13px] font-normal font-['Changa'] leading-normal">
-              (Up to $300)
+              (up to $77)
             </span>
           </div>
 
           {/* desktop */}
           <div className="hidden md:inline-flex w-full max-w-[1310px] flex-col justify-start items-center">
             <div className="relative">
-              <div data-svg-wrapper className="left-[45px] top-[65.92px] absolute">
+              <div data-svg-wrapper className="left-[-175px] top-[65.92px] absolute">
                 <svg
                   width="1053"
                   height="53"
@@ -325,7 +323,7 @@ export default function App() {
                   </defs>
                 </svg>
               </div>
-              <div data-svg-wrapper className="left-[240px] top-[59px] absolute">
+              <div data-svg-wrapper className="left-[40px] top-[59px] absolute">
                 <svg
                   width="653"
                   height="75"
@@ -356,27 +354,25 @@ export default function App() {
                 </svg>
               </div>
               <div className="relative text-center justify-center text-white text-[52px] font-medium font-['Changa'] leading-[173px] text-nowrap">
-                Just a Few Clicks to Claim Your Welcome Bonus!
+                Just a Few Clicks to Get Started!
               </div>
             </div>
             <div className="self-stretch h-[50px] text-center justify-center mt-[-32px]">
               <span className="text-white text-2xl font-normal font-['Changa'] leading-[33px]">
-                Get a
+                Get{' '}
               </span>
               <span className="text-white text-[34px] font-normal font-['Changa'] leading-[33px]">
-                {' '}
-                100% Bonus{' '}
+                100% cashback{' '}
               </span>
               <span className="text-white text-2xl font-normal font-['Changa'] leading-[33px]">
-                on Your
+                on your{' '}
               </span>
               <span className="text-white text-[34px] font-normal font-['Changa'] leading-[33px]">
-                {' '}
-                First Deposit{' '}
+                first Casino losses{' '}
               </span>
               <span className="text-white text-2xl font-normal font-['Changa'] leading-[33px]">
                 {' '}
-                (Up to $300)
+                (up to $77)
               </span>
             </div>
           </div>
@@ -407,7 +403,7 @@ export default function App() {
 
           <button
             className="cursor-pointer"
-            onClick={() => setEventEmitterS({ type: 'url', info: '/bonus-terms/' })}
+            onClick={() => setEventEmitterS({ type: 'url', info: '/promotion-page/registration_reward/' })}
           >
             <div
               className="
@@ -415,7 +411,7 @@ export default function App() {
           text-[13px] font-normal leading-[4px] md:text-xl md:font-semibold md:leading-[80px]
           "
             >
-              Bonus applied instantly after deposit
+              Only available for the first 1,000 players.
             </div>
           </button>
         </div>
