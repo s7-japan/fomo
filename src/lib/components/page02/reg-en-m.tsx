@@ -407,7 +407,7 @@ export default function App() {
 
           <button
             className="cursor-pointer"
-            onClick={() => setEventEmitterS({ type: 'url', info: '/promotion-page/registration_reward/' })}
+            onClick={() => setEventEmitterS({ type: 'url', info: '/bonus-terms/' })}
           >
             <div
               className="
@@ -415,7 +415,7 @@ export default function App() {
           text-[13px] font-normal leading-[4px] md:text-xl md:font-semibold md:leading-[80px]
           "
             >
-              Only available for the first 1,000 players.
+              Bonus applied instantly after deposit
             </div>
           </button>
         </div>
