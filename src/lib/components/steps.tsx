@@ -105,9 +105,8 @@ export default function App() {
                     en:text-[18px] en:md:text-[16px]
                     jakoth:text-[12px] jakoth:md:text-[12px] tracking-[-1px]
                     "
-        >
-          {t('page.step2_description')}
-        </p>
+          dangerouslySetInnerHTML={{ __html: t('page.step2_description') }}
+        ></p>
       </div>
 
       <div className="bg-[#1A1A1A] rounded-lg flex flex-col relative px-4 py-6">
