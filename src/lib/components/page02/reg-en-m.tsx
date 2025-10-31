@@ -209,7 +209,8 @@ export default function App() {
           {/* mobile */}
           <div className="md:hidden w-[334.09px] h-[76px] relative">
             <div className="relative text-center justify-center text-white text-3xl font-normal font-['Changa'] leading-[38px]">
-              Just a Few Clicks to <br /> Get Started!
+              Just a Few Clicks to Claim <br />
+              Your Welcome Bonus!
             </div>
             <div data-svg-wrapper className="left-[9px] top-[26.69px] absolute">
               <svg
@@ -274,26 +275,27 @@ export default function App() {
           </div>
           <div className="md:hidden w-[315px] text-center justify-center">
             <span className="text-white text-xs font-normal font-['Changa'] leading-normal">
-              Get{' '}
+              Get a{' '}
             </span>
-            <span className="text-white text-[16px] tracking-tight font-normal font-['Changa'] leading-normal">
-              100% cashback{' '}
+            <span className="text-white text-[17px] font-normal font-['Changa'] leading-normal">
+              100% Bonus
             </span>
             <span className="text-white text-xs font-normal font-['Changa'] leading-normal">
-              on your{' '}
+              {' '}
+              on Your{' '}
             </span>
-            <span className="text-white text-[16px] tracking-tight font-normal font-['Changa'] leading-normal">
-              first Casino losses <br />
+            <span className="text-white text-[17px] font-normal font-['Changa'] leading-normal">
+              First Deposit <br />
             </span>
             <span className="text-white text-[13px] font-normal font-['Changa'] leading-normal">
-              (up to $77)
+              (Up to $300)
             </span>
           </div>
 
           {/* desktop */}
           <div className="hidden md:inline-flex w-full max-w-[1310px] flex-col justify-start items-center">
             <div className="relative">
-              <div data-svg-wrapper className="left-[-175px] top-[65.92px] absolute">
+              <div data-svg-wrapper className="left-[25px] top-[65.92px] absolute">
                 <svg
                   width="1053"
                   height="53"
@@ -323,7 +325,7 @@ export default function App() {
                   </defs>
                 </svg>
               </div>
-              <div data-svg-wrapper className="left-[40px] top-[59px] absolute">
+              <div data-svg-wrapper className="left-[240px] top-[59px] absolute">
                 <svg
                   width="653"
                   height="75"
@@ -354,25 +356,27 @@ export default function App() {
                 </svg>
               </div>
               <div className="relative text-center justify-center text-white text-[52px] font-medium font-['Changa'] leading-[173px] text-nowrap">
-                Just a Few Clicks to Get Started!
+                Just a Few Clicks to Claim Your Welcome Bonus!
               </div>
             </div>
             <div className="self-stretch h-[50px] text-center justify-center mt-[-32px]">
               <span className="text-white text-2xl font-normal font-['Changa'] leading-[33px]">
-                Get{' '}
+                Get a
               </span>
               <span className="text-white text-[34px] font-normal font-['Changa'] leading-[33px]">
-                100% cashback{' '}
+                {' '}
+                100% Bonus{' '}
               </span>
               <span className="text-white text-2xl font-normal font-['Changa'] leading-[33px]">
-                on your{' '}
+                on Your
               </span>
               <span className="text-white text-[34px] font-normal font-['Changa'] leading-[33px]">
-                first Casino losses{' '}
+                {' '}
+                First Deposit{' '}
               </span>
               <span className="text-white text-2xl font-normal font-['Changa'] leading-[33px]">
                 {' '}
-                (up to $77)
+                (Up to $300)
               </span>
             </div>
           </div>
