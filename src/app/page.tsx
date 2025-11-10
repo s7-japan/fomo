@@ -11,5 +11,5 @@ ngEffect(() => {
 })
 
 export default function Home() {
-  return <LandingPage lang="en" is_show_header_footer={true} />
+  return <LandingPage />
 }
