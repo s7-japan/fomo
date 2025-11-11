@@ -40,3 +40,10 @@ export const addAdobeFonts = () => {
 const isShowHeaderFooterS = ngSignal(true)
 export const getIsShowHeaderFooter = () => ngComputed(() => isShowHeaderFooterS())
 export const setIsShowHeaderFooter = (v: boolean) => isShowHeaderFooterS.set(v)
+
+const isShowClarityScriptS = ngSignal(false)
+export const getIsShowClarityScript = () => ngComputed(() => isShowClarityScriptS())
+export const setIsShowClarityScript = (v: string) => {
+  const isShowClarityScript = v === 'true'
+  isShowClarityScriptS.set(isShowClarityScript)
+}
