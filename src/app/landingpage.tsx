@@ -17,7 +17,7 @@ export default function LandingPage() {
         {isShowHeaderFooterS() ? (
           <div className="w-auto px-4 py-6">
             <img
-              src={getCDNUrl(`/themes/fomoio/landingpage/images/FOMO_logo.png`)}
+              src={getCDNUrl(`/images/FOMO_logo.png`)}
               alt={`FOMO`}
               width={100}
               height={50}
@@ -36,7 +36,7 @@ export default function LandingPage() {
               <div className="mb-4">
                 <div className="inline-block">
                   <img
-                    src={getCDNUrl(`/themes/fomoio/landingpage/images/FOMO_logo.png`)}
+                    src={getCDNUrl(`/images/FOMO_logo.png`)}
                     alt="FOMO Logo"
                     width={80}
                     height={24}

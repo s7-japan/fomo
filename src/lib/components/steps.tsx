@@ -31,7 +31,7 @@ export default function App() {
 
         <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
           <img
-            src={getCDNUrl(`/themes/fomoio/landingpage/images/wheel.png`)}
+            src={getCDNUrl(`/images/wheel.png`)}
             alt="wheel"
             className="absolute w-full h-full object-contain"
           />
@@ -84,7 +84,7 @@ export default function App() {
 
         <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
           <img
-            src={getCDNUrl(`/themes/fomoio/landingpage/images/bolt.png`)}
+            src={getCDNUrl(`/images/bolt.png`)}
             alt="wheel"
             className="absolute w-full h-full object-contain"
           />
@@ -136,7 +136,7 @@ export default function App() {
 
         <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
           <img
-            src={getCDNUrl(`/themes/fomoio/landingpage/images/dollar.png`)}
+            src={getCDNUrl(`/images/dollar.png`)}
             alt="wheel"
             className="absolute w-full h-full object-contain"
           />

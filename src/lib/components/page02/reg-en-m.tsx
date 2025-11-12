@@ -10,11 +10,11 @@ export default function App() {
       <div className="self-stretch inline-flex flex-col justify-center items-center gap-1.5 -mb-6 md:-mb-11">
         <img
           className="block md:hidden w-full"
-          src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/big-header-m-en.png`)}
+          src={getCDNUrl(`/images/page02/big-header-m-en.png`)}
         />
         <img
           className="hidden md:block w-full"
-          src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/big-header-d-en.png`)}
+          src={getCDNUrl(`/images/page02/big-header-d-en.png`)}
         />
       </div>
 
@@ -159,7 +159,7 @@ export default function App() {
         <div className="size- flex flex-col justify-start items-center gap-4">
           <img
             className="w-[65.75px] h-[34.34px]"
-            src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/game-tag-m.png`)}
+            src={getCDNUrl(`/images/page02/game-tag-m.png`)}
           />
           <div
             className="
@@ -182,12 +182,12 @@ export default function App() {
         <div className="max-w-[992px]">
           <img
             className="md:hidden"
-            src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/game-list-m.png`)}
+            src={getCDNUrl(`/images/page02/game-list-m.png`)}
             alt=""
           />
           <img
             className="hidden md:block"
-            src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/game-list-d.png`)}
+            src={getCDNUrl(`/images/page02/game-list-d.png`)}
             alt=""
           />
         </div>
@@ -456,7 +456,7 @@ export default function App() {
             top-[227px] md:top-[-140px] md:left-[580px] md:w-[480px]
             "
             >
-              <img src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/ball-m.png`)} alt="" />
+              <img src={getCDNUrl(`/images/page02/ball-m.png`)} alt="" />
             </div>
 
             <div
@@ -476,7 +476,7 @@ export default function App() {
             "
             >
               <img
-                src={getCDNUrl(`/themes/fomoio/landingpage/images/page02/coin-list-m.png`)}
+                src={getCDNUrl(`/images/page02/coin-list-m.png`)}
                 alt=""
               />
             </div>

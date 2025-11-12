@@ -21,7 +21,7 @@ export default function LandingPage() {
           <div>
             <div className="relative inline-block w-full md:w-auto">
               <img
-                src={getCDNUrl(`/themes/fomoio/landingpage/images/line_bg.png`)}
+                src={getCDNUrl(`/images/line_bg.png`)}
                 alt=""
                 className="z-0 absolute w-full h-full object-contain"
               />
@@ -228,7 +228,7 @@ export default function LandingPage() {
                     {['apple', 'gpay', 'visa', 'mastercard'].map((name) => (
                       <div key={name} className="relative w-8 h-4 md:w-12 md:h-6">
                         <img
-                          src={getCDNUrl(`/themes/fomoio/landingpage/icons/${name}.png`)}
+                          src={getCDNUrl(`/icons/${name}.png`)}
                           alt={name}
                           className="absolute w-full h-full object-contain"
                         />
@@ -240,7 +240,7 @@ export default function LandingPage() {
 
               <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-[400px] mt-8 -top-[230px] md:-top-5 right-0 md:right-[140px] lg:mt-0 z-20  pointer-events-none">
                 <img
-                  src={getCDNUrl(`/themes/fomoio/landingpage/images/basketball.png`)}
+                  src={getCDNUrl(`/images/basketball.png`)}
                   alt="Basketball Bubble"
                   width={400}
                   height={400}

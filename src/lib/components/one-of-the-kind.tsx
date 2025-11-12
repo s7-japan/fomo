@@ -31,7 +31,7 @@ export default function App() {
             </span>
             &nbsp;
             <img
-              src={getCDNUrl(`/themes/fomoio/landingpage/images/FOMO_logo.png`)}
+              src={getCDNUrl(`/images/FOMO_logo.png`)}
               alt="FOMO Logo"
               className="
                           inline-block align-middle w-[80px] h-[24px] md:w-[170px] md:h-[50px] ml-0
