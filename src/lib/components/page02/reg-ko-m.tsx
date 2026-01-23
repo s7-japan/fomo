@@ -8,17 +8,103 @@ export default function App() {
   return (
     <div className="inline-flex flex-col justify-start items-center">
       <div className="self-stretch inline-flex flex-col justify-center items-center gap-1.5 -mb-6 md:-mb-11">
-        <img
-          className="block md:hidden w-full"
-          src={getCDNUrl(`/images/page02/big-header-m-ko.png`)}
-        />
-        <img
-          className="hidden md:block w-full"
-          src={getCDNUrl(`/images/page02/big-header-d-ko.png`)}
-        />
+        {/* src={getCDNUrl(`/images/page02/big-header-m-ko.png`)} */}
+        <img className="block md:hidden w-full" src={`/images/02/big-header-m-ko.png`} />
+        {/* src={getCDNUrl(`/images/page02/big-header-d-ko_02.png`)} */}
+        <img className="hidden md:block w-full" src={`/images/02/big-header-d-ko.png`} />
       </div>
 
-      <div className="md:w-[720px] inline-flex flex-col justify-start items-center gap-[30px] px-3">
+      <div className="inline-flex flex-col items-center gap-[30px] px-9 mt-7 md:items-start md:mt-20">
+        {/* mobile */}
+        <div className="md:hidden self-stretch inline-flex justify-start items-start gap-[23px]">
+          {/* <div className="w-[77px] h-0 origin-top-left rotate-90 outline outline-[3px] outline-offset-[-1.50px] outline-[#fe006e]"></div> */}
+          <div className="w-full border-l-4 border-[#fe006e] pl-6">
+            <span className="text-white text-[32px] font-bold font-['Gmarket_Sans'] leading-[38px]">
+              신용카드 or 코인? <br />
+            </span>
+            <span className="text-white text-2xl font-medium font-['Gmarket_Sans'] leading-[38px]">
+              원하는 방식으로 즐기세요.
+            </span>
+          </div>
+        </div>
+        <div className="md:hidden self-stretch relative">
+          <img src={`/images/02/card-m-ko.png`} alt="card" />
+        </div>
+
+        {/* desktop */}
+        <div className="hidden h-[112px] border-l-8 border-[#fe006e] pl-6 md:inline-flex text-center items-center text-white text-5xl font-bold font-['Gmarket_Sans'] leading-[42px]">
+          신용카드 or 코인? 원하는 방식으로 즐기세요.
+        </div>
+        <div className="hidden self-stretch max-w-[1200px] mt-[-20px] relative md:inline-flex">
+          <img src={`/images/02/card-d-ko.png`} alt="card" />
+        </div>
+      </div>
+
+      <div className="w-full pt-12 inline-flex flex-col justify-start items-center gap-[35px] px-3">
+        <div className="self-stretch flex flex-col justify-start items-center gap-4">
+          <img
+            className="w-[65.75px] h-[34.34px]"
+            src={getCDNUrl(`/images/page02/game-tag-m.png`)}
+          />
+          <div
+            className="
+          text-center justify-start text-[#ff008c] font-semibold font-['Inter']
+          text-6xl leading-[60px] md:text-[100px] md:leading-[100px]
+          "
+          >
+            5,000+
+          </div>
+          <div
+            className="
+          text-center justify-start text-white font-semibold font-['Pretendard'] 
+          text-xl leading-normal md:text-4xl md:leading-9
+          "
+          >
+            모든 장르의 게임이 기다리고 있습니다!
+          </div>
+        </div>
+        <div className="max-w-[992px]">
+          <img className="md:hidden" src={getCDNUrl(`/images/page02/game-list-m.png`)} alt="" />
+          <img
+            className="hidden md:block"
+            src={getCDNUrl(`/images/page02/game-list-d.png`)}
+            alt=""
+          />
+        </div>
+        <div
+          className="
+        text-center justify-start text-[#ff008c] font-semibold font-['Pretendard'] leading-[30px]
+        text-xl md:text-2xl md:text-center
+        "
+        >
+          슬롯, 라이브카지노, 바카라, 룰렛등
+          <br />전 세계 메이저 리그와 빅매치 베팅까지!
+        </div>
+
+        <div className="self-stretch inline-flex flex-col justify-start items-center gap-0.5 overflow-hidden">
+          <div className="size- inline-flex justify-start items-center gap-[7px]">
+            <img className="w-[83px] h-5" src={getCDNUrl(`/images/FOMO_logo.png`)} />
+            <div
+              className="
+            text-center justify-start text-white font-semibold font-['Pretendard'] leading-normal
+            text-xl md:text-2xl
+            "
+            >
+              에서만 즐길 수 있는
+            </div>
+          </div>
+          <div
+            className="
+          text-center justify-start text-white font-semibold font-['Pretendard'] leading-tight
+          text-xl md:text-2xl
+          "
+          >
+            오리지널 독점 게임도 놓치지 마세요!
+          </div>
+        </div>
+      </div>
+
+      <div className="md:w-[720px] inline-flex flex-col justify-start items-center gap-[30px] px-3 mt-32">
         <div className="self-stretch flex flex-col justify-center items-center">
           <div className="self-stretch justify-center">
             <span
@@ -155,242 +241,183 @@ export default function App() {
         </button>
       </div>
 
-      <div className="w-full pt-12 inline-flex flex-col justify-start items-center gap-[35px] px-3">
-        <div className="self-stretch flex flex-col justify-start items-center gap-4">
-          <img
-            className="w-[65.75px] h-[34.34px]"
-            src={getCDNUrl(`/images/page02/game-tag-m.png`)}
-          />
-          <div
-            className="
-          text-center justify-start text-[#ff008c] font-semibold font-['Inter']
-          text-6xl leading-[60px] md:text-[100px] md:leading-[100px]
-          "
-          >
-            5,000+
-          </div>
-          <div
-            className="
-          text-center justify-start text-white font-semibold font-['Pretendard'] 
-          text-xl leading-normal md:text-4xl md:leading-9
-          "
-          >
-            모든 장르의 게임이 기다리고 있습니다!
-          </div>
-        </div>
-        <div className="max-w-[992px]">
-          <img
-            className="md:hidden"
-            src={getCDNUrl(`/images/page02/game-list-m.png`)}
-            alt=""
-          />
-          <img
-            className="hidden md:block"
-            src={getCDNUrl(`/images/page02/game-list-d.png`)}
-            alt=""
-          />
-        </div>
-        <div
-          className="
-        text-center justify-start text-[#ff008c] font-semibold font-['Pretendard'] leading-[30px]
-        text-xl md:text-2xl md:text-center
-        "
-        >
-          슬롯, 라이브카지노, 바카라, 룰렛등
-          <br />전 세계 메이저 리그와 빅매치 베팅까지!
-        </div>
-
-        <div className="self-stretch inline-flex flex-col justify-start items-center gap-0.5 overflow-hidden">
-          <div className="size- inline-flex justify-start items-center gap-[7px]">
-            <img
-              className="w-[83px] h-5"
-              src={getCDNUrl(`/images/FOMO_logo.png`)}
-            />
-            <div
-              className="
-            text-center justify-start text-white font-semibold font-['Pretendard'] leading-normal
-            text-xl md:text-2xl
-            "
-            >
-              에서만 즐길 수 있는
-            </div>
-          </div>
-          <div
-            className="
-          text-center justify-start text-white font-semibold font-['Pretendard'] leading-tight
-          text-xl md:text-2xl
-          "
-          >
-            오리지널 독점 게임도 놓치지 마세요!
-          </div>
-        </div>
-      </div>
-
-      <div className="self-stretch pt-12 inline-flex justify-center items-center gap-2.5">
+      <div className="self-stretch mt-12 inline-flex justify-center items-center gap-2.5 md:mt-32">
         <div className="w-full inline-flex flex-col justify-start items-center gap-[17px]">
           {/* mobile */}
-          <div className="md:hidden w-[313px] h-[76px] relative">
-            <div className="relative text-center justify-center text-white text-[28px] tracking-tight font-normal font-['Changa'] leading-[38px]">
-              단 몇 번의 클릭으로
-              <br />
-              혜택을 잡으세요!
-            </div>
-            <div data-svg-wrapper className="left-0 top-[26.69px] absolute">
-              <svg
-                width="319"
-                height="29"
-                viewBox="0 0 319 29"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3 25.5156L316 3.03604"
-                  stroke="url(#paint0_linear_4003_33562)"
-                  strokeOpacity="0.19"
-                  strokeWidth="5"
-                  strokeLinecap="round"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_4003_33562"
-                    x1="3.12486"
-                    y1="31.0142"
-                    x2="316.474"
-                    y2="23.8967"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stopColor="#FE018C" />
-                    <stop offset="1" stopColor="#FF006F" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-            <div data-svg-wrapper className="left-[71.25px] top-[23px] absolute">
-              <svg
-                width="199"
-                height="41"
-                viewBox="0 0 199 41"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.25 3.34375L196.397 37.6201"
-                  stroke="url(#paint0_linear_4003_33563)"
-                  strokeOpacity="0.19"
-                  strokeWidth="5"
-                  strokeLinecap="round"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_4003_33563"
-                    x1="2.94176"
-                    y1="8.83514"
-                    x2="197.4"
-                    y2="19.7494"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stopColor="#FE018C" />
-                    <stop offset="1" stopColor="#FF006F" />
-                  </linearGradient>
-                </defs>
-              </svg>
+          <div className="w-[263px] px-4 py-2 bg-[#ff008c] rounded-[100px] inline-flex justify-center items-center gap-2.5 md:hidden">
+            <div className="text-center justify-center text-white text-2xl font-bold font-['Gmarket_Sans']">
+              선착순 1,000명 한정
             </div>
           </div>
-          <div className="md:hidden w-full text-center justify-center">
-            <span className="text-white text-xs font-normal font-['Changa'] leading-normal">
-              첫{' '}
-            </span>
-            <span className="text-white text-[17px] font-normal font-['Changa'] leading-normal">
-              손실금{' '}
-            </span>
-            <span className="text-white text-xs font-normal font-['Changa'] leading-normal">
-              100%
-              <br />
-              전액{' '}
-            </span>
-            <span className="text-white text-[17px] font-normal font-['Changa'] leading-normal">
-              캐시백!{' '}
-            </span>
-            <span className="text-white text-xs font-normal font-['Changa'] leading-normal">
-              (최대 $77)
-            </span>
+
+          <div className="w-[324px] h-[76px] relative md:hidden">
+            <div className="left-0 top-0 absolute text-center justify-center">
+              <span className="text-white text-3xl font-bold font-['Gmarket_Sans'] leading-[38px]">
+                첫 손실금 100% 캐시백!
+                <br />
+              </span>
+              <span className="text-white text-base font-light font-['Gmarket_Sans'] leading-[38px]">
+                최대
+              </span>
+              <span className="text-white text-3xl font-bold font-['Gmarket_Sans'] leading-[38px]">
+                {' '}
+                $77 ( 11만원 상당)
+              </span>
+            </div>
+            <div data-svg-wrapper className="left-[3px] top-[26.69px] absolute">
+              <svg
+                width="318"
+                height="28"
+                viewBox="0 0 318 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.49219 24.9844L315.492 2.50479"
+                  stroke="url(#paint0_linear_5167_60703)"
+                  stroke-opacity="0.19"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_5167_60703"
+                    x1="2.61705"
+                    y1="30.483"
+                    x2="315.966"
+                    y2="23.3654"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FE018C" />
+                    <stop offset="1" stop-color="#FF006F" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div data-svg-wrapper className="left-[74.25px] top-[23px] absolute">
+              <svg
+                width="199"
+                height="40"
+                viewBox="0 0 199 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.46875 2.53516L195.615 36.8115"
+                  stroke="url(#paint0_linear_5167_60704)"
+                  stroke-opacity="0.19"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_5167_60704"
+                    x1="2.16051"
+                    y1="8.02655"
+                    x2="196.618"
+                    y2="18.9408"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FE018C" />
+                    <stop offset="1" stop-color="#FF006F" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
           </div>
 
           {/* desktop */}
-          <div className="hidden md:inline-flex w-full max-w-[1310px] flex-col justify-start items-center">
-            <div className="relative">
-              <div data-svg-wrapper className="left-[-120px] top-[45.92px] absolute">
-                <svg
-                  width="1053"
-                  height="53"
-                  viewBox="0 0 1053 53"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.79688 48.0039L1047.79 5.91761"
-                    stroke="url(#paint0_linear_4290_39606)"
-                    strokeOpacity="0.19"
-                    strokeWidth="10"
-                    strokeLinecap="round"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_4290_39606"
-                      x1="6.01871"
-                      y1="53.4995"
-                      x2="1048.02"
-                      y2="11.4132"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stopColor="#FE018C" />
-                      <stop offset="1" stopColor="#FF006F" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-              <div data-svg-wrapper className="left-[240px] top-[39px] absolute">
-                <svg
-                  width="653"
-                  height="75"
-                  viewBox="0 0 653 75"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5 5L647.997 69.1723"
-                    stroke="url(#paint0_linear_4290_39607)"
-                    strokeOpacity="0.19"
-                    strokeWidth="10"
-                    strokeLinecap="round"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_4290_39607"
-                      x1="4.45372"
-                      y1="10.4728"
-                      x2="647.451"
-                      y2="74.6451"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stopColor="#FE018C" />
-                      <stop offset="1" stopColor="#FF006F" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-              <div className="relative text-center justify-center text-white text-[58px] font-normal font-['Changa'] leading-[140px] text-nowrap">
-                단 몇 번의 클릭으로 혜택을 잡으세요!
-              </div>
+          <div className="hidden size- px-20 py-6 bg-[#ff008c] rounded-[100px] justify-center items-center gap-2.5 md:inline-flex">
+            <div className="text-center justify-center text-white text-[40px] font-bold font-['Gmarket_Sans']">
+              선착순 1,000명 한정
             </div>
-            <div className="text-center justify-center text-white text-[34px] font-normal font-['Changa'] leading-normal">
-              첫 손실금 100% 전액 캐시백! (최대 $77)
+          </div>
+
+          <div className="hidden w-[1056px] h-[173px] relative md:inline-flex">
+            <div data-svg-wrapper className="left-[0px] top-[65.92px] absolute">
+              <svg
+                width="1052"
+                height="53"
+                viewBox="0 0 1052 53"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 47.0859L1047 4.99964"
+                  stroke="url(#paint0_linear_5167_60294)"
+                  stroke-opacity="0.19"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_5167_60294"
+                    x1="5.22184"
+                    y1="52.5815"
+                    x2="1047.22"
+                    y2="10.4952"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FE018C" />
+                    <stop offset="1" stop-color="#FF006F" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div data-svg-wrapper className="left-[331px] top-[59px] absolute">
+              <svg
+                width="653"
+                height="75"
+                viewBox="0 0 653 75"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 5L647.997 69.1723"
+                  stroke="url(#paint0_linear_5167_60295)"
+                  stroke-opacity="0.19"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_5167_60295"
+                    x1="4.45372"
+                    y1="10.4728"
+                    x2="647.451"
+                    y2="74.6451"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FE018C" />
+                    <stop offset="1" stop-color="#FF006F" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div className="left-0 top-0 absolute text-center justify-center">
+              <span className="text-white text-[72px] font-bold font-['Gmarket_Sans'] leading-[173px]">
+                첫 손실금 100% 캐시백!{' '}
+              </span>
+              <span className="text-white text-[50px] font-medium font-['Gmarket_Sans'] leading-[173px]">
+                최대
+              </span>
+              <span className="text-white text-[50px] font-bold font-['Gmarket_Sans'] leading-[173px]">
+                {' '}
+              </span>
+              <span className="text-white text-[72px] font-bold font-['Gmarket_Sans'] leading-[173px]">
+                $77
+              </span>
             </div>
           </div>
 
           <StepsM />
 
-          <button className="cursor-pointer" onClick={() => setEventEmitterS({ type: 'signUp' })}>
+          <button
+            className="cursor-pointer"
+            onClick={() =>
+              setEventEmitterS({ type: 'url', info: '/promotion-page/limited_cashback/' })
+            }
+          >
             <div
               className="
           py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3
@@ -406,14 +433,16 @@ export default function App() {
             text-base font-normal leading-[21px] md:text-[28px] md:font-medium md:leading-7
             "
               >
-                지금 가입하기
+                바로 가입하기
               </div>
             </div>
           </button>
 
           <button
             className="cursor-pointer"
-            onClick={() => setEventEmitterS({ type: 'url', info: '/promotion-page/registration_reward/' })}
+            onClick={() =>
+              setEventEmitterS({ type: 'url', info: '/promotion-page/registration_reward/' })
+            }
           >
             <div
               className="
@@ -481,10 +510,7 @@ export default function App() {
             top-[95px] w-[272px] md:top-[94px] md:w-[460px]
             "
             >
-              <img
-                src={getCDNUrl(`/images/page02/coin-list-m.png`)}
-                alt=""
-              />
+              <img src={getCDNUrl(`/images/page02/coin-list-m.png`)} alt="" />
             </div>
             <div
               className="

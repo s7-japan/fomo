@@ -1,5 +1,42 @@
 import { t } from 'i18next'
 import { getCDNUrl } from '../services/layout.service'
+import { getCurrentLng } from '../services/i18n.service'
+import { ngComputed } from '../common/preact-ng-signals'
+
+const langS = getCurrentLng()
+
+const infoS = ngComputed(() => {
+  let base = {
+    step1: {
+      url: getCDNUrl(`/images/wheel.png`),
+    },
+    step2: {
+      url: getCDNUrl(`/images/bolt.png`),
+    },
+    step3: {
+      url: getCDNUrl(`/images/dollar.png`),
+    },
+  }
+
+  if (langS() === 'ko') {
+    base = {
+      ...base,
+      ...{
+        step1: {
+          url: '/images/02/step01-img.png',
+        },
+        step2: {
+          url: '/images/02/step02-img.png',
+        },
+        step3: {
+          url: '/images/02/step03-img.png',
+        },
+      },
+    }
+  }
+
+  return base
+})
 
 export default function App() {
   return (
@@ -31,9 +68,17 @@ export default function App() {
 
         <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
           <img
-            src={getCDNUrl(`/images/wheel.png`)}
+            src={infoS().step1.url}
             alt="wheel"
             className="absolute w-full h-full object-contain"
+            style={
+              langS() === 'ko'
+                ? {
+                    right: '-10px',
+                    width: '100px'
+                  }
+                : {}
+            }
           />
         </div>
 
@@ -50,7 +95,7 @@ export default function App() {
           className="
                     text-white ml-2 -mr-1 md:ml-0 text-left
                     en:text-[18px] en:md:text-[16px]
-                    jakoth:text-[12px] jakoth:md:text-[12px] tracking-[-1px]
+                    jakoth:text-[14px] jakoth:md:text-[12px] tracking-[-1px]
                     "
         >
           {t('page.step1_description')}
@@ -84,9 +129,17 @@ export default function App() {
 
         <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
           <img
-            src={getCDNUrl(`/images/bolt.png`)}
+            src={infoS().step2.url}
             alt="wheel"
             className="absolute w-full h-full object-contain"
+            style={
+              langS() === 'ko'
+                ? {
+                    right: '-10px',
+                    width: '100px'
+                  }
+                : {}
+            }
           />
         </div>
 
@@ -103,7 +156,7 @@ export default function App() {
           className="
                     text-white ml-2 -mr-1 md:ml-0 text-left
                     en:text-[18px] en:md:text-[16px]
-                    jakoth:text-[12px] jakoth:md:text-[12px] tracking-[-1px]
+                    jakoth:text-[14px] jakoth:md:text-[12px] tracking-[-1px]
                     "
           dangerouslySetInnerHTML={{ __html: t('page.step2_description') }}
         ></p>
@@ -136,9 +189,17 @@ export default function App() {
 
         <div className="relative w-[120px] h-[120px] md:w-[150px] md:h-[150px] ml-40 md:ml-30 -mt-5 md:-mt-10">
           <img
-            src={getCDNUrl(`/images/dollar.png`)}
+            src={infoS().step3.url}
             alt="wheel"
             className="absolute w-full h-full object-contain"
+            style={
+              langS() === 'ko'
+                ? {
+                    right: '-10px',
+                    width: '100px'
+                  }
+                : {}
+            }
           />
         </div>
 
@@ -155,7 +216,7 @@ export default function App() {
           className="
                     text-white ml-2 -mr-1 md:ml-0 text-left
                     en:text-[18px] en:md:text-[16px]
-                    jakoth:text-[12px] jakoth:md:text-[12px] tracking-[-1px]
+                    jakoth:text-[14px] jakoth:md:text-[12px] tracking-[-1px]
                     "
         >
           {t('page.step3_description')}
