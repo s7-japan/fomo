@@ -460,91 +460,130 @@ export default function App() {
         <OneOfTheKind />
       </div>
 
-      <div className="self-stretch pt-12 inline-flex justify-center items-center gap-2.5 px-3">
-        <div className="w-full inline-flex flex-col justify-start items-start gap-[18px] px-4 max-w-5xl">
-          <div
-            className="
-          w-full pl-[23px] border-l-4 border-[#FF008C] justify-center text-white font-normal font-['Changa']
-          text-3xl leading-[38px] md:text-[52px] md:leading-[76px]
-          "
-          >
-            암호화폐 OK! <br className="md:hidden" />
-            법정화폐도 OK!
+      <div className="w-full py-5 inline-flex flex-col justify-start items-center">
+        <img
+          className="w-[53px] h-[50px] md:w-[101px] md:h-[101px]"
+          src="/images/02/a18plus.png"
+          alt=""
+        />
+        <div className="w-full h-[74px] mt-5 relative">
+          <div className="w-full h-[74px] left-0 top-0 absolute text-center justify-center text-[#b3bec1] text-sm font-medium font-['Gmarket_Sans'] md:text-xl">
+            도박은 중독될 수 있습니다. <br className="md:hidden" />
+            본인의 한도를 인지하고 도박에 대한 책임을 명심하세요.
           </div>
+        </div>
+      </div>
 
-          <div
-            className="
-          w-full relative
-          h-[613.24px] md:h-[440px]
-          "
-          >
-            <div
-              className="
-            w-full left-[6.66px] top-0 absolute bg-white/5 rounded-[21px]
-            h-[541px] md:h-[370px]
-            "
-            />
-
-            <div
-              className="
-            absolute
-            top-[227px] md:top-[-140px] md:left-[580px] md:w-[480px]
-            "
-            >
-              <img src={getCDNUrl(`/images/page02/ball-m.png`)} alt="" />
-            </div>
-
-            <div
-              className="
-            h-[45px] left-[29.17px] top-[170px] absolute justify-center text-white font-normal font-['Changa'] leading-snug
-            w-[285px] text-lg md:w-full md:text-[35px] md:leading-[42px]
-            "
-            >
-              암호화폐가 없으신가요? 걱정 마세요!
-              <br />
-              카드만 사용하세요.
-            </div>
-            <div
-              className="
-            left-[29.18px] absolute inline-flex justify-between items-center overflow-hidden
-            top-[95px] w-[272px] md:top-[94px] md:w-[460px]
-            "
-            >
-              <img src={getCDNUrl(`/images/page02/coin-list-m.png`)} alt="" />
-            </div>
-            <div
-              className="
-            h-[53px] left-[29.16px] top-[32px] absolute justify-center text-white font-['Changa']
-            w-[272px] text-[25px] font-semibold leading-[25px] md:w-full md:text-[48px] md:font-extrabold md:leading-[42px]
-            "
-            >
-              암호화폐를 입금하세요.
-            </div>
+      {/* mobile */}
+      <div className="w-full h-[160px] relative md:hidden">
+        <div className="w-full px-4 py-2.5 left-0 top-[0.02px] absolute inline-flex flex-col justify-start items-start gap-4 overflow-hidden">
+          <div className="self-stretch h-0.5 relative bg-[#191919]" />
+          <div className="self-stretch h-10 inline-flex justify-between items-center overflow-hidden">
+            <img className="w-[40px]" src="/images/02/payments/01.png" alt="" />
+            <img className="w-[40px]" src="/images/02/payments/02.png" alt="" />
+            <img className="w-[40px]" src="/images/02/payments/03.png" alt="" />
+            <img className="w-[40px]" src="/images/02/payments/04.png" alt="" />
+            <img className="w-[40px]" src="/images/02/payments/05.png" alt="" />
           </div>
-
+          <div className="self-stretch h-10 inline-flex justify-between items-center overflow-hidden">
+            <img className="w-[40px]" src="/images/02/payments/06.png" alt="" />
+            <img className="w-[98px]" src="/images/02/payments/07.png" alt="" />
+            <img className="w-[36px]" src="/images/02/payments/08.png" alt="" />
+            <img className="w-[72px]" src="/images/02/payments/09.png" alt="" />
+          </div>
+          <div className="self-stretch h-10 inline-flex justify-between items-center overflow-hidden">
+            <img className="w-[49px]" src="/images/02/payments/10.png" alt="" />
+            <img className="w-[56px]" src="/images/02/payments/11.png" alt="" />
+            <img className="w-[88px]" src="/images/02/payments/12.png" alt="" />
+            <img className="w-[40px]" src="/images/02/payments/13.png" alt="" />
+          </div>
+          <div className="self-stretch h-0.5 relative bg-[#191919]" />
+        </div>
+        <div className="w-full px-4 left-0 top-[208.02px] absolute inline-flex justify-center items-center gap-3.5">
           <button
-            className="cursor-pointer self-stretch md:self-center"
-            onClick={() => setEventEmitterS({ type: 'signUp' })}
+            className="cursor-pointer"
+            onClick={() => setEventEmitterS({ type: 'url', info: '/responsible-gaming/' })}
           >
-            <div
-              className="
-          py-1 bg-[#252525] rounded-[76px] inline-flex justify-center items-center gap-3
-          w-full md:w-[412px] md:mt-8
-          "
-            >
-              <div className="justify-start text-black text-[26px] font-normal font-['Inter'] tracking-wide">
-                🚀
-              </div>
-              <div
-                className="
-            text-center justify-center text-white font-['Changa']
-            text-base font-normal leading-[21px] md:text-[28px] md:font-medium md:leading-7
-            "
-              >
-                무료로 플레이하세요
-              </div>
-            </div>
+            <img className="w-[45px]" src="/images/02/footer-icons/01.png" alt="" />
           </button>
+          <button
+            className="cursor-pointer"
+            onClick={() => setEventEmitterS({ type: 'url', info: 'https://www.gamcare.org.uk' })}
+          >
+            <img className="w-[67px]" src="/images/02/footer-icons/02.png" alt="" />
+          </button>
+          <button
+            className="cursor-pointer"
+            onClick={() => setEventEmitterS({ type: 'url', info: 'https://betblocker.org/' })}
+          >
+            <img className="w-[47px]" src="/images/02/footer-icons/03.png" alt="" />
+          </button>
+          <img className="w-[24px]" src="/images/02/footer-icons/04.png" alt="" />
+        </div>
+      </div>
+
+      {/* desktop */}
+      <div className="hidden md:block mx-8">
+        <div className="self-stretch h-0.5 relative bg-[#191919] mb-12" />
+        <div className="w-full h-10 inline-flex justify-between items-center ">
+          <img className="w-[40px]" src="/images/02/payments/01.png" alt="" />
+          <img className="w-[40px]" src="/images/02/payments/02.png" alt="" />
+          <img className="w-[40px]" src="/images/02/payments/03.png" alt="" />
+          <img className="w-[40px]" src="/images/02/payments/04.png" alt="" />
+          <img className="w-[40px]" src="/images/02/payments/05.png" alt="" />
+          <img className="w-[40px]" src="/images/02/payments/06.png" alt="" />
+          <img className="w-[98px]" src="/images/02/payments/07.png" alt="" />
+          <img className="w-[58px]" src="/images/02/payments/08.png" alt="" />
+          <img className="w-[93px]" src="/images/02/payments/09.png" alt="" />
+          <img className="w-[63px]" src="/images/02/payments/10.png" alt="" />
+          <img className="w-[56px]" src="/images/02/payments/11.png" alt="" />
+          <img className="w-[88px]" src="/images/02/payments/12.png" alt="" />
+          <img className="w-[40px]" src="/images/02/payments/13.png" alt="" />
+        </div>
+        <div className="self-stretch h-0.5 relative bg-[#191919] my-12" />
+
+        <div className="w-full justify-center">
+          <span className="text-[#b3bec1] text-[10px] font-medium font-['Inter'] leading-[15px]">
+            FOMO.IO는 Galaxy Gaming B.V.가 소유 및 운영합니다. 이 회사는 큐라소 빌렘스타트
+            Emancipatie Boulevard 522에 등록되어 있으며, 등록 번호는 72638212입니다. Galaxy Gaming
+            B.V.는 큐라소 게이밍 관리 위원회의 허가를 받았으며, 라이선스 번호 OGL/2025/423/5122357에
+            따라 규제를 받습니다. <br />
+            해당 회사의 본사는 키프로스 리마솔 Arch. Makariou III Ave 55, Unit 10, 3030에
+            위치하며(등록 번호: HE 2788273), 모회사인 Galaxy Gaming B.V.의 승인된 대리인 자격으로
+            업무를 수행합니다. FOMO.IO는 책임감 있는 도박을 지향합니다. 자세한 정보는 다음을
+            방문하세요{' '}
+          </span>
+          <span className="text-[#b3bec1] text-[10px] font-medium font-['Inter'] underline leading-[15px]">
+            Gamblingtherapy.org
+            <br />
+          </span>
+          <span className="text-[#b3bec1] text-[10px] font-medium font-['Inter'] leading-[15px]">
+            © 2026 FOMO.IO 모든 콘텐츠는 저작권법에 의해 보호됩니다.{' '}
+          </span>
+        </div>
+
+        <div className=" inline-flex justify-start items-center gap-3.5 mt-12">
+          <img className="w-[53px]" src="/images/02/footer-icons/05.png" alt="" />
+          <img className="w-[42px]" src="/images/02/footer-icons/06.png" alt="" />
+          <button
+            className="cursor-pointer"
+            onClick={() => setEventEmitterS({ type: 'url', info: '/responsible-gaming/' })}
+          >
+            <img className="w-[51px]" src="/images/02/footer-icons/01.png" alt="" />
+          </button>
+          <button
+            className="cursor-pointer"
+            onClick={() => setEventEmitterS({ type: 'url', info: 'https://www.gamcare.org.uk' })}
+          >
+            <img className="w-[98px]" src="/images/02/footer-icons/02.png" alt="" />
+          </button>
+          <button
+            className="cursor-pointer"
+            onClick={() => setEventEmitterS({ type: 'url', info: 'https://betblocker.org/' })}
+          >
+            <img className="w-[69px]" src="/images/02/footer-icons/03.png" alt="" />
+          </button>
+          <img className="w-[35px]" src="/images/02/footer-icons/04.png" alt="" />
         </div>
       </div>
     </div>
