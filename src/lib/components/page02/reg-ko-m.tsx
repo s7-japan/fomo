@@ -3,6 +3,9 @@ import { getCDNUrl } from '../../../lib/services/layout.service'
 import OneOfTheKind from '../one-of-the-kind'
 import StepsM from '../steps'
 import GameList from './game-list'
+import ProviderMarque from './provider-marquee'
+
+
 
 export default function App() {
   return (
@@ -62,7 +65,10 @@ export default function App() {
           >
             모든 장르의 게임이 기다리고 있습니다!
           </div>
+
+          <ProviderMarque />
         </div>
+
         <div className="max-w-[992px]">
           <img className="md:hidden" src={getCDNUrl(`/images/page02/game-list-m.png`)} alt="" />
           <img
@@ -71,6 +77,7 @@ export default function App() {
             alt=""
           />
         </div>
+
         <div
           className="
         text-center justify-start text-[#ff008c] font-semibold font-['Pretendard'] leading-[30px]
@@ -161,7 +168,7 @@ export default function App() {
         </div>
 
         <button className="cursor-pointer" onClick={() => setEventEmitterS({ type: 'signUp' })}>
-          <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
+          <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
             <div
               className="
           text-center justify-start text-white font-normal font-['Gmarket_Sans'] translate-y-[2px]
@@ -217,7 +224,7 @@ export default function App() {
           바로 크립토 승리를 즐기세요!{' '}
         </div>
         <button className="cursor-pointer" onClick={() => setEventEmitterS({ type: 'signUp' })}>
-          <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
+          <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
             <div
               className="
           text-center justify-start text-white font-normal font-['Gmarket_Sans'] translate-y-[2px]
@@ -275,9 +282,9 @@ export default function App() {
                 <path
                   d="M2.49219 24.9844L315.492 2.50479"
                   stroke="url(#paint0_linear_5167_60703)"
-                  stroke-opacity="0.19"
-                  stroke-width="5"
-                  stroke-linecap="round"
+                  strokeOpacity="0.19"
+                  strokeWidth="5"
+                  strokeLinecap="round"
                 />
                 <defs>
                   <linearGradient
@@ -288,8 +295,8 @@ export default function App() {
                     y2="23.3654"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#FE018C" />
-                    <stop offset="1" stop-color="#FF006F" />
+                    <stop stopColor="#FE018C" />
+                    <stop offset="1" stopColor="#FF006F" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -305,9 +312,9 @@ export default function App() {
                 <path
                   d="M2.46875 2.53516L195.615 36.8115"
                   stroke="url(#paint0_linear_5167_60704)"
-                  stroke-opacity="0.19"
-                  stroke-width="5"
-                  stroke-linecap="round"
+                  strokeOpacity="0.19"
+                  strokeWidth="5"
+                  strokeLinecap="round"
                 />
                 <defs>
                   <linearGradient
@@ -318,8 +325,8 @@ export default function App() {
                     y2="18.9408"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#FE018C" />
-                    <stop offset="1" stop-color="#FF006F" />
+                    <stop stopColor="#FE018C" />
+                    <stop offset="1" stopColor="#FF006F" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -345,9 +352,9 @@ export default function App() {
                 <path
                   d="M5 47.0859L1047 4.99964"
                   stroke="url(#paint0_linear_5167_60294)"
-                  stroke-opacity="0.19"
-                  stroke-width="10"
-                  stroke-linecap="round"
+                  strokeOpacity="0.19"
+                  strokeWidth="10"
+                  strokeLinecap="round"
                 />
                 <defs>
                   <linearGradient
@@ -358,8 +365,8 @@ export default function App() {
                     y2="10.4952"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#FE018C" />
-                    <stop offset="1" stop-color="#FF006F" />
+                    <stop stopColor="#FE018C" />
+                    <stop offset="1" stopColor="#FF006F" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -375,9 +382,9 @@ export default function App() {
                 <path
                   d="M5 5L647.997 69.1723"
                   stroke="url(#paint0_linear_5167_60295)"
-                  stroke-opacity="0.19"
-                  stroke-width="10"
-                  stroke-linecap="round"
+                  strokeOpacity="0.19"
+                  strokeWidth="10"
+                  strokeLinecap="round"
                 />
                 <defs>
                   <linearGradient
@@ -388,8 +395,8 @@ export default function App() {
                     y2="74.6451"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#FE018C" />
-                    <stop offset="1" stop-color="#FF006F" />
+                    <stop stopColor="#FE018C" />
+                    <stop offset="1" stopColor="#FF006F" />
                   </linearGradient>
                 </defs>
               </svg>
