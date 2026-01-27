@@ -23,11 +23,11 @@ export default function App(props: IAppProps) {
       <div className="marquee-track">
         {/* <!-- 第一組 --> */}
         {providerS().map((p, i) => (
-          <img key={i} className="max-w-[80px] max-h-[50px]" src={p.imageUrl} alt={p.prov} />
+          <img key={i} className="max-w-[80px] max-h-[50px] md:max-w-[110px] md:max-h-[60px]" src={p.imageUrl} alt={p.prov} />
         ))}
         {/* <!-- 第二組（完全相同） --> */}
         {providerS().map((p, i) => (
-          <img key={i} className="max-w-[80px] max-h-[50px]" src={p.imageUrl} alt={p.prov} />
+          <img key={i} className="max-w-[80px] max-h-[50px] md:max-w-[110px] md:max-h-[60px]" src={p.imageUrl} alt={p.prov} />
         ))}
       </div>
     </div>
