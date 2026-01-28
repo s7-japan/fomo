@@ -1,6 +1,5 @@
-import { from, map, switchMap } from 'rxjs'
+import { getCurrentLng } from './i18n.service'
 
-const apiUrl = 'https://api.fomo.io/catalog/providers/true/true/en/2'
 const CDN = 'https://tiles.fomo.io'
 
 export type ProviderType = {
@@ -9,14 +8,21 @@ export type ProviderType = {
   imageUrl: string
 }
 
-export const getProviders = () =>
-  from(fetch(apiUrl)).pipe(
-    switchMap((a) => a.json()),
-    map((a: ProviderType[]) =>
-      a.map((p) => ({
-        name: p.name,
-        prov: p.prov,
-        imageUrl: `${CDN}/t/${p.prov}.svg`,
-      }))
-    )
-  )
+const langS = getCurrentLng()
+
+const getApiUrl = (lang: string) => `https://api.fomo.io/catalog/providers/true/true/${lang}/2`
+
+export const getProviders = async () => {
+  const lang = langS()
+  if (lang) {
+    const apiUrl = getApiUrl(lang)
+    const res = await fetch(apiUrl)
+    const data: ProviderType[] = await res.json()
+    return data.map((p) => ({
+      name: p.name,
+      prov: p.prov,
+      imageUrl: `${CDN}/t/${p.prov}.svg`,
+    }))
+  }
+  return Promise.resolve([])
+}

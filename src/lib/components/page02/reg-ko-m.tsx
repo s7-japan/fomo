@@ -5,8 +5,6 @@ import StepsM from '../steps'
 import GameList from './game-list'
 import ProviderMarque from './provider-marquee'
 
-
-
 export default function App() {
   return (
     <div className="inline-flex flex-col justify-start items-center">
