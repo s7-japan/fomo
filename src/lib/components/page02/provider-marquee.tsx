@@ -3,11 +3,9 @@ import { useEffect } from 'react'
 import { ngEffect, ngSignal } from '../../../lib/common/preact-ng-signals'
 import { ProviderType, getProviders } from '../../../lib/services/provider.service'
 
-export interface IAppProps {}
-
 const providerS = ngSignal([] as ProviderType[])
 
-export default function App(props: IAppProps) {
+export default function App() {
   useSignals()
 
   useEffect(() => {

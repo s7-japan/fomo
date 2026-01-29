@@ -23,13 +23,13 @@ const infoS = ngComputed(() => {
       ...base,
       ...{
         step1: {
-          url: '/images/02/step01-img.png',
+          url: getCDNUrl(`/images/02/step01-img.png`),
         },
         step2: {
-          url: '/images/02/step02-img.png',
+          url: getCDNUrl(`/images/02/step02-img.png`),
         },
         step3: {
-          url: '/images/02/step03-img.png',
+          url: getCDNUrl(`/images/02/step03-img.png`),
         },
       },
     }
@@ -75,7 +75,7 @@ export default function App() {
               langS() === 'ko'
                 ? {
                     right: '-10px',
-                    width: '100px'
+                    width: '100px',
                   }
                 : {}
             }
@@ -136,7 +136,7 @@ export default function App() {
               langS() === 'ko'
                 ? {
                     right: '-10px',
-                    width: '100px'
+                    width: '100px',
                   }
                 : {}
             }
@@ -196,7 +196,7 @@ export default function App() {
               langS() === 'ko'
                 ? {
                     right: '-10px',
-                    width: '100px'
+                    width: '100px',
                   }
                 : {}
             }

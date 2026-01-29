@@ -9,10 +9,8 @@ export default function App() {
   return (
     <div className="inline-flex flex-col justify-start items-center">
       <div className="self-stretch inline-flex flex-col justify-center items-center gap-1.5 -mb-6 md:-mb-11">
-        {/* src={getCDNUrl(`/images/page02/big-header-m-ko.png`)} */}
-        <img className="block md:hidden w-full" src={`/images/02/big-header-m-ko.png`} />
-        {/* src={getCDNUrl(`/images/page02/big-header-d-ko_02.png`)} */}
-        <img className="hidden md:block w-full" src={`/images/02/big-header-d-ko.png`} />
+        <img className="block md:hidden w-full" src={getCDNUrl(`/images/02/big-header-m-ko.png`)} />
+        <img className="hidden md:block w-full" src={getCDNUrl(`/images/02/big-header-d-ko.png`)} />
       </div>
 
       <div className="inline-flex flex-col items-center gap-[30px] px-9 mt-7 md:items-start md:mt-20">
@@ -29,7 +27,7 @@ export default function App() {
           </div>
         </div>
         <div className="md:hidden self-stretch relative">
-          <img src={`/images/02/card-m-ko.png`} alt="card" />
+          <img src={getCDNUrl(`/images/02/card-m-ko.png`)} alt="card" />
         </div>
 
         {/* desktop */}
@@ -37,7 +35,7 @@ export default function App() {
           신용카드 or 코인? 원하는 방식으로 즐기세요.
         </div>
         <div className="hidden self-stretch max-w-[1200px] mt-[-20px] relative md:inline-flex">
-          <img src={`/images/02/card-d-ko.png`} alt="card" />
+          <img src={getCDNUrl(`/images/02/card-d-ko.png`)} alt="card" />
         </div>
       </div>
 
@@ -468,7 +466,7 @@ export default function App() {
       <div className="w-full py-5 inline-flex flex-col justify-start items-center">
         <img
           className="w-[53px] h-[50px] md:w-[101px] md:h-[101px]"
-          src="/images/02/a18plus.png"
+          src={getCDNUrl(`/images/02/a18plus.png`)}
           alt=""
         />
         <div className="w-full h-[74px] mt-5 relative">
@@ -484,23 +482,23 @@ export default function App() {
         <div className="w-full px-4 py-2.5 left-0 top-[0.02px] absolute inline-flex flex-col justify-start items-start gap-4 overflow-hidden">
           <div className="self-stretch h-0.5 relative bg-[#191919]" />
           <div className="self-stretch h-10 inline-flex justify-between items-center overflow-hidden">
-            <img className="w-[40px]" src="/images/02/payments/01.png" alt="" />
-            <img className="w-[40px]" src="/images/02/payments/02.png" alt="" />
-            <img className="w-[40px]" src="/images/02/payments/03.png" alt="" />
-            <img className="w-[40px]" src="/images/02/payments/04.png" alt="" />
-            <img className="w-[40px]" src="/images/02/payments/05.png" alt="" />
+            <img className="w-[40px]" src={getCDNUrl(`/images/02/payments/01.png`)} alt="" />
+            <img className="w-[40px]" src={getCDNUrl(`/images/02/payments/02.png`)} alt="" />
+            <img className="w-[40px]" src={getCDNUrl(`/images/02/payments/03.png`)} alt="" />
+            <img className="w-[40px]" src={getCDNUrl(`/images/02/payments/04.png`)} alt="" />
+            <img className="w-[40px]" src={getCDNUrl(`/images/02/payments/05.png`)} alt="" />
           </div>
           <div className="self-stretch h-10 inline-flex justify-between items-center overflow-hidden">
-            <img className="w-[40px]" src="/images/02/payments/06.png" alt="" />
-            <img className="w-[98px]" src="/images/02/payments/07.png" alt="" />
-            <img className="w-[36px]" src="/images/02/payments/08.png" alt="" />
-            <img className="w-[72px]" src="/images/02/payments/09.png" alt="" />
+            <img className="w-[40px]" src={getCDNUrl(`/images/02/payments/06.png`)} alt="" />
+            <img className="w-[98px]" src={getCDNUrl(`/images/02/payments/07.png`)} alt="" />
+            <img className="w-[36px]" src={getCDNUrl(`/images/02/payments/08.png`)} alt="" />
+            <img className="w-[72px]" src={getCDNUrl(`/images/02/payments/09.png`)} alt="" />
           </div>
           <div className="self-stretch h-10 inline-flex justify-between items-center overflow-hidden">
-            <img className="w-[49px]" src="/images/02/payments/10.png" alt="" />
-            <img className="w-[56px]" src="/images/02/payments/11.png" alt="" />
-            <img className="w-[88px]" src="/images/02/payments/12.png" alt="" />
-            <img className="w-[40px]" src="/images/02/payments/13.png" alt="" />
+            <img className="w-[49px]" src={getCDNUrl(`/images/02/payments/10.png`)} alt="" />
+            <img className="w-[56px]" src={getCDNUrl(`/images/02/payments/11.png`)} alt="" />
+            <img className="w-[88px]" src={getCDNUrl(`/images/02/payments/12.png`)} alt="" />
+            <img className="w-[40px]" src={getCDNUrl(`/images/02/payments/13.png`)} alt="" />
           </div>
           <div className="self-stretch h-0.5 relative bg-[#191919]" />
         </div>
@@ -509,21 +507,21 @@ export default function App() {
             className="cursor-pointer"
             onClick={() => setEventEmitterS({ type: 'url', info: '/responsible-gaming/' })}
           >
-            <img className="w-[45px]" src="/images/02/footer-icons/01.png" alt="" />
+            <img className="w-[45px]" src={getCDNUrl(`/images/02/footer-icons/01.png`)} alt="" />
           </button>
           <button
             className="cursor-pointer"
             onClick={() => setEventEmitterS({ type: 'url', info: 'https://www.gamcare.org.uk' })}
           >
-            <img className="w-[67px]" src="/images/02/footer-icons/02.png" alt="" />
+            <img className="w-[67px]" src={getCDNUrl(`/images/02/footer-icons/02.png`)} alt="" />
           </button>
           <button
             className="cursor-pointer"
             onClick={() => setEventEmitterS({ type: 'url', info: 'https://betblocker.org/' })}
           >
-            <img className="w-[47px]" src="/images/02/footer-icons/03.png" alt="" />
+            <img className="w-[47px]" src={getCDNUrl(`/images/02/footer-icons/03.png`)} alt="" />
           </button>
-          <img className="w-[24px]" src="/images/02/footer-icons/04.png" alt="" />
+          <img className="w-[24px]" src={getCDNUrl(`/images/02/footer-icons/04.png`)} alt="" />
         </div>
       </div>
 
@@ -531,19 +529,19 @@ export default function App() {
       <div className="hidden md:block mx-8">
         <div className="self-stretch h-0.5 relative bg-[#191919] mb-12" />
         <div className="w-full h-10 inline-flex justify-between items-center ">
-          <img className="w-[40px]" src="/images/02/payments/01.png" alt="" />
-          <img className="w-[40px]" src="/images/02/payments/02.png" alt="" />
-          <img className="w-[40px]" src="/images/02/payments/03.png" alt="" />
-          <img className="w-[40px]" src="/images/02/payments/04.png" alt="" />
-          <img className="w-[40px]" src="/images/02/payments/05.png" alt="" />
-          <img className="w-[40px]" src="/images/02/payments/06.png" alt="" />
-          <img className="w-[98px]" src="/images/02/payments/07.png" alt="" />
-          <img className="w-[58px]" src="/images/02/payments/08.png" alt="" />
-          <img className="w-[93px]" src="/images/02/payments/09.png" alt="" />
-          <img className="w-[63px]" src="/images/02/payments/10.png" alt="" />
-          <img className="w-[56px]" src="/images/02/payments/11.png" alt="" />
-          <img className="w-[88px]" src="/images/02/payments/12.png" alt="" />
-          <img className="w-[40px]" src="/images/02/payments/13.png" alt="" />
+          <img className="w-[40px]" src={getCDNUrl(`/images/02/payments/01.png`)} alt="" />
+          <img className="w-[40px]" src={getCDNUrl(`/images/02/payments/02.png`)} alt="" />
+          <img className="w-[40px]" src={getCDNUrl(`/images/02/payments/03.png`)} alt="" />
+          <img className="w-[40px]" src={getCDNUrl(`/images/02/payments/04.png`)} alt="" />
+          <img className="w-[40px]" src={getCDNUrl(`/images/02/payments/05.png`)} alt="" />
+          <img className="w-[40px]" src={getCDNUrl(`/images/02/payments/06.png`)} alt="" />
+          <img className="w-[98px]" src={getCDNUrl(`/images/02/payments/07.png`)} alt="" />
+          <img className="w-[58px]" src={getCDNUrl(`/images/02/payments/08.png`)} alt="" />
+          <img className="w-[93px]" src={getCDNUrl(`/images/02/payments/09.png`)} alt="" />
+          <img className="w-[63px]" src={getCDNUrl(`/images/02/payments/10.png`)} alt="" />
+          <img className="w-[56px]" src={getCDNUrl(`/images/02/payments/11.png`)} alt="" />
+          <img className="w-[88px]" src={getCDNUrl(`/images/02/payments/12.png`)} alt="" />
+          <img className="w-[40px]" src={getCDNUrl(`/images/02/payments/13.png`)} alt="" />
         </div>
         <div className="self-stretch h-0.5 relative bg-[#191919] my-12" />
 
@@ -568,27 +566,27 @@ export default function App() {
         </div>
 
         <div className=" inline-flex justify-start items-center gap-3.5 mt-12">
-          <img className="w-[53px]" src="/images/02/footer-icons/05.png" alt="" />
-          <img className="w-[42px]" src="/images/02/footer-icons/06.png" alt="" />
+          <img className="w-[53px]" src={getCDNUrl(`/images/02/footer-icons/05.png`)} alt="" />
+          <img className="w-[42px]" src={getCDNUrl(`/images/02/footer-icons/06.png`)} alt="" />
           <button
             className="cursor-pointer"
             onClick={() => setEventEmitterS({ type: 'url', info: '/responsible-gaming/' })}
           >
-            <img className="w-[51px]" src="/images/02/footer-icons/01.png" alt="" />
+            <img className="w-[51px]" src={getCDNUrl(`/images/02/footer-icons/01.png`)} alt="" />
           </button>
           <button
             className="cursor-pointer"
             onClick={() => setEventEmitterS({ type: 'url', info: 'https://www.gamcare.org.uk' })}
           >
-            <img className="w-[98px]" src="/images/02/footer-icons/02.png" alt="" />
+            <img className="w-[98px]" src={getCDNUrl(`/images/02/footer-icons/02.png`)} alt="" />
           </button>
           <button
             className="cursor-pointer"
             onClick={() => setEventEmitterS({ type: 'url', info: 'https://betblocker.org/' })}
           >
-            <img className="w-[69px]" src="/images/02/footer-icons/03.png" alt="" />
+            <img className="w-[69px]" src={getCDNUrl(`/images/02/footer-icons/03.png`)} alt="" />
           </button>
-          <img className="w-[35px]" src="/images/02/footer-icons/04.png" alt="" />
+          <img className="w-[35px]" src={getCDNUrl(`/images/02/footer-icons/04.png`)} alt="" />
         </div>
       </div>
     </div>
