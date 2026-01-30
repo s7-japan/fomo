@@ -107,7 +107,7 @@ export default function App() {
         </div>
       </div>
 
-      <div className="md:w-[720px] inline-flex flex-col justify-start items-center gap-[30px] px-3 mt-32">
+      <div className="inline-flex flex-col justify-start items-center gap-[30px] px-3 mt-20 md:mt-24 md:w-[720px]">
         <div className="self-stretch flex flex-col justify-center items-center">
           <div className="self-stretch justify-center">
             <span
@@ -444,7 +444,7 @@ export default function App() {
           <button
             className="cursor-pointer"
             onClick={() =>
-              setEventEmitterS({ type: 'url', info: '/promotion-page/registration_reward/' })
+              setEventEmitterS({ type: 'url', info: '/promotion-page/limited_cashback/' })
             }
           >
             <div
@@ -511,13 +511,13 @@ export default function App() {
           </button>
           <button
             className="cursor-pointer"
-            onClick={() => setEventEmitterS({ type: 'url', info: 'https://www.gamcare.org.uk' })}
+            onClick={() => setEventEmitterS({ type: 'url', info: 'https://betblocker.org/' })}
           >
             <img className="w-[67px]" src={getCDNUrl(`/images/02/footer-icons/02.png`)} alt="" />
           </button>
           <button
             className="cursor-pointer"
-            onClick={() => setEventEmitterS({ type: 'url', info: 'https://betblocker.org/' })}
+            onClick={() => setEventEmitterS({ type: 'url', info: 'https://www.gamcare.org.uk' })}
           >
             <img className="w-[47px]" src={getCDNUrl(`/images/02/footer-icons/03.png`)} alt="" />
           </button>
@@ -566,8 +566,13 @@ export default function App() {
         </div>
 
         <div className=" inline-flex justify-start items-center gap-3.5 mt-12">
-          <img className="w-[53px]" src={getCDNUrl(`/images/02/footer-icons/05.png`)} alt="" />
-          <img className="w-[42px]" src={getCDNUrl(`/images/02/footer-icons/06.png`)} alt="" />
+          <button
+            className="cursor-pointer"
+            onClick={() => setEventEmitterS({ type: 'url', info: 'https://ecogra.org/' })}
+          >
+            <img className="w-[53px]" src={getCDNUrl(`/images/02/footer-icons/05.png`)} alt="" />
+          </button>
+          <img className="w-[42px]" src={getCDNUrl(`/images/02/footer-icons/06_1.png`)} alt="" />
           <button
             className="cursor-pointer"
             onClick={() => setEventEmitterS({ type: 'url', info: '/responsible-gaming/' })}
@@ -576,13 +581,13 @@ export default function App() {
           </button>
           <button
             className="cursor-pointer"
-            onClick={() => setEventEmitterS({ type: 'url', info: 'https://www.gamcare.org.uk' })}
+            onClick={() => setEventEmitterS({ type: 'url', info: 'https://betblocker.org/' })}
           >
             <img className="w-[98px]" src={getCDNUrl(`/images/02/footer-icons/02.png`)} alt="" />
           </button>
           <button
             className="cursor-pointer"
-            onClick={() => setEventEmitterS({ type: 'url', info: 'https://betblocker.org/' })}
+            onClick={() => setEventEmitterS({ type: 'url', info: 'https://www.gamcare.org.uk' })}
           >
             <img className="w-[69px]" src={getCDNUrl(`/images/02/footer-icons/03.png`)} alt="" />
           </button>

@@ -2,6 +2,7 @@ import { t } from 'i18next'
 import { getCDNUrl } from '../services/layout.service'
 import { getCurrentLng } from '../services/i18n.service'
 import { ngComputed } from '../common/preact-ng-signals'
+import { setEventEmitterS } from '../services/event.service'
 
 const langS = getCurrentLng()
 
@@ -97,6 +98,7 @@ export default function App() {
                     en:text-[18px] en:md:text-[16px]
                     jakoth:text-[14px] jakoth:md:text-[12px] tracking-[-1px]
                     "
+          style={langS() === 'ko' ? { fontSize: '18px' } : {}}
         >
           {t('page.step1_description')}
         </p>
@@ -152,14 +154,37 @@ export default function App() {
         >
           {t('page.step2_title')}
         </p>
-        <p
-          className="
+
+        {langS() === 'ko' ? (
+          <p
+            className="
+                    text-white ml-2 -mr-1 md:ml-0 text-left
+                    en:text-[18px] en:md:text-[16px]
+                    jakoth:text-[18px] jakoth:md:text-[16px] tracking-[-1px]
+                    "
+          >
+            짧은{' '}
+            <button
+              onClick={() =>
+                setEventEmitterS({ type: 'url', info: 'https://forms.gle/61rPEB8tkQR2P4Ti8' })
+              }
+              className="underline underline-offset-2"
+            >
+              설문조사
+            </button>
+            로
+            <br className="md:hidden" /> 여러분의 생각을알려주세요
+          </p>
+        ) : (
+          <p
+            className="
                     text-white ml-2 -mr-1 md:ml-0 text-left
                     en:text-[18px] en:md:text-[16px]
                     jakoth:text-[14px] jakoth:md:text-[12px] tracking-[-1px]
                     "
-          dangerouslySetInnerHTML={{ __html: t('page.step2_description') }}
-        ></p>
+            dangerouslySetInnerHTML={{ __html: t('page.step2_description') }}
+          ></p>
+        )}
       </div>
 
       <div className="bg-[#1A1A1A] rounded-lg flex flex-col relative px-4 py-6">
@@ -218,6 +243,7 @@ export default function App() {
                     en:text-[18px] en:md:text-[16px]
                     jakoth:text-[14px] jakoth:md:text-[12px] tracking-[-1px]
                     "
+          style={langS() === 'ko' ? { fontSize: '18px' } : {}}
         >
           {t('page.step3_description')}
         </p>
