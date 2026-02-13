@@ -264,7 +264,7 @@ export default function App() {
               </span>
               <span className="text-white text-3xl font-bold font-['Gmarket_Sans'] leading-[38px]">
                 {' '}
-                $77 ( 11만원 상당)
+                $88 ( 11만원 상당)
               </span>
             </div>
             <div data-svg-wrapper className="left-[3px] top-[26.69px] absolute">
@@ -408,7 +408,7 @@ export default function App() {
                 {' '}
               </span>
               <span className="text-white text-[72px] font-bold font-['Gmarket_Sans'] leading-[173px]">
-                $77
+                $88
               </span>
             </div>
           </div>
