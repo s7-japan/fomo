@@ -312,7 +312,7 @@ export default function App() {
               캐시백!{' '}
             </span>
             <span className="text-white text-xs font-normal font-['Changa'] leading-normal">
-              (최대 $77)
+              (최대 $88)
             </span>
           </div>
 
@@ -384,7 +384,7 @@ export default function App() {
               </div>
             </div>
             <div className="text-center justify-center text-white text-[34px] font-normal font-['Changa'] leading-normal">
-              첫 손실금 100% 전액 캐시백! (최대 $77)
+              첫 손실금 100% 전액 캐시백! (최대 $88)
             </div>
           </div>
 
