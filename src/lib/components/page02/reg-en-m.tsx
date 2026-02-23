@@ -18,7 +18,8 @@ export default function App() {
         />
       </div>
 
-      <div className="size- inline-flex flex-col justify-start items-center gap-[30px] px-3">
+      {/* inline-flex */}
+      <div className="hidden flex-col justify-start items-center gap-[30px] px-3">
         <div className="w-full text-center justify-center">
           <span
             className="
