@@ -2,7 +2,7 @@ import { setEventEmitterS } from '../../../lib/services/event.service'
 import { getCDNUrl } from '../../../lib/services/layout.service'
 import OneOfTheKind from '../one-of-the-kind'
 import StepsM from '../steps'
-import GameList from './game-list'
+// import GameList from './game-list'
 
 export default function App() {
   return (
@@ -18,8 +18,73 @@ export default function App() {
         />
       </div>
 
-      {/* inline-flex */}
-      <div className="hidden flex-col justify-start items-center gap-[30px] px-3">
+      <div className="size- inline-flex flex-col justify-start items-center gap-[30px] mx-1">
+        <div className="w-full text-center justify-center">
+          <span
+            className="
+            font-bold font-['Phudu'] leading-[30px]
+            text-white text-[28px] md:text-5xl md:leading-[50px]
+            "
+          >
+            Play and win{' '}
+          </span>
+          <span
+            className="
+            font-bold font-['Phudu'] leading-[30px]
+            text-[#ff008c] text-[28px] md:text-5xl md:leading-[50px]
+            "
+          >
+            Crypto
+          </span>
+          <span
+            className="
+            font-bold font-['Phudu'] leading-[30px]
+            text-white text-[28px] md:text-5xl md:leading-[50px]
+            "
+          >
+            ! <br className="hidden md:inline" />
+            At the hottest{' '}
+          </span>
+          <span
+            className="
+            font-bold font-['Phudu'] leading-[30px]
+            text-[#ff008c] text-[28px] md:text-5xl md:leading-[50px]
+            "
+          >
+            Crypto Casino <br className="inline md:hidden" />
+          </span>
+          <span
+            className="
+            font-bold font-['Phudu'] leading-[30px]
+            text-white text-[28px] md:text-5xl md:leading-[50px]
+            "
+          >
+            around.
+          </span>
+        </div>
+        <div
+          className="
+          w-full text-center justify-start text-white text-lg font-normal font-['Inter'] leading-6
+          md:text-2xl
+          "
+        >
+          Get a 100% bonus up to $300 on your first deposit. <br className="inline md:hidden" />
+          Start now and aim for the jackpot!
+        </div>
+        <button className="cursor-pointer" onClick={() => setEventEmitterS({ type: 'signUp' })}>
+          <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
+            <div
+              className="
+            text-center justify-start text-white text-2xl font-normal font-['Gmarket_Sans'] leading-7
+            "
+            >
+              SIGN UP NOW
+            </div>
+          </div>
+        </button>
+      </div>
+
+      {/* <div className="inline-flex flex-col justify-start items-center gap-[30px] px-3">
         <div className="w-full text-center justify-center">
           <span
             className="
@@ -154,7 +219,7 @@ export default function App() {
             Available to new players only.
           </div>
         </button>
-      </div>
+      </div> */}
 
       <div className="w-full pt-12 inline-flex flex-col justify-start items-center gap-[35px] px-3">
         <div className="size- flex flex-col justify-start items-center gap-4">
@@ -181,11 +246,7 @@ export default function App() {
           </div>
         </div>
         <div className="max-w-[992px]">
-          <img
-            className="md:hidden"
-            src={getCDNUrl(`/images/page02/game-list-m.png`)}
-            alt=""
-          />
+          <img className="md:hidden" src={getCDNUrl(`/images/page02/game-list-m.png`)} alt="" />
           <img
             className="hidden md:block"
             src={getCDNUrl(`/images/page02/game-list-d.png`)}
@@ -476,10 +537,7 @@ export default function App() {
             top-[111.66px] w-[272px] md:top-[94px] md:w-[460px]
             "
             >
-              <img
-                src={getCDNUrl(`/images/page02/coin-list-m.png`)}
-                alt=""
-              />
+              <img src={getCDNUrl(`/images/page02/coin-list-m.png`)} alt="" />
             </div>
 
             <div

@@ -2,7 +2,7 @@ import { setEventEmitterS } from '../../../lib/services/event.service'
 import { getCDNUrl } from '../../../lib/services/layout.service'
 import OneOfTheKind from '../one-of-the-kind'
 import StepsM from '../steps'
-import GameList from './game-list'
+// import GameList from './game-list'
 
 export default function App() {
   return (
@@ -17,8 +17,49 @@ export default function App() {
           src={getCDNUrl(`/images/page02/big-header-d-ko.png`)}
         />
       </div>
-      {/* inline-flex */}
-      <div className="hidden flex-col justify-start items-center gap-[30px] px-3 md:w-[720px] ">
+
+      <div className="size- inline-flex flex-col justify-start items-center gap-[30px] mx-4">
+        <div className="w-full text-center justify-center">
+          <span className="
+            text-[#ff008c] font-bold font-['Phudu']
+            text-[28px] leading-[30px]
+            md:text-5xl md:leading-[50px]
+            ">
+            암호화폐로
+          </span>
+          <span className="
+            text-white font-bold font-['Phudu']
+            text-[28px] leading-[30px]
+            md:text-5xl md:leading-[50px]
+            ">
+            {' '}
+            자유롭게 플레이! <br />새로운{' '}
+          </span>
+          <span className="
+            text-[#ff008c] font-bold font-['Phudu']
+            text-[28px] leading-[30px]
+            md:text-5xl md:leading-[50px]
+            ">
+            온라인 카지노
+          </span>
+          <span className="
+            text-white font-bold font-['Phudu']
+            text-[28px] leading-[30px]
+            md:text-5xl md:leading-[50px]
+            ">
+            가 열립니다!
+          </span>
+        </div>
+        <button className="cursor-pointer" onClick={() => setEventEmitterS({ type: 'signUp' })}>
+          <div className="size- px-[42px] py-2 bg-black rounded-[100px] outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2.5">
+            <div className="text-center justify-start text-white text-2xl font-medium font-['Inter'] leading-7">
+              지금 가입하기
+            </div>
+          </div>
+        </button>
+      </div>
+
+      {/* <div className="inline-flex flex-col justify-start items-center gap-[30px] px-3 md:w-[720px] ">
         <div className="self-stretch flex flex-col justify-center items-center">
           <div className="self-stretch justify-center">
             <span
@@ -153,7 +194,7 @@ export default function App() {
             ※ 신규 회원 한정 프로모션입니다.
           </div>
         </button>
-      </div>
+      </div> */}
 
       <div className="w-full pt-12 inline-flex flex-col justify-start items-center gap-[35px] px-3">
         <div className="self-stretch flex flex-col justify-start items-center gap-4">
@@ -179,11 +220,7 @@ export default function App() {
           </div>
         </div>
         <div className="max-w-[992px]">
-          <img
-            className="md:hidden"
-            src={getCDNUrl(`/images/page02/game-list-m.png`)}
-            alt=""
-          />
+          <img className="md:hidden" src={getCDNUrl(`/images/page02/game-list-m.png`)} alt="" />
           <img
             className="hidden md:block"
             src={getCDNUrl(`/images/page02/game-list-d.png`)}
@@ -202,10 +239,7 @@ export default function App() {
 
         <div className="self-stretch inline-flex flex-col justify-start items-center gap-0.5 overflow-hidden">
           <div className="size- inline-flex justify-start items-center gap-[7px]">
-            <img
-              className="w-[83px] h-5"
-              src={getCDNUrl(`/images/FOMO_logo.png`)}
-            />
+            <img className="w-[83px] h-5" src={getCDNUrl(`/images/FOMO_logo.png`)} />
             <div
               className="
             text-center justify-start text-white font-semibold font-['Pretendard'] leading-normal
@@ -413,7 +447,9 @@ export default function App() {
 
           <button
             className="cursor-pointer"
-            onClick={() => setEventEmitterS({ type: 'url', info: '/promotion-page/registration_reward/' })}
+            onClick={() =>
+              setEventEmitterS({ type: 'url', info: '/promotion-page/registration_reward/' })
+            }
           >
             <div
               className="
@@ -481,10 +517,7 @@ export default function App() {
             top-[95px] w-[272px] md:top-[94px] md:w-[460px]
             "
             >
-              <img
-                src={getCDNUrl(`/images/page02/coin-list-m.png`)}
-                alt=""
-              />
+              <img src={getCDNUrl(`/images/page02/coin-list-m.png`)} alt="" />
             </div>
             <div
               className="
