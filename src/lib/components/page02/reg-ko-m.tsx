@@ -106,8 +106,8 @@ export default function App() {
           </div>
         </div>
       </div>
-
-      <div className="inline-flex flex-col justify-start items-center gap-[30px] px-3 mt-20 md:mt-24 md:w-[720px]">
+      {/* inline-flex */}
+      <div className="hidden flex-col justify-start items-center gap-[30px] px-3 mt-20 md:mt-24 md:w-[720px]">
         <div className="self-stretch flex flex-col justify-center items-center">
           <div className="self-stretch justify-center">
             <span

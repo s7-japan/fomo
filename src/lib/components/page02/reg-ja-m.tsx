@@ -17,8 +17,8 @@ export default function App() {
           src={getCDNUrl(`/images/page02/big-header-d-ja.png`)}
         />
       </div>
-
-      <div className="size- inline-flex flex-col justify-start items-center gap-[30px] px-3">
+      {/* inline-flex */}
+      <div className="hidden flex-col justify-start items-center gap-[30px] px-3">
         <div className="w-full text-center justify-center">
           <span
             className="
