@@ -2,8 +2,8 @@ import { setEventEmitterS } from '../../../lib/services/event.service'
 import { getCDNUrl } from '../../../lib/services/layout.service'
 import OneOfTheKind from '../one-of-the-kind'
 import StepsM from '../steps'
-import GameList from './game-list'
 import ProviderMarque from './provider-marquee'
+// import GameList from './game-list'
 
 export default function App() {
   return (
@@ -106,8 +106,8 @@ export default function App() {
           </div>
         </div>
       </div>
-      {/* inline-flex */}
-      <div className="hidden flex-col justify-start items-center gap-[30px] px-3 mt-20 md:mt-24 md:w-[720px]">
+      
+      {/* <div className="inline-flex flex-col justify-start items-center gap-[30px] px-3 mt-20 md:mt-24 md:w-[720px]">
         <div className="self-stretch flex flex-col justify-center items-center">
           <div className="self-stretch justify-center">
             <span
@@ -242,7 +242,7 @@ export default function App() {
             ※ 신규 회원 한정 프로모션입니다.
           </div>
         </button>
-      </div>
+      </div> */}
 
       <div className="self-stretch mt-12 inline-flex justify-center items-center gap-2.5 md:mt-32">
         <div className="w-full inline-flex flex-col justify-start items-center gap-[17px]">
